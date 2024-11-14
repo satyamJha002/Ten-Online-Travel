@@ -11,7 +11,7 @@ import Hiking from "./Pages/Activities/Hiking/Hiking";
 import Termpage from "./Components/Footer/FooterLink/Termpage"
 import DocumentVisa from "./Components/Footer/FooterLink/DocumentVisa";
 import PrivacyPolicy from "./Components/Footer/FooterLink/PrivacyPolicy";
-
+import Footer from "./Components/Footer/Footer"
 function App() {
   return (
     <>
