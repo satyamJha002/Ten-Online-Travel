@@ -28,7 +28,7 @@ const NavBar = () => {
     <nav className="flex items-center justify-between p-4 pl-12 pr-12 shadow-md bg-white">
       <div className="flex-shrink-0 flex">
         <NavLink to="/" className="text-black font-bold text-xl m-3">
-          TEN Traviling
+          TEN Travel
         </NavLink>
       </div>
       <ul className="hidden lg:flex space-x-8">
