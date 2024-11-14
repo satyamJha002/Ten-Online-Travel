@@ -1,0 +1,154 @@
+.travelCard {
+  width: 320px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travelTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+.travelTitle h2 {
+  font-size: 1.5rem;
+  color: #666666;
+  font-weight: 500;
+}
+
+.heartIcon {
+  font-size: 2rem;
+}
+.travelDescription {
+  width: 100%;
+}
+.travelCardDescription {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+}
+
+.descriptionLeft {
+  border-right: 1px solid #666666;
+}
+.descriptionLeft,
+.descriptionRight {
+  width: 50%;
+}
+.descriptionRight {
+  padding: 10px;
+}
+.descriptionLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+.cardDays,
+.CardPeople,
+.des,
+.cardLocation {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  color: #666666;
+  gap: 10px;
+  align-items: center;
+}
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.cardDescription span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cardPrice {
+  width: 100%;
+}
+.cardPrice h2 {
+  font-size: 2rem;
+  color: #666666;
+  font-weight: 500;
+}
+.travelCardBtn {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.travelCardBtn .button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.2em 2em;
+  border: #32b67a solid 0.1em;
+  border-radius: 0.25em;
+  color: #32b67a;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+.travelCardBtn .button p {
+  z-index: 1;
+}
+
+.travelCardBtn .button:hover {
+  color: #212121;
+}
+
+.travelCardBtn .button:active {
+  border-color: teal;
+}
+
+.travelCardBtn .button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  width: 15em;
+  aspect-ratio: 1;
+  background: #32b67a;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 1000ms, background 300ms;
+}
+
+.button::before {
+  left: 0;
+  transform: translateX(-14em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(14em);
+}
+
+.button:hover:before {
+  transform: translateX(-0em);
+}
+
+.button:hover:after {
+  transform: translateX(0em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: teal;
+}
