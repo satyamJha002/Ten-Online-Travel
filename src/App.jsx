@@ -5,6 +5,7 @@ import ScrollToTop from "./Components/NavBar/ScrollToTop";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Dubai from "./Pages/International/Dubai/Dubai";
+import Paragliding from "./Pages/Activities/Paragliding/Paragliding";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/international/dubai" element={<Dubai />} />
+          <Route path="/activities/paragliding" element={<Paragliding />} />
         </Routes>
       </BrowserRouter>
     </>
