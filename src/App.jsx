@@ -6,7 +6,7 @@ import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Dubai from "./Pages/International/Dubai/Dubai";
 import Paragliding from "./Pages/Activities/Paragliding/Paragliding";
-
+import RiverRafting from "./Pages/Activities/RiverRafting/RiverRafting";
 function App() {
   return (
     <>
@@ -18,6 +18,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
+          <Route path="/activities/RiverRafting" element={<RiverRafting />} />
         </Routes>
       </BrowserRouter>
     </>
