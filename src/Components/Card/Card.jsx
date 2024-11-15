@@ -32,7 +32,8 @@ const Card = ({ pkg }) => {
             height="300"
             allowFullScreen=""
             loading="lazy"
-            title="Google Map"></iframe>
+            title="Google Map"
+          ></iframe>
         ) : (
           <img
             src={pkg.images[currentImage]}
@@ -43,13 +44,15 @@ const Card = ({ pkg }) => {
         <button
           className="arrow left"
           onClick={handlePrevImage}
-          disabled={showMap}>
+          disabled={showMap}
+        >
           ❮
         </button>
         <button
           className="arrow right"
           onClick={handleNextImage}
-          disabled={showMap}>
+          disabled={showMap}
+        >
           ❯
         </button>
         <div className="map-icon-container">

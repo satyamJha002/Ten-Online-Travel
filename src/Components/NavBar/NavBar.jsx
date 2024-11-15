@@ -37,7 +37,8 @@ const NavBar = () => {
             to="/"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+          >
             HOME
           </NavLink>
         </li>
@@ -50,7 +51,8 @@ const NavBar = () => {
               dropdownOpen === "india" || location.pathname.includes("india")
                 ? "text-green-500 font-bold"
                 : ""
-            }`}>
+            }`}
+          >
             INDIA
             <span className="ml-2">&#9660;</span>
           </li>
@@ -61,7 +63,8 @@ const NavBar = () => {
               </li>
               <li
                 onClick={() => handleSubDropdownToggle("himachal")}
-                className="relative px-4 py-2 hover:bg-gray-100">
+                className="relative px-4 py-2 hover:bg-gray-100"
+              >
                 <NavLink to="/india/himachal" className="flex items-center">
                   Himachal
                   <span className="ml-2">&#9654;</span>
@@ -76,7 +79,8 @@ const NavBar = () => {
               </li>
               <li
                 onClick={() => handleSubDropdownToggle("kerala")}
-                className="relative px-4 py-2 hover:bg-gray-100">
+                className="relative px-4 py-2 hover:bg-gray-100"
+              >
                 <NavLink to="/india/kerala" className="flex items-center">
                   Kerala
                   <span className="ml-2">&#9654;</span>
@@ -92,7 +96,8 @@ const NavBar = () => {
 
               <li
                 onClick={() => handleSubDropdownToggle("tamilnadu")}
-                className="relative px-4 py-2 hover:bg-gray-100">
+                className="relative px-4 py-2 hover:bg-gray-100"
+              >
                 <NavLink to="/india/tamilnadu" className="flex items-center">
                   Tamil Nadu
                   <span className="ml-2">&#9654;</span>
@@ -132,7 +137,8 @@ const NavBar = () => {
 
               <li
                 onClick={() => handleSubDropdownToggle("uttarakhand")}
-                className="relative px-4 py-2 hover:bg-gray-100">
+                className="relative px-4 py-2 hover:bg-gray-100"
+              >
                 <NavLink to="/india/uttarakhand" className="flex items-center">
                   Uttarakhand
                   <span className="ml-2">&#9654;</span>
@@ -163,7 +169,8 @@ const NavBar = () => {
               location.pathname.includes("international")
                 ? "text-green-500 font-bold"
                 : ""
-            }`}>
+            }`}
+          >
             INTERNATIONAL
             <span className="ml-2">&#9660;</span>
           </li>
@@ -200,7 +207,8 @@ const NavBar = () => {
               location.pathname.includes("activities")
                 ? "text-green-500 font-bold"
                 : ""
-            }`}>
+            }`}
+          >
             ACTIVITIES
             <span className="ml-2">&#9660;</span>
           </li>
@@ -223,7 +231,8 @@ const NavBar = () => {
             to="/about"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+          >
             ABOUT US
           </NavLink>
         </li>
@@ -233,7 +242,8 @@ const NavBar = () => {
             to="/reviews"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+          >
             REVIEWS
           </NavLink>
         </li>
@@ -243,7 +253,8 @@ const NavBar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+          >
             CONTACT
           </NavLink>
         </li>
@@ -252,13 +263,15 @@ const NavBar = () => {
       {/* Mobile Menu */}
       <li
         className="lg:hidden flex items-center space-x-2"
-        onClick={toggleMobileMenu}>
+        onClick={toggleMobileMenu}
+      >
         <span className="text-2xl">&#9776;</span>
       </li>
       <div
         className={`lg:hidden fixed inset-0 bg-white transition-transform transform ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        } shadow-lg`}>
+        } shadow-lg`}
+      >
         <ul className="space-y-4 p-6">
           <li>
             <NavLink
@@ -266,7 +279,8 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? "text-green-500 font-bold" : "hover:text-green-500"
               }
-              onClick={toggleMobileMenu}>
+              onClick={toggleMobileMenu}
+            >
               HOME
             </NavLink>
           </li>
@@ -278,7 +292,8 @@ const NavBar = () => {
                 dropdownOpen === "india" || location.pathname.includes("india")
                   ? "text-green-500 font-bold"
                   : "hover:text-green-500"
-              }`}>
+              }`}
+            >
               INDIA
               <span className="ml-2">&#9660;</span>
             </li>
@@ -290,7 +305,8 @@ const NavBar = () => {
                   </NavLink>
                   <li
                     onClick={() => handleMobileSubDropdownToggle("himachal")}
-                    className="ml-2 ">
+                    className="ml-2 "
+                  >
                     <span className="ml-2">&#9654;</span>
                   </li>
                   {mobileSubDropdownOpen === "himachal" && (
@@ -298,7 +314,8 @@ const NavBar = () => {
                       <li>
                         <NavLink
                           to="/india/himachal/kasol"
-                          onClick={toggleMobileMenu}>
+                          onClick={toggleMobileMenu}
+                        >
                           Kasol
                         </NavLink>
                       </li>
@@ -333,7 +350,8 @@ const NavBar = () => {
                 location.pathname.includes("international")
                   ? "text-green-500 font-bold"
                   : "hover:text-green-500"
-              }`}>
+              }`}
+            >
               INTERNATIONAL
               <span className="ml-2">&#9660;</span>
             </li>
@@ -342,14 +360,16 @@ const NavBar = () => {
                 <li>
                   <NavLink
                     to="/international/singapore"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     Singapore
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to="/international/malaysia"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     Malaysia
                   </NavLink>
                 </li>
@@ -362,14 +382,16 @@ const NavBar = () => {
                 <li>
                   <NavLink
                     to="/international/maldives"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     Maldives
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to="/international/thailand"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     Thailand
                   </NavLink>
                 </li>
@@ -391,7 +413,8 @@ const NavBar = () => {
                 location.pathname.includes("Activities")
                   ? "text-green-500 font-bold"
                   : "hover:text-green-500"
-              }`}>
+              }`}
+            >
               Activities
               <span className="ml-2">&#9660;</span>
             </li>
@@ -400,21 +423,24 @@ const NavBar = () => {
                 <li>
                   <NavLink
                     to="/activities/riverrafting"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     River Rafting
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to="/activities/paragliding"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     Paragliding
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to="/international/hiking"
-                    onClick={toggleMobileMenu}>
+                    onClick={toggleMobileMenu}
+                  >
                     Hiking
                   </NavLink>
                 </li>
@@ -427,7 +453,8 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? "text-green-500 font-bold" : "hover:text-green-500"
               }
-              onClick={toggleMobileMenu}>
+              onClick={toggleMobileMenu}
+            >
               ABOUT US
             </NavLink>
           </li>
@@ -437,7 +464,8 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? "text-green-500 font-bold" : "hover:text-green-500"
               }
-              onClick={toggleMobileMenu}>
+              onClick={toggleMobileMenu}
+            >
               REVIEWS
             </NavLink>
           </li>
@@ -447,7 +475,8 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? "text-green-500 font-bold" : "hover:text-green-500"
               }
-              onClick={toggleMobileMenu}>
+              onClick={toggleMobileMenu}
+            >
               CONTACT
             </NavLink>
           </li>
