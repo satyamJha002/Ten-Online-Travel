@@ -8,7 +8,7 @@ const Darjeeling = () => {
     <div className="darjeeling-container">
       <h1 className="text-4xl mt-5">Darjeeling</h1>
 
-      <div className="container py-4">
+      <div className="">
         <p className="mt-2 text-gray-700">
           Darjeeling, the "Queen of the Hills" in West Bengal, India, is famous
           for its stunning Himalayan views, especially of Mount Kanchenjunga,

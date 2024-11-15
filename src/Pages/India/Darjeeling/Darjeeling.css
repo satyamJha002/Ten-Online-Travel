@@ -1,6 +1,5 @@
 /* Base Styles */
 .darjeeling-container {
-  padding: 20px;
   background-color: #f9f9f9;
 }
 
@@ -12,7 +11,7 @@
 .darjeeling-container p {
   color: #848282;
   text-align: justify;
-  margin-left: 2rem;
+  padding: 0rem 1rem;
 }
 
 .darjeeling-cards {
@@ -37,7 +36,7 @@
 
 @media (max-width: 768px) {
   .darjeeling-container h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .darjeeling-card {
@@ -73,8 +72,11 @@
   }
 
   .darjeeling-container h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+
+  .darjeeling-container p {
+    margin-left: 0.2rem;
   }
 
   .price-section {
