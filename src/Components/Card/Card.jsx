@@ -1,86 +1,93 @@
 import "./card.css";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
-import { GoPeople } from "react-icons/go";
-import { IoCheckmark } from "react-icons/io5";
-import { IoMdTime } from "react-icons/io";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-const Card = () => {
-  const [liked, setLiked] = useState(false);
-  const toggleLike = () => {
-    setLiked((prevLiked) => !prevLiked);
+const Card = ({ pkg }) => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [showMap, setShowMap] = useState(false);
+
+  const handlePrevImage = () => {
+    setCurrentImage((prev) => (prev === 0 ? pkg.images.length - 1 : prev - 1));
+  };
+
+  const handleNextImage = () => {
+    setCurrentImage((prev) => (prev === pkg.images.length - 1 ? 0 : prev + 1));
+  };
+
+  const toggleMap = () => {
+    setShowMap(!showMap);
   };
 
   return (
-    <>
-      <div className="container">
-        <div className="travelCard">
-          {/* the img should be dynamic  */}
-          <div className="travelCard-img">
-            <img
-              src="https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg"
-              alt=""
-            />
-          </div>
-          <div className="travelTitle">
-            {/* the Title should be dynamic  */}
-            <h2>VELIGANDU ISLAND RESORT</h2>
-            <div
-              onClick={toggleLike}
-              style={{ fontSize: "24px", cursor: "pointer" }}>
-              {liked ? <FaHeart color="red" /> : <FaRegHeart />}
-            </div>
-          </div>
-          <div className="travelCardDescription">
-            <div className="descriptionLeft">
-              <div className="cardLocation">
-                <IoLocationOutline />
-                {/* the  the  should be dynamic  */}
-                <span>Maldives</span>
-              </div>
-              <div className="cardDays">
-                <IoMdTime />
-                <span>5 Days - 4 Nights</span>
-              </div>
-              <div className="CardPeople">
-                <GoPeople />
-                <span>2-4 People</span>
-              </div>
-              {/* this description should be dynamic  */}
-              <div className="des">Award-winning Vilamendhoo</div>
-            </div>
-            <div className="descriptionRight">
-              <div className="cardPrice">
-                {/* the price should be dynamic  */}
-                <h2>₹135,000</h2>
-              </div>
-              <div className="cardDescription">
-                <div className="cardDescription">
-                  <span>Next Departure</span>
-                </div>
-                <span>
-                  <IoCheckmark /> Nov 14
-                </span>
-                <span>
-                  <IoCheckmark />
-                  Nov 15
-                </span>
-                <span>
-                  <IoCheckmark /> Nov 16
-                </span>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div className="travelCardBtn">
-            <button className="button">
-              <p>View Details</p>
-            </button>
-          </div>
+    <div className="travel-card">
+      {pkg.featured && <span className="badge">Featured</span>}
+      <div className="image-slider">
+        {showMap ? (
+          <iframe
+            src={`https://www.google.com/maps?q=${encodeURIComponent(
+              pkg.location
+            )}&output=embed`}
+            width="100%"
+            height="300"
+            allowFullScreen=""
+            loading="lazy"
+            title="Google Map"></iframe>
+        ) : (
+          <img
+            src={pkg.images[currentImage]}
+            alt={pkg.title}
+            className="card-image"
+          />
+        )}
+        <button
+          className="arrow left"
+          onClick={handlePrevImage}
+          disabled={showMap}>
+          ❮
+        </button>
+        <button
+          className="arrow right"
+          onClick={handleNextImage}
+          disabled={showMap}>
+          ❯
+        </button>
+        <div className="map-icon-container">
+          <FontAwesomeIcon
+            icon={faMapMarkerAlt}
+            className="map-toggle-icon"
+            onClick={toggleMap}
+          />
         </div>
       </div>
-    </>
+      <h2 className="title">{pkg.title}</h2>
+      <div className="card-details">
+        <p>
+          <span>📍</span>
+          {pkg.location}
+        </p>
+        <p>
+          <span>🕒</span>
+          {pkg.duration}
+        </p>
+        <p>
+          <span>👥</span>
+          {pkg.people}
+        </p>
+        <div className="price-section">
+          <span className="discount">{pkg.discount}</span>
+          <span className="price">{pkg.price}</span>
+          <span className="original-price">{pkg.originalPrice}</span>
+        </div>
+        <p>Next Departure</p>
+        <ul className="departures">
+          {pkg.nextDepartures.map((date, index) => (
+            <li key={index}>✔ {date}</li>
+          ))}
+        </ul>
+        <button className="view-details-btn">View Details</button>
+      </div>
+    </div>
   );
 };
 

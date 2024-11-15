@@ -1,87 +1,151 @@
-.travelCard {
-  width: 320px;
+.travel-card {
+  position: relative;
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
-.container {
+
+.travel-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.image-slider {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.map-icon-container {
+  position: absolute;
+  top: 190px;
+  right: 10px;
+  padding: 7px;
+  color: white;
+  background-color: #333;
+  border-radius: 6px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 50%;
+  transition: background 0.3s, opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-slider:hover .arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.title {
+  margin: 20px;
+  font-size: 1.7rem;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: orange;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.85em;
+  z-index: 1;
+}
+
+.card-details {
+  margin: 20px;
+}
+
+.card-details p {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
+  color: #555;
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
-.travelTitle {
-  width: 100%;
+.price-section {
   display: flex;
-  align-items: center;
-  padding: 0 10px;
-  justify-content: space-between;
-}
-.travelTitle h2 {
-  font-size: 1.5rem;
-  color: #666666;
-  font-weight: 500;
+  gap: 15px;
+  align-items: baseline;
+  margin-top: 10px;
+  font-size: 1.4rem;
 }
 
-.heartIcon {
-  font-size: 2rem;
-}
-.travelDescription {
-  width: 100%;
-}
-.travelCardDescription {
-  width: 100%;
-  padding: 0 10px;
-  display: flex;
+.price-section .discount {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
-.descriptionLeft {
-  border-right: 1px solid #666666;
+.price-section .price {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333;
 }
-.descriptionLeft,
-.descriptionRight {
-  width: 50%;
-}
-.descriptionRight {
-  padding: 10px;
-}
-.descriptionLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  justify-content: center;
+.price-section .original-price {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.9em;
 }
-.cardDays,
-.CardPeople,
-.des,
-.cardLocation {
+
+.departures li {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.view-details-btn {
   width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
   margin-bottom: 10px;
-  display: flex;
-  color: #666666;
-  gap: 10px;
-  align-items: center;
+  transition: background-color 0.3s;
 }
-.cardDescription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  justify-content: center;
+
+.view-details-btn:hover {
+  background-color: #19692a;
 }
-.cardDescription span {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.cardPrice {
-  width: 100%;
-}
-.cardPrice h2 {
-  font-size: 2rem;
-  color: #666666;
-  font-weight: 500;
-}
+
 .travelCardBtn {
   margin-top: 20px;
   display: flex;

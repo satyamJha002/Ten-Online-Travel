@@ -1,7 +1,6 @@
-import React from "react";
-
+import Card from "../../../Components/Card/Card";
 const Dubai = () => {
-  return <div>Dubai</div>;
+  return <Card />;
 };
 
 export default Dubai;
