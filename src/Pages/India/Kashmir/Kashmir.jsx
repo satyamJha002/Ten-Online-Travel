@@ -7,7 +7,7 @@ const Kashmir = () => {
     <div className="p-5 bg-[#f9f9f9]">
       <h1 className="text-4xl m-8">Kashmir</h1>
       <div
-        className="relative h-96 bg-cover bg-center"
+        className="relative h-[30vh] bg-cover bg-center md:h-[50vh] sm:h-[30vh] w-full"
         style={{
           backgroundImage:
             "url('https://b4holiday.com/wp-content/uploads/2022/02/1567063194_kashmir_web.jpg')",

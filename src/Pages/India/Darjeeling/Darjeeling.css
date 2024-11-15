@@ -12,7 +12,7 @@
 .darjeeling-container p {
   color: #848282;
   text-align: justify;
-  margin: 2rem;
+  margin-left: 2rem;
 }
 
 .darjeeling-cards {
@@ -25,13 +25,6 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .darjeeling-container h1 {
-    font-size: 2rem;
-    margin: 1.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-
   .darjeeling-card {
     width: 45%;
   }
@@ -45,7 +38,6 @@
 @media (max-width: 768px) {
   .darjeeling-container h1 {
     font-size: 1.8rem;
-    margin: 1rem;
   }
 
   .darjeeling-card {
@@ -82,9 +74,8 @@
   }
 
   .darjeeling-container h1 {
-    font-size: 1.8rem;
-    margin: 1rem;
-    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
   .price-section {
