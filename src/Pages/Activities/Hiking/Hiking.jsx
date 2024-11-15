@@ -1,12 +1,14 @@
-import Card from "../../../Components/Card/Card";
+import { packages } from "../../../assets/Data/hiking";
+
 import "./Hiking.css";
-import { hiking } from "../../../assets/Data/hiking";
+import Card from "../../../Components/Card/Card";
+
 const Hiking = () => {
   return (
     <div className="hiking-container">
-      <h1>hiking</h1>
+      <h1>Hiking</h1>
       <div className="hiking-cards">
-        {hiking.map((pkg) => (
+        {packages.map((pkg) => (
           <Card key={pkg.id} pkg={pkg} />
         ))}
       </div>
