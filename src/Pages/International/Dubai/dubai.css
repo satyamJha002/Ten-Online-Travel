@@ -1,0 +1,63 @@
+.dubaiIntro {
+  padding: 20px 40px;
+}
+.dubaiIntro h1 {
+  font-size: 2.5rem;
+}
+.dubaiIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+.dubaiInfo {
+  margin-top: 30px;
+}
+.dubaiInfo p {
+  color: #7c7c8b;
+}
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.friAndFam h2 {
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 0 30px;
+  font-weight: 400;
+  z-index: 1;
+}
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+.DubaiCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}

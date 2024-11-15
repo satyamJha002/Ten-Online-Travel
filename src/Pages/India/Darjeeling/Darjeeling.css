@@ -1,50 +1,58 @@
 /* Base Styles */
-.paragliding-container {
+.darjeeling-container {
   padding: 20px;
   background-color: #f9f9f9;
 }
 
-.paragliding-container h1 {
+.darjeeling-container h1 {
   font-size: 2.5rem;
   margin: 2rem;
 }
 
-.paragliding-cards {
+.darjeeling-container p {
+  color: #848282;
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+.darjeeling-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+  flex-wrap: wrap;
   padding-left: 40px;
   margin-top: 30px;
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .paragliding-container h1 {
+  .darjeeling-container h1 {
     font-size: 2rem;
     margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  .paragliding-card {
+  .darjeeling-card {
     width: 45%;
   }
 
-  .paragliding-cards {
+  .darjeeling-cards {
     padding-left: 20px;
     gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .paragliding-container h1 {
+  .darjeeling-container h1 {
     font-size: 1.8rem;
     margin: 1rem;
   }
 
-  .paragliding-card {
+  .darjeeling-card {
     width: 100%;
   }
 
-  .paragliding-cards {
+  .darjeeling-cards {
     padding-left: 10px;
     gap: 15px;
   }
@@ -69,11 +77,11 @@
 }
 
 @media (max-width: 480px) {
-  .paragliding-container {
+  .darjeeling-container {
     padding: 10px;
   }
 
-  .paragliding-container h1 {
+  .darjeeling-container h1 {
     font-size: 1.5rem;
     margin: 1rem 0;
   }
