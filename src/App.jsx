@@ -13,6 +13,7 @@ import DocumentVisa from "./Components/Footer/FooterLink/DocumentVisa";
 import PrivacyPolicy from "./Components/Footer/FooterLink/PrivacyPolicy";
 import Footer from "./Components/Footer/Footer";
 import Malaysia from "./Pages/International/Malaysia/Malaysia";
+import Maldives from "./Pages/International/Maldives/Maldives";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
+          <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
           <Route path="/activities/RiverRafting" element={<RiverRafting />} />
           <Route path="/activities/Hiking" element={<Hiking />} />

@@ -1,5 +1,4 @@
 import { packages } from "../../../assets/Data/hiking";
-
 import "./Hiking.css";
 import Card from "../../../Components/Card/Card";
 
