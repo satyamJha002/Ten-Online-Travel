@@ -17,10 +17,11 @@
 
 .darjeeling-cards {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
-  padding-left: 40px;
-  margin-top: 30px;
+  gap: 35px;
+  justify-content: center; 
+  margin: 30px auto; 
+  padding-left: 0; 
 }
 
 /* Responsive Styles */
@@ -30,7 +31,6 @@
   }
 
   .darjeeling-cards {
-    padding-left: 20px;
     gap: 20px;
   }
 }
@@ -45,7 +45,6 @@
   }
 
   .darjeeling-cards {
-    padding-left: 10px;
     gap: 15px;
   }
 
