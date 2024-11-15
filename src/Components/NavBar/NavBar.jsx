@@ -65,7 +65,7 @@ const NavBar = () => {
             <span className="ml-2">&#9660;</span>
           </div>
           {dropdownOpen === "india" && (
-            <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg">
+            <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg z-50">
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/india/andaman" onClick={handleItemClick}>
                   Andaman Tour
@@ -192,7 +192,7 @@ const NavBar = () => {
             <span className="ml-2">&#9660;</span>
           </div>
           {dropdownOpen === "international" && (
-            <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg">
+            <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg z-50">
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/international/singapore" onClick={handleItemClick}>
                   Singapore
@@ -241,7 +241,7 @@ const NavBar = () => {
             <span className="ml-2">&#9660;</span>
           </div>
           {dropdownOpen === "activities" && (
-            <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg">
+            <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg z-50">
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/activities/riverrafting" onClick={handleItemClick}>
                   River Rafting
