@@ -1,0 +1,146 @@
+.goa{
+  padding: 20px 40px;
+
+  
+  }
+  .goa-heading{
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+   
+  }
+  .goa-heading::after {
+    content: "";
+    padding: 2px;
+    width: 10%;
+    display: flex;
+    background-color: #32b67a;
+  }
+  .goa-content{
+     font-size: 16px;
+     color: #666666;
+     width: 97%;
+     margin-bottom: 4%;
+  }
+
+
+  .Friends-div .Friends-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5%;
+    font-size: 176%;
+    font-weight: 500;
+  }
+  
+  .Friends-div .Friends-title::before,
+  .Friends-div .Friends-title::after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; 
+    margin: 0 10px; 
+    height: 6px;
+  }
+  
+  .Friends-div .Friends-title::before {
+    border-top: 2px solid rgba(0, 0, 0, 0.4); 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  
+  .Friends-div .Friends-title::after {
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+  
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  .Friends-div .Friends-title span {
+    display: inline-block;
+  }
+  .friendfamily-headng{
+    width: 64%;
+
+  }
+
+  .other-div .other-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3%;
+    font-size: 176%;
+    font-weight: 500;
+  }
+  
+  .other-div .other-title::before,
+  .other-div .other-title::after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; 
+    margin: 0 10px; 
+    height: 6px;
+  }
+  
+  .other-div .other-title::before {
+    border-top: 2px solid rgba(0, 0, 0, 0.4); 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  
+  .other-div .other-title::after {
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+  
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  .other-div .other-title span {
+    display: inline-block;
+  }
+  .otherstrip-headng{
+    width: 28%;
+
+  }
+
+  .othertrips-content{
+    color: #666666;
+  }
+
+
+
+
+  /* card */
+
+  .GoaContainer{
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+
+
+
+  @media (max-width: 480px){
+    .Friends-div .Friends-title::before {
+      border-top: none ;
+     border-bottom:none ;
+  }
+  .Friends-div .Friends-title::after {
+    border-top: none ;
+    border-bottom:none ;
+}
+.friendfamily-headng {
+  font-size: 28px;
+  width: 329%;
+  text-align: center;
+}
+  }
