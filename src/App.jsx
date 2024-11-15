@@ -15,6 +15,7 @@ import PrivacyPolicy from "./Components/Footer/FooterLink/PrivacyPolicy";
 import Footer from "./Components/Footer/Footer";
 import Kashmir from "./Pages/India/Kashmir/Kashmir";
 import Ladakh from "./Pages/India/Ladakh/Ladakh";
+import Maldives from "./Pages/International/Maldives/Maldives";
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/international/dubai" element={<Dubai />} />
+          <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
           <Route path="/india/kashmir" element={<Kashmir />} />
           <Route path="/india/ladakh" element={<Ladakh />} />

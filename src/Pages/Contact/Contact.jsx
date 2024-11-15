@@ -41,16 +41,14 @@ const Contact = () => {
             height="450"
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div className="payment-options">
           <h2>Payment Options:</h2>
           <Popup
             trigger=<button id="Pay_btm"> Payment</button>
-            position="right center"
-          >
+            position="right center">
             <div>To be provided on Request</div>
           </Popup>
 
