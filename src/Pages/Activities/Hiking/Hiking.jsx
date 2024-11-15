@@ -1,51 +1,12 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import "./RiverRafting.css";
+import "./Hiking.css";
 
-const RiverRafting = () => {
+const Hiking = () => {
     const packages = [
         {
             id: 1,
-            images: [
-                "https://b4holiday.com/wp-content/uploads/2017/11/holly-mandarich-3266802-1024x681.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/10/riverrafting-1526135_19201-1024x683.jpg",
-            ],
-            title: "Shimla Manali Honeymoon",
-            location: "Himachal, India",
-            duration: "6 Days - 5 Nights",
-            people: "2 People",
-            discount: "35% Off",
-            price: "₹16,700",
-            originalPrice: "₹25,500",
-            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
-            featured: true,
-        },
-        {
-            id: 2,
-            images: [
-                "https://b4holiday.com/wp-content/uploads/2021/03/river_rafting_rishikesh.jpg",
-                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_2256.jpg",
-                "https://b4holiday.com/wp-content/uploads/2021/03/20170909_102201.jpg",
-                "https://b4holiday.com/wp-content/uploads/2021/03/11.jpeg",
-                "https://b4holiday.com/wp-content/uploads/2021/03/bonfire.jpg",
-                "https://b4holiday.com/wp-content/uploads/2021/03/2018-03-12.jpg",
-                "https://b4holiday.com/wp-content/uploads/2021/03/2018-03-10.jpg",
-            ],
-            title: "Rishikesh Camping",
-            location: "India, Rishikesh, Uttarakhand",
-            duration: "2 Days - 1 Night",
-            people: "2-60 People",
-            discount: "33% Off",
-            price: "₹1,500",
-            originalPrice: "₹2,250",
-            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
-            featured: true,
-        },
-
-        {
-            id: 3,
             images: [
                 "https://b4holiday.com/wp-content/uploads/2021/03/IMG_2256.jpg",
                 "https://b4holiday.com/wp-content/uploads/2021/03/20170909_102201.jpg",
@@ -69,81 +30,79 @@ const RiverRafting = () => {
             featured: true,
         },
         {
-            id: 4,
+            id: 2,
             images: [
-                "https://b4holiday.com/wp-content/uploads/2017/11/holly-mandarich-3266802-1024x681.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/10/riverrafting-1526135_19201-1024x683.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/River1-e1581076472594-768x1024-1.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/Alpine1-1024x683-1.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/Snow1-1024x576-1.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/Snowfall-1024x577-1.jpg",
             ],
-            title: "Kullu Manali",
-            location: "Himachal, India",
-            duration: "4 Days - 3 Nights",
-            people: "2-10 People",
-            discount: "20% Off",
-            price: "₹11,250",
-            originalPrice: "₹14,000",
-            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
-            featured: true,
-        },
-        {
-            id: 5,
-            images: [
-                "https://b4holiday.com/wp-content/uploads/2017/11/holly-mandarich-3266802-1024x681.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/10/riverrafting-1526135_19201-1024x683.jpg",
-            ],
-            title: "Dal Housie",
-            location: "Himachal, India",
+            title: "Kasol Camping | 2 Nights Stay",
+            location: "Kasol",
             duration: "3 Days - 2 Nights",
-            people: "2-4 People",
-            discount: "20% Off",
-            price: "₹7,999",
-            originalPrice: "₹10,000",
-            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
-            featured: true,
-        },
-        {
-            id: 6,
-            images: [
-                "https://b4holiday.com/wp-content/uploads/2017/11/holly-mandarich-3266802-1024x681.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/10/riverrafting-1526135_19201-1024x683.jpg",
-            ],
-            title: "Shimla Manali",
-            location: "Himachal, India",
-            duration: "5 Days - 4 Nights",
-            people: "7 People",
-            discount: "15% Off",
-            price: "₹9,800",
-            originalPrice: "₹11,500",
-            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
-            featured: true,
-        },
-        {
-            id: 7,
-            images: [
-                "https://b4holiday.com/wp-content/uploads/2017/11/holly-mandarich-3266802-1024x681.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
-                "https://b4holiday.com/wp-content/uploads/2017/10/riverrafting-1526135_19201-1024x683.jpg",
-            ],
-            title: "Shimla Manali",
-            location: "Himachal, India",
-            duration: "5 Days - 4 Nights",
-            people: "7 People",
-            discount: "8% Off",
-            price: "₹22,000",
-            originalPrice: "₹24,000",
+            people: "2-60 People",
+            discount: "25% Off",
+            price: "₹3,750",
+            originalPrice: "₹4,990",
             nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
             featured: true,
         },
 
+        {
+            id: 3,
+            images: [
+                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_2256.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/20170909_102201.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_20180420_171651732_HDR.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_2256.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/11.jpeg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/bonfire.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/8.jpeg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/10.jpeg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/river_rafting_rishikesh.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/2018-03-12.jpg",
+            ],
+            title: "Rishikesh Camping | Wild Leopard Camp",
+            location: "Rishikesh ",
+            duration: "2 Days - 1 Nights",
+            people: "2-60 People",
+            discount: "36% Off",
+            price: "₹1,450",
+            originalPrice: "₹2,250",
+            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
+            featured: true,
+        },
+        {
+            id: 4,
+            images: [
+                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_2256.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/20170909_102201.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_20180420_171651732_HDR.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/IMG_2256.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/11.jpeg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/bonfire.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/8.jpeg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/10.jpeg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/river_rafting_rishikesh.jpg",
+                "https://b4holiday.com/wp-content/uploads/2021/03/2018-03-12.jpg",
+            ],
+            title: "Rishikesh Camping Package",
+            location: "Rishikesh",
+            duration: "3 Days - 2 Nights",
+            people: "2-60 People",
+            discount: "23% Off",
+            price: "₹2,900",
+            originalPrice: "₹3,750",
+            nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
+            featured: true,
+        },
 
     ];
 
     return (
-        <div className="riverrafting-container">
-            <h1>River Rafting</h1>
-            <div className="riverrafting-cards">
+        <div className="hiking-container">
+            <h1>hiking</h1>
+            <div className="hiking-cards">
                 {packages.map((pkg) => (
                     <PackageCard key={pkg.id} pkg={pkg} />
                 ))}
@@ -169,7 +128,7 @@ const PackageCard = ({ pkg }) => {
     };
 
     return (
-        <div className="riverrafting-card">
+        <div className="hiking-card">
             {pkg.featured && <span className="badge">Featured</span>}
             <div className="image-slider">
                 {showMap ? (
@@ -243,4 +202,4 @@ const PackageCard = ({ pkg }) => {
     );
 };
 
-export default RiverRafting;
+export default Hiking;

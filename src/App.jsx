@@ -6,7 +6,12 @@ import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Dubai from "./Pages/International/Dubai/Dubai";
 import Paragliding from "./Pages/Activities/Paragliding/Paragliding";
-
+import RiverRafting from "./Pages/Activities/RiverRafting/RiverRafting";
+import Hiking from "./Pages/Activities/Hiking/Hiking";
+import Termpage from "./Components/Footer/FooterLink/Termpage"
+import DocumentVisa from "./Components/Footer/FooterLink/DocumentVisa";
+import PrivacyPolicy from "./Components/Footer/FooterLink/PrivacyPolicy";
+import Footer from "./Components/Footer/Footer"
 function App() {
   return (
     <>
@@ -18,8 +23,14 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
+          <Route path="/activities/RiverRafting" element={<RiverRafting />} />
+          <Route path="/activities/Hiking" element={<Hiking />} />
+           <Route path="/Termpage" element={<Termpage />} />
+         <Route path="/DocumentVisa" element={< DocumentVisa/>}/>
+         <Route path="/PrivacyPolicy" element={< PrivacyPolicy/>}/>
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </>
   );
 }
