@@ -6,17 +6,19 @@ import "./Darjeeling.css";
 const Darjeeling = () => {
   return (
     <div className="darjeeling-container">
-      <h1>Darjeeling</h1>
+      <h1 className="text-4xl mt-5">Darjeeling</h1>
 
-      <p>
-        Darjeeling, the "Queen of the Hills" in West Bengal, India, is famous
-        for its stunning Himalayan views, especially of Mount Kanchenjunga, and
-        its world-renowned tea. With a vibrant culture blending Tibetan, Nepali,
-        and Bengali influences, Darjeeling offers unique attractions like the
-        UNESCO-listed Darjeeling Himalayan Railway and the scenic Tiger Hill,
-        making it a beloved destination for its natural beauty and colonial
-        charm.
-      </p>
+      <div className="">
+        <p className="mt-2 text-gray-700">
+          Darjeeling, the "Queen of the Hills" in West Bengal, India, is famous
+          for its stunning Himalayan views, especially of Mount Kanchenjunga,
+          and its world-renowned tea. With a vibrant culture blending Tibetan,
+          Nepali, and Bengali influences, Darjeeling offers unique attractions
+          like the UNESCO-listed Darjeeling Himalayan Railway and the scenic
+          Tiger Hill, making it a beloved destination for its natural beauty and
+          colonial charm.
+        </p>
+      </div>
 
       <div class="flex items-center my-5">
         <div class="flex-grow border-t border-gray-300"></div>
