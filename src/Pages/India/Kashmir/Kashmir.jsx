@@ -1,10 +1,10 @@
 import React from "react";
-import { packages } from "../../../assets/Data/kashmir";
+import { kashmirPackages } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
 
 const Kashmir = () => {
   return (
-    <div className="p-1 bg-[#f9f9f9]">
+    <div className="p-1">
       <h1 className="text-4xl m-8">Kashmir</h1>
       <div
         className="relative h-[30vh] bg-cover bg-center md:h-[50vh] sm:h-[30vh] w-full"
@@ -14,7 +14,7 @@ const Kashmir = () => {
         }}
       ></div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-1">
         <div className="mt-8 text-gray-700">
           <h3 className="text-2xl font-semibold">Kashmir Tour Packages</h3>
           <p className="mt-2">
@@ -90,7 +90,7 @@ const Kashmir = () => {
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
       <div>
-        {packages.map((pckg) => (
+        {kashmirPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
       </div>

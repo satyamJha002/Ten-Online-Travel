@@ -1,5 +1,5 @@
 import React from "react";
-import { packages } from "../../../assets/Data/darjeeling";
+import { darjeelingPackages } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
 import "./Darjeeling.css";
 
@@ -27,7 +27,7 @@ const Darjeeling = () => {
       </div>
 
       <div className="darjeeling-cards">
-        {packages.map((pckg) => (
+        {darjeelingPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
       </div>
