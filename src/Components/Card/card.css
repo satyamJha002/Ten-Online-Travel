@@ -1,3 +1,4 @@
+/* Base Styles */
 .travel-card {
   position: relative;
   width: 30%;
@@ -153,6 +154,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .travelCardBtn .button {
   all: unset;
   display: flex;
@@ -183,7 +185,7 @@
 }
 
 .travelCardBtn .button::after,
-.button::before {
+.travelCardBtn .button::before {
   content: "";
   position: absolute;
   width: 15em;
@@ -194,25 +196,104 @@
   transition: transform 1000ms, background 300ms;
 }
 
-.button::before {
+.travelCardBtn .button::before {
   left: 0;
   transform: translateX(-14em);
 }
 
-.button::after {
+.travelCardBtn .button::after {
   right: 0;
   transform: translateX(14em);
 }
 
-.button:hover:before {
-  transform: translateX(-0em);
+.travelCardBtn .button:hover::before {
+  transform: translateX(0);
 }
 
-.button:hover:after {
-  transform: translateX(0em);
+.travelCardBtn .button:hover::after {
+  transform: translateX(0);
 }
 
-.button:active:before,
-.button:active:after {
+.travelCardBtn .button:active::before,
+.travelCardBtn .button:active::after {
   background: teal;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .travel-card {
+    width: 45%;
+  }
+
+  .price-section {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .view-details-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .travel-card {
+    width: 100%;
+  }
+
+  .image-slider {
+    height: 200px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin: 15px;
+  }
+
+  .card-details p {
+    font-size: 1rem;
+  }
+
+  .price-section {
+    font-size: 1rem;
+  }
+
+  .view-details-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .travelCardBtn .button {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel-card {
+    margin-bottom: 15px;
+  }
+
+  .travelCardBtn .button {
+    font-size: 1rem;
+    padding: 0.2em 1.5em;
+  }
+
+  .price-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .badge {
+    font-size: 0.7em;
+    padding: 3px 8px;
+  }
+
+  .view-details-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
 }
