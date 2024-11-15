@@ -12,9 +12,10 @@
 .hiking-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-left: 40px;
-    margin-top: 30px;
+    gap: 35px;
+    justify-content: center; 
+    margin: 30px auto; 
+    padding-left: 0; 
 }
 
 .hiking-card {
@@ -178,7 +179,6 @@
     }
 
     .hiking-cards {
-        padding-left: 20px;
         gap: 20px;
     }
 }
@@ -194,7 +194,6 @@
     }
 
     .hiking-cards {
-        padding-left: 10px;
         gap: 15px;
     }
 
