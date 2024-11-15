@@ -12,7 +12,7 @@
 .darjeeling-container p {
   color: #848282;
   text-align: justify;
-  margin-left: 2rem;
+  margin: 2rem;
 }
 
 .darjeeling-cards {
@@ -82,8 +82,9 @@
   }
 
   .darjeeling-container h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-size: 1.8rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
   }
 
   .price-section {
