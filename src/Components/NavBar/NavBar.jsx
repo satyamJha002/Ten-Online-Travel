@@ -12,449 +12,566 @@ const NavBar = () => {
     setDropdownOpen(dropdownOpen === dropdown ? null : dropdown);
     setSubDropdownOpen(null);
   };
+
   const handleSubDropdownToggle = (subDropdown) => {
     setSubDropdownOpen(subDropdownOpen === subDropdown ? null : subDropdown);
   };
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
+
   const handleMobileSubDropdownToggle = (subDropdown) => {
     setMobileSubDropdownOpen(
       mobileSubDropdownOpen === subDropdown ? null : subDropdown
     );
   };
 
+  const handleItemClick = () => {
+    setDropdownOpen(null);
+    setSubDropdownOpen(null);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className="flex items-center justify-between p-4 pl-12 pr-12 shadow-md bg-white">
       <div className="flex-shrink-0 flex">
-        <NavLink to="/" className="text-black font-bold text-xl m-3">
+        <NavLink to="/" className="text-black font-bold text-xl m-3" onClick={handleItemClick}>
           TEN Travel
         </NavLink>
       </div>
       <ul className="hidden lg:flex space-x-8">
-        <li>
+        <button>
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+            onClick={handleItemClick}>
             HOME
           </NavLink>
-        </li>
+        </button>
 
-        {/* india */}
-        <li className="relative">
-          <li
+        {/* India */}
+        <button className="relative">
+          <div
             onClick={() => handleDropdownToggle("india")}
             className={`hover:text-green-500 ${
               dropdownOpen === "india" || location.pathname.includes("india")
                 ? "text-green-500 font-bold"
                 : ""
-            }`}>
+            } cursor-pointer`}>
             INDIA
             <span className="ml-2">&#9660;</span>
-          </li>
+          </div>
           {dropdownOpen === "india" && (
             <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg">
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/Andaman Tour">Andaman Tour</NavLink>
-              </li>
-              <li
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/india/andaman" onClick={handleItemClick}>
+                  Andaman Tour
+                </NavLink>
+              </button>
+              <button
                 onClick={() => handleSubDropdownToggle("himachal")}
-                className="relative px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/himachal" className="flex items-center">
+                className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <div className="flex items-center">
                   Himachal
                   <span className="ml-2">&#9654;</span>
-                </NavLink>
+                </div>
                 {subDropdownOpen === "himachal" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
-                    <li className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/himachal/kasol">Kasol</NavLink>
-                    </li>
+                    <button className="px-4 py-2 hover:bg-gray-100">
+                      <NavLink to="/india/himachal/kasol" onClick={handleItemClick}>
+                        Kasol
+                      </NavLink>
+                    </button>
                   </ul>
                 )}
-              </li>
-              <li
+              </button>
+              <button
                 onClick={() => handleSubDropdownToggle("kerala")}
-                className="relative px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/kerala" className="flex items-center">
-                  Kerala
+                className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <div className="flex items-center">
+                Kerala
                   <span className="ml-2">&#9654;</span>
-                </NavLink>
+                </div>
                 {subDropdownOpen === "kerala" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
-                    <li className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/kerala/munnar">Munnar</NavLink>
-                    </li>
+                    <button className="px-4 py-2 hover:bg-gray-100">
+                      <NavLink to="/india/himachal/munnar" onClick={handleItemClick}>
+                        Munnar
+                      </NavLink>
+                    </button>
                   </ul>
                 )}
-              </li>
-
-              <li
+              </button>
+              <button
                 onClick={() => handleSubDropdownToggle("tamilnadu")}
-                className="relative px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/tamilnadu" className="flex items-center">
-                  Tamil Nadu
+                className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <div className="flex items-center">
+                 Tamil Nadu
                   <span className="ml-2">&#9654;</span>
-                </NavLink>
+                </div>
                 {subDropdownOpen === "tamilnadu" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
-                    <li className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/tamilnadu/ooty">Ooty</NavLink>
-                    </li>
-                    <li className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/tamilnadu/kodaikanal">
-                        Kodaikanal
+                    <button className="px-4 py-2 hover:bg-gray-100">
+                      <NavLink to="/india/tamilnadu/Ooty" onClick={handleItemClick}>
+                       Ooty
                       </NavLink>
-                    </li>
+                    </button>
+                    <button className="px-4 py-2 hover:bg-gray-100">
+                      <NavLink to="/india/tamilnadu/kodaikanal" onClick={handleItemClick}>
+                      Kodaikanal
+                      </NavLink>
+                    </button>
                   </ul>
                 )}
-              </li>
-
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/goa">Goa</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/tamilnadu">Tamil Nadu</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/sikkim">Sikkim</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/darjeeling">Darjeeling</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/kashmir">Kashmir</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/ladakh">Ladakh</NavLink>
-              </li>
-
-              <li
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/india/goa" onClick={handleItemClick}>
+                  Goa
+                </NavLink>
+              </button>              
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/india/darjeeling" onClick={handleItemClick}>
+                Darjeeling
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/india/sikkim" onClick={handleItemClick}>
+                  Sikkim
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/india/kashmir" onClick={handleItemClick}>
+                Kashmir
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/india/ladakh" onClick={handleItemClick}>
+                Ladakh
+                </NavLink>
+              </button>
+              <button
                 onClick={() => handleSubDropdownToggle("uttarakhand")}
-                className="relative px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/india/uttarakhand" className="flex items-center">
+                className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <div className="flex items-center">
                   Uttarakhand
                   <span className="ml-2">&#9654;</span>
-                </NavLink>
+                </div>
                 {subDropdownOpen === "uttarakhand" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
-                    <li className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/tamilnadu/nainital">Nainital</NavLink>
-                    </li>
-                    <li className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/tamilnadu/rishikesh">
-                        Rishikesh
+                    <button className="px-4 py-2 hover:bg-gray-100">
+                      <NavLink to="/india/uttarakhand/nainital" onClick={handleItemClick}>
+                      Nainital
                       </NavLink>
-                    </li>
+                    </button>
+                    <button className="px-4 py-2 hover:bg-gray-100">
+                      <NavLink to="/india/uttarakhand/rishikesh" onClick={handleItemClick}>
+                      Rishikesh
+                      </NavLink>
+                    </button>
                   </ul>
                 )}
-              </li>
+              </button>
             </ul>
           )}
-        </li>
+        </button>
 
-        {/* international*/}
-        <li className="relative">
-          <li
+        {/* International */}
+        <button className="relative">
+          <div
             onClick={() => handleDropdownToggle("international")}
             className={`hover:text-green-500 ${
               dropdownOpen === "international" ||
               location.pathname.includes("international")
                 ? "text-green-500 font-bold"
                 : ""
-            }`}>
+            } cursor-pointer`}>
             INTERNATIONAL
             <span className="ml-2">&#9660;</span>
-          </li>
+          </div>
           {dropdownOpen === "international" && (
             <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg">
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/singapore">Singapore</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/malaysia">Malaysia</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/dubai">Dubai</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/maldives">Maldives</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/thailand">Thailand</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/bali">Bali</NavLink>
-              </li>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/international/singapore" onClick={handleItemClick}>
+                  Singapore
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/international/malaysia" onClick={handleItemClick}>
+                Malaysia
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/international/dubai" onClick={handleItemClick}>
+                Dubai
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/international/maldives" onClick={handleItemClick}>
+                Maldives
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/international/thailand" onClick={handleItemClick}>
+                Thailand
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/international/bali" onClick={handleItemClick}>
+                Bali
+                </NavLink>
+              </button>             
             </ul>
           )}
-        </li>
+        </button>
 
-        {/* activities */}
-        <li className="relative">
-          <li
+        {/* Activities */}
+        <button className="relative">
+          <div
             onClick={() => handleDropdownToggle("activities")}
             className={`hover:text-green-500 ${
               dropdownOpen === "activities" ||
               location.pathname.includes("activities")
                 ? "text-green-500 font-bold"
                 : ""
-            }`}>
+            } cursor-pointer`}>
             ACTIVITIES
             <span className="ml-2">&#9660;</span>
-          </li>
+          </div>
           {dropdownOpen === "activities" && (
             <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg">
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/activities/riverrafting">River Rafting</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/activities/paragliding">Paragliding</NavLink>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/activities/hiking">Hiking</NavLink>
-              </li>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/activities/riverrafting" onClick={handleItemClick}>
+                  River Rafting
+                </NavLink>
+              </button>
+
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/activities/paragliding" onClick={handleItemClick}>
+                Paragliding
+                </NavLink>
+              </button>
+              <button className="px-4 py-2 hover:bg-gray-100">
+                <NavLink to="/activities/hiking" onClick={handleItemClick}>
+                  Hiking
+                </NavLink>
+              </button>
             </ul>
           )}
-        </li>
-        <li>
+        </button>
+
+    
+        <button>
           <NavLink
             to="/about"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+            onClick={handleItemClick}>
             ABOUT US
           </NavLink>
-        </li>
-
-        <li>
+        </button>
+        <button>
           <NavLink
             to="/reviews"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+            onClick={handleItemClick}>
             REVIEWS
           </NavLink>
-        </li>
-
-        <li>
+        </button>
+        <button>
           <NavLink
             to="/contact"
             className={({ isActive }) =>
               isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-            }>
+            }
+            onClick={handleItemClick}>
             CONTACT
           </NavLink>
-        </li>
+        </button>
       </ul>
 
-      {/* Mobile Menu */}
-      <li
-        className="lg:hidden flex items-center space-x-2"
-        onClick={toggleMobileMenu}>
-        <span className="text-2xl">&#9776;</span>
-      </li>
+      {/* Mobile toggle */}
+      <div className="lg:hidden flex items-center space-x-2" onClick={toggleMobileMenu}>
+        <span className="text-2xl cursor-pointer">&#9776;</span>
+      </div>
+
+      {/* Mobile Overlay */}
       <div
         className={`lg:hidden fixed inset-0 bg-white transition-transform transform ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        } shadow-lg`}>
-        <ul className="space-y-4 p-6">
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-              }
-              onClick={toggleMobileMenu}>
-              HOME
-            </NavLink>
-          </li>
-          {/* india */}
-          <li>
-            <li
-              onClick={() => handleDropdownToggle("india")}
-              className={`w-full text-left ${
-                dropdownOpen === "india" || location.pathname.includes("india")
-                  ? "text-green-500 font-bold"
-                  : "hover:text-green-500"
-              }`}>
-              INDIA
-              <span className="ml-2">&#9660;</span>
-            </li>
-            {dropdownOpen === "india" && (
-              <ul className="ml-4 space-y-2">
-                <li className="flex items-center">
-                  <NavLink to="/india/himachal" onClick={toggleMobileMenu}>
-                    Himachal
-                  </NavLink>
-                  <li
-                    onClick={() => handleMobileSubDropdownToggle("himachal")}
-                    className="ml-2 ">
-                    <span className="ml-2">&#9654;</span>
-                  </li>
-                  {mobileSubDropdownOpen === "himachal" && (
-                    <ul className="ml-4 space-y-2">
-                      <li>
-                        <NavLink
-                          to="/india/himachal/kasol"
-                          onClick={toggleMobileMenu}>
+        } shadow-lg z-50`}>
+        <div className="p-6">
+          <button onClick={toggleMobileMenu} className="text-2xl mb-6">&#10005;</button>
+
+          <ul className="space-y-4 ">
+            <button className="flex">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-green-500 font-bold" : "hover:text-green-500"
+                }
+                onClick={handleItemClick}>
+                HOME
+              </NavLink>
+            </button>
+
+            {/* India */}
+            <button  className="flex">
+              <div
+                onClick={() => handleDropdownToggle("india")}
+                className={`flex justify-between items-center cursor-pointer ${
+                  dropdownOpen === "india" ? "text-green-500 font-bold" : ""
+                }`}>
+                INDIA
+                <span className="ml-2">&#9654;</span>
+              </div>
+              {dropdownOpen === "india" && (
+                <ul className="ml-4 mt-2 space-y-2">
+                  <button  className="flex">
+                    <NavLink to="/india/andaman" onClick={handleItemClick}>
+                      Andaman Tour
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <div
+                      onClick={() => handleMobileSubDropdownToggle("himachal")}
+                      className="flex justify-between items-center cursor-pointer">
+                        Himachal
+                      <span className="ml-2 ">&#9654;</span>
+                    </div>
+                    {mobileSubDropdownOpen === "himachal" && (
+                      <ul className="ml-4 mt-2 space-y-2 ">
+                        <button className="flex">
+                          <NavLink to="/india/himachal/kasol" onClick={handleItemClick}>
                           Kasol
-                        </NavLink>
-                      </li>
-                    </ul>
-                  )}
-                </li>
-                <li>
-                  <NavLink to="/india/kerala" onClick={toggleMobileMenu}>
-                    Kerala
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/india/tamilnadu" onClick={toggleMobileMenu}>
-                    Tamil Nadu
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/india/andaman" onClick={toggleMobileMenu}>
-                    Andaman Tour
-                  </NavLink>
-                </li>
-              </ul>
-            )}
-          </li>
+                          </NavLink>
+                        </button>
+                      </ul>
+                    )}
+                  </button>
+                  <button className="flex">
+                    <div
+                      onClick={() => handleMobileSubDropdownToggle("kerala")}
+                      className="flex justify-between items-center cursor-pointer">
+                        Kerala
+                      <span className="ml-2 ">&#9654;</span>
+                    </div>
+                    {mobileSubDropdownOpen === "kerala" && (
+                      <ul className="ml-4 mt-2 space-y-2 ">
+                        <button className="flex">
+                          <NavLink to="/india/kerala/munnar" onClick={handleItemClick}>
+                          Munnar
+                          </NavLink>
+                        </button>
+                      </ul>
+                    )}
+                  </button>
+                  <button className="flex">
+                    <div
+                      onClick={() => handleMobileSubDropdownToggle("tamilnadu")}
+                      className="flex justify-between items-center cursor-pointer">
+                        Tamil Nadu
+                      <span className="ml-1">&#9654;</span>
+                    </div>
+                    {mobileSubDropdownOpen === "tamilnadu" && (
+                      <ul className="ml-4 mt-2 space-y-2">
+                        <button className="flex">
+                          <NavLink to="/india/tamilnadu/Ooty" onClick={handleItemClick}>
+                          Ooty
+                          </NavLink>
+                        </button>
+                        <button className="flex" >
+                          <NavLink to="/india/tamilnadu/kodaikanal" onClick={handleItemClick}>
+                          Kodaikanal
+                          </NavLink>
+                        </button>
+                      </ul>
+                    )}
+                  </button>
+                  <button  className="flex">
+                    <NavLink to="/india/goa" onClick={handleItemClick}>
+                      Goa
+                    </NavLink>
+                  </button>
+                  
+                  <button  className="flex">
+                    <NavLink to="/india/darjeeling" onClick={handleItemClick}>
+                    Darjeeling
+                    </NavLink>
+                  </button>
+                  
+                  <button  className="flex">
+                    <NavLink to="/india/sikkim" onClick={handleItemClick}>
+                     Sikkim
+                    </NavLink>
+                  </button>
+                  
+                  <button  className="flex">
+                    <NavLink to="/india/kashmir" onClick={handleItemClick}>
+                      Kashmir
+                    </NavLink>
+                  </button>
+                  
+                  <button  className="flex">
+                    <NavLink to="/india/ladakh" onClick={handleItemClick}>
+                     Ladakh
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <div
+                      onClick={() => handleMobileSubDropdownToggle("uttarakhand")}
+                      className="flex justify-between items-center cursor-pointer">
+                        Uttarakhand
+                      <span className="ml-2">&#9654;</span>
+                    </div>
+                    {mobileSubDropdownOpen === "uttarakhand" && (
+                      <ul className="ml-4 mt-2 space-y-2">
+                        <button >
+                          <NavLink to="/india/uttarakhand/nainital" onClick={handleItemClick}>
+                          Nainital
+                          </NavLink>
+                        </button>
+                        <button >
+                          <NavLink to="/india/uttarakhand/rishikesh" onClick={handleItemClick}>
+                          Rishikesh
+                          </NavLink>
+                        </button>
+                      </ul>
+                    )}
+                  </button>
+                </ul>
+              )}
+            </button>
 
-          {/* international*/}
-          <li>
-            <li
-              onClick={() => handleDropdownToggle("international")}
-              className={`w-full text-left ${
-                dropdownOpen === "international" ||
-                location.pathname.includes("international")
-                  ? "text-green-500 font-bold"
-                  : "hover:text-green-500"
-              }`}>
-              INTERNATIONAL
-              <span className="ml-2">&#9660;</span>
-            </li>
-            {dropdownOpen === "international" && (
-              <ul className="ml-4 space-y-2">
-                <li>
-                  <NavLink
-                    to="/international/singapore"
-                    onClick={toggleMobileMenu}>
-                    Singapore
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/international/malaysia"
-                    onClick={toggleMobileMenu}>
-                    Malaysia
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/international/Dubai" onClick={toggleMobileMenu}>
+            {/* International  */}
+            <button  className="flex">
+              <div
+                onClick={() => handleDropdownToggle("international")}
+                className={`flex justify-between items-center cursor-pointer ${
+                  dropdownOpen === "international" ? "text-green-500 font-bold" : ""
+                }`}>
+                INTERNATIONAL
+                <span className="ml-2">&#9654;</span>
+              </div>
+              {dropdownOpen === "international" && (
+                <ul className="ml-4 mt-2 space-y-2">
+                  <button >
+                    <NavLink to="/international/singapore" onClick={handleItemClick}>
+                      Singapore
+                    </NavLink>
+                  </button >
+                  <button className="flex">
+                    <NavLink to="/international/dubai" onClick={handleItemClick}>
                     Dubai
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    to="/international/maldives"
-                    onClick={toggleMobileMenu}>
+                    </NavLink>
+                  </button >
+                  <button className="flex">
+                    <NavLink to="/international/maldives" onClick={handleItemClick}>
                     Maldives
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/international/thailand"
-                    onClick={toggleMobileMenu}>
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink to="/international/thailand" onClick={handleItemClick}>
                     Thailand
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/international/bali" onClick={toggleMobileMenu}>
-                    Bali
-                  </NavLink>
-                </li>
-              </ul>
-            )}
-          </li>
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink to="/international/bali" onClick={handleItemClick}>
+                      Bali
+                    </NavLink>
+                  </button>
+                </ul>
+              )}
+            </button>
 
-          {/* activities */}
-          <li>
-            <li
-              onClick={() => handleDropdownToggle("Activities")}
-              className={`w-full text-left ${
-                dropdownOpen === "Activities" ||
-                location.pathname.includes("Activities")
-                  ? "text-green-500 font-bold"
-                  : "hover:text-green-500"
-              }`}>
-              Activities
-              <span className="ml-2">&#9660;</span>
-            </li>
-            {dropdownOpen === "Activities" && (
-              <ul className="ml-4 space-y-2">
-                <li>
-                  <NavLink
-                    to="/activities/riverrafting"
-                    onClick={toggleMobileMenu}>
-                    River Rafting
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/activities/paragliding"
-                    onClick={toggleMobileMenu}>
+            {/* Activities */}
+            <button  className="flex">
+              <div
+                onClick={() => handleDropdownToggle("activities")}
+                className={`flex justify-between items-center cursor-pointer ${
+                  dropdownOpen === "activities" ? "text-green-500 font-bold" : ""
+                }`}>
+                ACTIVITIES
+                <span className="ml-2">&#9654;</span>
+              </div>
+              {dropdownOpen === "activities" && (
+                <ul className="ml-4 mt-2 space-y-2">
+                  <button className="flex">
+                    <NavLink to="/activities/riverrafting" onClick={handleItemClick}>
+                      River Rafting
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink to="/activities/paragliding" onClick={handleItemClick}>
                     Paragliding
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/international/hiking"
-                    onClick={toggleMobileMenu}>
-                    Hiking
-                  </NavLink>
-                </li>
-              </ul>
-            )}
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-              }
-              onClick={toggleMobileMenu}>
-              ABOUT US
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/reviews"
-              className={({ isActive }) =>
-                isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-              }
-              onClick={toggleMobileMenu}>
-              REVIEWS
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive ? "text-green-500 font-bold" : "hover:text-green-500"
-              }
-              onClick={toggleMobileMenu}>
-              CONTACT
-            </NavLink>
-          </li>
-        </ul>
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink to="/activities/hiking" onClick={handleItemClick}>
+                      Hiking
+                    </NavLink>
+                  </button>
+                </ul>
+              )}
+            </button>
+
+         
+            <button  className="flex">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "text-green-500 font-bold" : "hover:text-green-500"
+                }
+                onClick={handleItemClick}>
+                ABOUT US
+              </NavLink>
+            </button >
+            <button  className="flex">
+              <NavLink
+                to="/reviews"
+                className={({ isActive }) =>
+                  isActive ? "text-green-500 font-bold" : "hover:text-green-500"
+                }
+                onClick={handleItemClick}>
+                REVIEWS
+              </NavLink>
+            </button >
+            <button  className="flex">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "text-green-500 font-bold" : "hover:text-green-500"
+                }
+                onClick={handleItemClick}>
+                CONTACT
+              </NavLink>
+            </button>
+          </ul>
+        </div>
       </div>
     </nav>
   );
 };
 
 export default NavBar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
