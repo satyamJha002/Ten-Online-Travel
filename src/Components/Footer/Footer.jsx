@@ -81,10 +81,14 @@ function Footer() {
                   </g>
                 </svg>
               </svg>
-              <h2 className="text-xl font-semibold">Ten Travel</h2>
+              <h className="text-xl font-semibold">Ten Travel</h> <br /><br />
+              <br />
             </div>
-            <p>New Delhi, India</p>
-            <p>
+            <h>New Delhi, India</h>
+            <br />
+            <br />
+            {/* <br /> */}
+            <h>
               Email:{" "}
               <a
                 href="mailto:info@entrepreneurshipnetwork.net"
@@ -92,7 +96,7 @@ function Footer() {
               >
                 info@entrepreneurshipnetwork.net
               </a>
-            </p>
+            </h>
           </div>
 
           <div className="flex-1">
@@ -184,7 +188,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="flex-1 map">
+          {/* <div className="flex-1 map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54092701996!2d77.04383197592139!3d28.527252326223294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1726850552412!5m2!1sen!2sin"
               width="1290px"
@@ -194,11 +198,11 @@ function Footer() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full border-none"
             ></iframe>
-          </div>
+          </div> */}
         </div>
 
-        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500">
-          <p>@2024 Ten Travel | Developed by Ten Travel Teams</p>
+        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-white-500">
+          <h>@2024 Ten Travel | Developed by Ten Travel Teams</h>
         </div>
       </div>
     </footer>
