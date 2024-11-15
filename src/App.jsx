@@ -30,7 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/international/dubai" element={<Dubai />} />
-          <Route path="/india/Andaman Tour" element={<AndamanTour />} />
+          <Route path="/india/andaman" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
