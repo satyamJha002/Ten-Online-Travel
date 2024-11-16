@@ -161,12 +161,9 @@ function Footer() {
                   Documents Collection & Visa
                 </a>
               </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="text-gray-400 hover:text-yellow-400">
-                  Contact Us
-                </a>
+             <li>
+            <Link to="/contact" >Contact Us</Link>
+            </li>
               </li>
             </ul>
           </div>
