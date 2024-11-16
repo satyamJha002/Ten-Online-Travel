@@ -1,6 +1,7 @@
 import React from "react";
 import "./FooterLink/Termpage";
 import "./FooterLink/PrivacyPolicy";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -161,9 +162,8 @@ function Footer() {
                   Documents Collection & Visa
                 </a>
               </li>
-             <li>
-            <Link to="/contact" >Contact Us</Link>
-            </li>
+              <li>
+                <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
