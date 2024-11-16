@@ -36,7 +36,10 @@ const NavBar = () => {
   return (
     <nav className="flex items-center justify-between p-4 pl-12 pr-12 shadow-md bg-white">
       <div className="flex-shrink-0 flex">
-        <NavLink to="/" className="text-black font-bold text-xl m-3" onClick={handleItemClick}>
+        <NavLink
+          to="/"
+          className="text-black font-bold text-xl m-3"
+          onClick={handleItemClick}>
           TEN Travel
         </NavLink>
       </div>
@@ -81,7 +84,9 @@ const NavBar = () => {
                 {subDropdownOpen === "himachal" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
                     <button className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/himachal/kasol" onClick={handleItemClick}>
+                      <NavLink
+                        to="/india/himachal/kasol"
+                        onClick={handleItemClick}>
                         Kasol
                       </NavLink>
                     </button>
@@ -92,13 +97,15 @@ const NavBar = () => {
                 onClick={() => handleSubDropdownToggle("kerala")}
                 className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <div className="flex items-center">
-                Kerala
+                  Kerala
                   <span className="ml-2">&#9654;</span>
                 </div>
                 {subDropdownOpen === "kerala" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
                     <button className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/himachal/munnar" onClick={handleItemClick}>
+                      <NavLink
+                        to="/india/himachal/munnar"
+                        onClick={handleItemClick}>
                         Munnar
                       </NavLink>
                     </button>
@@ -109,19 +116,23 @@ const NavBar = () => {
                 onClick={() => handleSubDropdownToggle("tamilnadu")}
                 className="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
                 <div className="flex items-center">
-                 Tamil Nadu
+                  Tamil Nadu
                   <span className="ml-2">&#9654;</span>
                 </div>
                 {subDropdownOpen === "tamilnadu" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
                     <button className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/tamilnadu/Ooty" onClick={handleItemClick}>
-                       Ooty
+                      <NavLink
+                        to="/india/tamilnadu/Ooty"
+                        onClick={handleItemClick}>
+                        Ooty
                       </NavLink>
                     </button>
                     <button className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/tamilnadu/kodaikanal" onClick={handleItemClick}>
-                      Kodaikanal
+                      <NavLink
+                        to="/india/tamilnadu/kodaikanal"
+                        onClick={handleItemClick}>
+                        Kodaikanal
                       </NavLink>
                     </button>
                   </ul>
@@ -131,10 +142,10 @@ const NavBar = () => {
                 <NavLink to="/india/goa" onClick={handleItemClick}>
                   Goa
                 </NavLink>
-              </button>              
+              </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/india/darjeeling" onClick={handleItemClick}>
-                Darjeeling
+                  Darjeeling
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
@@ -144,12 +155,12 @@ const NavBar = () => {
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/india/kashmir" onClick={handleItemClick}>
-                Kashmir
+                  Kashmir
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/india/ladakh" onClick={handleItemClick}>
-                Ladakh
+                  Ladakh
                 </NavLink>
               </button>
               <button
@@ -162,13 +173,17 @@ const NavBar = () => {
                 {subDropdownOpen === "uttarakhand" && (
                   <ul className="absolute top-0 left-full mt-0 w-40 bg-white border border-gray-200 shadow-lg">
                     <button className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/uttarakhand/nainital" onClick={handleItemClick}>
-                      Nainital
+                      <NavLink
+                        to="/india/uttarakhand/nainital"
+                        onClick={handleItemClick}>
+                        Nainital
                       </NavLink>
                     </button>
                     <button className="px-4 py-2 hover:bg-gray-100">
-                      <NavLink to="/india/uttarakhand/rishikesh" onClick={handleItemClick}>
-                      Rishikesh
+                      <NavLink
+                        to="/india/uttarakhand/rishikesh"
+                        onClick={handleItemClick}>
+                        Rishikesh
                       </NavLink>
                     </button>
                   </ul>
@@ -194,35 +209,37 @@ const NavBar = () => {
           {dropdownOpen === "international" && (
             <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg z-50">
               <button className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/international/singapore" onClick={handleItemClick}>
+                <NavLink
+                  to="/international/singapore"
+                  onClick={handleItemClick}>
                   Singapore
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/international/malaysia" onClick={handleItemClick}>
-                Malaysia
+                  Malaysia
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/international/dubai" onClick={handleItemClick}>
-                Dubai
+                  Dubai
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/international/maldives" onClick={handleItemClick}>
-                Maldives
+                  Maldives
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/international/thailand" onClick={handleItemClick}>
-                Thailand
+                  Thailand
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/international/bali" onClick={handleItemClick}>
-                Bali
+                  Bali
                 </NavLink>
-              </button>             
+              </button>
             </ul>
           )}
         </button>
@@ -243,14 +260,16 @@ const NavBar = () => {
           {dropdownOpen === "activities" && (
             <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg z-50">
               <button className="px-4 py-2 hover:bg-gray-100">
-                <NavLink to="/activities/riverrafting" onClick={handleItemClick}>
+                <NavLink
+                  to="/activities/riverrafting"
+                  onClick={handleItemClick}>
                   River Rafting
                 </NavLink>
               </button>
 
               <button className="px-4 py-2 hover:bg-gray-100">
                 <NavLink to="/activities/paragliding" onClick={handleItemClick}>
-                Paragliding
+                  Paragliding
                 </NavLink>
               </button>
               <button className="px-4 py-2 hover:bg-gray-100">
@@ -262,7 +281,6 @@ const NavBar = () => {
           )}
         </button>
 
-    
         <button>
           <NavLink
             to="/about"
@@ -296,7 +314,9 @@ const NavBar = () => {
       </ul>
 
       {/* Mobile toggle */}
-      <div className="lg:hidden flex items-center space-x-2" onClick={toggleMobileMenu}>
+      <div
+        className="lg:hidden flex items-center space-x-2"
+        onClick={toggleMobileMenu}>
         <span className="text-2xl cursor-pointer">&#9776;</span>
       </div>
 
@@ -306,7 +326,9 @@ const NavBar = () => {
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } shadow-lg z-50`}>
         <div className="p-6">
-          <button onClick={toggleMobileMenu} className="text-2xl mb-6">&#10005;</button>
+          <button onClick={toggleMobileMenu} className="text-2xl mb-6">
+            &#10005;
+          </button>
 
           <ul className="space-y-4 ">
             <button className="flex">
@@ -321,7 +343,7 @@ const NavBar = () => {
             </button>
 
             {/* India */}
-            <button  className="flex">
+            <button className="flex">
               <div
                 onClick={() => handleDropdownToggle("india")}
                 className={`flex justify-between items-center cursor-pointer ${
@@ -332,7 +354,7 @@ const NavBar = () => {
               </div>
               {dropdownOpen === "india" && (
                 <ul className="ml-4 mt-2 space-y-2">
-                  <button  className="flex">
+                  <button className="flex">
                     <NavLink to="/india/andaman" onClick={handleItemClick}>
                       Andaman Tour
                     </NavLink>
@@ -341,14 +363,16 @@ const NavBar = () => {
                     <div
                       onClick={() => handleMobileSubDropdownToggle("himachal")}
                       className="flex justify-between items-center cursor-pointer">
-                        Himachal
+                      Himachal
                       <span className="ml-2 ">&#9654;</span>
                     </div>
                     {mobileSubDropdownOpen === "himachal" && (
                       <ul className="ml-4 mt-2 space-y-2 ">
                         <button className="flex">
-                          <NavLink to="/india/himachal/kasol" onClick={handleItemClick}>
-                          Kasol
+                          <NavLink
+                            to="/india/himachal/kasol"
+                            onClick={handleItemClick}>
+                            Kasol
                           </NavLink>
                         </button>
                       </ul>
@@ -358,14 +382,16 @@ const NavBar = () => {
                     <div
                       onClick={() => handleMobileSubDropdownToggle("kerala")}
                       className="flex justify-between items-center cursor-pointer">
-                        Kerala
+                      Kerala
                       <span className="ml-2 ">&#9654;</span>
                     </div>
                     {mobileSubDropdownOpen === "kerala" && (
                       <ul className="ml-4 mt-2 space-y-2 ">
                         <button className="flex">
-                          <NavLink to="/india/kerala/munnar" onClick={handleItemClick}>
-                          Munnar
+                          <NavLink
+                            to="/india/kerala/munnar"
+                            onClick={handleItemClick}>
+                            Munnar
                           </NavLink>
                         </button>
                       </ul>
@@ -375,70 +401,80 @@ const NavBar = () => {
                     <div
                       onClick={() => handleMobileSubDropdownToggle("tamilnadu")}
                       className="flex justify-between items-center cursor-pointer">
-                        Tamil Nadu
+                      Tamil Nadu
                       <span className="ml-1">&#9654;</span>
                     </div>
                     {mobileSubDropdownOpen === "tamilnadu" && (
                       <ul className="ml-4 mt-2 space-y-2">
                         <button className="flex">
-                          <NavLink to="/india/tamilnadu/Ooty" onClick={handleItemClick}>
-                          Ooty
+                          <NavLink
+                            to="/india/tamilnadu/Ooty"
+                            onClick={handleItemClick}>
+                            Ooty
                           </NavLink>
                         </button>
-                        <button className="flex" >
-                          <NavLink to="/india/tamilnadu/kodaikanal" onClick={handleItemClick}>
-                          Kodaikanal
+                        <button className="flex">
+                          <NavLink
+                            to="/india/tamilnadu/kodaikanal"
+                            onClick={handleItemClick}>
+                            Kodaikanal
                           </NavLink>
                         </button>
                       </ul>
                     )}
                   </button>
-                  <button  className="flex">
+                  <button className="flex">
                     <NavLink to="/india/goa" onClick={handleItemClick}>
                       Goa
                     </NavLink>
                   </button>
-                  
-                  <button  className="flex">
+
+                  <button className="flex">
                     <NavLink to="/india/darjeeling" onClick={handleItemClick}>
-                    Darjeeling
+                      Darjeeling
                     </NavLink>
                   </button>
-                  
-                  <button  className="flex">
+
+                  <button className="flex">
                     <NavLink to="/india/sikkim" onClick={handleItemClick}>
-                     Sikkim
+                      Sikkim
                     </NavLink>
                   </button>
-                  
-                  <button  className="flex">
+
+                  <button className="flex">
                     <NavLink to="/india/kashmir" onClick={handleItemClick}>
                       Kashmir
                     </NavLink>
                   </button>
-                  
-                  <button  className="flex">
+
+                  <button className="flex">
                     <NavLink to="/india/ladakh" onClick={handleItemClick}>
-                     Ladakh
+                      Ladakh
                     </NavLink>
                   </button>
                   <button className="flex">
                     <div
-                      onClick={() => handleMobileSubDropdownToggle("uttarakhand")}
+                      onClick={() =>
+                        handleMobileSubDropdownToggle("uttarakhand")
+                      }
                       className="flex justify-between items-center cursor-pointer">
-                        Uttarakhand
+                      Uttarakhand
                       <span className="ml-2">&#9654;</span>
                     </div>
                     {mobileSubDropdownOpen === "uttarakhand" && (
                       <ul className="ml-4 mt-2 space-y-2">
-                        <button >
-                          <NavLink to="/india/uttarakhand/nainital" onClick={handleItemClick}>
-                          Nainital
+                        <button>
+                          <NavLink
+                            to="/india/uttarakhand/nainital"
+                            onClick={handleItemClick}>
+                            Nainital
                           </NavLink>
                         </button>
-                        <button >
-                          <NavLink to="/india/uttarakhand/rishikesh" onClick={handleItemClick}>
-                          Rishikesh
+                        <button>
+                          <NavLink
+                            to="/india/uttarakhand/rishikesh"
+                            onClick={handleItemClick}>
+                            Rishikesh
                           </NavLink>
                         </button>
                       </ul>
@@ -449,35 +485,45 @@ const NavBar = () => {
             </button>
 
             {/* International  */}
-            <button  className="flex">
+            <button className="flex">
               <div
                 onClick={() => handleDropdownToggle("international")}
                 className={`flex justify-between items-center cursor-pointer ${
-                  dropdownOpen === "international" ? "text-green-500 font-bold" : ""
+                  dropdownOpen === "international"
+                    ? "text-green-500 font-bold"
+                    : ""
                 }`}>
                 INTERNATIONAL
                 <span className="ml-2">&#9654;</span>
               </div>
               {dropdownOpen === "international" && (
                 <ul className="ml-4 mt-2 space-y-2">
-                  <button >
-                    <NavLink to="/international/singapore" onClick={handleItemClick}>
+                  <button>
+                    <NavLink
+                      to="/international/singapore"
+                      onClick={handleItemClick}>
                       Singapore
-                    </NavLink>
-                  </button >
-                  <button className="flex">
-                    <NavLink to="/international/dubai" onClick={handleItemClick}>
-                    Dubai
-                    </NavLink>
-                  </button >
-                  <button className="flex">
-                    <NavLink to="/international/maldives" onClick={handleItemClick}>
-                    Maldives
                     </NavLink>
                   </button>
                   <button className="flex">
-                    <NavLink to="/international/thailand" onClick={handleItemClick}>
-                    Thailand
+                    <NavLink
+                      to="/international/dubai"
+                      onClick={handleItemClick}>
+                      Dubai
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink
+                      to="/international/maldives"
+                      onClick={handleItemClick}>
+                      Maldives
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink
+                      to="/international/thailand"
+                      onClick={handleItemClick}>
+                      Thailand
                     </NavLink>
                   </button>
                   <button className="flex">
@@ -490,11 +536,13 @@ const NavBar = () => {
             </button>
 
             {/* Activities */}
-            <button  className="flex">
+            <button className="flex">
               <div
                 onClick={() => handleDropdownToggle("activities")}
                 className={`flex justify-between items-center cursor-pointer ${
-                  dropdownOpen === "activities" ? "text-green-500 font-bold" : ""
+                  dropdownOpen === "activities"
+                    ? "text-green-500 font-bold"
+                    : ""
                 }`}>
                 ACTIVITIES
                 <span className="ml-2">&#9654;</span>
@@ -502,13 +550,17 @@ const NavBar = () => {
               {dropdownOpen === "activities" && (
                 <ul className="ml-4 mt-2 space-y-2">
                   <button className="flex">
-                    <NavLink to="/activities/riverrafting" onClick={handleItemClick}>
+                    <NavLink
+                      to="/activities/riverrafting"
+                      onClick={handleItemClick}>
                       River Rafting
                     </NavLink>
                   </button>
                   <button className="flex">
-                    <NavLink to="/activities/paragliding" onClick={handleItemClick}>
-                    Paragliding
+                    <NavLink
+                      to="/activities/paragliding"
+                      onClick={handleItemClick}>
+                      Paragliding
                     </NavLink>
                   </button>
                   <button className="flex">
@@ -520,8 +572,7 @@ const NavBar = () => {
               )}
             </button>
 
-         
-            <button  className="flex">
+            <button className="flex">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -530,8 +581,8 @@ const NavBar = () => {
                 onClick={handleItemClick}>
                 ABOUT US
               </NavLink>
-            </button >
-            <button  className="flex">
+            </button>
+            <button className="flex">
               <NavLink
                 to="/reviews"
                 className={({ isActive }) =>
@@ -540,8 +591,8 @@ const NavBar = () => {
                 onClick={handleItemClick}>
                 REVIEWS
               </NavLink>
-            </button >
-            <button  className="flex">
+            </button>
+            <button className="flex">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -559,19 +610,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
