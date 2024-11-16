@@ -32,9 +32,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/international/dubai" element={<Dubai />} />
-          <Route path="/international/andaman" element={<AndamanTour />} />
-          <Route path="/international/goa" element={<Goa />} />
-          <Route path="/international/sikkim" element={<Sikkim />} />
+          <Route path="/india/andaman" element={<AndamanTour />} />
+          <Route path="/india/goa" element={<Goa />} />
+          <Route path="/india/sikkim" element={<Sikkim />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
