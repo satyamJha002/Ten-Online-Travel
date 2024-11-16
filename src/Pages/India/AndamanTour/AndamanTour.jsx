@@ -1,6 +1,6 @@
 import React from 'react'
 import "./AndamanTour.css";
-import { andmatour, watertourPackages } from '../../../assets/Data/Andmatour';
+import { andmatour, watertourPackages } from '../../../assets/Data/Andmantour';
 import Card from '../../../Components/Card/Card';
 
 const AndamanTour = () => {

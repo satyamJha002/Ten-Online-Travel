@@ -8,12 +8,13 @@ export const andmatour = [
         "https://b4holiday.com/wp-content/uploads/2021/02/Elephant-Beach-Swaraj-Dweep.jpg",
         "https://b4holiday.com/wp-content/uploads/2021/02/Kalapather-Beach-Swaraj-Dweep.jpg",
       ],
-      title: "Andaman Tour Package ",
+      title: "Andaman Tour Package",
       location: "Andaman Tour India",
       duration: "6 Days - 5 Nights",
       discount: "25% Off ",
       people: "2 People",
-      originalprice: "₹18,500",
+      price: "₹18,500",
+      originalPrice: "₹24,500",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
     },
@@ -31,7 +32,9 @@ export const andmatour = [
       duration: "5 Days - 4 Nights",
       discount: "37 Off%",
       people: "2 People",
-      originalprice: "₹13,500",
+      price: "₹13,500",
+     originalPrice: "₹21,500",
+    
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     },
     {
@@ -48,7 +51,9 @@ export const andmatour = [
       duration: "4 Days - 3 Nights",
       discount: "40% Off",
       people: "2 People",
-      originalprice: "₹10,500",
+      price: "₹10,500",
+    originalPrice: "17,500",
+
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     },
     {
@@ -65,7 +70,9 @@ export const andmatour = [
       duration: "7 Days - 6Nights",
       discount: "14% Off",
       people: "2-20 People",
-      originalprice: "₹19,000",
+      price: "₹19,000",
+    originalPrice: "₹17,500",
+
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     }
   ];
@@ -86,7 +93,9 @@ export const andmatour = [
       duration: "4 Days - 3 Nights",
       discount: "15% Off",
       people: "2 People",
-      originalprice: "₹14,500",
+      price: "₹14,500",
+    originalPrice: "₹17,500",
+
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     },
     {
@@ -103,7 +112,9 @@ export const andmatour = [
       duration: "5 Days - 4 Nights",
       discount: "14% Off",
       people: "2 People",
-      originalprice: "₹15,700",
+      price: "₹15,700",
+      originalPrice: "₹10,500",
+
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     },
     {
@@ -121,7 +132,9 @@ export const andmatour = [
       duration: "5 Days - 4 Nights",
       discount: "13% Off",
       people: "2 People",
-      originalprice: "₹27,900",
+      price:"₹27,900",
+    originalPrice: "₹32,000",
+
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     },
     {
@@ -138,7 +151,9 @@ export const andmatour = [
       duration: "6 Days - 5Nights",
       discount: "11% Off",
       people: "2 People",
-      originalprice: "₹21,250",
+      price: "₹21,250",
+    originalPrice: "₹24,000",
+
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     },
     {
@@ -155,7 +170,9 @@ export const andmatour = [
         duration: "6 Days - 5 Nights",
         discount: "14% Off",
         people: "2 People",
-        originalprice: "₹14,250",
+        price: "₹14,250",
+    originalPrice: "₹16,500",
+
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       },
       {
@@ -172,7 +189,9 @@ export const andmatour = [
         duration: "4 Days - 3 Nights",
         discount: "25% Off",
         people: "2 People",
-        originalprice: "₹18,500",
+        price: "₹18,500",
+    originalPrice: "₹24,500",
+
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       },
       {
@@ -189,7 +208,9 @@ export const andmatour = [
         duration: "6 Days - 5 Nights",
         discount: "8% Off",
         people: "2 People",
-        originalprice: "₹40,000",
+        price: "₹40,000",
+    originalPrice: "₹43,500",
+
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       },
       {
@@ -206,7 +227,9 @@ export const andmatour = [
         duration: "7 Days -6 Nights",
         discount: "8% Off",
         people: "2 People",
-        originalprice: "₹27,500",
+        price: "₹27,500",
+        originalPrice: "₹30,000",
+
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       },
 

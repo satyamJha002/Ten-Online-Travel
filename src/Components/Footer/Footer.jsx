@@ -1,5 +1,6 @@
 import React from "react";
-// import "./FooterLink/Termpage";
+ import "./Termpage";
+import "./PrivacyPolicy";
 
 function Footer() {
   return (
