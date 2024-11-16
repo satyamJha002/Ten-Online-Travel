@@ -8,7 +8,7 @@ export const andmatour = [
         "https://b4holiday.com/wp-content/uploads/2021/02/Elephant-Beach-Swaraj-Dweep.jpg",
         "https://b4holiday.com/wp-content/uploads/2021/02/Kalapather-Beach-Swaraj-Dweep.jpg",
       ],
-      title: "Andaman Tour Package ",
+      title: "Andaman Tour Package",
       location: "Andaman Tour India",
       duration: "6 Days - 5 Nights",
       discount: "25% Off ",
