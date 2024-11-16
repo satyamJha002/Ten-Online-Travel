@@ -21,6 +21,8 @@ import Review from "./Pages/Review/Review";
 import AndamanTour from "./Pages/India/AndamanTour/AndamanTour";
 import Goa from "./Pages/India/Goa/Goa";
 import Sikkim from "./Pages/India/Sikkim/Sikkim";
+import Kasol from "./Pages/India/Himachal/Kasol";
+
 function App() {
   return (
     <>
@@ -46,6 +48,7 @@ function App() {
           <Route path="/Termpage" element={<Termpage />} />
           <Route path="/DocumentVisa" element={<DocumentVisa />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/india/himachal/kasol" element={<Kasol />} />
         </Routes>
         <Footer />
       </BrowserRouter>
