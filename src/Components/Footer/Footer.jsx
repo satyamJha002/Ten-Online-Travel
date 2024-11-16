@@ -32,16 +32,16 @@ function Footer() {
               </svg>
               <h1 className="text-xl font-semibold">Ten Travel</h1>
             </div>
-            <p>New Delhi, India</p>
-            <p>
-              Email:{" "}
-              <a
-                href="mailto:info@entrepreneurshipnetwork.net"
-                className="text-yellow-400 hover:underline"
-              >
-                info@entrepreneurshipnetwork.net
-              </a>
-            </p>
+            <p className="text-white">New Delhi, India</p>
+<p className="text-white">
+  Email:{" "}
+  <a
+    href="mailto:info@entrepreneurshipnetwork.net"
+    className="text-yellow-400 hover:underline"
+  >
+    info@entrepreneurshipnetwork.net
+  </a>
+</p>
           </div>
 
           <div className="flex-1">
