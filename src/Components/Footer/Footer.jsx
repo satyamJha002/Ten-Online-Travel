@@ -135,7 +135,7 @@ function Footer() {
         </div>
 
         <div className="mt-10 border-t border-gray-700 pt-6 text-center text-white-500">
-          <p>@2024 Ten Travel | Developed by Ten Travel Teams</p>
+          <p className="text-white" >@2024 Ten Travel | Developed by Ten Travel Teams</p>
         </div>
       </div>
     </footer>
