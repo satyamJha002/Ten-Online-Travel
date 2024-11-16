@@ -1,5 +1,5 @@
 import React from "react";
-// import "./FooterLink/Termpage";
+ import "./FooterLink/Termpage";
 
 function Footer() {
   return (
