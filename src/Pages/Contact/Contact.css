@@ -1,7 +1,7 @@
 .contact-us {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
     font-family: Arial, sans-serif;
 }
 
@@ -24,13 +24,14 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin: 0 15px 0 15px;
     flex-wrap: wrap;
 }
 
 .contact-info,
 .payment-options {
     flex: 1;
-/*     padding: 20px; */
+    padding: 8px 11px 8px 11px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #f9f9f9;
