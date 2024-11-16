@@ -18,9 +18,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  justify-content: center; 
-  margin: 30px auto; 
-  padding-left: 0; 
+  justify-content: center;
+  margin: 30px auto;
+  padding-left: 0;
 }
 
 /* Responsive Styles */
