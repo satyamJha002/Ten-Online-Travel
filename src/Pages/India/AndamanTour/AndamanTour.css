@@ -154,6 +154,13 @@
       column-gap: 27px;
       text-align: center;
     }
+    .AndamanContainer{
+      width: 111%;
+    }
+    .WaterSportContainer{
+      width: 111%;
+
+    }
 
   }
   @media (max-width: 840px){
