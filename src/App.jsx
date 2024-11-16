@@ -47,8 +47,9 @@ function App() {
           <Route path="/DocumentVisa" element={<DocumentVisa />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
+    
     </>
   );
 }
