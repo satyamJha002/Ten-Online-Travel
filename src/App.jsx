@@ -17,6 +17,7 @@ import Footer from "./Components/Footer/Footer";
 import Kashmir from "./Pages/India/Kashmir/Kashmir";
 import Ladakh from "./Pages/India/Ladakh/Ladakh";
 import Maldives from "./Pages/International/Maldives/Maldives";
+import Review from "./Pages/Review/Review";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/reviews" element={<Review />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
           <Route path="/international/maldives" element={<Maldives />} />
