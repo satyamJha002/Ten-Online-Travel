@@ -1,5 +1,4 @@
 export const packages = [
-
     {
         id: 1,
         images: [
@@ -16,6 +15,7 @@ export const packages = [
         originalPrice: "₹25,500",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Romantic retreat amidst serene hills and landsc..."
     },
     {
         id: 2,
@@ -37,8 +37,8 @@ export const packages = [
         originalPrice: "₹2,250",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Camping adventure with river views and bonfires..."
     },
-
     {
         id: 3,
         images: [
@@ -62,6 +62,7 @@ export const packages = [
         originalPrice: "₹3,500",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Exciting river rafting and scenic camping experience..."
     },
     {
         id: 4,
@@ -79,6 +80,7 @@ export const packages = [
         originalPrice: "₹14,000",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Explore Kullu's beauty and Manali's adventure activities..."
     },
     {
         id: 5,
@@ -96,6 +98,7 @@ export const packages = [
         originalPrice: "₹10,000",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Relax and rejuvenate in picturesque Dalhousie's serenity..."
     },
     {
         id: 6,
@@ -113,6 +116,7 @@ export const packages = [
         originalPrice: "₹11,500",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Scenic Shimla and Manali tours with adventure opportun..."
     },
     {
         id: 7,
@@ -130,6 +134,6 @@ export const packages = [
         originalPrice: "₹24,000",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
+        description: "Unwind amidst Shimla's charm and Manali's wonders..."
     },
 ];
-

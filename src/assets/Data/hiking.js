@@ -16,6 +16,7 @@ export const packages = [
     originalPrice: "₹6,900",
     nextDepartures: ["Dec 1", "Dec 5", "Dec 10"],
     featured: true,
+    description: "Relaxing getaway to Goa's stunning beaches and sunsets."
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ export const packages = [
     originalPrice: "₹5,000",
     nextDepartures: ["Dec 3", "Dec 7", "Dec 12"],
     featured: true,
+    description: "Enjoy snow activities and breathtaking views in Manali."
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export const packages = [
     originalPrice: "₹6,700",
     nextDepartures: ["Dec 2", "Dec 6", "Dec 11"],
     featured: true,
+    description: "Serene houseboat journey through Kerala's scenic backwaters."
   },
   {
     id: 4,
@@ -68,5 +71,6 @@ export const packages = [
     originalPrice: "₹12,000",
     nextDepartures: ["Dec 8", "Dec 15", "Dec 22"],
     featured: true,
+    description: "Thrilling trek through the majestic Himalayan mountain range."
   },
 ];

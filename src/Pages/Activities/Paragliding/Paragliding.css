@@ -12,12 +12,31 @@
 .paragliding-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 30px;
   justify-content: center; 
-  margin: 30px auto; 
+  margin: 30px auto;
   padding-left: 0; 
 }
 
+.paragliding-cards > *:nth-last-child(-n+1) {
+  margin-right: auto;
+  margin-left: 28px; 
+}
+
+.paragliding-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.paragliding-card:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 30px 60px 20px rgba(0, 0, 0, 0.7); 
+  transform: translateY(-10px) scale(1.05); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -31,7 +50,12 @@
   }
 
   .paragliding-cards {
-    gap: 20px;
+    gap: 30px;
+  }
+
+  .paragliding-cards > *:nth-last-child(-n+1) {
+    margin-right: auto;
+    margin: 0; 
   }
 }
 
@@ -46,7 +70,20 @@
   }
 
   .paragliding-cards {
-    gap: 15px;
+    gap: 20px;
+  }
+
+  .paragliding-card:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 30px 60px 20px rgba(0, 0, 0, 0.7); 
+    transform: translateY(-10px) scale(1.05); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+  .paragliding-cards > *:nth-last-child(-n+1) {
+    margin-right: auto;
+    margin: 0; 
   }
 
   .price-section {
@@ -59,7 +96,7 @@
   }
 
   .card-details p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .view-details-btn {
@@ -77,6 +114,15 @@
     font-size: 1.8rem;
     margin: 1rem;
     margin-left: 1.5rem;
+  }
+
+  .paragliding-cards{
+    gap: 20px;
+  }
+
+  .paragliding-cards > *:nth-last-child(-n+1) {
+    margin-right: auto;
+    margin: 0; 
   }
 
   .price-section {

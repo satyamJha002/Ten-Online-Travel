@@ -15,6 +15,7 @@ export const packages = [
     originalPrice: "₹19,500",
     nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
     featured: true,
+    description: "Experience the magical charm of Shimla and Manali ..."
   },
   {
     id: 2,
@@ -32,8 +33,8 @@ export const packages = [
     originalPrice: "₹21,500",
     nextDepartures: ["Nov 22", "Nov 23", "Nov 24"],
     featured: true,
+    description: "Discover the rich culture and heritage of Rajasthan ..."
   },
-
   {
     id: 3,
     images: [
@@ -50,6 +51,7 @@ export const packages = [
     originalPrice: "₹14,000",
     nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
     featured: true,
+    description: "Immerse yourself in the beauty of Kullu and Manali ..."
   },
   {
     id: 4,
@@ -67,6 +69,7 @@ export const packages = [
     originalPrice: "₹24,500",
     nextDepartures: ["Nov 17", "Nov 18"],
     featured: true,
+    description: "Explore the untouched beauty of Spiti Valley ..."
   },
   {
     id: 5,
@@ -84,6 +87,7 @@ export const packages = [
     originalPrice: "₹39,000",
     nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
     featured: true,
+    description: "Embark on an unforgettable expedition to Ladh ..."
   },
   {
     id: 6,
@@ -101,6 +105,7 @@ export const packages = [
     originalPrice: "₹21,000",
     nextDepartures: ["Nov 19", "Nov 20"],
     featured: true,
+    description: "Unwind at the serene beaches of Goa with this relaxin ..."
   },
   {
     id: 7,
@@ -118,43 +123,28 @@ export const packages = [
     originalPrice: "₹25,500",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
+    description: "Shimla offers a perfect blend of natural beauty and colonial charm ..." 
   },
   {
     id: 8,
     images: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Houseboats_at_Kerala_Backwaters.jpg/640px-Houseboats_at_Kerala_Backwaters.jpg",
-      "https://www.tripsavvy.com/thmb/UoylMLyzOBPdDp34ForEiJd9m3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-522478216-5ab12c4e3de4230036949cee.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoWmAl5YG_tgPKfjQ-1_NqLmKVnF42vLOgA&s",
+      "https://www.tripsavvy.com/thmb/UoylMLyzOBPdDp34ForEiJd9m3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/houseboats-in-kerala-598973521-5b7bc207ff4e8d0036d9f3b9.jpg",
+      "https://media.istockphoto.com/id/533825957/photo/houseboat-in-kerala.jpg?s=612x612&w=is&k=20&c=KNt2VYgkzVt8VSH-7cA2PqSgfnjD7phGg1F82ZxtdD0=",
     ],
     title: "Kerala Backwaters",
     location: "Kerala, India",
-    duration: "5 Days - 4 Nights",
-    people: "2-4 People",
-    discount: "20% Off",
-    price: "₹15,500",
-    originalPrice: "₹19,000",
-    nextDepartures: ["Nov 25", "Nov 26"],
+    duration: "6 Days - 5 Nights",
+    people: "2-10 People",
+    discount: "10% Off",
+    price: "₹20,000",
+    originalPrice: "₹22,500",
+    nextDepartures: ["Nov 12", "Nov 13"],
     featured: true,
+    description: "Experience the tranquility of Kerala's backwaters ..." 
   },
   {
     id: 9,
-    images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14p2iPF-bbbYPn0IL9FRp81TY43vaGjDF0g&s",
-      "https://andamanemeraldholidays.com/wp-content/uploads/2022/04/Port-Blair-to-Ross-Island-and-Excursion-to-Coral-IslandNorth-Bay.jpg",
-      "https://cdn.prod.website-files.com/5b56319971ac8c56a6a9d887/5c4bb53cc49ea6b924af7244_Ross%20Island.JPG",
-    ],
-    title: "Andaman Islands Escape",
-    location: "Andaman, India",
-    duration: "7 Days - 6 Nights",
-    people: "2-6 People",
-    discount: "18% Off",
-    price: "₹25,000",
-    originalPrice: "₹30,500",
-    nextDepartures: ["Nov 28", "Nov 29"],
-    featured: true,
-  },
-  {
-    id: 10,
     images: [
       "https://live.staticflickr.com/4028/4719743807_ff75c131a2.jpg",
       "https://qph.cf2.quoracdn.net/main-qimg-58a9eef5c2587e098d215ca73ebe061a-lq",
@@ -169,5 +159,24 @@ export const packages = [
     originalPrice: "₹14,000",
     nextDepartures: ["Nov 30", "Dec 1"],
     featured: true,
+    description: "Immerse yourself in the tranquility of Nainital with this ..." 
+  },
+  {
+    id: 10,
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14p2iPF-bbbYPn0IL9FRp81TY43vaGjDF0g&s",
+      "https://andamanemeraldholidays.com/wp-content/uploads/2022/04/Port-Blair-to-Ross-Island-and-Excursion-to-Coral-IslandNorth-Bay.jpg",
+      "https://cdn.prod.website-files.com/5b56319971ac8c56a6a9d887/5c4bb53cc49ea6b924af7244_Ross%20Island.JPG",
+    ],
+    title: "Andaman Islands Escape",
+    location: "Andaman, India",
+    duration: "7 Days - 6 Nights",
+    people: "2-6 People",
+    discount: "18% Off",
+    price: "₹25,000",
+    originalPrice: "₹30,500",
+    nextDepartures: ["Nov 28", "Nov 29"],
+    featured: true,
+    description: "Explore the stunning beaches, crystal-clear waters ..." 
   },
 ];

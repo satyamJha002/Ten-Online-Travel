@@ -65,8 +65,13 @@ const Card = ({ pkg }) => {
       </div>
       <h2 className="title">{pkg.title}</h2>
       <div className="card-details">
+      {/* Left Section */}
+      <div className="details-left">
         <p>
-          <span>📍</span>
+          <span><FontAwesomeIcon
+          icon={faMapMarkerAlt}
+          className="map-toggle-icon"
+        /></span>
           {pkg.location}
         </p>
         <p>
@@ -77,18 +82,33 @@ const Card = ({ pkg }) => {
           <span>👥</span>
           {pkg.people}
         </p>
+        <p className="describe">
+          {pkg.description}
+        </p>
+      </div>
+
+      {/* Right Section */}
+      <div className="details-right">
+        {/* Price Section */}
         <div className="price-section">
           <span className="discount">{pkg.discount}</span>
           <span className="price">{pkg.price}</span>
           <span className="original-price">{pkg.originalPrice}</span>
         </div>
-        <p>Next Departure</p>
-        <ul className="departures">
-          {pkg.nextDepartures.map((date, index) => (
-            <li key={index}>✔ {date}</li>
-          ))}
-        </ul>
-        <button className="view-details-btn">View Details</button>
+        {/* Departures Section */}
+        <div className="departures">
+          <p>Next Departure</p>
+          <ul>
+            {pkg.nextDepartures.map((date, index) => (
+              <li key={index}>✔ {date}</li>
+            ))}
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div className="available-year">
+      <button className="view-details-btn">View Details</button>
+      <p>Available through out the year: <br/> 🗓️ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec </p>
       </div>
     </div>
   );
