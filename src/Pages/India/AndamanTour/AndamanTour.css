@@ -154,13 +154,11 @@
       column-gap: 27px;
       text-align: center;
     }
+
   }
   @media (max-width: 840px){
     .list-div{
       margin-bottom: 30px;
   }
-  /* .sightseeing-div {
-    margin-top: 5px !important;
 
-  } */
   }

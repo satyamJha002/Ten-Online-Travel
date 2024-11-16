@@ -16,7 +16,8 @@ export const andmatour = [
       price: "₹18,500",
       originalPrice: "₹24,500",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
-    featured: true,
+      featured: true,
+      description: "The Andaman Islands, located in the..."
     },
     {
       id: 2,
@@ -34,8 +35,10 @@ export const andmatour = [
       people: "2 People",
       price: "₹13,500",
      originalPrice: "₹21,500",
-    
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+      
     },
     {
       id: 3,
@@ -53,8 +56,10 @@ export const andmatour = [
       people: "2 People",
       price: "₹10,500",
     originalPrice: "17,500",
-
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+
     },
     {
       id: 4,
@@ -72,8 +77,10 @@ export const andmatour = [
       people: "2-20 People",
       price: "₹19,000",
     originalPrice: "₹17,500",
-
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+
     }
   ];
 
@@ -95,9 +102,10 @@ export const andmatour = [
       people: "2 People",
       price: "₹14,500",
     originalPrice: "₹17,500",
-
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
-    },
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+         },
     {
       id: 2,
       images: [
@@ -114,8 +122,10 @@ export const andmatour = [
       people: "2 People",
       price: "₹15,700",
       originalPrice: "₹10,500",
-
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+      
     },
     {
       id: 3,
@@ -127,15 +137,16 @@ export const andmatour = [
         "https://b4holiday.com/wp-content/uploads/2021/02/Kalapather-Beach-Swaraj-Dweep.jpg",
       ],
       title: "5D Andaman Package ",
-    
-      location: "Andaman Tour India",
+          location: "Andaman Tour India",
       duration: "5 Days - 4 Nights",
       discount: "13% Off",
       people: "2 People",
       price:"₹27,900",
     originalPrice: "₹32,000",
-
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+     
     },
     {
       id: 4,
@@ -153,8 +164,10 @@ export const andmatour = [
       people: "2 People",
       price: "₹21,250",
     originalPrice: "₹24,000",
-
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the..."
+      
     },
     {
         id: 5,
@@ -172,8 +185,10 @@ export const andmatour = [
         people: "2 People",
         price: "₹14,250",
     originalPrice: "₹16,500",
-
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+      
       },
       {
         id: 6,
@@ -191,8 +206,10 @@ export const andmatour = [
         people: "2 People",
         price: "₹18,500",
     originalPrice: "₹24,500",
-
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the east of..."
+       
       },
       {
         id: 7,
@@ -210,8 +227,10 @@ export const andmatour = [
         people: "2 People",
         price: "₹40,000",
     originalPrice: "₹43,500",
-
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the..."
+        
       },
       {
         id: 8,
@@ -229,8 +248,10 @@ export const andmatour = [
         people: "2 People",
         price: "₹27,500",
         originalPrice: "₹30,000",
-
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      featured: true,
+      description: "The Andaman Islands, located in the..."
+      
       },
 
   ];

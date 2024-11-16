@@ -21,6 +21,8 @@ export const tourGoaPackages = [
       originalPrice: "₹10,750",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Located at Calangute – Candolim Main Road, just 500 meters away"
+
     },
 ]
 export const tourotherPackages = [
@@ -46,6 +48,7 @@ export const tourotherPackages = [
       people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at"
 
     },
     {
@@ -69,6 +72,8 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at Candolim –"
+
       },
     {
         id: 3,
@@ -91,6 +96,8 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at"
+
       },
       {
         id: 4,
@@ -113,6 +120,8 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at Candolim –"
+
       },
       {
         id: 5,
@@ -135,6 +144,8 @@ export const tourotherPackages = [
         people: "2 People",
         nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
         featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at"
+
       },
       {
         id: 6,
@@ -157,6 +168,7 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at",
       },
       {
         id: 7,
@@ -179,6 +191,8 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Banyan Tree Courtyard - Candolim, Goa Located at"
+
       },
       {
         id: 8,
@@ -201,6 +215,8 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Stone Wood Riverfront Resort, Goa Stonewood Riverfront Resort"
+
       },
       {
         id: 9,
@@ -223,6 +239,8 @@ export const tourotherPackages = [
         people: "2 People",
       nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
       featured: true,
+      description: "Stone Wood Riverfront Resort, Goa Stonewood",
+
       },
       
       
