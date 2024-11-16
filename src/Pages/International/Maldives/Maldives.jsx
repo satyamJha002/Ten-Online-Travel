@@ -1,3 +1,9 @@
+import {
+  maldives,
+  maldivesOtherTrips,
+  maldivesWaterVilla,
+} from "../../../assets/Data/maldives";
+import Card from "../../../Components/Card/Card";
 import "./maldives.css";
 const Maldives = () => {
   return (
@@ -39,9 +45,25 @@ const Maldives = () => {
           <h2>Jacuzzi</h2>
         </div>
         <div className="maldivesCardsContainer">
-          {/* {dubai.map((pkg) => (
+          {maldives.map((pkg) => (
             <Card key={pkg.id} pkg={pkg} />
-          ))} */}
+          ))}
+        </div>
+        <div className="friAndFam">
+          <h2>Water Villa</h2>
+        </div>
+        <div className="maldivesCardsContainer">
+          {maldivesWaterVilla.map((pkg) => (
+            <Card key={pkg.id} pkg={pkg} />
+          ))}
+        </div>
+        <div className="friAndFam">
+          <h2>Other Trips</h2>
+        </div>
+        <div className="maldivesCardsContainer">
+          {maldivesOtherTrips.map((pkg) => (
+            <Card key={pkg.id} pkg={pkg} />
+          ))}
         </div>
       </div>
     </>
