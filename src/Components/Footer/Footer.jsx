@@ -34,7 +34,7 @@ function Footer() {
             </div>
             <p className="text-white">New Delhi, India</p>
 <p className="text-white">
-  Email:{" "}
+ 
   <a
     href="mailto:info@entrepreneurshipnetwork.net"
     className="text-yellow-400 hover:underline"
