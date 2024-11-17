@@ -5,8 +5,8 @@ import "./Darjeeling.css";
 
 const Darjeeling = () => {
   return (
-    <div className="darjeeling-container">
-      <h1 className="text-4xl mt-5">Darjeeling</h1>
+    <div className="px-3">
+      <h1 className="text-4xl my-4">Darjeeling</h1>
 
       <div className="">
         <p className="mt-2 text-gray-700">
@@ -20,13 +20,15 @@ const Darjeeling = () => {
         </p>
       </div>
 
-      <div class="flex items-center my-5">
-        <div class="flex-grow border-t border-gray-300"></div>
-        <span class="mx-4 text-4xl text-gray-700">Sightseeing</span>
-        <div class="flex-grow border-t border-gray-300"></div>
+      <div className="flex items-center my-5">
+        <div className="flex-grow border-t border-gray-700"></div>
+        <span className="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700">
+          Sightseeing
+        </span>
+        <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="darjeeling-cards">
+      <div className="flex flex-wrap justify-between gap-4">
         {darjeelingPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}

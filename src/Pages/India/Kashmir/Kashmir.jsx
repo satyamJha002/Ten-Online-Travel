@@ -6,18 +6,18 @@ const Kashmir = () => {
   return (
     <div className="p-1">
       <h1 className="text-4xl m-8">Kashmir</h1>
-      <div
-        className="relative h-[30vh] bg-cover bg-center md:h-[50vh] sm:h-[30vh] w-full"
-        style={{
-          backgroundImage:
-            "url('https://b4holiday.com/wp-content/uploads/2022/02/1567063194_kashmir_web.jpg')",
-        }}
-      ></div>
+      <div className="px-2">
+        <img
+          src="https://b4holiday.com/wp-content/uploads/2022/02/1567063194_kashmir_web.jpg"
+          alt=""
+          className="relative h-[60vh] bg-cover bg-center md:h-[50vh] sm:h-[50vh] w-screen"
+        />
+      </div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-1">
+      <div className="mx-auto px-2  py-1">
         <div className="mt-8 text-gray-700">
           <h3 className="text-2xl font-semibold">Kashmir Tour Packages</h3>
-          <p className="mt-2">
+          <p className="mt-2 ">
             Book online{" "}
             <strong>
               Kashmir Packages from Delhi, Mumbai, Bangalore, Chennai, and other
@@ -31,14 +31,14 @@ const Kashmir = () => {
           <h3 className="text-2xl font-semibold">
             List Of Best Kashmir Tour Packages
           </h3>
-          <p className="mt-2">
+          <p className="mt-2 ">
             Book the latest <strong>Cheap Kashmir Holiday Tour Packages</strong>{" "}
             check our three types of <strong>Cheap Holiday Packages</strong> for
             Families Group & Couples, you can find the perfect package and get
             the best prices & services with our company.
           </p>
           <br />
-          <p>
+          <p className="">
             We provide <strong>Kashmir tours & travel package</strong> services
             such as budget & Luxury Hotels in Srinagar, Gulmarg, Pahalgam,
             Jammu, Cab Services & much more. want to know more about so contact
@@ -49,7 +49,7 @@ const Kashmir = () => {
           <h3 className="text-2xl font-semibold">
             Kashmir Tour Packages for Family
           </h3>
-          <p className="mt-2">
+          <p className="mt-2 ">
             Are you looking for the best <strong>Holiday Package</strong> for
             your Family? If yes, then check our latest{" "}
             <strong>Holiday Packages for Family”s</strong>. Check below family
@@ -65,7 +65,7 @@ const Kashmir = () => {
           <h3 className="text-2xl font-semibold">
             Kashmir Tour Package for Couple{" "}
           </h3>
-          <p className="mt-2">
+          <p className="mt-2 ">
             We have special Kashmir Tour packages for Couples who have the plan
             to Make a honeymoon tour in Kashmir. Check our Special 4 packages
             and get the best Honeymoon arrangements such as Bed Decoration in a
@@ -86,7 +86,9 @@ const Kashmir = () => {
       </div>
       <div class="flex items-center my-5">
         <div class="flex-grow border-t border-gray-300"></div>
-        <span class="mx-4 text-4xl text-gray-700">Friends & Family Tour</span>
+        <span class="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700">
+          Friends & Family Tour
+        </span>
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
       <div>

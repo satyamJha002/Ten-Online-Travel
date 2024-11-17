@@ -5,7 +5,6 @@ import {
   thingsTodoInLadakh,
 } from "../../../assets/Data/data";
 import { famousLakes } from "../../../assets/Data/data";
-import { list } from "postcss";
 import Card from "../../../Components/Card/Card";
 
 const Ladakh = () => {
@@ -64,14 +63,14 @@ const Ladakh = () => {
   ];
 
   return (
-    <div className="container p-4">
-      <div className="relative inline-block m-4">
-        <span className="text-4xl mb-3">Ladakh</span>
+    <div className="px-2">
+      <div className="relative inline-block m-2">
+        <span className="text-4xl mb-2">Ladakh</span>
         {/* <span class="absolute left-0 bottom-0 w-10 h-1 bg-green-500"></span> */}
       </div>
 
       <div className="">
-        <p className="mt-2 px-4 text-gray-700 leading-tight sm:leading-snug">
+        <p className="mt-2 px-2 text-gray-700 leading-tight sm:leading-snug">
           Ladakh, <strong>India's dramatic crown, entices adventurers</strong>{" "}
           with its barren beauty, snow-capped peaks, azure skies, and vibrant
           culture. Since opening to tourists in the 1970s, it has enchanted
@@ -89,14 +88,14 @@ const Ladakh = () => {
           </strong>
           .
         </p>
-        <p className="mt-2 px-4 text-gray-700 leading-7 sm:leading-snug">
+        <p className="mt-2 px-2 text-gray-700 leading-7 sm:leading-snug">
           Be a part of an unforgettable travel story with us and relish our
           legacy to travel, explore and celebrate life.
         </p>
       </div>
 
-      <div className="m-4">
-        <h3 className="text-2xl font-semibold text-gray-600 ">
+      <div className="mx-2 my-3">
+        <h3 className="text-xl font-semibold text-gray-600 ">
           Best Places to Visit in Ladakh
         </h3>
         <ul className="mx-4 list-disc marker:text-gray-600 space-y-2">
@@ -107,13 +106,15 @@ const Ladakh = () => {
       </div>
 
       <div className="">
-        <span className="text-2xl font-semibold text-gray-600">
-          <u className="w-5 text-gray-600">Things to do in Ladakh</u>
-        </span>{" "}
-        <span className="text-2xl font-semibold text-gray-600">|</span>{" "}
-        <span className="text-2xl font-semibold text-gray-600">
-          <u className="w-5 text-gray-600">Attraction in Ladakh</u>
-        </span>
+        <div className="my-4">
+          <span className="text-2xl font-semibold text-gray-600">
+            <u className="w-5 text-gray-600">Things to do in Ladakh</u>
+          </span>{" "}
+          <span className="text-2xl font-semibold text-gray-600">|</span>{" "}
+          <span className="text-2xl font-semibold text-gray-600">
+            <u className="w-5 text-gray-600">Attraction in Ladakh</u>
+          </span>
+        </div>
         {thingsTodoInLadakh.map((list, index) => (
           <div key={index} className="">
             <div className="mx-2 mb-9">
@@ -172,22 +173,22 @@ const Ladakh = () => {
         ))}
       </div>
 
-      <div className="my-5">
-        <span className="text-2xl font-semibold text-gray-600">
+      <div className="my-3">
+        <span className="text-2xl m-2  font-semibold text-gray-600">
           <u className="w-5 text-gray-600">List of Monasteries in Leh ladakh</u>
         </span>{" "}
-        <ul className="mx-4 my-2 list-disc marker:text-gray-600 space-y-2">
+        <ul className="mx-4 my-3 list-disc marker:text-gray-600 space-y-2">
           {listMonasteries.map((item, index) => (
             <li className="text-md text-gray-500" key={index}>
               {item}
             </li>
           ))}
         </ul>
-        <div className="my-5">
+        <div className="my-4">
           <span className="text-xl font-semibold text-gray-600">
             List of popular Mountain Passes in Leh ladakh
           </span>
-          <ul className="mx-4 my-2 list-disc marker:text-gray-600 space-y-2">
+          <ul className="mx-4 my-4 list-disc marker:text-gray-600 space-y-2">
             {listOfMountains.map((item, index) => (
               <li className="text-md text-gray-500" key={index}>
                 {item}
@@ -197,7 +198,7 @@ const Ladakh = () => {
         </div>
       </div>
 
-      <div className="container mx-auto mt-10 px-4">
+      <div className="mx-auto mt-10 px-2">
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse border  border-gray-300 text-left text-sm lg:text-base">
             <tbody>
@@ -267,26 +268,28 @@ const Ladakh = () => {
       </div>
 
       <div className="flex items-center my-8">
-        <div className="flex-grow border-t border-gray-300"></div>
-        <span className="mx-4 text-4xl text-gray-700">
+        <div className="flex-grow border-t border-gray-700"></div>
+        <span className="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700">
           Friends & Family Tour
         </span>
-        <div className="flex-grow border-t border-gray-300"></div>
+        <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-9 justify-center mt-8 mx-auto px-0">
+      <div className="flex flex-wrap justify-between gap-4 mt-8 mx-auto px-0">
         {ladakhFamilyTrips.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
       </div>
 
       <div className="flex items-center my-8">
-        <div className="flex-grow border-t border-gray-300"></div>
-        <span className="mx-4 text-4xl text-gray-700">The Other Trips</span>
-        <div className="flex-grow border-t border-gray-300"></div>
+        <div className="flex-grow border-t border-gray-700"></div>
+        <span className="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700">
+          The Other Trips
+        </span>
+        <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-9 justify-center mt-8 mx-auto px-0">
+      <div className="flex flex-wrap justify-between gap-4 mt-8 mx-auto px-0">
         {ladakhOtherTrip.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
