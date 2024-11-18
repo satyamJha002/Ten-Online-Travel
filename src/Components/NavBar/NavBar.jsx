@@ -100,8 +100,9 @@ const Navbar = () => {
             HOME
           </NavLink>
           <div className="relative mx-2"
-          onMouseEnter={() => setIndiaSubmenuOpen(true)}
-          onMouseLeave={() => setIndiaSubmenuOpen(false)} >
+          // onMouseEnter={() => setIndiaSubmenuOpen(true)}
+          // onMouseLeave={() => setIndiaSubmenuOpen(false)} 
+          >
             <div className="flex">
             <NavLink
               to="/india"
@@ -116,7 +117,7 @@ const Navbar = () => {
             </button>
             </div>
             {isIndiaSubmenuOpen && (
-              <div className="absolute  bg-white mx-2 w-40 shadow-lg z-50 mt-4">
+              <div className="absolute  bg-green-400 mx-2 w-40 shadow-lg z-50 mt-4">
                 <NavLink
                   to="/andaman-tour"
                   className={({ isActive }) =>
@@ -130,15 +131,15 @@ const Navbar = () => {
                   className="block px-4 py-2 justify-center items-center flex text-left hover:bg-gray-100 no-underline hover:no-underline focus:no-underline"
                   onClick={() =>
                     setHimachalSubmenuOpen(!isHimachalSubmenuOpen) }>
-                  Himachal <span className="ml-2">&#9654;</span>
+                  Himachal <span className="ml-6">&#9654;</span>
                 </button>
                 {isHimachalSubmenuOpen && (
-                  <div className="absolute left-full top-10 bg-white shadow-lg">
+                  <div className="absolute left-full top-16 bg-green-400 shadow-lg">
                     <NavLink
                       to="/kasol"
                       className={({ isActive }) =>
                         `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline`}>
-                      <button className="block  justify-center items-center px-4 py-2 text-left hover:bg-gray-100"
+                      <button className="block  justify-center items-center px-4 py-2 text-left text-black  hover:bg-gray-100"
                         onClick={() => {
                           setIndiaSubmenuOpen(false);
                           setHimachalSubmenuOpen(false); }} >
@@ -148,14 +149,14 @@ const Navbar = () => {
                   </div>
                 )}
                 <button
-                  className="block px-4 py-2 flex text-left hover:bg-gray-100 no-underline hover:no-underline focus:no-underline"
+                  className="block px-4 py-2 flex text-left hover:bg-gray-100 no-underline hover:no-underline focus:no-underlin"
                   onClick={() =>
                     setKeralaSubmenuOpen(!isKeralaSubmenuOpen) }  >
                   Kerala
-                 <span className="ml-2">&#9654;</span>
+                 <span className="ml-12">&#9654;</span>
                 </button>
                 {isKeralaSubmenuOpen && (
-                  <div className="absolute left-full top-20 bg-white shadow-lg">
+                  <div className="absolute left-full my-3 bg-green-400 top-24 shadow-lg">
                     <NavLink
                       to="/Munnar"
                       className={({ isActive }) =>
@@ -177,7 +178,7 @@ const Navbar = () => {
                  <span className="ml-2">&#9654;</span>
                 </button>
                 {isTamilNaduSubmenuOpen && (
-                  <div className="absolute left-full top-28  my-4 bg-white shadow-lg">
+                  <div className="absolute left-full top-32  my-4 bg-green-400 shadow-lg">
                     <NavLink
                       to="/india/tamilnadu/ooty"
                       className={({ isActive }) =>
@@ -248,14 +249,14 @@ const Navbar = () => {
                   </button>
                 </NavLink>
                 <button
-                  className="block px-4 py-2 flex text-left hover:bg-gray-100 no-underline hover:no-underline focus:no-underline"
+                  className="block px-2 py-2 flex text-left hover:bg-gray-100 no-underline hover:no-underline focus:no-underline"
                   onClick={() =>
                     setUttarakhandSubmenuOpen(!isUttarakhandSubmenuOpen)} >
                   Uttarakhand
-                 <span className="ml-2">&#9654;</span>
+                 <span className="ml-4">&#9654;</span>
                 </button>
                 {isUttarakhandSubmenuOpen && (
-                  <div className="absolute left-full top-28 my-64 bg-white shadow-lg z-50">
+                  <div className="absolute left-full top-28 my-72 bg-green-400 shadow-lg z-50">
                     <NavLink
                       to="/india/uttarakhand/nainital"
                       className={({ isActive }) =>
@@ -299,7 +300,7 @@ const Navbar = () => {
             </button>
             </div>
             {isInternationalSubmenuOpen && (
-              <div className="absolute justify-center items-center bg-white shadow-lg z-50 mt-2">
+              <div className="absolute left-20 bg-green-400 justify-center items-center shadow-lg z-50 mt-4">
                 <NavLink
                   to="/international/singapore"
                   className={({ isActive }) =>
@@ -373,7 +374,7 @@ const Navbar = () => {
             </button>
             </div>
             {isActivitiesSubmenuOpen && (
-              <div className="absolute w-18 bg-white shadow-lg mt-4">
+              <div className="absolute w-18 left-8 bg-green-400 shadow-lg z-50 mt-4">
                 <NavLink
                   to="/activities/riverrafting"
                   className={({ isActive }) =>
