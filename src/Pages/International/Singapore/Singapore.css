@@ -1,0 +1,212 @@
+.singaporeIntro {
+  padding: 20px 40px;
+}
+.singaporeIntro h1 {
+  font-size: 2.5rem;
+}
+.BaliIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+.singaporeInfo {
+  margin-top: 30px;
+}
+.singaporeInfo p {
+  color: #7c7c8b;
+}
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.friAndFam h2 {
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 0 30px;
+  font-weight: 400;
+  z-index: 1;
+}
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+.singaporeCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .singaporeIntro {
+    padding: 18px 35px;
+  }
+  .singaporeIntro h1 {
+    font-size: 2.3rem;
+  }
+  .friAndFam {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .singaporeIntro {
+    padding: 16px 30px;
+  }
+  .singaporeIntro h1 {
+    font-size: 2.1rem;
+  }
+  .friAndFam {
+    font-size: 32px;
+  }
+  .singaporeCardsContainer {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .singaporeIntro {
+    padding: 14px 25px;
+  }
+  .singaporeIntro h1 {
+    font-size: 1.9rem;
+  }
+  .friAndFam {
+    font-size: 28px;
+  }
+  .friAndFam h2 {
+    padding: 0 25px;
+  }
+  .singaporeCardsContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .singaporeIntro {
+    padding: 12px 20px;
+  }
+  .singaporeIntro h1 {
+    font-size: 1.7rem;
+  }
+  .BaliIntro h1::after {
+    width: 15%;
+  }
+  .friAndFam {
+    font-size: 24px;
+  }
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+  .singaporeCardsContainer {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .singaporeIntro {
+    padding: 10px 15px;
+  }
+  .singaporeIntro h1 {
+    font-size: 1.5rem;
+  }
+  .friAndFam {
+    font-size: 22px;
+  }
+  .friAndFam h2 {
+    padding: 0 15px;
+  }
+}
+
+/* .singaporeIntro {
+  padding: 20px 40px;
+}
+.singaporeIntro h1 {
+  font-size: 2.5rem;
+}
+.BaliIntro h1::after {
+  content: "";
+  padding: 2px;
+  width: 10%;
+  display: flex;
+  background-color: #32b67a;
+}
+.singaporeInfo {
+  margin-top: 30px;
+}
+.singaporeInfo p {
+  color: #7c7c8b;
+}
+.friAndFam {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.friAndFam h2 {
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 0 30px;
+  font-weight: 400;
+  z-index: 1;
+}
+.friAndFam::after,
+.friAndFam::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+.friAndFam::after {
+  content: "";
+  top: 45%;
+}
+.friAndFam::before {
+  content: "";
+  top: 55%;
+}
+.singaporeCardsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+ */
