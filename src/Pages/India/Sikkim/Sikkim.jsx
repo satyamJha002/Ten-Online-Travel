@@ -13,7 +13,7 @@ const Sikkim = () => {
 
 
       <div className='sightseeing-sikkim-div'>
-        <h2 className="sightseeing-title"><span>Sightseeing</span></h2>
+        <h2 className="sightseeing-sikkim-title"><span>Sightseeing</span></h2>
       </div>
 
       {/* card */}

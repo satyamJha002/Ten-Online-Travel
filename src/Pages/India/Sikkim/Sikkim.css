@@ -5,7 +5,7 @@
   .sikkim-heading::after {
     content: "";
     padding: 2px;
-    width: 10%;
+    width: 5%;
     display: flex;
     background-color: #32b67a;
   }
@@ -32,7 +32,7 @@
      width: 97%;
      margin-bottom: 4%;
   }
-  .sightseeing-sikkim-div .sightseeing-title {
+  .sightseeing-sikkim-div .sightseeing-sikkim-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,8 +42,8 @@
     font-weight: 500;
   }
   
-  .sightseeing-sikkim-div .sightseeing-title::before,
-  .sightseeing-sikkim-div .sightseeing-title::after {
+  .sightseeing-sikkim-div .sightseeing-sikkim-title::before,
+  .sightseeing-sikkim-div .sightseeing-sikkim-title::after {
     content: "";
     display: flex;
     flex-direction: column;
@@ -53,19 +53,19 @@
     height: 6px;
   }
   
-  .sightseeing-sikkim-div .sightseeing-title::before {
+  .sightseeing-sikkim-div .sightseeing-sikkim-title::before {
     border-top: 2px solid rgba(0, 0, 0, 0.4); 
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   }
   
-  .sightseeing-sikkim-div .sightseeing-title::after {
+  .sightseeing-sikkim-div .sightseeing-sikkim-title::after {
     border-top: 2px solid rgba(0, 0, 0, 0.4);
   
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   
   }
   
-  .sightseeing-sikkim-div .sightseeing-title span {
+  .sightseeing-sikkim-div .sightseeing-sikkim-title span {
     display: inline-block;
   }
 
@@ -83,10 +83,21 @@
   }
 
   @media (max-width: 480px) {
+    .sikkim-content{
+      text-align: justify;
+    }
     .sightseeing-sikkim-div {
         margin-top: 24%;
     }
     .SikkimContainer{
       width: 111%;
     }
+    .sikkim-contentk{
+      
+      text-align: justify;
+  }
+  .sikkim-heading::after {
+   
+    width: 26%;
 }
+  }

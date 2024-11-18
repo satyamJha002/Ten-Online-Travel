@@ -10,7 +10,7 @@
 .andaman-heading::after {
   content: "";
   padding: 2px;
-  width: 10%;
+  width: 5%;
   display: flex;
   background-color: #32b67a;
 }
@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 19px 6px 0px;
-  grid-gap: 50px;
+ 
 
 }
 .no-symbol {
@@ -45,6 +45,8 @@
   margin-bottom: 5%;
   font-size: 176%;
   font-weight: 500;
+  margin-top: 8%;
+
 }
 
 .sightseeing-div .sightseeing-title::before,
@@ -133,7 +135,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 71px;
+    gap: 65px;
     margin-top: 30px;
   }
   
@@ -143,16 +145,58 @@
   
 
   
-  
+  @media screen and (width:320px){
+    .list-name{
+      column-gap: 9px !important;
+      /* text-align: center; */
+      margin-left: -4% !important;
+    }
+    .sightseeing-div {
+      margin-top: 96% !important;
+  }
+    .sightseeing-div, .sightseeing-title {
+      margin-top: 262px !important;
+  }
+  .andaman-heading::after {
+       width: 25%;
+  }
+
+.andaman-heading{
+
+    font-size: 32px;
+
+}
+.sightseeing-div .sightseeing-title {
+  margin-top: 108% !important;
+}
+
+  }
+  @media(width:360px){
+    .sightseeing-div .sightseeing-title{
+      margin-top: 95% !important;
+
+    }
+     
+  }
+  @media(width:375px){
+    .sightseeing-div .sightseeing-title{
+      margin-top: 95% !important;
+
+    }
+     
+  }
    
-  @media (max-width: 480px){
+  @media (max-width: 480px) and (min-width:360px){
+  
     .sightseeing-div{
-      margin-top: 54%;
+      margin-top: 56% !important;
   
     }
     .list-name{
       column-gap: 27px;
       text-align: center;
+      
+
     }
     .AndamanContainer{
       width: 111%;
@@ -161,11 +205,47 @@
       width: 111%;
 
     }
+    .andaman-content{
+      
+        text-align: justify;
+    }
+  
+    .sightseeing-div .sightseeing-title {
+      margin-top: 95% !important;
+  }
 
+  }
+  @media (width:600px){
+    .sightseeing-div .sightseeing-title{
+    margin-top: 30%;
+  }
+    .sightseeing-div{
+
+      margin-top: 25%;
+  }
   }
   @media (max-width: 840px){
     .list-div{
       margin-bottom: 30px;
   }
+ .sightseeing-div{
 
+    margin-top: 18%;
+}
+.sightseeing-title{
+
+    margin-top: 10%;
+}
+
+.sightseeing-div .sightseeing-title{
+  margin-top: 30%;
+}
+ 
+  }
+  @media(width:884px){
+    .sightseeing-title{
+
+      margin-top: 10% !important;
+  }
+  
   }

@@ -12,7 +12,7 @@ const Goa = () => {
       </div>
 
       <div className='Friends-div'>
-        <h2 className="Friends-title"><span className='friendfamily-headng'>Friends & Family Tour</span></h2>
+        <h2 className="Friends-title"><span className='friendfamily-heading'>Friends & Family Tour</span></h2>
       </div>
       {/* card */}
       <div className="GoaContainer">
@@ -23,7 +23,7 @@ const Goa = () => {
 
 
       <div className='other-div'>
-        <h2 className="other-title"><span className='otherstrip-headng'>Other Trips</span></h2>
+        <h2 className="other-title"><span className='otherstrip-heading'>Other Trips</span></h2>
       </div>
 
       <div>

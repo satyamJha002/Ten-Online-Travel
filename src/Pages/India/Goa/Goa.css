@@ -11,7 +11,7 @@
   .goa-heading::after {
     content: "";
     padding: 2px;
-    width: 10%;
+    width: 3%;
     display: flex;
     background-color: #32b67a;
   }
@@ -59,7 +59,7 @@
   .Friends-div .Friends-title span {
     display: inline-block;
   }
-  .friendfamily-headng{
+  .friendfamily-heading{
     width: 64%;
 
   }
@@ -100,7 +100,7 @@
   .other-div .other-title span {
     display: inline-block;
   }
-  .otherstrip-headng{
+  .otherstrip-heading{
     width: 28%;
 
   }
@@ -130,10 +130,43 @@
     margin-top: 30px;
   }
 
+@media screen and (width:320px){
+  
 
+    .otherstrip-heading {
+      font-size: 184% !important;
+      width: 208% !important;
+  }
+    
+  
+    .other-div .other-title {
+      font-size: 61% !important;
+  }
+    .goa-heading::after {
+    
+      width: 26%;
+    }
+    .friendfamily-heading {
+      font-size: 20px !important;
+      width: 332% !important;
+    }
+}
 
 
   @media (max-width: 480px){
+    .goa-heading::after {
+      width: 13%;
+  }
+
+    .Friends-div{
+      width: 121%;
+      margin-left: -13%;
+      text-align: center;
+    }
+   
+    .goa-content {
+      text-align: justify;
+      }
     .Friends-div .Friends-title::before {
       border-top: none ;
      border-bottom:none ;
@@ -142,15 +175,59 @@
     border-top: none ;
     border-bottom:none ;
 }
-.friendfamily-headng {
-  font-size: 28px;
-  width: 329%;
-  text-align: center;
+.otherstrip-heading{
+
+  min-width: 21% !important;
+
 }
-.otherstrip-headng {
-  width: 280%;
-}
+
+
+
 .GoaContainer{
   width: 111%;
+}
+.other-div .other-title {
+ 
+  font-size: 98%;
+}
+.othertrips-content {
+  margin-top: 25px;
+}
+  }
+
+  @media(width:768px){
+    .otherstrip-heading {
+      font-size: 62% !important;
+      width: 35% !important;
+
+  }
+  }
+   @media (width: 820px) {
+    .friendfamily-heading {
+        width: 148px !important;
+    }
+}
+
+  @media only screen and (max-width:884px){
+    .friendfamily-heading {
+      width: 183% !important;
+  }
+  .otherstrip-heading {
+    font-size: 94% !important;
+    width: 47% !important;
+
+}
+
+
+
+  }
+  @media(width:1280px){
+    .friendfamily-heading {
+      width: 72%;
+  }
+  .otherstrip-heading {
+    font-size: 62% !important;
+    width: 19% !important;
+
 }
   }
