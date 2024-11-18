@@ -1,12 +1,14 @@
 import React from "react";
 import { darjeelingPackages } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
-import "./Darjeeling.css";
 
 const Darjeeling = () => {
   return (
     <div className="px-3">
-      <h1 className="text-4xl my-4">Darjeeling</h1>
+      <h1 className="text-4xl my-4 relative sikkim-heading">
+        Darjeeling
+        <span class="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
+      </h1>
 
       <div className="">
         <p className="mt-2 text-gray-700">
@@ -28,7 +30,7 @@ const Darjeeling = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-4">
+      <div className="flex flex-wrap justify-evenly gap-4">
         {darjeelingPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}

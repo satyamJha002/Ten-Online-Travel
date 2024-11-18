@@ -64,10 +64,10 @@ const Ladakh = () => {
 
   return (
     <div className="px-3">
-      <div className="relative inline-block m-2">
-        <span className="text-4xl mb-2">Ladakh</span>
-        {/* <span class="absolute left-0 bottom-0 w-10 h-1 bg-green-500"></span> */}
-      </div>
+      <h1 className="text-4xl my-4 relative sikkim-heading">
+        Ladakh
+        <span class="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
+      </h1>
 
       <div className="">
         <p className="mt-2 px-2 text-gray-700 leading-tight sm:leading-snug">
@@ -275,7 +275,7 @@ const Ladakh = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-4 mt-8 mx-auto px-0">
+      <div className="flex flex-wrap gap-4 justify-evenly md:justify-between">
         {ladakhFamilyTrips.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
@@ -289,7 +289,7 @@ const Ladakh = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-4 mt-8 mx-auto px-0">
+      <div className="flex flex-wrap gap-4 justify-evenly md:justify-start">
         {ladakhOtherTrip.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
