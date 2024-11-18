@@ -201,7 +201,7 @@ export const kashmirPackages = [
       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Dal-Lake-4.jpg",
     ],
-    title: "KASHMIR TOUR PACKAGE",
+    title: "Kashmir Tour Package",
     location: "Kashmir",
     duration: "5 Days - 4 Nights",
     people: "2 people",

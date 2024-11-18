@@ -275,7 +275,7 @@ const Ladakh = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-4 justify-evenly md:justify-evenly">
+      <div className="flex flex-wrap gap-4 justify-evenly md:justify-between">
         {ladakhFamilyTrips.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
@@ -289,7 +289,7 @@ const Ladakh = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-4 justify-evenly md:justify-start">
+      <div className="flex flex-wrap gap-4 md:justify-between sm:justify-center justify-center">
         {ladakhOtherTrip.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}

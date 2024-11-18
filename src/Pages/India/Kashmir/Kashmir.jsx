@@ -94,7 +94,7 @@ const Kashmir = () => {
         </span>
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
-      <div className="flex flex-wrap gap-4 justify-evenly md:justify-start">
+      <div className="flex flex-wrap gap-4 md:justify-between sm:justify-center justify-center">
         {kashmirPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
