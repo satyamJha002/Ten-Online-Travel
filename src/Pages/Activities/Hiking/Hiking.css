@@ -98,7 +98,7 @@
 
 .title {
     margin: 20px;
-    font-size: 1.7rem;
+    font-size: 1.4em;
 }
 
 .badge {
@@ -188,6 +188,10 @@
         width: 45%;
     }
 
+    .title {
+        font-size: 1.4rem;
+      }
+
     .hiking-cards {
         gap: 30px;
     }
@@ -231,7 +235,7 @@
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.1em;
     }
 
     .card-details p {
@@ -269,7 +273,7 @@
     }
 
     .title {
-        font-size: 1.3rem;
+        font-size: 1em;
         margin: 10px;
     }
 

@@ -13,7 +13,7 @@ const Kashmir = () => {
         <img
           src="https://b4holiday.com/wp-content/uploads/2022/02/1567063194_kashmir_web.jpg"
           alt=""
-          className="relative h-[60vh] bg-cover bg-center md:h-[50vh] sm:h-[50vh] w-screen"
+          className="relative h-[35vh] bg-cover bg-center md:h-[50vh] sm:h-[50vh] w-screen"
         />
       </div>
 
