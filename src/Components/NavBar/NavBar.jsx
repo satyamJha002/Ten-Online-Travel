@@ -92,7 +92,7 @@ const Navbar = () => {
 </div>
       {/* Desktop */}
       <div className="hidden md:flex justify-center items-center bg-green-400 px-6 py-4 shadow-md">
-        <div className="flex gap-5">
+        <div className="flex gap-3">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -407,7 +407,7 @@ const Navbar = () => {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `${isActive ? activeStyle : inactiveStyle} no-underline mx-1 hover:no-underline focus:no-underline` }>
+              `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline` }>
             ABOUT US
           </NavLink>
           <NavLink
