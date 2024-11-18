@@ -1,10 +1,4 @@
 .About-description {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto; */
   padding: 20px;
 }
 
@@ -16,41 +10,44 @@
 }
 
 .About-description p {
-  padding: 10px 15px; /* Add padding around the paragraphs */
-  line-height: 1.6; /* Improve readability */
+  padding: 10px 15px;
+  line-height: 1.6;
 }
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  width: auto;
   margin: 20px auto;
 }
 
+/* Set fixed height for images to ensure consistency */
 .image-grid img {
-  width: 400px;
+  width: 100%;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
+
+/* Adjust grid layout for tablet screens */
 @media (max-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     gap: 16px;
-    width: 100%;
   }
 }
 
-/* Ensure images are responsive */
-.image-grid img {
-  width: 100%; /* Full width of the grid cell */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px;
-  object-fit: cover; /* Ensure images fit properly */
-}
-
+/* Adjust grid layout for mobile screens */
 @media (max-width: 480px) {
   .image-grid {
     grid-template-columns: 1fr; /* 1 image per row */
   }
+}
+
+/* Ensure images are fully responsive */
+.image-grid img {
+  width: 100%;
+  height: 200px; /* Fixed height to maintain equal size */
+  border-radius: 10px;
+  object-fit: cover;
 }
