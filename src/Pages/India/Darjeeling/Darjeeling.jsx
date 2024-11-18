@@ -5,7 +5,7 @@ import "./Darjeeling.css";
 
 const Darjeeling = () => {
   return (
-    <div className="px-3">
+    <div className="px-4">
       <h1 className="text-4xl my-4">Darjeeling</h1>
 
       <div className="">

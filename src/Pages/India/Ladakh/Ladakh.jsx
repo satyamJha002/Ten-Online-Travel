@@ -63,7 +63,7 @@ const Ladakh = () => {
   ];
 
   return (
-    <div className="px-2">
+    <div className="px-3">
       <div className="relative inline-block m-2">
         <span className="text-4xl mb-2">Ladakh</span>
         {/* <span class="absolute left-0 bottom-0 w-10 h-1 bg-green-500"></span> */}
