@@ -507,6 +507,13 @@ const NavBar = () => {
                   </button>
                   <button className="flex">
                     <NavLink
+                      to="/international/malaysia"
+                      onClick={handleItemClick}>
+                      Malaysia
+                    </NavLink>
+                  </button>
+                  <button className="flex">
+                    <NavLink
                       to="/international/dubai"
                       onClick={handleItemClick}>
                       Dubai

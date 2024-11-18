@@ -27,13 +27,12 @@
   position: relative;
 }
 .friAndFam h2 {
-  background: #f4f4f4;
+  background: #948a8a;
   display: inline-block;
   position: relative;
   padding: 0 30px;
   font-weight: 400;
   z-index: 1;
-  font-size: 2.5rem;
 }
 .friAndFam::after,
 .friAndFam::before {
