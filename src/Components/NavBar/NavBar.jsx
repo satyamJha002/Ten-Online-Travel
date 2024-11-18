@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isActivitiesSubmenuOpen, setActivitiesSubmenuOpen] = useState(false);
   const [isInternationalSubmenuOpen, setInternationalSubmenuOpen] = useState(false);
   const [isUttarakhandSubmenuOpen, setUttarakhandSubmenuOpen] = useState(false);
-  const activeStyle = "text-white-200 font-bold"; 
+  const activeStyle = "text-white font-bold"; 
   const inactiveStyle = "text-black font-small"; 
   return (
     <div>
@@ -94,7 +94,7 @@ const Navbar = () => {
       <div className="hidden md:flex justify-center items-center bg-green-400 px-6 py-4 shadow-md">
         <div className="flex gap-5">
           <NavLink
-            to="/home"
+            to="/"
             className={({ isActive }) =>
               `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline` } >
             HOME
