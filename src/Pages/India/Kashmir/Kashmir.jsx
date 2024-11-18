@@ -4,7 +4,7 @@ import Card from "../../../Components/Card/Card";
 
 const Kashmir = () => {
   return (
-    <div className="p-1">
+    <div className="px-3">
       <h1 className="text-4xl m-8">Kashmir</h1>
       <div className="px-2">
         <img
