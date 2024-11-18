@@ -36,8 +36,19 @@
 @media (max-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 16px;
+    width: 100%;
   }
 }
+
+/* Ensure images are responsive */
+.image-grid img {
+  width: 100%; /* Full width of the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  object-fit: cover; /* Ensure images fit properly */
+}
+
 @media (max-width: 480px) {
   .image-grid {
     grid-template-columns: 1fr; /* 1 image per row */

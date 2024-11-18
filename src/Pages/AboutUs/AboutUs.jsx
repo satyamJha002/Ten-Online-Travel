@@ -10,6 +10,18 @@ const AboutUs = () => {
     "https://wisdomswebzine.com/wp-content/uploads/2013/07/1381482_14408778.jpg",
     "https://tse3.mm.bing.net/th?id=OIP.ylHV8SPDpVc7FntTo0ZBsQHaEK&pid=Api&P=0&h=180",
     "https://tse3.mm.bing.net/th?id=OIP.oEV457iq2o2Xif-8uaxrAQHaFj&pid=Api&P=0&h=180",
+    "https://i.ytimg.com/vi/MfPAPF2OdT4/maxresdefault.jpg",
+    "https://tse4.mm.bing.net/th?id=OIP.MFFSCDJBstq172f-JZ1pdwHaFj&pid=Api&P=0&h=180",
+    "https://tse3.mm.bing.net/th?id=OIF.dUqKUQbUZi7%2buEszLiB91Q&pid=Api&P=0&h=180",
+    "https://cdn.images.express.co.uk/img/dynamic/78/1200x630/5764453.jpg",
+    "https://tse2.mm.bing.net/th?id=OIP.2_9qf9n3-OvNNXaoAiCTeAHaEY&pid=Api&P=0&w=675&h=400",
+    "https://b4holiday.com/wp-content/uploads/2022/02/IMG-20190912-WA0003.jpg",
+    "https://b4holiday.com/wp-content/uploads/2022/02/IMG-20190912-WA0004.jpg",
+    "https://b4holiday.com/wp-content/uploads/2022/02/IMG-20190928-WA0010.jpg",
+    "https://b4holiday.com/wp-content/uploads/2022/02/WhatsApp-Image-2019-05-25-at-5.49.56-PM-1.jpeg",
+    "https://tse3.mm.bing.net/th?id=OIP.UTfESn5HwYBTUBFoRtBg1QHaEW&pid=Api&P=0&h=180",
+    "https://tse2.mm.bing.net/th?id=OIP.n0kEEKdips-q0TeT-XFuhAHaEK&pid=Api&P=0&h=180",
+    "https://media.cntraveller.in/wp-content/uploads/2014/10/taj-mahal-hotel-1366x768.jpg",
   ];
   return (
     <section>
