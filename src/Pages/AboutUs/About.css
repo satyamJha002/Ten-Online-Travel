@@ -15,7 +15,11 @@
   padding: 10px 15px;
   line-height: 1.6;
 }
-
+.heading {
+  font-size: 24px;
+  padding: 10px;
+  font-weight: bold;
+}
 .image-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -36,6 +40,12 @@
   .image-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     gap: 16px;
+  }
+  .image-grid img {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
   }
   .About-description img {
     width: auto;

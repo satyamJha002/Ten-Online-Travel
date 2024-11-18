@@ -25,6 +25,7 @@ const AboutUs = () => {
   ];
   return (
     <section>
+      <h2 className='heading'>ABOUT US</h2>
       <div className='About-description'>
         <img
           src='https://b4holiday.com/wp-content/uploads/2022/02/Why-Book-with-before-holiday.jpeg'
