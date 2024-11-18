@@ -12,14 +12,14 @@ export const tourGoaPackages = [
         "https://b4holiday.com/wp-content/uploads/2021/02/Restaurant_Resort_De_Coracao_Goa_8.jpg",
         "https://b4holiday.com/wp-content/uploads/2021/02/Restaurant_Resort_De_Coracao_Goa_6.jpg",
       ],
-      title: "Andaman Tour Package ",
-      location: "Andaman Tour India",
-      duration: "6 Days - 5 Nights",
-      discount: "25% Off ",
-      people: "2 People",
-      price: "₹18,500",
+      title: "Resort De Coracao Goa – 4 Star Resort",
+      location: "Goa",
+      duration: "4 Days - 3 Nights",
+      discount: "27% Off ",
+      // people: "2 People",
+      price: "₹7,850",
       originalPrice: "₹10,750",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Located at Calangute – Candolim Main Road, just 500 meters away"
 
@@ -45,8 +45,8 @@ export const tourotherPackages = [
       discount: "36% Off ",
       price: "₹6,850",
       originalPrice: "₹10,750",
-      people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at"
 
@@ -69,8 +69,8 @@ export const tourotherPackages = [
         discount: "22% Off ",
         price: "₹9,790",
         originalPrice: "₹12,500",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at Candolim –"
 
@@ -93,8 +93,8 @@ export const tourotherPackages = [
         discount: "11% Off ",
         price: "₹28,330",
         originalPrice: "₹32,000",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at"
 
@@ -117,8 +117,8 @@ export const tourotherPackages = [
         discount: "21% Off ",
         price: "₹8,290",
         originalPrice: "₹10,500",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at Candolim –"
 
@@ -141,8 +141,8 @@ export const tourotherPackages = [
         discount: "18% Off ",
         price: "₹19,750",
         originalPrice: "₹24,000",
-        people: "2 People",
-        nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
         featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at"
 
@@ -162,11 +162,11 @@ export const tourotherPackages = [
         title: "Goa Watersports",
         location: "Goa India",
         duration: "4 Days - 3 Nights",
-        discount: "18% Off ",
+        discount: "16% Off ",
         price: "₹15,600",
         originalPrice: "₹18,500",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at",
       },
@@ -188,8 +188,8 @@ export const tourotherPackages = [
         discount: "15% Off ",
         price: "₹12,800",
         originalPrice: "₹15,000",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Banyan Tree Courtyard - Candolim, Goa Located at"
 
@@ -212,8 +212,8 @@ export const tourotherPackages = [
         discount: "13% Off ",
         price: "₹11,250",
         originalPrice: "₹13,000",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Stone Wood Riverfront Resort, Goa Stonewood Riverfront Resort"
 
@@ -236,8 +236,8 @@ export const tourotherPackages = [
         discount: "15% Off ",
         price: "₹19,500",
         originalPrice: "₹23,000",
-        people: "2 People",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        // people: "2 People",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "Stone Wood Riverfront Resort, Goa Stonewood",
 

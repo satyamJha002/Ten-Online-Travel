@@ -270,3 +270,8 @@
   }
   
   }
+  @media(max-width:900px){
+    .Andaman-tour {
+      padding: 10px;
+  }
+  }

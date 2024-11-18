@@ -257,3 +257,8 @@
 
 }
   }
+  @media(max-width:900px){
+    .goa {
+      padding: 10px;
+  }
+  }

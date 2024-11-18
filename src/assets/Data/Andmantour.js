@@ -9,13 +9,13 @@ export const andmatour = [
         "https://b4holiday.com/wp-content/uploads/2021/02/Kalapather-Beach-Swaraj-Dweep.jpg",
       ],
       title: "Andaman Tour Package",
-      location: "Andaman Tour India",
+      location: "Andaman Tour ",
       duration: "6 Days - 5 Nights",
-      discount: "25% Off ",
+      discount: "24% Off ",
       people: "2 People",
       price: "₹18,500",
       originalPrice: "₹24,500",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the..."
     },
@@ -35,7 +35,7 @@ export const andmatour = [
       people: "2 People",
       price: "₹13,500",
      originalPrice: "₹21,500",
-     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+     nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
       
@@ -56,7 +56,7 @@ export const andmatour = [
       people: "2 People",
       price: "₹10,500",
     originalPrice: "17,500",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
 
@@ -72,12 +72,12 @@ export const andmatour = [
       ],
       title: "Island Hopping in Andaman",
       location: "Andaman Tour India",
-      duration: "7 Days - 6Nights",
+      duration: "7 Days - 6 Nights",
       discount: "14% Off",
       people: "2-20 People",
       price: "₹19,000",
-    originalPrice: "₹17,500",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+    originalPrice: "₹22,5000",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
 
@@ -101,8 +101,8 @@ export const andmatour = [
       discount: "15% Off",
       people: "2 People",
       price: "₹14,500",
-    originalPrice: "₹17,500",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+    originalPrice: "₹17,000",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
          },
@@ -120,9 +120,9 @@ export const andmatour = [
       duration: "5 Days - 4 Nights",
       discount: "14% Off",
       people: "2 People",
-      price: "₹15,700",
-      originalPrice: "₹10,500",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      price: "₹13,800",
+      originalPrice: "₹16,000",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
       
@@ -139,11 +139,11 @@ export const andmatour = [
       title: "5D Andaman Package ",
           location: "Andaman Tour India",
       duration: "5 Days - 4 Nights",
-      discount: "13% Off",
+      discount: "15% Off",
       people: "2 People",
-      price:"₹27,900",
-    originalPrice: "₹32,000",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      price:"₹15,700",
+      originalPrice: "₹18,500",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
      
@@ -157,14 +157,14 @@ export const andmatour = [
         "https://b4holiday.com/wp-content/uploads/2021/02/Elephant-Beach-Swaraj-Dweep.jpg",
         "https://b4holiday.com/wp-content/uploads/2021/02/Kalapather-Beach-Swaraj-Dweep.jpg",
       ],
-      title: "6D Andaman  Package ",
+      title: "5D Andaman  Package ",
       location: "Andaman Tour India",
-      duration: "6 Days - 5Nights",
-      discount: "11% Off",
+      duration: "5 Days - 4 Nights",
+      discount: "13% Off",
       people: "2 People",
-      price: "₹21,250",
-    originalPrice: "₹24,000",
-      nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+      price: "₹27,900",
+    originalPrice: "₹32,000",
+      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the..."
       
@@ -181,11 +181,11 @@ export const andmatour = [
         title: "6D Andaman  Package",
         location: "Andaman Tour India",
         duration: "6 Days - 5 Nights",
-        discount: "14% Off",
+        discount: "11% Off",
         people: "2 People",
-        price: "₹14,250",
-    originalPrice: "₹16,500",
-        nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        price: "₹21,250",
+    originalPrice: "₹24,000",
+        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
       
@@ -202,11 +202,11 @@ export const andmatour = [
         title: "Andaman Tour Package 4",
         location: "Andaman Tour India",
         duration: "4 Days - 3 Nights",
-        discount: "25% Off",
+        discount: "14% Off",
         people: "2 People",
-        price: "₹18,500",
-    originalPrice: "₹24,500",
-        nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        price: "₹14,250",
+    originalPrice: "₹16,500",
+        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the east of..."
        
@@ -227,7 +227,7 @@ export const andmatour = [
         people: "2 People",
         price: "₹40,000",
     originalPrice: "₹43,500",
-        nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the..."
         
@@ -243,12 +243,12 @@ export const andmatour = [
         ],
         title: "7D Andaman Package",
         location: "Andaman Tour India",
-        duration: "7 Days -6 Nights",
+        duration: "7 Days - 6 Nights",
         discount: "8% Off",
-        people: "2 People",
+        people: "6 People",
         price: "₹27,500",
         originalPrice: "₹30,000",
-        nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
       description: "The Andaman Islands, located in the..."
       
