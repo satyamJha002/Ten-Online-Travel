@@ -6,16 +6,16 @@ export const packages = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbQbA6pFKZID9NyuOezrCefNYZyP9nQlcxw&s",
       "https://images1.livehindustan.com/uploadimage/library/2019/12/17/16_9/16_9_2/after_snowfall_temperature_decreases_in_upper_shimla_areas_and_water_started_frozen_1576586584.jpg",
     ],
-    title: "Frozen Shimla-Manali",
-    location: "Himachal, India",
+    title: "Shimla-Manali Escape",
+    location: "Himachal",
     duration: "6 Days - 5 Nights",
     people: "2 People",
     discount: "13% Off",
     price: "₹17,000",
     originalPrice: "₹19,500",
-    nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
+    nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
-    description: "Experience the magical charm of Shimla and Manali ..."
+    description: "Enjoy the happy charm of Shimla/Manali..."
   },
   {
     id: 2,
@@ -24,16 +24,16 @@ export const packages = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_2fJ1CoTPMVyZDOwTY98UPuT0zKFJoglmQ&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMXsPMsUu0QQ0i-mooBwMl4V7F8gLwBI96g&s",
     ],
-    title: "Royal Rajasthan Tour",
-    location: "Rajasthan, India",
+    title: "Rajasthan Journey",
+    location: "Rajasthan",
     duration: "6 Days - 5 Nights",
     people: "2-10 People",
     discount: "12% Off",
     price: "₹19,000",
     originalPrice: "₹21,500",
-    nextDepartures: ["Nov 22", "Nov 23", "Nov 24"],
+    nextDepartures: ["Nov 22", "Nov 23"],
     featured: true,
-    description: "Discover the rich culture and heritage of Rajasthan ..."
+    description: "Reach the sweet mix and art of Rajast..."
   },
   {
     id: 3,
@@ -43,15 +43,15 @@ export const packages = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pO0rlhIpYA-NMtoYSR8ezHb5HLWmT1Rfng&s",
     ],
     title: "Kullu Manali",
-    location: "Himachal, India",
+    location: "Himachal",
     duration: "4 Days - 3 Nights",
     people: "2-10 People",
     discount: "20% Off",
     price: "₹11,250",
     originalPrice: "₹14,000",
-    nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
+    nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
-    description: "Immerse yourself in the beauty of Kullu and Manali ..."
+    description: "Enter your charm in the charm of Kullu/Manal..."
   },
   {
     id: 4,
@@ -60,8 +60,8 @@ export const packages = [
       "https://www.himalayanecotourism.com/wp-content/uploads/2023/06/spiti-link-1.jpg",
       "https://www.citybit.in/wp-content/uploads/2024/10/Spiti-Valley-Photos-1024x576.jpg",
     ],
-    title: "Spiti Valley Adventure",
-    location: "Spiti, India",
+    title: "Spiti Expedition",
+    location: "Spiti",
     duration: "7 Days - 6 Nights",
     people: "4-8 People",
     discount: "10% Off",
@@ -69,7 +69,7 @@ export const packages = [
     originalPrice: "₹24,500",
     nextDepartures: ["Nov 17", "Nov 18"],
     featured: true,
-    description: "Explore the untouched beauty of Spiti Valley ..."
+    description: "Explore the grand charm of Spiti vast lands..."
   },
   {
     id: 5,
@@ -78,16 +78,16 @@ export const packages = [
       "https://royalskyholidays.com/wp-content/uploads/2021/12/Leh-Ladakh-Packages.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9x-MU2XMe7KHrelpXLU-j5G0pr4Eb7X8Ydg&s",
     ],
-    title: "Leh Ladakh Expedition",
-    location: "Ladakh, India",
+    title: "Ladakh Adventure",
+    location: "Ladakh",
     duration: "8 Days - 7 Nights",
     people: "2-6 People",
     discount: "25% Off",
     price: "₹29,500",
     originalPrice: "₹39,000",
-    nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
+    nextDepartures: ["Nov 20", "Nov 21"],
     featured: true,
-    description: "Embark on an unforgettable expedition to Ladh ..."
+    description: "Begin a grand trip to Ladh's high lands..."
   },
   {
     id: 6,
@@ -96,8 +96,8 @@ export const packages = [
       "https://www.estrelahotels.com/blog/wp-content/uploads/2023/06/beach-resort-goa-1024x577.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPGOH_n76qzNycmNK8FdyzBpGTOHXq3mQ_VA&s",
     ],
-    title: "Goa Beach Retreat",
-    location: "Goa, India",
+    title: "Goa Getaway",
+    location: "Goa",
     duration: "5 Days - 4 Nights",
     people: "2 People",
     discount: "15% Off",
@@ -105,7 +105,7 @@ export const packages = [
     originalPrice: "₹21,000",
     nextDepartures: ["Nov 19", "Nov 20"],
     featured: true,
-    description: "Unwind at the serene beaches of Goa with this relaxin ..."
+    description: "Rest on Goa's calm shores for pure peace..."
   },
   {
     id: 7,
@@ -114,8 +114,8 @@ export const packages = [
       "https://media1.thrillophilia.com/filestore/l5stwgse3qt889ohvpojpa13ftp0_Mall_Road_Shimla_1.jpg?w=400&dpr=2",
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/445773682.jpg?k=0f35bfef4772be87015561f512a3ca0e3f2aa2d665e7bf70475d01c1edc67548&o=&hp=1",
     ],
-    title: "Shimla",
-    location: "Himachal, India",
+    title: "Shimla Escape",
+    location: "Himachal",
     duration: "4 Days - 3 Nights",
     people: "2 People",
     discount: "35% Off",
@@ -123,7 +123,7 @@ export const packages = [
     originalPrice: "₹25,500",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
-    description: "Shimla offers a perfect blend of natural beauty and colonial charm ..." 
+    description: "Shimla blends lush views with rich colonial charm..." 
   },
   {
     id: 8,
@@ -132,8 +132,8 @@ export const packages = [
       "https://www.tripsavvy.com/thmb/UoylMLyzOBPdDp34ForEiJd9m3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/houseboats-in-kerala-598973521-5b7bc207ff4e8d0036d9f3b9.jpg",
       "https://media.istockphoto.com/id/533825957/photo/houseboat-in-kerala.jpg?s=612x612&w=is&k=20&c=KNt2VYgkzVt8VSH-7cA2PqSgfnjD7phGg1F82ZxtdD0=",
     ],
-    title: "Kerala Backwaters",
-    location: "Kerala, India",
+    title: "Kerala Waters",
+    location: "Kerala",
     duration: "6 Days - 5 Nights",
     people: "2-10 People",
     discount: "10% Off",
@@ -141,7 +141,7 @@ export const packages = [
     originalPrice: "₹22,500",
     nextDepartures: ["Nov 12", "Nov 13"],
     featured: true,
-    description: "Experience the tranquility of Kerala's backwaters ..." 
+    description: "Feel Kerala's calm charm and lush green beauty..." 
   },
   {
     id: 9,
@@ -150,8 +150,8 @@ export const packages = [
       "https://qph.cf2.quoracdn.net/main-qimg-58a9eef5c2587e098d215ca73ebe061a-lq",
       "https://www.uttarakhandtraveltourism.com/wp-content/uploads/2022/03/Bhimtal.png",
     ],
-    title: "Nainital Lake Paradise",
-    location: "Nainital, India",
+    title: "Nainital Serenity",
+    location: "Nainital",
     duration: "3 Days - 2 Nights",
     people: "2-5 People",
     discount: "10% Off",
@@ -159,7 +159,7 @@ export const packages = [
     originalPrice: "₹14,000",
     nextDepartures: ["Nov 30", "Dec 1"],
     featured: true,
-    description: "Immerse yourself in the tranquility of Nainital with this ..." 
+    description: "Feel Nainital's calm vibe and fresh cool air..." 
   },
   {
     id: 10,
@@ -168,8 +168,8 @@ export const packages = [
       "https://andamanemeraldholidays.com/wp-content/uploads/2022/04/Port-Blair-to-Ross-Island-and-Excursion-to-Coral-IslandNorth-Bay.jpg",
       "https://cdn.prod.website-files.com/5b56319971ac8c56a6a9d887/5c4bb53cc49ea6b924af7244_Ross%20Island.JPG",
     ],
-    title: "Andaman Islands Escape",
-    location: "Andaman, India",
+    title: "Andaman Shores",
+    location: "Andaman",
     duration: "7 Days - 6 Nights",
     people: "2-6 People",
     discount: "18% Off",
@@ -177,6 +177,6 @@ export const packages = [
     originalPrice: "₹30,500",
     nextDepartures: ["Nov 28", "Nov 29"],
     featured: true,
-    description: "Explore the stunning beaches, crystal-clear waters ..." 
+    description: "Visit bright shore clear wave calm ski..." 
   },
 ];

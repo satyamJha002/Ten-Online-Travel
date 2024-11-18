@@ -1,6 +1,11 @@
 import "./card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapMarkerAlt,
+  faClock,
+  faUsers,
+  faCalendarAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Card = ({ pkg }) => {
@@ -65,55 +70,65 @@ const Card = ({ pkg }) => {
       </div>
       <h2 className="title">{pkg.title}</h2>
       <div className="card-details">
-      {/* Left Section */}
-      <div className="details-left">
-        <p>
-          <span><FontAwesomeIcon
-          icon={faMapMarkerAlt}
-          className="map-toggle-icon"
-        /></span>
-          {pkg.location}
-        </p>
-        <p>
-          <span>🕒</span>
-          {pkg.duration}
-        </p>
-        <p>
-          <span>👥</span>
-          {pkg.people}
-        </p>
-        <p className="describe">
-          {pkg.description}
-        </p>
-      </div>
+        {/* Left Section */}
+        <div className="details-left">
+          <p className="icon-map">
+            <span>
+              <FontAwesomeIcon
+                icon={faMapMarkerAlt}
+                className="map-toggle-icon"
+              />
+            </span>
+            {pkg.location}
+          </p>
+          <p className="icon-duration">
+            <span>
+              <FontAwesomeIcon icon={faClock} className="icon" />
+            </span>
+            {pkg.duration}
+          </p>
+          <p className="icon-people">
+            <span>
+              <FontAwesomeIcon icon={faUsers} className="icon" />
+            </span>
+            {pkg.people}
+          </p>
+          <p className="describe">{pkg.description}</p>
+        </div>
 
-      {/* Right Section */}
-      <div className="details-right">
-        {/* Price Section */}
-        <div className="price-section">
-          <span className="discount">{pkg.discount}</span>
-          <span className="price">{pkg.price}</span>
-          <span className="original-price">{pkg.originalPrice}</span>
-        </div>
-        {/* Departures Section */}
-        <div className="departures">
-          <p>Next Departure</p>
-          <ul>
-            {pkg.nextDepartures.map((date, index) => (
-              <li key={index}>✔ {date}</li>
-            ))}
-          </ul>
-        </div>
+        {/* Right Section */}
+        <div className="details-right">
+          {/* Price Section */}
+          <div className="price-section">
+            <span className="discount">{pkg.discount}</span>
+            <span className="price">{pkg.price}</span>
+            <span className="original-price">{pkg.originalPrice}</span>
+          </div>
+          {/* Departures Section */}
+          <div className="departures">
+            <p>Next Departure</p>
+            <ul>
+              {pkg.nextDepartures.map((date, index) => (
+                <li key={index}>✔ {date}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       <div className="available-year">
-      <button className="view-details-btn">View Details</button>
-      <p>Available through out the year: <br/> 🗓️ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec </p>
+        <button className="view-details-btn">View Details</button>
+        <p>
+          Available throughout the year:
+          <p className="month">
+          <span>
+          <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
+          </span>
+            Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+          </p>
+        </p>
       </div>
     </div>
   );
 };
 
 export default Card;
-
-
