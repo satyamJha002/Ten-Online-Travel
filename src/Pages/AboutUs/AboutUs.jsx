@@ -7,7 +7,7 @@ const AboutUs = () => {
     "https://b4holiday.com/wp-content/uploads/2022/02/IMG-20190614-WA0017.jpg",
     "https://tse4.mm.bing.net/th?id=OIP.nXAA4tV1x3IL55OSZe7d_wHaE8&pid=Api&P=0&h=180",
     "https://www.tripfore.com/wp-content/uploads/2020/02/best-vacation-spots-in-the-world.jpeg",
-    "https://wisdomswebzine.com/wp-content/uploads/2013/07/1381482_14408778.jpg",
+    "https://tse3.mm.bing.net/th?id=OIF.dUqKUQbUZi7%2buEszLiB91Q&pid=Api&P=0&h=180",
     "https://tse3.mm.bing.net/th?id=OIP.ylHV8SPDpVc7FntTo0ZBsQHaEK&pid=Api&P=0&h=180",
     "https://tse3.mm.bing.net/th?id=OIP.oEV457iq2o2Xif-8uaxrAQHaFj&pid=Api&P=0&h=180",
     "https://i.ytimg.com/vi/MfPAPF2OdT4/maxresdefault.jpg",

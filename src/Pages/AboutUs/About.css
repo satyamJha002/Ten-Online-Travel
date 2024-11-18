@@ -4,18 +4,13 @@
 
 .About-description img {
   width: 100%;
-  height: auto;
+  height: 600px;
   border-radius: 10px;
   margin-bottom: 20px;
   object-fit: cover;
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  padding: 10px;
 }
 
-/* Add hover effect */
-.About-description img:hover {
-  transform: scale(1.05); /* Slightly enlarge the image */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-}
 .About-description p {
   padding: 10px 15px;
   line-height: 1.6;
@@ -41,6 +36,11 @@
   .image-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     gap: 16px;
+  }
+  .About-description img {
+    width: auto;
+    height: 400px;
+    padding: 0px;
   }
 }
 
