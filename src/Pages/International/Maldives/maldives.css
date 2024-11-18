@@ -71,3 +71,75 @@
   gap: 30px;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+  .maldivesIntro {
+    padding: 15px 30px;
+  }
+
+  .maldivesIntro h1 {
+    font-size: 2.2rem;
+  }
+
+  .friAndFam {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .maldivesIntro {
+    padding: 10px 20px;
+  }
+
+  .maldivesIntro h1 {
+    font-size: 2rem;
+  }
+
+  .friAndFam {
+    font-size: 32px;
+  }
+
+  .maldivesCardsContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maldivesIntro h1 {
+    font-size: 1.8rem;
+  }
+
+  .friAndFam {
+    font-size: 28px;
+  }
+
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+
+  .maldivesCardsContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .maldivesIntro {
+    padding: 10px;
+  }
+
+  .maldivesIntro h1 {
+    font-size: 1.5rem;
+  }
+
+  .maldivesIntro h1::after {
+    width: 15%;
+  }
+
+  .friAndFam {
+    font-size: 24px;
+  }
+
+  .friAndFam h2 {
+    padding: 0 15px;
+  }
+}

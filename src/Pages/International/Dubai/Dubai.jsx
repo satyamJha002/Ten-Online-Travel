@@ -37,7 +37,7 @@ const Dubai = () => {
         <div className="friAndFam">
           <h2>Friends & Family Tour</h2>
         </div>
-        <div className="DubaiCardsContainer">
+        <div className="dubaiCardsContainer">
           {dubai.map((pkg) => (
             <Card key={pkg.id} pkg={pkg} />
           ))}
