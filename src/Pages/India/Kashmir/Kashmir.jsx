@@ -5,7 +5,10 @@ import Card from "../../../Components/Card/Card";
 const Kashmir = () => {
   return (
     <div className="px-3">
-      <h1 className="text-4xl m-8">Kashmir</h1>
+      <h1 className="ext-4xl my-4 relative sikkim-heading">
+        Kashmir
+        <span class="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
+      </h1>
       <div className="px-2">
         <img
           src="https://b4holiday.com/wp-content/uploads/2022/02/1567063194_kashmir_web.jpg"
@@ -91,7 +94,7 @@ const Kashmir = () => {
         </span>
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
-      <div>
+      <div className="flex flex-wrap gap-4 justify-evenly md:justify-start">
         {kashmirPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
