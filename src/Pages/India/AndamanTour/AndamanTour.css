@@ -213,6 +213,9 @@
     .sightseeing-div .sightseeing-title {
       margin-top: 95% !important;
   }
+  .andaman-heading::after {
+        width: 21%;
+  }
 
   }
   @media (width:600px){
