@@ -128,7 +128,7 @@ const Navbar = () => {
                   </button>
                 </NavLink>
                 <button
-                  className="block px-4 py-2 justify-center items-center flex text-left hover:bg-green-400 no-underline hover:no-underline focus:no-underline"
+                  className="block px-3 py-2 justify-center items-center flex text-left hover:bg-green-400 no-underline hover:no-underline focus:no-underline"
                   onClick={() =>
                     setHimachalSubmenuOpen(!isHimachalSubmenuOpen) }>
                   Himachal <span className="ml-6">&#9654;</span>
