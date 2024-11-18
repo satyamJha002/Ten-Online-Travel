@@ -90,7 +90,7 @@
         margin-top: 24%;
     }
     .SikkimContainer{
-      width: 111%;
+      width: 102%;
     }
     .sikkim-contentk{
       
@@ -100,4 +100,14 @@
    
     width: 15%;
 }
+  }
+  @media screen and (max-width: 600px) {
+    .sikkim{
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .SikkimContainer{
+      justify-content: center;
+    }
   }
