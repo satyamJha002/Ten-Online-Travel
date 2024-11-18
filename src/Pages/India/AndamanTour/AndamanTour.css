@@ -148,7 +148,6 @@
   @media screen and (width:320px){
     .list-name{
       column-gap: 9px !important;
-      /* text-align: center; */
       margin-left: -4% !important;
     }
     .sightseeing-div {
@@ -200,9 +199,13 @@
     }
     .AndamanContainer{
       width: 111%;
+      margin-left: -3%;
+
     }
     .WaterSportContainer{
       width: 111%;
+      margin-left: -3%;
+
 
     }
     .andaman-content{
@@ -218,6 +221,20 @@
   }
 
   }
+  @media screen and (max-width: 768px) {
+    .AndamanContainer {
+      justify-content: center;
+  }
+  .WaterSportContainer{
+     justify-content: center;
+  
+  }
+  }
+  @media(max-width:600px){
+    .Andaman-tour{
+      padding: 10px !important;
+    }
+  }
   @media (width:600px){
     .sightseeing-div .sightseeing-title{
     margin-top: 30%;
@@ -226,6 +243,7 @@
 
       margin-top: 25%;
   }
+  
   }
   @media (max-width: 840px){
     .list-div{

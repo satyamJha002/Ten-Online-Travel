@@ -151,7 +151,22 @@
       width: 332% !important;
     }
 }
+@media screen and (max-width: 390px){
+  .friendfamily-heading{
+    font-size: 20% !important;
 
+  }
+  .Friends-div,.Friends-title{
+    font-size: 93px !important;
+
+  }
+ 
+}
+@media screen and (max-width: 600px) {
+  .goa{
+    padding: 10px;
+  }
+}
 
   @media (max-width: 480px){
     .goa-heading::after {
@@ -184,7 +199,9 @@
 
 
 .GoaContainer{
-  width: 111%;
+  width: 108%;
+  justify-content: center;
+
 }
 .other-div .other-title {
  
@@ -195,12 +212,21 @@
 }
   }
 
-  @media(width:768px){
+  @media (width:768px){
     .otherstrip-heading {
       font-size: 62% !important;
-      width: 35% !important;
+      min-width: 22% !important;
 
   }
+  .GoaContainer{
+    justify-content: center;
+  }
+  
+  }
+  @media(width:800px){
+    .otherstrip-heading{
+    min-width: 21% !important;
+    }
   }
    @media (width: 820px) {
     .friendfamily-heading {
