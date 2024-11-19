@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +8,7 @@ import {
   faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ pkg }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -23,7 +25,7 @@ const Card = ({ pkg }) => {
   const toggleMap = () => {
     setShowMap(!showMap);
   };
-  console.log(pkg.discount);
+
   return (
     <div className="travel-card">
       {pkg.featured && <span className="badge">Featured</span>}
@@ -117,7 +119,9 @@ const Card = ({ pkg }) => {
         </div>
       </div>
       <div className="available-year">
-        <button className="view-details-btn">View Details</button>
+        <Link to={`/detail/${pkg.id}`} className="view-details-btn">
+          <button>View Details</button>
+        </Link>
         <p>
           Available throughout the year:
           <p className="month">

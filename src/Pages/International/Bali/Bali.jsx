@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Bali as BaliData } from "../../../assets/Data/BaliData";
 import Card from "../../../Components/Card/Card";
 import "./Bali.css";
+import { useLocation } from "react-router-dom";
 // import './BaliArticle.css';
 
 export default function Bali() {
+  const location = useLocation();
+  const [locationURL, setLocationURL] = useState(location.pathname);
+  const newUrl = locationURL
+    .split("")
+    .map((ele) => (ele === "/" ? " > " : ele))
+    .join("");
   return (
     <>
       <div className="BaliIntro">
+        <p>Home {newUrl} </p>
         <h1>Bali</h1>
         {/* BaliArticle Content */}
         <article className="bali-article">

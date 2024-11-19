@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import {
   maldives,
   maldivesOtherTrips,
@@ -5,10 +6,18 @@ import {
 } from "../../../assets/Data/maldives";
 import Card from "../../../Components/Card/Card";
 import "./maldives.css";
+import { useState } from "react";
 const Maldives = () => {
+  const location = useLocation();
+  const [locationURL, setLocationURL] = useState(location.pathname);
+  const newUrl = locationURL
+    .split("")
+    .map((ele) => (ele === "/" ? " > " : ele))
+    .join("");
   return (
     <>
       <div className="maldivesIntro">
+        <p>Home {newUrl}</p>
         <h1>Maldives</h1>
         <div className="maldivesInfo">
           <h2>

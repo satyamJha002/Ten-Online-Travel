@@ -1,11 +1,22 @@
 import "./dubai.css";
 import Card from "../../../Components/Card/Card";
 import { dubai } from "../../../assets/Data/dubai";
+import { useLocation } from "react-router-dom";
+
+import { useState } from "react";
 
 const Dubai = () => {
+  const location = useLocation();
+  const [locationURL, setLocationURL] = useState(location.pathname);
+  const newUrl = locationURL
+    .split("")
+    .map((ele) => (ele === "/" ? " > " : ele))
+    .join("");
+
   return (
     <>
       <div className="dubaiIntro">
+        <p> Home {newUrl}</p>
         <h1>Dubai</h1>
         <div className="dubaiInfo">
           <p>

@@ -26,6 +26,7 @@ import Kasol from "./Pages/India/Himachal/Kasol";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import Singapore from "./Pages/International/Singapore/Singapore";
+import Details from "./Pages/DetailsPage/Details";
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
           <Route path="/international/bali" element={<Bali />} />
           <Route path="/international/thailand" element={<Thailand />} />
           <Route path="/international/singapore" element={<Singapore />} />
-
+          <Route path="/:id/:id/detail/:id" element={<Details />} />
           <Route path="/india/andaman" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/sikkim" element={<Sikkim />} />

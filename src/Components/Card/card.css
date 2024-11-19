@@ -201,6 +201,7 @@
 
 .view-details-btn {
   align-self: flex-start;
+  text-align: center;
   width: 100%;
   background-color: #32b67a;
   color: white;
@@ -216,6 +217,7 @@
 
 .view-details-btn:hover {
   background-color: #19692a;
+  color: white;
 }
 
 .available-year p {
