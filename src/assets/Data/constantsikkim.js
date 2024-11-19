@@ -17,7 +17,7 @@ export const tourssightPackages = [
       originalPrice: "",
       // discount: "25% Off ",
       people: "2 People",
-      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+      nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
       description: "Sikkim & Darjeeling are panoramic sites with surprises of all kinds...",
 
@@ -39,7 +39,7 @@ export const tourssightPackages = [
         price: "₹12,500",
         originalPrice: "₹14,000",
         people: "6 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic site...",
         
@@ -61,7 +61,7 @@ export const tourssightPackages = [
         price: "₹26,000",
         originalPrice: "₹28,500",
         people: "2 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic...",
         
@@ -83,7 +83,7 @@ export const tourssightPackages = [
         price: "₹13,500",
         originalPrice: "₹15,000",
       people: "2 People",
-      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+      nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
       description: "Sikkim & Darjeeling are panoramic...",
         
@@ -105,7 +105,7 @@ export const tourssightPackages = [
         price: "₹17,500",
         originalPrice: "₹19,500",
         people: "2 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic sites...",
         
@@ -127,7 +127,7 @@ export const tourssightPackages = [
         price: "₹19,250",
         originalPrice: "₹23,500",
         people: "2 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic...",
         
@@ -147,9 +147,9 @@ export const tourssightPackages = [
         duration: "5 Days - 4 Nights",
         discount: "9% Off ",
         price: "₹26,000",
-        originalPrice: "₹20,500",
+        originalPrice: "₹28,500",
         people: "2 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic...",
         
@@ -171,7 +171,7 @@ export const tourssightPackages = [
         price: "₹23,250",
         originalPrice: "₹25,000",
         people: "2 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic...",
         
@@ -191,9 +191,9 @@ export const tourssightPackages = [
         duration: "6 Days - 5 Nights",
         discount: "9% Off ",
         price: "₹35,000",
-        originalPrice: "₹30,500",
+        originalPrice: "₹38,500",
         people: "2 People",
-        nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
+        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
       description: "Sikkim & Darjeeling are panoramic...",
         
