@@ -23,7 +23,7 @@ const Card = ({ pkg }) => {
   const toggleMap = () => {
     setShowMap(!showMap);
   };
-
+  console.log(pkg.discount);
   return (
     <div className="travel-card">
       {pkg.featured && <span className="badge">Featured</span>}
@@ -37,8 +37,7 @@ const Card = ({ pkg }) => {
             height="300"
             allowFullScreen=""
             loading="lazy"
-            title="Google Map"
-          ></iframe>
+            title="Google Map"></iframe>
         ) : (
           <img
             src={pkg.images[currentImage]}
@@ -49,15 +48,13 @@ const Card = ({ pkg }) => {
         <button
           className="arrow left"
           onClick={handlePrevImage}
-          disabled={showMap}
-        >
+          disabled={showMap}>
           ❮
         </button>
         <button
           className="arrow right"
           onClick={handleNextImage}
-          disabled={showMap}
-        >
+          disabled={showMap}>
           ❯
         </button>
         <div className="map-icon-container">
@@ -100,7 +97,11 @@ const Card = ({ pkg }) => {
         <div className="details-right">
           {/* Price Section */}
           <div className="price-section">
-            <span className="discount">{pkg.discount}</span>
+            {pkg.discount === " " ? (
+              " "
+            ) : (
+              <span className="discount">{pkg.discount}</span>
+            )}
             <span className="price">{pkg.price}</span>
             <span className="original-price">{pkg.originalPrice}</span>
           </div>
@@ -120,9 +121,9 @@ const Card = ({ pkg }) => {
         <p>
           Available throughout the year:
           <p className="month">
-          <span>
-          <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
-          </span>
+            <span>
+              <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
+            </span>
             Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
           </p>
         </p>
