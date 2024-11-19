@@ -174,9 +174,9 @@
   }
 
     .Friends-div{
-      width: 121%;
-      margin-left: -13%;
-      text-align: center;
+      width: 109%;
+      margin-left: -8%;
+            text-align: center;
     }
    
     .goa-content {
@@ -199,7 +199,7 @@
 
 
 .GoaContainer{
-  width: 108%;
+  width: 100%;
   justify-content: center;
 
 }
@@ -256,4 +256,9 @@
     width: 19% !important;
 
 }
+  }
+  @media(max-width:900px){
+    .goa {
+      padding: 10px;
+  }
   }

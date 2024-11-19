@@ -144,11 +144,11 @@
   }
   
 
+
   
-  @media screen and (width:320px){
+  @media screen and (max-width:320px){
     .list-name{
       column-gap: 9px !important;
-      margin-left: -4% !important;
     }
     .sightseeing-div {
       margin-top: 96% !important;
@@ -269,4 +269,9 @@
       margin-top: 10% !important;
   }
   
+  }
+  @media(max-width:900px){
+    .Andaman-tour {
+      padding: 10px;
+  }
   }

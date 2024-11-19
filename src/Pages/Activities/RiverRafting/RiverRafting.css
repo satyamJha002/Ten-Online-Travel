@@ -99,7 +99,7 @@
 
 .title {
     margin: 20px;
-    font-size: 1.7rem;
+    font-size: 1.4em;
 }
 
 .badge {
@@ -180,6 +180,9 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+    .title {
+        font-size: 1.4rem;
+      }
     .riverrafting-container h1 {
         font-size: 2rem;
         margin: 1.5rem;
@@ -231,7 +234,7 @@
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.1em;
     }
 
     .card-details p {
@@ -269,7 +272,7 @@
     }
 
     .title {
-        font-size: 1.3rem;
+        font-size: 1em;
         margin: 10px;
     }
 

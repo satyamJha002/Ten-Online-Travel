@@ -13,7 +13,7 @@ const Kashmir = () => {
         <img
           src="https://b4holiday.com/wp-content/uploads/2022/02/1567063194_kashmir_web.jpg"
           alt=""
-          className="relative h-[60vh] bg-cover bg-center md:h-[50vh] sm:h-[50vh] w-screen"
+          className="relative h-[35vh] bg-cover bg-center md:h-[50vh] sm:h-[50vh] w-screen"
         />
       </div>
 
@@ -94,7 +94,7 @@ const Kashmir = () => {
         </span>
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
-      <div className="flex flex-wrap gap-4 justify-evenly md:justify-start">
+      <div className="flex flex-wrap gap-4 md:justify-between sm:justify-center justify-center">
         {kashmirPackages.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
