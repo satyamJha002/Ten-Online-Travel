@@ -119,9 +119,7 @@ const Card = ({ pkg, locationURL }) => {
         </div>
       </div>
       <div className="available-year">
-        <Link
-          to={`${locationURL}/detail/${pkg.id}`}
-          className="view-details-btn">
+        <Link to={`${locationURL}/trip/${pkg.id}`} className="view-details-btn">
           <button>View Details</button>
         </Link>
         <p>

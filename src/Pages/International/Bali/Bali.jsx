@@ -86,7 +86,7 @@ export default function Bali() {
         </div>
         <div className="BaliCardsContainer">
           {BaliData.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
       </div>

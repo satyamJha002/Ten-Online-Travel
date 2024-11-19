@@ -75,7 +75,7 @@ const Maldives = () => {
         </div>
         <div className="maldivesCardsContainer">
           {maldivesOtherTrips.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
       </div>

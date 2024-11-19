@@ -22,7 +22,7 @@ const Singapore = () => {
         </div>
         <div className="singaporeCardsContainer">
           {SingaporeData.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
       </div>

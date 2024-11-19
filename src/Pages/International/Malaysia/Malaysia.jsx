@@ -20,7 +20,7 @@ const Malaysia = () => {
         </div>
         <div className="malaysiaCardsContainer">
           {malaysia.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
       </div>
