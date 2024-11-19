@@ -213,6 +213,11 @@
   }
 
   @media (width:768px){
+ 
+      .friendfamily-heading {
+          min-width: 303px !important;
+      }
+  
     .otherstrip-heading {
       font-size: 62% !important;
       min-width: 22% !important;
@@ -224,20 +229,40 @@
   
   }
   @media(width:800px){
+    .friendfamily-heading {
+      min-width: 309px;
+    }
     .otherstrip-heading{
-    min-width: 21% !important;
+    
+    min-width: 148px !important;
+
     }
   }
    @media (width: 820px) {
-    .friendfamily-heading {
-        width: 148px !important;
+    .Friends-div{
+      font-size: 13px !important;
+
     }
+    .friendfamily-heading {
+        min-width: 303px !important;
+
+    }
+    .other-div {
+      min-width: 146px !important;
+
+      font-size: 14px !important;
+    }  
+      .otherstrip-heading {
+        min-width: 146px !important;
+
+          width: 56% !important;
 }
+   }
 
   @media only screen and (max-width:884px){
     .friendfamily-heading {
-      width: 183% !important;
-  }
+      width: 137% !important;
+      }
   .otherstrip-heading {
     font-size: 94% !important;
     width: 47% !important;
@@ -247,18 +272,39 @@
 
 
   }
-  @media(width:1280px){
+  @media (width:1280px){
+    .Friends-div{
+      
+        font-size: 63%;
+   
+    }
+    .other-div{
+      font-size: 63%;
+  }
+  
     .friendfamily-heading {
-      width: 72%;
+      min-width: 128px !important;
+      font-size: 112px !important;
+
   }
   .otherstrip-heading {
     font-size: 62% !important;
-    width: 19% !important;
+    width: 49% !important;
 
 }
+.friendfamily-heading {
+  width: 124%;
+}
+/* .friendfamily-heading {
+  width: 128% !important;
+}
+.otherstrip-heading {
+  width: 49% !important;
+} */
   }
   @media(max-width:900px){
     .goa {
       padding: 10px;
   }
+
   }

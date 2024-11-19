@@ -119,7 +119,7 @@ const Navbar = () => {
             {isIndiaSubmenuOpen && (
               <div className="absolute  bg-green-400 mx-2 w-40 shadow-lg z-50 mt-4">
                 <NavLink
-                  to="/andaman-tour"
+                  to="/india/andaman-tour"
                   className={({ isActive }) =>
                     `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline` }
                   onClick={() => setIndiaSubmenuOpen(false)} >

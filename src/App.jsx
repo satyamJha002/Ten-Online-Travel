@@ -45,7 +45,7 @@ function App() {
           <Route path="/international/thailand" element={<Thailand />} />
           <Route path="/international/singapore" element={<Singapore />} />
           <Route path="/:id/:id/trip/:id" element={<Details />} />
-          <Route path="/india/andaman" element={<AndamanTour />} />
+          <Route path="/india/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
