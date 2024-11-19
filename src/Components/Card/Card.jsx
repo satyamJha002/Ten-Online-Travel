@@ -10,7 +10,7 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ pkg }) => {
+const Card = ({ pkg, locationURL }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [showMap, setShowMap] = useState(false);
 
@@ -119,7 +119,9 @@ const Card = ({ pkg }) => {
         </div>
       </div>
       <div className="available-year">
-        <Link to={`/detail/${pkg.id}`} className="view-details-btn">
+        <Link
+          to={`${locationURL}/detail/${pkg.id}`}
+          className="view-details-btn">
           <button>View Details</button>
         </Link>
         <p>

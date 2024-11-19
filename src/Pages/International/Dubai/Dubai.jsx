@@ -50,7 +50,7 @@ const Dubai = () => {
         </div>
         <div className="dubaiCardsContainer">
           {dubai.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
       </div>
