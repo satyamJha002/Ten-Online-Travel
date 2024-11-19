@@ -9,28 +9,28 @@ const Dubai = () => {
         <h1>Dubai</h1>
         <div className="dubaiInfo">
           <p>
-            A city of many faces, Dubai is one of the most popular tourist
-            destinations in the world. Home to the tallest tower in the world,
-            the Burj Khalifa, this global city is known for its lavish
-            architecture, incredible skylines and a plethora of tourist
-            attractions that break records to be the tallest, longest and
-            biggest. Dubai has abundant opportunities when it comes to adventure
-            activities like Desert Safaris through golden Arabian Dunes,
-            Skydiving over the beautiful Palm Islands, Reef and wreck diving,
-            kite surfing, wakeboarding, etc.
+            One of the world's most visited tourist attractions, Dubai is a
+            metropolis with many different faces. This international metropolis,
+            which is home to the Burj Khalifa, the highest structure in the
+            world, is renowned for its impressive skylines, opulent
+            architecture, and several tourist attractions that set records for
+            being the largest, longest, and tallest. Adventure sports like
+            skydiving over the stunning Palm Islands, reef and wreck diving,
+            kite surfing, wakeboarding, and desert safaris over the golden
+            Arabian dunes are all quite common in Dubai.
           </p>
           <br />
           <p>
-            Flaunting its glittering infrastructure amid the glorious Arabian
-            desert, the city of Dubai was once known to be a barren land. Today,
-            this man-made miracle is filled with shimmering skyscrapers, fancy
-            hotels, shopping malls and restaurants. Burj Khalifa – the tallest
-            manmade building, Dubai Fountain with jets and lights choreographed
-            to music, Atlantis, the Palm and an aquarium resort are among the
-            top tourist destinations in Dubai. With the biggest population of
-            all the seven emirates and the second largest in size, Dubai will
-            overwhelm you with its amalgamation of futuristic marvel and ancient
-            Arabian traditions.
+            Once a desolate place, Dubai now boasts a sparkling infrastructure
+            set against the backdrop of the Arabian desert. This man-made wonder
+            is now teeming with glistening skyscrapers, upscale hotels, shopping
+            centers, and dining establishments. Among the most popular tourist
+            attractions in Dubai are the Burj Khalifa, the tallest man-made
+            structure, the Atlantis, the Palm, the aquarium resort, and the
+            Dubai Fountain, which has jets and lights that are timed to music.
+            Dubai, the second largest of the seven emirates in terms of size and
+            population, will wow you with its blend of traditional Arabian
+            customs and contemporary wonder.
           </p>
         </div>
 
