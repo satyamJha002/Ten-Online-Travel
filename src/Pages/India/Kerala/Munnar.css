@@ -1,0 +1,160 @@
+.munnar-intro {
+    padding: 20px 40px;
+}
+
+.munnar-intro h1 {
+    font-size: 2.5rem;
+}
+
+.munnar-intro h1::after {
+    content: "";
+    padding: 2px;
+    width: 10%;
+    display: flex;
+    background-color: #32b67a;
+}
+
+.munnarInfo {
+    margin-top: 30px;
+}
+
+.munnarInfo h2 {
+    font-weight: 600;
+}
+
+.munnarInfo p {
+    color: #7c7c8b;
+}
+
+.munnarInfo p span {
+    color: #4d4d50;
+    font-weight: bold;
+}
+
+.Sightseeing {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 1.125em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.Sightseeing h2 {
+    background-color: #f4f4f4;
+    display: inline-block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding: 0 30px;
+    font-weight: 500;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.Sightseeing::after,
+.Sightseeing::before {
+    content: "";
+    padding: 0.5px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: #7c7c8b;
+}
+
+.Sightseeing::after {
+    content: "";
+    top: 45%;
+}
+
+.Sightseeing::before {
+    content: "";
+    top: 55%;
+}
+
+.munnnarCardsContainer,
+.friAndFamCardsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .munnar-intro {
+        padding: 15px 30px;
+    }
+
+    .munnar-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .Sightseeing {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .munnar-intro {
+        padding: 10px 20px;
+    }
+
+    .munnar-intro h1 {
+        font-size: 2rem;
+    }
+
+    .Sightseeing {
+        font-size: 32px;
+    }
+
+    .munnnarCardsContainer {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .munnar-intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .Sightseeing {
+        font-size: 28px;
+    }
+
+    .Sightseeing h2 {
+        padding: 0 20px;
+    }
+
+    .munnnarCardsContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .munnar-intro {
+        padding: 10px;
+    }
+
+    .munnar-intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .munnar-intro h1::after {
+        width: 15%;
+    }
+
+    .Sightseeing {
+        font-size: 24px;
+    }
+
+    .Sightseeing h2 {
+        padding: 0 15px;
+    }
+}
