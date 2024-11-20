@@ -12,11 +12,12 @@ export const travelPackage = [
         location: "Alleppey, India, Kerala, Munnar, Thekkady",
         duration: "5 Days - 4 Nights",
         people: "2 People",
-        discount: "19%",
+        discount: "19% Off",
         price: "₹12,990",
         originalPrice: "₹15,990",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
+        description: "Ooty Tour Package, once the summer..."
     },
     {
         id: 2,
@@ -31,11 +32,12 @@ export const travelPackage = [
         location: "Alleppey, India, Kerala, Munnar, Thekkady",
         duration: "5 Days - 4 Nights",
         people: "2 People",
-        discount: "19%",
+        discount: "19% Off",
         price: "₹12,990",
         originalPrice: "₹15,990",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
+        description: "Tamil Nadu Tamil Nadu- A land of..."
     },
 
 ];
