@@ -499,7 +499,7 @@ const Navbar = () => {
               isIndiaSubmenuOpen ? "text-white-500" : "text-gray-600"
             } hover:text-gray-800`}
             onClick={() => setIndiaSubmenuOpen(!isIndiaSubmenuOpen)} ref={indiaMenuRef}>
-            {isIndiaSubmenuOpen ? "▲" : "▼"} {/* Toggle icon */}
+            {isIndiaSubmenuOpen ? "▲" : "▼"} 
           </span>
         </div>
         {isIndiaSubmenuOpen && (
@@ -674,7 +674,7 @@ const Navbar = () => {
               isInternationalSubmenuOpen ? "text-white-500" : "text-gray-600"
             } hover:text-gray-800`}
             onClick={() => setInternationalSubmenuOpen(!isInternationalSubmenuOpen)}  ref={internationalMenuRef}>
-            {isInternationalSubmenuOpen ? "▲" : "▼"} {/* Toggle icon */}
+            {isInternationalSubmenuOpen ? "▲" : "▼"} 
           </span>
             </div>
             {isInternationalSubmenuOpen && (
