@@ -107,7 +107,7 @@ export const munnarsightseeing = [
     {
         id: 3,
         images: [
-            "https://b4holiday.com/wp-content/uploads/2021/09/Abad_hotels.jpg",
+            
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_Harmonia_Kovalam_1.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_Harmonia_Kovalam_4.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_copper_castle-1024x576.jpg",
