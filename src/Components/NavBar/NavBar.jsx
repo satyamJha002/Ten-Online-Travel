@@ -136,7 +136,7 @@ const Navbar = () => {
                 {isHimachalSubmenuOpen && (
                   <div className="absolute left-full top-16 bg-green-400 shadow-lg z-50">
                     <NavLink
-                      to="/kasol"
+                      to="/india/himachal/kasol"
                       className={({ isActive }) =>
                         `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline`}>
                       <button className="block  justify-center items-center px-4 py-2 text-left   hover:bg-green-400"
