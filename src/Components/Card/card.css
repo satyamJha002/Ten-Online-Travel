@@ -13,22 +13,6 @@
   margin-bottom: 20px; /* Add space between cards */
 }
 
-/* .travel-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.3s ease;
-}
-
-.travel-card:hover {
-  background-color: #000;
-  color: #fff;
-  box-shadow: 0 30px 60px 20px rgba(0, 0, 0, 0.7);
-  transform: translateY(-10px) scale(1.05);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.3s ease;
-} */
 .travel-card:hover {
   box-shadow: 0 0px 7px 14px rgba(122, 122, 122, 0.2);
 }

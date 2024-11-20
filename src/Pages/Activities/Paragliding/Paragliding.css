@@ -18,12 +18,12 @@
   padding-left: 0;
 }
 
-/* .paragliding-cards > *:nth-last-child(-n+1) {
+.paragliding-cards > *:nth-last-child(-n+1) {
   margin-right: auto;
   margin-left: 28px; 
-} */
+  height: 100%;
+}
 
-/*  */
 .title {
   margin: 20px;
   font-size: 1.4em;
