@@ -9,7 +9,7 @@ export const travelPackage = [
 
         ],
         title: "5 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala, Munnar, Thekkady",
+        location: "Alleppey, India, Kerala",
         duration: "5 Days - 4 Nights",
         people: "2 People",
         discount: "19% Off",
@@ -17,7 +17,7 @@ export const travelPackage = [
         originalPrice: "₹15,990",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Tamil Nadu Tamil Nadu- A land of..."
+        description: "Tamil Nadu Tamil Nadu..."
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ export const travelPackage = [
 
         ],
         title: "6 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala, Kochi, Munnar, Thekkady",
+        location: "Alleppey, India, Kerala",
         duration: "6 Days - 5 Nights",
         people: "2 People",
         discount: "21% Off",
@@ -38,7 +38,7 @@ export const travelPackage = [
         originalPrice: "₹18,900",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Tamil Nadu Tamil Nadu- A land of..."
+        description: "Tamil Nadu Tamil Nadu..."
     },
     {
         id: 3,
@@ -58,7 +58,7 @@ export const travelPackage = [
         originalPrice: "₹13,500",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Tamil Nadu Tamil Nadu- A land of..."
+        description: "Tamil Nadu Tamil Nadu..."
     },
 ];
 
@@ -73,7 +73,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
         ],
         title: "6 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala, Kochi, Munnar, Thekkady",
+        location: "Alleppey, India, Kerala",
         duration: "6 Days - 5 Nights",
         people: "2 People",
         discount: "21% Off",
@@ -81,7 +81,7 @@ export const munnarsightseeing = [
         originalPrice: "₹18,900",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Kerala – a divine state in the..."
+        description: "Kerala – a divine state..."
     },
     {
         id: 2,
@@ -101,7 +101,7 @@ export const munnarsightseeing = [
         originalPrice: "₹13,500",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Kerala – a divine state in the..."
+        description: "Kerala – a divine state..."
 
     },
     {
@@ -115,7 +115,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/09/Bamboo_pool_villa_in_Abad_Whispering_Palms_Resort_in_Kumarakom.jpg",
         ],
         title: "Abad Hotels Kerala Packages 7 Night",
-        location: "Alleppey, Kerala, Kochi, Kovalam, Kumarakom, Munnar, Thekkady",
+        location: "Alleppey, Kerala, Kochi",
         duration: "8 Days - 7 Nights",
         people: "2-6 People",
         discount: "10% Off",
@@ -123,7 +123,7 @@ export const munnarsightseeing = [
         originalPrice: "₹31,150",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Abad Hotels Kerala Packages..."
+        description: "Abad Hotels Kerala Pack..."
     },
     {
         id: 4,
@@ -143,7 +143,7 @@ export const munnarsightseeing = [
         originalPrice: "₹29,000",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Kerala has an endless list of tourist..."
+        description: "Kerala has an endless lis..."
     },
     {
         id: 5,
@@ -155,7 +155,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
         ],
         title: "Kerala Full Tour Packages",
-        location: "Alleppey, India, Kanyakumari, Kerala, Kochi, Kovalam, Munnar, Thekkady",
+        location: "Alleppey, India, Kerala",
         duration: "9 Days - 8 Nights",
         people: "2-8 People",
         discount: "34% Off",
@@ -163,7 +163,7 @@ export const munnarsightseeing = [
         originalPrice: "₹42,000",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Kerala Full Tour Packages is embraced..."
+        description: "Kerala Full Tour Packag..."
     },
 
 
@@ -191,6 +191,6 @@ export const munnarOtherTrips = [
         originalPrice: "₹22,000",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "A rare and unique honeymoo..."
+        description: "A rare and unique hone..."
     },
 ];
