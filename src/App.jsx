@@ -27,6 +27,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import Singapore from "./Pages/International/Singapore/Singapore";
 import Details from "./Pages/DetailsPage/Details";
+import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/india/darjeeling" element={<Darjeeling />} />
           <Route path="/india/kashmir" element={<Kashmir />} />
           <Route path="/india/ladakh" element={<Ladakh />} />
+          <Route path="/india/tamilnadu/Ooty" element={<Ooty />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
           <Route path="/activities/RiverRafting" element={<RiverRafting />} />
           <Route path="/activities/Hiking" element={<Hiking />} />
