@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,8 +10,48 @@ const Navbar = () => {
   const [isActivitiesSubmenuOpen, setActivitiesSubmenuOpen] = useState(false);
   const [isInternationalSubmenuOpen, setInternationalSubmenuOpen] = useState(false);
   const [isUttarakhandSubmenuOpen, setUttarakhandSubmenuOpen] = useState(false);
-  const activeStyle = "text-white font-bold"; 
-  const inactiveStyle = " text-black font-small"; 
+
+  const indiaMenuRef = useRef(null); 
+  const indiaDropdownRef = useRef(null); 
+  const internationalMenuRef = useRef(null); 
+  const internationalDropdownRef = useRef(null); 
+  const activitiesMenuRef = useRef(null); 
+  const activitiesDropdownRef = useRef(null); 
+
+  const activeStyle = "text-white font-bold";
+  const inactiveStyle = "text-black font-small";
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        indiaMenuRef.current && !indiaMenuRef.current.contains(event.target) &&
+        indiaDropdownRef.current && !indiaDropdownRef.current.contains(event.target)
+      ) {
+        setIndiaSubmenuOpen(false);
+      }
+
+      if (
+        internationalMenuRef.current && !internationalMenuRef.current.contains(event.target) &&
+        internationalDropdownRef.current && !internationalDropdownRef.current.contains(event.target)
+      ) {
+        setInternationalSubmenuOpen(false);
+      }
+      if (
+        activitiesMenuRef.current && !activitiesMenuRef.current.contains(event.target) &&
+        activitiesDropdownRef.current && !activitiesDropdownRef.current.contains(event.target)
+      ) {
+        setActivitiesSubmenuOpen(false);
+      }
+     
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  
   return (
     <div>
 <div className="flex flex-col md:flex-row md:justify-between md:items-center px-6 md:px-36 py-4">
@@ -99,10 +139,8 @@ const Navbar = () => {
               `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline` } >
             HOME
           </NavLink>
-          <div className="relative mx-2"
-          // onMouseEnter={() => setIndiaSubmenuOpen(true)}
-          // onMouseLeave={() => setIndiaSubmenuOpen(false)} 
-          >
+          
+          <div className="relative mx-2" >
             <div className="flex">
             <NavLink
               to="/india"
@@ -112,14 +150,14 @@ const Navbar = () => {
             </NavLink>
             <button
               className={`${inactiveStyle} no-underline hover:no-underline focus:no-underline`}
-              onClick={() => setIndiaSubmenuOpen(!isIndiaSubmenuOpen)}>
+              onClick={() => setIndiaSubmenuOpen(!isIndiaSubmenuOpen)}  ref={indiaMenuRef}>
               <span className="ml-2">&#9660;</span>
             </button>
             </div>
             {isIndiaSubmenuOpen && (
-              <div className="absolute  bg-green-400 mx-2 w-40 shadow-lg z-50 mt-4">
+              <div className="absolute  bg-green-400 mx-2 w-40 shadow-lg z-50 mt-4"  ref={indiaDropdownRef}>
                 <NavLink
-                  to="/india/andaman-tour"
+                  to="/andaman-tour"
                   className={({ isActive }) =>
                     `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline` }
                   onClick={() => setIndiaSubmenuOpen(false)} >
@@ -136,7 +174,7 @@ const Navbar = () => {
                 {isHimachalSubmenuOpen && (
                   <div className="absolute left-full top-16 bg-green-400 shadow-lg z-50">
                     <NavLink
-                      to="/india/himachal/kasol"
+                      to="/kasol"
                       className={({ isActive }) =>
                         `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline`}>
                       <button className="block  justify-center items-center px-4 py-2 text-left   hover:bg-green-400"
@@ -295,12 +333,12 @@ const Navbar = () => {
             </NavLink>
             <button
               className={`${inactiveStyle} no-underline hover:no-underline focus:no-underline`}
-              onClick={() => setInternationalSubmenuOpen(!isInternationalSubmenuOpen)}>
+              onClick={() => setInternationalSubmenuOpen(!isInternationalSubmenuOpen)}  ref={internationalMenuRef}>
               <span className="ml-2">&#9660;</span>
             </button>
             </div>
             {isInternationalSubmenuOpen && (
-              <div className="absolute left-20 bg-green-400 justify-center items-center shadow-lg z-50 mt-4">
+              <div className="absolute left-20 bg-green-400 justify-center items-center shadow-lg z-50 mt-4" ref={internationalDropdownRef}>
                 <NavLink
                   to="/international/singapore"
                   className={({ isActive }) =>
@@ -369,12 +407,12 @@ const Navbar = () => {
             </NavLink>
             <button
               className={`${inactiveStyle} no-underline hover:no-underline focus:no-underline`}
-              onClick={() => setActivitiesSubmenuOpen(!isActivitiesSubmenuOpen)} >
+              onClick={() => setActivitiesSubmenuOpen(!isActivitiesSubmenuOpen)} ref={activitiesMenuRef} >
               <span className="ml-2">&#9660;</span>
             </button>
             </div>
             {isActivitiesSubmenuOpen && (
-              <div className="absolute w-18 left-8 bg-green-400 shadow-lg z-50 mt-4">
+              <div className="absolute w-18 left-8 bg-green-400 shadow-lg z-50 mt-4" ref={activitiesDropdownRef}>
                 <NavLink
                   to="/activities/riverrafting"
                   className={({ isActive }) =>
@@ -460,12 +498,12 @@ const Navbar = () => {
             className={`ml-48 px-3 py-2 cursor-pointer ${
               isIndiaSubmenuOpen ? "text-white-500" : "text-gray-600"
             } hover:text-gray-800`}
-            onClick={() => setIndiaSubmenuOpen(!isIndiaSubmenuOpen)}>
+            onClick={() => setIndiaSubmenuOpen(!isIndiaSubmenuOpen)} ref={indiaMenuRef}>
             {isIndiaSubmenuOpen ? "▲" : "▼"} {/* Toggle icon */}
           </span>
         </div>
         {isIndiaSubmenuOpen && (
-          <div className="ml-4">
+          <div className="ml-4" ref={indiaDropdownRef}>
             <NavLink
               to="/india/andaman"
               className={({ isActive }) =>
@@ -635,12 +673,12 @@ const Navbar = () => {
             className={`ml-32 py-2 cursor-pointer ${
               isInternationalSubmenuOpen ? "text-white-500" : "text-gray-600"
             } hover:text-gray-800`}
-            onClick={() => setInternationalSubmenuOpen(!isInternationalSubmenuOpen)} >
+            onClick={() => setInternationalSubmenuOpen(!isInternationalSubmenuOpen)}  ref={internationalMenuRef}>
             {isInternationalSubmenuOpen ? "▲" : "▼"} {/* Toggle icon */}
           </span>
             </div>
             {isInternationalSubmenuOpen && (
-              <div>
+              <div ref={internationalDropdownRef}>
                 <NavLink
                   to="/international/singapore"
                   className={({ isActive }) =>
@@ -698,12 +736,12 @@ const Navbar = () => {
           className={`ml-36 px-6 py-2 cursor-pointer ${
             isActivitiesSubmenuOpen ? "text-white-500" : "text-gray-600"
           } hover:text-gray-800`}
-          onClick={() => setActivitiesSubmenuOpen(!isActivitiesSubmenuOpen)}>
-          {isActivitiesSubmenuOpen ? "▲" : "▼"} {/* Toggle icon */}
+          onClick={() => setActivitiesSubmenuOpen(!isActivitiesSubmenuOpen)} ref={activitiesMenuRef}>
+          {isActivitiesSubmenuOpen ? "▲" : "▼"} 
         </span>
             </div>
             {isActivitiesSubmenuOpen && (
-              <div>
+              <div ref={activitiesDropdownRef}>
                 <NavLink
                   to="/activities/riverraftingr"
                   className={({ isActive }) =>
@@ -763,6 +801,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 
