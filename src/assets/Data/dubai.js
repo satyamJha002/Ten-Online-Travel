@@ -17,6 +17,10 @@ export const dubai = [
     price: "₹28,000",
     originalPrice: "₹30,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+    detailDescription:
+      "A city of many faces, Dubai is one of the most popular tourist destinations in the world. Home to the tallest tower in the world, the Burj Khalifa, this global city is known for its lavish architecture, incredible skylines and a plethora of tourist attractions that break records to be the tallest, longest and biggest. Dubai has abundant opportunities when it comes to adventure activities like Desert Safaris through golden Arabian Dunes, Skydiving over the beautiful Palm Islands, Reef and wreck diving, kite surfing, wakeboarding, etc.",
+    subDescription:
+      "Flaunting its glittering infrastructure amid the glorious Arabian desert, the city of Dubai was once known to be a barren land. Today, this man-made miracle is filled with shimmering skyscrapers, fancy hotels, shopping malls and restaurants. Burj Khalifa – the tallest manmade building, Dubai Fountain with jets and lights choreographed to music, Atlantis, the Palm and an aquarium resort are among the top tourist destinations in Dubai. With the biggest population of all the seven emirates and the second largest in size, Dubai will overwhelm you with its amalgamation of futuristic marvel and ancient Arabian traditions.",
     featured: true,
   },
   {

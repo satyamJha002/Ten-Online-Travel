@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Dubai = () => {
   const location = useLocation();
-  const [locationURL, setLocationURL] = useState(location.pathname);
+  const [locationURL] = useState(location.pathname);
   const newUrl = locationURL
     .split("")
     .map((ele) => (ele === "/" ? " > " : ele))
@@ -20,7 +20,7 @@ const Dubai = () => {
         <h1>Dubai</h1>
         <div className="dubaiInfo">
           <p>
-            One of the world's most visited tourist attractions, Dubai is a
+            One of the world&apos;s most visited tourist attractions, Dubai is a
             metropolis with many different faces. This international metropolis,
             which is home to the Burj Khalifa, the highest structure in the
             world, is renowned for its impressive skylines, opulent

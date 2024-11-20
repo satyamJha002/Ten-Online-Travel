@@ -59,7 +59,7 @@ const Maldives = () => {
         </div>
         <div className="maldivesCardsContainer">
           {maldives.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
         <div className="friAndFam">
@@ -67,7 +67,7 @@ const Maldives = () => {
         </div>
         <div className="maldivesCardsContainer">
           {maldivesWaterVilla.map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
         <div className="friAndFam">

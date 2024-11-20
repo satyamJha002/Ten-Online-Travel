@@ -67,7 +67,9 @@ const Card = ({ pkg, locationURL }) => {
           />
         </div>
       </div>
-      <h2 className="title">{pkg.title}</h2>
+      <div className="titleContainer">
+        <h2 className="title">{pkg.title}</h2>
+      </div>
       <div className="card-details">
         {/* Left Section */}
         <div className="details-left">
