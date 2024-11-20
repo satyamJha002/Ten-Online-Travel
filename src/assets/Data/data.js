@@ -19,6 +19,8 @@ export const darjeelingPackages = [
     originalPrice: "₹20,655",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 2,
@@ -40,6 +42,8 @@ export const darjeelingPackages = [
     originalPrice: "₹14,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 3,
@@ -61,6 +65,8 @@ export const darjeelingPackages = [
     originalPrice: "₹28,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 4,
@@ -82,6 +88,8 @@ export const darjeelingPackages = [
     originalPrice: "₹15,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 5,
@@ -103,6 +111,8 @@ export const darjeelingPackages = [
     originalPrice: "₹19,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 6,
@@ -124,6 +134,8 @@ export const darjeelingPackages = [
     originalPrice: "₹23,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 7,
@@ -145,6 +157,8 @@ export const darjeelingPackages = [
     originalPrice: "₹28,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 8,
@@ -166,6 +180,8 @@ export const darjeelingPackages = [
     originalPrice: "₹25,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
   {
     id: 9,
@@ -187,6 +203,8 @@ export const darjeelingPackages = [
     originalPrice: "₹38,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    description:
+      "Sikkim & Darjeeling are panoramic sites with surprises of all kinds",
   },
 ];
 
