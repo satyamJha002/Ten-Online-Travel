@@ -30,6 +30,7 @@ import Details from "./Pages/DetailsPage/Details";
 import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
 import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
+import Munnar from "./Pages/India/Kerala/Munnar";
 
 
 function App() {
@@ -56,7 +57,8 @@ function App() {
           <Route path="/india/kashmir" element={<Kashmir />} />
           <Route path="/india/ladakh" element={<Ladakh />} />
           <Route path="/india/tamilnadu/Ooty" element={<Ooty />} />
-           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
+          <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
+          <Route path="/munnar" element={<Munnar />} />
           <Route path="/india/uttarakhand/nainital" element={< Naintal/>} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
           <Route path="/activities/RiverRafting" element={<RiverRafting />} />
