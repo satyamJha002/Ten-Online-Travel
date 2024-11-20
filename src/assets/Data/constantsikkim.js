@@ -19,7 +19,7 @@ export const tourssightPackages = [
       people: "2 People",
       nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "Sikkim & Darjeeling are panoramic sites with surprises of all kinds...",
+      description: "Sikkim & Darjeeling ar...",
 
     },
     {
@@ -41,7 +41,7 @@ export const tourssightPackages = [
         people: "6 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic site...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
     {
@@ -63,7 +63,7 @@ export const tourssightPackages = [
         people: "2 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       {
@@ -85,7 +85,7 @@ export const tourssightPackages = [
       people: "2 People",
       nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "Sikkim & Darjeeling are panoramic...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       {
@@ -107,7 +107,7 @@ export const tourssightPackages = [
         people: "2 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic sites...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       {
@@ -129,7 +129,7 @@ export const tourssightPackages = [
         people: "2 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       {
@@ -151,7 +151,7 @@ export const tourssightPackages = [
         people: "2 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       {
@@ -173,7 +173,7 @@ export const tourssightPackages = [
         people: "2 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       {
@@ -195,7 +195,7 @@ export const tourssightPackages = [
         people: "2 People",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-      description: "Sikkim & Darjeeling are panoramic...",
+      description: "Sikkim & Darjeeling ar...",
         
       },
       
