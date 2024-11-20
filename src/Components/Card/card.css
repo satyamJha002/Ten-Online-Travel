@@ -283,6 +283,7 @@
 @media (max-width: 768px) {
   .travel-card {
     width: 90%;
+    height: 100%;
   }
 
   .image-slider {
@@ -315,6 +316,7 @@
 @media (max-width: 480px) {
   .travel-card {
     margin-bottom: 15px;
+    height: 100%;
   }
 
   .travelCardBtn .button {
