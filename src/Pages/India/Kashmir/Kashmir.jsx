@@ -96,7 +96,7 @@ const Kashmir = () => {
       </div>
 
       {kashmirPackages.map((pckg) => (
-        <div className="flex gap-4 justify-center max-md:justify-center max-lg:justify-start max-xl:justify-start max-2xl:justify-start">
+        <div className="flex gap-4 justify-start max-md:justify-center max-lg:justify-start max-xl:justify-start max-2xl:justify-start">
           <Card pkg={pckg} />
         </div>
       ))}
