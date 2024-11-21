@@ -29,7 +29,7 @@ const AboutUs = () => {
       <div className='About-description'>
         <img
           src='https://b4holiday.com/wp-content/uploads/2022/02/Why-Book-with-before-holiday.jpeg'
-          alt='Why Book with Before Holiday'
+          alt='Why Book with Ten Travel'
         />
         <p>
         At The Entrepreneurship Network (TEN), we are passionate about transforming ideas into impactful realities. Our mission is to empower aspiring entrepreneurs through our Virtual Incubator Program, a comprehensive initiative that offers accessible resources, expert mentorship, and practical guidance. From idea validation and market research to strategic business planning and funding opportunities, we are dedicated to supporting individuals at every stage of their entrepreneurial journey, bridging the gap between ambition and success.
