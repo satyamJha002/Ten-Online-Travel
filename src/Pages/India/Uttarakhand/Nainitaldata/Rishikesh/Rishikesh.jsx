@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Rishikesh.css";
-import { rishikeshcamping, rishikeshfriend, rishikeshhiking, rishikeshrafting, rishikeshwatersports } from '../../../../assets/Data/risihikesh';
-import Card from '../../../../Components/Card/Card';
+import { rishikeshcamping, rishikeshfriend, rishikeshhiking, rishikeshrafting, rishikeshwatersports } from '../../../../../assets/Data/risihikesh';
+import Card from '../../../../../Components/Card/Card';
 
 const Rishikesh = () => {
 
