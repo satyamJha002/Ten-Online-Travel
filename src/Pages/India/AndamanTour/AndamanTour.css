@@ -149,8 +149,11 @@
   @media screen and (max-width:320px){
     .list-name{
       column-gap: 9px !important;
+      margin-bottom: 114% !important;
+
     }
-  
+   
+
   .andaman-heading::after {
        width: 25%;
   }
@@ -198,21 +201,25 @@
      }
     
 }
-  
-  @media (max-width: 360px) and (min-width:320px) {
-    .sightseeing-div .sightseeing-title {
-        margin-top: 79% !important;
-    }
-    .sightseeing-div {
-      margin-top: 77% !important;
-  }
+@media (width: 390px) {
+  .sightseeing-div .sightseeing-title {
+    margin-top: -20% !important;
 }
+.list-name {
+  margin-bottom: 2% !important;
+}
+.sightseeing-div {
+  margin-top: -14% !important;
+}
+}
+  
+
 @media (max-width: 360px) {
   .sightseeing-div .sightseeing-title {
       margin-top: 77% !important;
   }
   .sightseeing-div {
-    margin-top: 76% !important;
+    margin-top: -12% !important;
 }
 
 }
@@ -228,7 +235,7 @@
   @media (max-width: 480px) {
   
     .sightseeing-div{
-      margin-top: 45% !important;
+      margin-top: -15% !important;
   
     }
     .list-name{
