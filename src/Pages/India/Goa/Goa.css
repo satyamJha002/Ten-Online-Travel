@@ -131,17 +131,6 @@
   }
 
 @media screen and (width:320px){
-  
-
-    .otherstrip-heading {
-      font-size: 184% !important;
-      width: 208% !important;
-  }
-    
-  
-    .other-div .other-title {
-      font-size: 61% !important;
-  }
     .goa-heading::after {
     
       width: 26%;
@@ -166,6 +155,12 @@
   .goa{
     padding: 10px;
   }
+  .otherstrip-heading {
+    font-size: 100% !important;
+    min-width: 26% !important;
+
+}
+
 }
 
   @media (max-width: 480px){
@@ -182,6 +177,9 @@
     .goa-content {
       text-align: justify;
       }
+      .friendfamily-heading {
+        width: 410%;
+    }
     .Friends-div .Friends-title::before {
       border-top: none ;
      border-bottom:none ;
@@ -190,29 +188,37 @@
     border-top: none ;
     border-bottom:none ;
 }
-.otherstrip-heading{
-
-  min-width: 21% !important;
-
+.other-div .other-title::before{
+  border-top: none ;
+ border-bottom:none ;
 }
-
-
+.other-div .other-title::after{
+border-top: none ;
+border-bottom:none ;
+}
 
 .GoaContainer{
   width: 100%;
   justify-content: center;
 
 }
+.otherstrip-heading{
+  text-align: center;
+
+  font-size: 200% !important;
+  width: 146% !important;
+}
 .other-div .other-title {
- 
-  font-size: 98%;
+  min-width: 35% !important;
+  font-size: 62% !important;
 }
 .othertrips-content {
   margin-top: 25px;
 }
+
   }
 
-  @media (max-width:768px){
+  @media (max-width:768px)  and (min-width:500px){
  
       .friendfamily-heading {
           min-width: 303px !important;
@@ -259,7 +265,7 @@
 }
    }
 
-  @media only screen and (max-width:884px){
+  @media only screen and (max-width:884px)  and (min-width:500px){
     .friendfamily-heading {
       width: 137% !important;
       }
@@ -295,14 +301,9 @@
 .friendfamily-heading {
   width: 124%;
 }
-/* .friendfamily-heading {
-  width: 128% !important;
-}
-.otherstrip-heading {
-  width: 49% !important;
-} */
+
   }
-  @media(max-width:900px){
+  @media (max-width:900px) and (min-width:500px){
     .goa {
       padding: 10px 20px;
   }

@@ -1,22 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./AndamanTour.css";
 import { andmatour, watertourPackages } from '../../../assets/Data/Andmantour';
 import Card from '../../../Components/Card/Card';
-// import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const AndamanTour = () => {
-  // const location = useLocation();
-  // const [locationURL] = useState(location.pathname);
-  // const newUrl = locationURL
-  //   .split("")
-  //   .map((ele) => (ele === "/" ? " > " : ele))
-  //   .join("");
-
+  const location = useLocation();
+  const [locationURL] = useState(location.pathname);
+  const newUrl = locationURL
+    .split("")
+    .map((ele) => (ele === "/" ? " > " : ele))
+    .join("");
+ 
+console.log("locationURL={locationURL}",locationURL);
 
   return (
     <div className='Andaman-tour'>
       {/*Andaman  */}
       <div className='Andaman-div'>
+      <p> Home {newUrl}</p>
+
         <h1 className='andaman-heading'>Andaman Tour</h1>
         <p className='andaman-content'>
   <strong>Andaman and Nicobar Islands,</strong> also referred to as Kalapani, are among the most stunning destinations in India.<br />
@@ -64,7 +67,7 @@ const AndamanTour = () => {
 
       <div className="AndamanContainer">
         {andmatour.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg}  />
+          <Card key={pkg.id} pkg={pkg}  locationURL={locationURL} />
         ))}
       </div>
 
@@ -80,7 +83,7 @@ const AndamanTour = () => {
   {watertourPackages.map((pkg, index) => {
     const isLastTwo = index >= watertourPackages.length - 2;
     return (
-      <Card key={pkg.id} pkg={pkg} className={isLastTwo ? 'last-company' : ''} />
+      <Card key={pkg.id} pkg={pkg} locationURL={locationURL} className={isLastTwo ? 'last-company' : ''} />
     );
   })}
 </div>
