@@ -10,7 +10,7 @@ export const travelPackage = [
           "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Aerial-4-600x400-1.jpg",
       ],
       title: "Uttarakhand (Haridwar-Nainital)",
-      location: "Nainital,Uttarakhand",
+      location: "Uttarakhand",
       duration: "6 Days - 5 Nights",
       people: "4 People",
       discount: "12% Off",
@@ -18,7 +18,7 @@ export const travelPackage = [
       originalPrice: "₹68,000",
       nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
       featured: true,
-      description: "Uttarakhand tourism offerings rang..."
+      description: "Uttarakhand tourism..."
   },
   
 ]
