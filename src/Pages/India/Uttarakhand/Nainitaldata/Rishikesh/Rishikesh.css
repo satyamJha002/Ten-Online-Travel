@@ -1,5 +1,4 @@
 
-  
   /* Section styles */
   .rishikesh {
     padding: 20px 40px;
@@ -21,6 +20,7 @@
   .rishikesh-content {
     font-size: 16px;
     color: #666666;
+
   }
   
   .App {
@@ -63,7 +63,7 @@
   }
   
   .camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
-    background-color:#f4f4f4;
+    background-color:#f8f9fa;
     display: inline-block;
     position: relative;
     color: rgb(0, 0, 0);
@@ -72,7 +72,7 @@
     z-index: 1;
     font-size: 2rem;
   }
-  
+ 
   .camping::after, .camping::before,
   .friendtour::after, .friendtour::before,
   .hiking::after, .hiking::before,
@@ -83,21 +83,15 @@
     display: flex;
     position: absolute;
     width: 100%;
-    background-color: rgb(179, 166, 166);
+    background-color: rgb(144, 144, 144);
 
-  }
-  .camping-div, .friend-div,
-  .rafting-div, .sports-div {
-    gap: 20px;
-    padding: 0.5px;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-left: 50px;
-  }
-  @media (max-width: 1200px) { .camping-div, .friend-div, .rafting-div, .sports-div { margin-left: 30px; } } @media (max-width: 768px) { .camping-div, .friend-div, .rafting-div, .sports-div { flex-direction: column; align-items: center; margin-left: 0; } } @media (max-width: 480px) { .camping-div, .friend-div, .rafting-div, .sports-div { gap: 10px; padding: 0.25px; } }
+  } 
   
-  .hiking-div { 
+  /* @media (max-width: 768px) { .camping-div, .friend-div, .rafting-div, .sports-div { flex-direction: column; align-items: center; margin-left: 10px; margin-right: 10px; } } 
+  @media (max-width: 480px) { .camping-div, .friend-div, .rafting-div, .sports-div { gap: 25px; padding: 1.25px; } }
+  @media (max-width: 325px) { .camping-div, .friend-div, .rafting-div, .sports-div { flex-direction: column; align-items: center; margin-left: 10px; margin-right: 10px; } }  */
+
+  .hiking-div, .camping-div, .friend-div, .rafting-div, .sports-div { 
     display: flex;
     justify-content: space-around; 
     align-items: flex-start; 
@@ -107,7 +101,7 @@
   } /* Individual card styles */ 
     .card { background-color: #fff; 
         border: 1px solid #ddd; 
-        border-radius: 8px; 
+        border-radius: 1px; 
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
         padding: 20px; flex: 1; 
         min-width: 200px; /* Ensures cards have a minimum width */ 
@@ -116,8 +110,14 @@
       } /* Responsive styles */ 
       @media (max-width: 768px) { 
         .card-container { 
-          justify-content: center; } 
+          justify-content: center;
+        } 
         }
+        @media (max-width: 320px) { 
+          .card-container { 
+            justify-content: center;
+          } 
+          }
   .camping::after, .friendtour::after, .hiking::after, .rafting::after, .sports::after {
     top: 45%;
   }
