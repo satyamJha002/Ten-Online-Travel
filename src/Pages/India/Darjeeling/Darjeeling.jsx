@@ -30,14 +30,13 @@ const Darjeeling = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-5 ml-0 justify-center max-lg:justify-start max-lg:ml-7 max-md:justify-center max-xl:justify-start  max-2xl:justify-start max-sm:ml-0">
-        {darjeelingPackages.map((pckg) => (
-          <Card
-            key={pckg.id}
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
-            pkg={pckg}
-          />
-        ))}
+      {/* flex flex-wrap gap-5 ml-0 justify-center max-lg:justify-start max-lg:ml-7 max-lg:pl-5 max-md:justify-center max-md:ml-7 max-md:pl-5 max-xl:justify-start  max-2xl:justify-start max-sm:ml-0 */}
+      <div className="mx-auto px-0 max-sm:px-5">
+        <div className="flex gap-5 flex-wrap justify-center mx-0 max-2xl:justify-between max-2xl:mx-4 max-2xl:px-6 max-xl:justify-between max-lg:justify-between max-lg:mx-4 max-lg:px-7 max-md:justify-center max-sm:mx-0 max-sm:px-0">
+          {darjeelingPackages.map((pckg) => (
+            <Card key={pckg.id} className="" pkg={pckg} />
+          ))}
+        </div>
       </div>
     </div>
   );
