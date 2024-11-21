@@ -289,18 +289,16 @@ border-bottom:none ;
   }
   
     .friendfamily-heading {
-      min-width: 128px !important;
-      font-size: 112px !important;
+      min-width: 65% !important;
+      font-size: 72px !important;
 
   }
   .otherstrip-heading {
-    font-size: 62% !important;
+    font-size: 234% !important;
     width: 49% !important;
 
 }
-.friendfamily-heading {
-  width: 124%;
-}
+
 
   }
   @media (max-width:900px) and (min-width:500px){
