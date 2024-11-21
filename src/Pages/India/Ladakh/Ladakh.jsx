@@ -275,7 +275,7 @@ const Ladakh = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-5 justify-center md:justify-between xl:justify-between 2xl:justify-between">
+      <div className="flex flex-wrap gap-5 ml-0 justify-center max-lg:justify-start max-lg:ml-7 max-md:justify-center max-xl:justify-start  max-2xl:justify-start max-sm:ml-0">
         {ladakhFamilyTrips.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
