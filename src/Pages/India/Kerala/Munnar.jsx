@@ -43,7 +43,7 @@ const Munnar = () => {
         <div className="Sightseeing">
           <h2>Sightseeing</h2>
         </div>
-        <div className="munnarCardsContainer">
+        <div className="sightseeingCardsContainer">
           {(munnarsightseeing || []).map((pkg) => (
             <Card key={pkg.id} pkg={pkg} />
           ))}
@@ -51,7 +51,7 @@ const Munnar = () => {
         <div className="Sightseeing">
           <h2>Other Trips</h2>
         </div>
-        <div className="munnarCardsContainer">
+        <div className="otherCardsContainer">
           {(munnarOtherTrips || []).map((pkg) => (
             <Card key={pkg.id} pkg={pkg} />
           ))}
