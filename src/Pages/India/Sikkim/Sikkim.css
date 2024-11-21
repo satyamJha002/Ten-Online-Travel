@@ -113,6 +113,12 @@
   }
   @media(max-width:900px){
     .sikkim {
-      padding: 10px;
+      padding: 10px 20px;
+
   }
+  .SikkimContainer{
+    padding: 10px !important;
   }
+
+  }
+  

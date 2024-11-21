@@ -8,7 +8,10 @@ const Goa = () => {
     <div className='goa'>
       <div className='goa-div'>
         <h1 className='goa-heading'>Goa</h1>
-        <p className='goa-content'>Goa is a favored tourist destination for people from around the world. With its vast stretches of silvery beaches caressed by the sparkling blue Arabian Sea, this city offers its visitors a medley of old-world charm and modern sophistication. The hidden coves of Goa offer an unexplored territory for the adventurer in you. Despite being the smallest state in India, Goa boasts a quality of life that is ranked No. 1 in the country. Goa is home to two World Heritage sights, namely the Bom Jesus Basilica and the churches and convents of Old Goa. The city has a very vibrant nightlife, ranked 6th in the world. Goa flaunts its Portuguese heritage in the many churches, temples, and mansions spread across the city. The Naval Aviation Museum, Fort Aguada, and the Wax Museum, showcasing the history, heritage, and culture of India, are a few of the must-see attractions in Goa.</p>
+        <p className='goa-content'>Goa is a globally renowned tourist hotspot, celebrated for its endless stretches of silver beaches kissed by the shimmering blue waters of the Arabian Sea. This vibrant destination blends old-world charm with contemporary sophistication, making it a unique experience for visitors. Its hidden coves provide an exciting opportunity for adventurers to explore uncharted territory.
+        Despite being India’s smallest state, Goa ranks first in the nation for quality of life. It is home to two UNESCO World Heritage sites: the Bom Jesus Basilica and the churches and convents of Old Goa. Known for its lively nightlife, ranked sixth globally, Goa showcases its rich Portuguese heritage through its numerous churches, temples, and mansions scattered across the region.
+        Must-visit attractions include the Naval Aviation Museum, Fort Aguada, and the Wax Museum, which offer insights into India’s history, heritage, and culture.
+</p>          
       </div>
 
       <div className='Friends-div'>
@@ -26,9 +29,7 @@ const Goa = () => {
         <h2 className="other-title"><span className='otherstrip-heading'>Other Trips</span></h2>
       </div>
 
-      <div>
-        <p className='othertrips-content'>These are other trips.</p>
-      </div>
+     
       <div className="GoaContainer">
         {tourotherPackages.map((pkg) => (
           <Card key={pkg.id} pkg={pkg} />

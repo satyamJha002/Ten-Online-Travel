@@ -8,7 +8,8 @@ const Sikkim = () => {
     <div className='sikkim'>
       <div className='sikkim-div'>
         <h1 className='sikkim-heading'>Sikkim</h1>
-        <p className='sikkim-content'>Witness the spectacular dawn on the world’s third-highest mountain, Khangchendzonga with Sikkim holiday packages. The various aspects of Sikkim are like Buddhist monasteries, trekking trails, glaciers and glacier lakes, the snow-clad peaks, and the colonial-era architecture, make them hard-to-miss destinations!</p>
+        <p className='sikkim-content'>
+        Experience the breathtaking sunrise over Khangchendzonga, the world’s third-highest mountain, with Sikkim holiday packages. Sikkim's charm lies in its diverse attractions, including serene Buddhist monasteries, thrilling trekking trails, majestic glaciers and glacier lakes, snow-covered peaks, and enchanting colonial-era architecture, making it a must-visit destination!</p>
       </div>
 
 

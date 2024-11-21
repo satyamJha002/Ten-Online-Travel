@@ -212,7 +212,7 @@
 }
   }
 
-  @media (width:768px){
+  @media (max-width:768px){
  
       .friendfamily-heading {
           min-width: 303px !important;
@@ -224,7 +224,7 @@
 
   }
   .GoaContainer{
-    justify-content: center;
+    justify-content: center !important;
   }
   
   }
@@ -304,7 +304,22 @@
   }
   @media(max-width:900px){
     .goa {
-      padding: 10px;
+      padding: 10px 20px;
+  }
+
+  .GoaContainer{
+       padding: 10px !important;
+
+  }
+  .otherstrip-heading {
+    font-size: 94% !important;
+    width: 56% !important;
+}
+.friendfamily-heading {
+  width: 166% !important;
+}
+.goa-content {
+  text-align: justify;
   }
 
   }

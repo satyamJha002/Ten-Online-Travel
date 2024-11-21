@@ -2,9 +2,15 @@ import React from 'react'
 import "./AndamanTour.css";
 import { andmatour, watertourPackages } from '../../../assets/Data/Andmantour';
 import Card from '../../../Components/Card/Card';
+// import { useLocation } from 'react-router-dom';
 
 const AndamanTour = () => {
-
+  // const location = useLocation();
+  // const [locationURL] = useState(location.pathname);
+  // const newUrl = locationURL
+  //   .split("")
+  //   .map((ele) => (ele === "/" ? " > " : ele))
+  //   .join("");
 
 
   return (
@@ -12,14 +18,16 @@ const AndamanTour = () => {
       {/*Andaman  */}
       <div className='Andaman-div'>
         <h1 className='andaman-heading'>Andaman Tour</h1>
-        <p className='andaman-content'><strong>Andaman and Nicobar Islands, </strong>also known as Kalapani is one of the most beautiful places you can visit in India.<br />
-          <strong>Andaman and Nicobar Islands</strong> include a whooping 572 islands in total out of which only 50 are inhabited by people whereas the rest are either too small, come<br />
-          under forest reserve or are used by the Indian military as their base.<br />
-          Exotic, beautiful and richly evocative of India’s colonial past, the <strong>Andaman and Nicobar Islands</strong> are growing into popular tourist destinations. The 2 groups of <br />
-          islands, made up of the summits of a submerged mountain range, form India’s most remote state, located in the middle of the Bay of Bengal.<br />
-          <strong>Weather</strong>
-          The weather here is moderate throughout the year and does not follow the trends of India. When there is summer all over the mainland, Andamans just start out <br />
-          with monsoon and therefore offer a perfect break from the harsh sun.</p>
+        <p className='andaman-content'>
+  <strong>Andaman and Nicobar Islands,</strong> also referred to as Kalapani, are among the most stunning destinations in India.<br />
+  These islands comprise an impressive 572 islands in total, of which only 50 are inhabited, while the rest are either too small,<br />
+  classified as forest reserves, or utilized as military bases by the Indian armed forces.<br />
+  Exotic, captivating, and deeply tied to India’s colonial history, the <strong>Andaman and Nicobar Islands</strong> are emerging as a popular tourist hotspot.<br />
+  This group of islands, formed by the peaks of a submerged mountain range, represents India’s most remote state, situated in the heart of the Bay of Bengal.<br />
+  <strong>Weather</strong><br />
+  The islands enjoy a moderate climate throughout the year, differing from mainland India’s weather patterns. While the mainland experiences<br />
+  the sweltering heat of summer, the Andamans transition into their monsoon season, offering a refreshing escape from the scorching sun.
+</p>
       </div>
       <div className='list-div'>
         <strong>Here is the list of all islands in Andaman you can visit:</strong>
@@ -56,7 +64,7 @@ const AndamanTour = () => {
 
       <div className="AndamanContainer">
         {andmatour.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg} />
+          <Card key={pkg.id} pkg={pkg}  />
         ))}
       </div>
 
