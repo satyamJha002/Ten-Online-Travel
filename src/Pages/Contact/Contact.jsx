@@ -16,7 +16,7 @@ const Contact = () => {
             Looking for Business Tie-Ups, Hotel Tie Ups, B2B Contracts, etc
           </h2>
           <p>
-            Email us at:{" "}
+            Email us:{" "}
             <a href=" info@entrepreneurshipnetwork.net ">
               {" "}
               info@entrepreneurshipnetwork.net{" "}
@@ -25,7 +25,7 @@ const Contact = () => {
 
           <h2>For Holiday Package Deals, or Flights Deals, etc</h2>
           <p>
-            Email us at:{" "}
+            Email us:{" "}
             <a href=" info@entrepreneurshipnetwork.net ">
               {" "}
               info@entrepreneurshipnetwork.net{" "}
