@@ -30,9 +30,13 @@ const Darjeeling = () => {
         <div className="flex-grow border-t border-gray-700"></div>
       </div>
 
-      <div className="flex flex-wrap gap-5 justify-between max-lg:justify-between max-md:justify-center">
+      <div className="flex flex-wrap gap-5 justify-center max-lg:justify-center">
         {darjeelingPackages.map((pckg) => (
-          <Card key={pckg.id} pkg={pckg} />
+          <Card
+            key={pckg.id}
+            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+            pkg={pckg}
+          />
         ))}
       </div>
     </div>
