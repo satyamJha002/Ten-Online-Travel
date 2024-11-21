@@ -20,10 +20,11 @@
      color: #666666;
      width: 97%;
      margin-bottom: 4%;
-    padding-right: 20px;
+  }
+.goa-content p{
+  padding-right: 20px;
     padding-left: 30px;
 }
-  }
 
 
 .friAndFam {
