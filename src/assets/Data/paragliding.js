@@ -129,8 +129,8 @@ export const packages = [
     id: 8,
     images: [
       "https://www.bogmallobeachresort.com/wp-content/uploads/2024/07/F8A4669.webp",
-      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Houseboats_Kerala.jpg",
-      "https://media.easemytrip.com/media/Blog/India/637802188132268987/6378021881322689875W1wh9.jpg",
+      "https://d26dp53kz39178.cloudfront.net/media/uploads/products/6_result_1-1675320548210.webp",
+      "https://im.whatshot.in/img/2019/Dec/yelagiri-1574166831-1577385483.jpg",
     ],
     title: "Yelagiri Eco Escape",
     location: "Tamil Nadu",

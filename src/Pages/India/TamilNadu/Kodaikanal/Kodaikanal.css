@@ -4,6 +4,8 @@
 
 .Kodaikanal-intro h1 {
     font-size: 2.5rem;
+    margin-top: 20px;
+    margin-left: 15px ;
 }
 
 .Kodaikanal-intro h1::after {
@@ -24,6 +26,7 @@
 
 .KodaikanalInfo p {
     color: #7c7c8b;
+    padding: 10px;
 }
 
 .KodaikanalInfo p span {
@@ -35,15 +38,22 @@
 .KodaikanalCardsContainer {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex !important;
+    justify-content: space-evenly !important;
     flex-direction: row;
     gap: 20px;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+.KodaikanalCardsContainer > *:nth-last-child(-n+1) {
+    margin-right: auto ;
+    margin-left: 18px !important; 
+    height: 100%;
+  }
+
+@media screen and (max-width: 1024px) {
     .Kodaikanal-intro {
         padding: 15px 30px;
     }
@@ -52,38 +62,74 @@
         font-size: 2.2rem;
     }
 
+    .KodaikanalCardsContainer{
+        display: flex;
+        justify-content: space-evenly;
+        /* margin-left: 10px; */
+    }
+    .KodaikanalCardsContainer > *:nth-last-child(-n + 1) {
+        margin-right: 12px !important;
+        margin: 0;
+      }
+
    
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .Kodaikanal-intro {
         padding: 10px 20px;
     }
 
     .Kodaikanal-intro h1 {
         font-size: 2rem;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 20px !important;
     }
+     
+    .KodaikanalCardsContainer{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .KodaikanalCardsContainer80 > *:nth-last-child(-n + 1) {
+        margin-right: 12px !important;
+        margin: 0;
+      } 
+
 
 }
 
 @media screen and (max-width: 768px) {
     .Kodaikanal-intro h1 {
         font-size: 1.8rem;
+        margin-top: 20px;
+        margin-left: 15px;
     }
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     .Kodaikanal-intro {
         padding: 10px;
     }
 
     .Kodaikanal-intro h1 {
         font-size: 1.5rem;
+        margin-top: 20px;
+        margin-left: 8px !important;
+    }
+
+    .KodaikanalCardsContainer{
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .Kodaikanal-intro h1::after {
         width: 15%;
     }
+    .KodaikanalCardsContainer80 > *:nth-last-child(-n + 1) {
+        margin-right: 10px !important;
+        margin: 0;
+      } 
 
 }
