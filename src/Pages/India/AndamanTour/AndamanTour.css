@@ -1,9 +1,7 @@
-.Andaman-tour{
+.Andaman-tour {
   padding: 20px 40px;
-
-
 }
-.andaman-heading{
+.andaman-heading {
   font-size: 2.5rem;
   margin-bottom: 2%;
 }
@@ -14,22 +12,19 @@
   display: flex;
   background-color: #32b67a;
 }
-.andaman-content{
-   font-size: 16px;
-   color: #666666;
+.andaman-content {
+  font-size: 16px;
+  color: #666666;
 }
-.list-div{
+.list-div {
   color: #666666;
   margin-top: 30px;
-
 }
-.list-name{
+.list-name {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 19px 6px 0px;
- 
-
 }
 .no-symbol {
   list-style-type: none;
@@ -37,7 +32,7 @@
   margin: 0;
 }
 
- .sightseeing-div .sightseeing-title {
+.sightseeing-div .sightseeing-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,8 +40,7 @@
   margin-bottom: 5%;
   font-size: 176%;
   font-weight: 500;
-  margin-top:12%;
-
+  margin-top: 12%;
 }
 
 .sightseeing-div .sightseeing-title::before,
@@ -55,13 +49,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%; 
-  margin: 0 10px; 
+  width: 100%;
+  margin: 0 10px;
   height: 6px;
 }
 
 .sightseeing-div .sightseeing-title::before {
-  border-top: 2px solid rgba(0, 0, 0, 0.4); 
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -69,7 +63,6 @@
   border-top: 2px solid rgba(0, 0, 0, 0.4);
 
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-
 }
 
 .sightseeing-div .sightseeing-title span {
@@ -95,13 +88,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%; 
-  margin: 0 10px; 
+  width: 100%;
+  margin: 0 10px;
   height: 6px;
 }
 
 .Watersports-div .Watersports-title::before {
-  border-top: 2px solid rgba(0, 0, 0, 0.4); 
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -109,7 +102,6 @@
   border-top: 2px solid rgba(0, 0, 0, 0.4);
 
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-
 }
 
 .Watersports-div .Watersports-title span {
@@ -118,216 +110,175 @@
 
 /* card */
 
-.AndamanContainer{
-  
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
+.AndamanContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.WaterSportContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  margin-top: 30px;
+}
+
+.last-company {
+  flex: 0 0 calc(50% - 15px);
+}
+
+@media screen and (max-width: 320px) {
+  .list-name {
+    column-gap: 9px !important;
+    margin-bottom: 114% !important;
   }
- 
-
-  .WaterSportContainer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 65px;
-    margin-top: 30px;
-  }
-  
-  .last-company {
-    flex: 0 0 calc(50% - 15px); 
-  }
-  
-
-
-  
-  @media screen and (max-width:320px){
-    .list-name{
-      column-gap: 9px !important;
-      margin-bottom: 114% !important;
-
-    }
-   
 
   .andaman-heading::after {
-       width: 25%;
+    width: 25%;
   }
 
-.andaman-heading{
-
+  .andaman-heading {
     font-size: 32px;
-
-}
-
-
-
   }
-  @media (max-width: 388px) {
-    .sightseeing-div .sightseeing-title {
-        margin-top: 59% !important;
-    }
-    .sightseeing-div {
-      margin-top: 60% !important;
+}
+@media (max-width: 388px) {
+  .sightseeing-div .sightseeing-title {
+    margin-top: 59% !important;
+  }
+  .sightseeing-div {
+    margin-top: 60% !important;
   }
 }
 
-
-  @media(max-width:481px){
-    .sightseeing-div .sightseeing-title{
-      margin-top: 51% !important;
-  
+@media (max-width: 481px) {
+  .sightseeing-div .sightseeing-title {
+    margin-top: 51% !important;
+  }
 }
+
+@media (width: 390px) {
+  .list-name {
+    margin-bottom: 12px;
   }
- 
-  @media(width:390px){
-    .list-name{
-      margin-bottom: 12px;
-     }
+}
+@media (max-width: 390px) {
+  .sightseeing-div {
+    margin-top: -12% !important;
   }
-  @media (max-width: 390px) {
-    .sightseeing-div {
-      margin-top: -12% !important;
+  .sightseeing-div .sightseeing-title {
+    margin-top: -15% !important;
   }
-    .sightseeing-div .sightseeing-title {
-        margin-top: -15% !important;
-    }
-     .list-name{
-      margin-bottom: 12px;
-     }
-    
+  .list-name {
+    margin-bottom: 12px;
+  }
 }
 @media (width: 390px) {
   .sightseeing-div .sightseeing-title {
     margin-top: -20% !important;
+  }
+  .list-name {
+    margin-bottom: 2% !important;
+  }
+  .sightseeing-div {
+    margin-top: -14% !important;
+  }
 }
-.list-name {
-  margin-bottom: 2% !important;
-}
-.sightseeing-div {
-  margin-top: -14% !important;
-}
-}
-  
-
 
 @media (max-width: 360px) {
   .sightseeing-div .sightseeing-title {
-      margin-top: 77% !important;
+    margin-top: 77% !important;
   }
   .sightseeing-div {
     margin-top: -12% !important;
+  }
 }
-
-}
-  @media(max-width:400px){
-    .sightseeing-div .sightseeing-title{
-      margin-top: 60% !important;
-  
-}
+@media (max-width: 400px) {
+  .sightseeing-div .sightseeing-title {
+    margin-top: 60% !important;
+  }
   .list-name {
-      margin-bottom: 93%;
+    margin-bottom: 93%;
   }
 }
-  @media (max-width: 480px) {
-  
-    .sightseeing-div{
-      margin-top: -15% !important;
-  
-    }
-    .list-name{
-      column-gap: 27px;
-      text-align: center;
-           
-    }
-    .AndamanContainer{
-      width: 111%;
-      margin-left: -3%;
+@media (max-width: 480px) {
+  .sightseeing-div {
+    margin-top: -15% !important;
+  }
+  .list-name {
+    column-gap: 27px;
+    text-align: center;
+  }
+  .AndamanContainer {
+    width: 111%;
+    margin-left: -3%;
+  }
+  .WaterSportContainer {
+    width: 111%;
+    margin-left: -3%;
+  }
+  .andaman-content {
+    text-align: justify;
+  }
 
-    }
-    .WaterSportContainer{
-      width: 111%;
-      margin-left: -3%;
-
-
-    }
-    .andaman-content{
-      
-        text-align: justify;
-    }
-  
-  
   .andaman-heading::after {
-        width: 21%;
+    width: 21%;
   }
-
-  }
-  @media screen and (max-width: 768px) {
-    .AndamanContainer {
-      justify-content: center;
-  }
-  .WaterSportContainer{
-     justify-content: center;
-  
-  }
-  }
-  @media(max-width:600px) and (min-width:481px){
-    .Andaman-tour{
-      padding: 10px !important;
-    }
-    .sightseeing-div .sightseeing-title{
-      margin-top: 30% !important;
-  
 }
+@media screen and (max-width: 768px) {
+  .AndamanContainer {
+    justify-content: center;
   }
-  @media (width:600px){
-    .sightseeing-div .sightseeing-title{
+  .WaterSportContainer {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) and (min-width: 481px) {
+  .Andaman-tour {
+    padding: 10px !important;
+  }
+  .sightseeing-div .sightseeing-title {
+    margin-top: 30% !important;
+  }
+}
+@media (width: 600px) {
+  .sightseeing-div .sightseeing-title {
     margin-top: 30%;
   }
-    .sightseeing-div{
-
-      margin-top: 25%;
+  .sightseeing-div {
+    margin-top: 25%;
   }
-  
+}
+@media (max-width: 840px) {
+  .list-div {
+    margin-bottom: 30px;
   }
-  @media (max-width: 840px){
-    .list-div{
-      margin-bottom: 30px;
-  }
- .sightseeing-div{
-
+  .sightseeing-div {
     margin-top: 18%;
-}
-.sightseeing-title{
-
+  }
+  .sightseeing-title {
     margin-top: 10%;
+  }
 }
-
-
- 
+@media (width: 884px) {
+  .sightseeing-title {
+    margin-top: 10% !important;
   }
-  @media(width:884px){
-    .sightseeing-title{
-
-      margin-top: 10% !important;
+}
+@media (max-width: 900px) {
+  .Andaman-tour {
+    padding: 10px 20px;
   }
-  
-  }
-  @media(max-width:900px){
-    .Andaman-tour {
-      padding:10px 20px;
-    
-  }
-  .AndamanContainer{
+  .AndamanContainer {
     gap: 47px;
     padding: 10px !important;
-}
-.WaterSportContainer{
-  padding: 10px !important;
-   
-}
   }
+  .WaterSportContainer {
+    padding: 10px !important;
+  }
+}
