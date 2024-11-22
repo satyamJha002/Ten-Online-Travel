@@ -31,7 +31,7 @@
   font-weight: bold;
 }
 
-.Sightseeing {
+.friAndFam {
   margin-top: 20px;
   font-size: 40px;
   line-height: 1.125em;
@@ -40,8 +40,7 @@
   text-align: center;
   position: relative;
 }
-
-.Sightseeing h2 {
+.friAndFam h2 {
   background-color: #f4f4f4;
   display: inline-block;
   position: relative;
@@ -51,9 +50,8 @@
   z-index: 1;
   font-size: 2rem;
 }
-
-.Sightseeing::after,
-.Sightseeing::before {
+.friAndFam::after,
+.friAndFam::before {
   content: "";
   padding: 0.5px;
   display: flex;
@@ -61,13 +59,11 @@
   width: 100%;
   background-color: #7c7c8b;
 }
-
-.Sightseeing::after {
+.friAndFam::after {
   content: "";
   top: 45%;
 }
-
-.Sightseeing::before {
+.friAndFam::before {
   content: "";
   top: 55%;
 }

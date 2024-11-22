@@ -40,7 +40,7 @@ const Munnar = () => {
             <Card key={pkg.id} pkg={pkg} />
           ))}
         </div>
-        <div className="Sightseeing">
+        <div className="friAndFam">
           <h2>Sightseeing</h2>
         </div>
         <div className="munnarCardsContainer">
@@ -48,7 +48,7 @@ const Munnar = () => {
             <Card key={pkg.id} pkg={pkg} />
           ))}
         </div>
-        <div className="Sightseeing">
+        <div className="friAndFam">
           <h2>Other Trips</h2>
         </div>
         <div className="munnarCardsContainer">

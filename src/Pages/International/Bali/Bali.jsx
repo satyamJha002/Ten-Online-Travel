@@ -21,7 +21,7 @@ export default function Bali() {
         <article className="bali-article">
           <div className="article-content">
             <p>
-              <strong>"The Island of the Gods"</strong> is Bali. is, very
+              <strong>The Island of the Gods</strong> is Bali. is, very
               rightfully, Indonesia's most visited tourist attraction. This
               place is the epitome of a tropical paradise. Daily little
               sacrifices of Outside the hotels, there are flowers and sticks of
@@ -36,11 +36,13 @@ export default function Bali() {
               Bali is among them. The beaches and cities in Bali's southern
               region are the main destinations for tourists. Where{" "}
               <span className="location">Kuta </span> draws in youthful event
-              attendees, Where{" "}
-              <span className="location">There are hipsters in Canggu</span>,{" "}
-              Where{" "}
-              <span className="location">The yogis congregate in Ubud</span>,{" "}
-              Where{" "}
+              attendees, Where
+              <span className="location">
+                There are hipsters in Canggu
+              </span>, Where
+              <span className="location">
+                The yogis congregate in Ubud
+              </span>, Where
               <span className="location">
                 For the wealthy and young, Seminyak
               </span>

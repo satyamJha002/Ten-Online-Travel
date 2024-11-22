@@ -28,13 +28,27 @@
   display: flex;
   padding: 2px;
   width: 50%;
-  background-color: green;
+  background-color: #32b67a;
+}
+
+.no-days {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgb(211, 210, 210);
 }
 .detail-right {
   width: 60%;
 }
 .detail-left {
   width: 40%;
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
 }
 .card-image {
   width: 100%;
@@ -105,15 +119,73 @@
   margin-top: 50px;
 }
 
-.detail-overview h1 {
-  font-size: 1.5rem;
+.detail-overview h1,
+.detail-itinerary h1,
+.inclusions-container h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 .detail-itinerary {
   margin-top: 50px;
 }
+.qna-container {
+  margin-top: 50px;
+}
+.question h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
 
-.detail-itinerary h1 {
-  font-size: 1.5rem;
+.inclusions-container {
+  margin-top: 50px;
+}
+
+.detail-price-container {
+  width: 80%;
+  height: 300px;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: white;
+}
+.detail-discount {
   margin-bottom: 20px;
+}
+.detail-discount h1 {
+  padding: 5px 10px;
+  display: inline;
+  background-color: #fceaea;
+  color: #e75040;
+  font-weight: 500;
+}
+
+.originalPrice span {
+  display: inline-flex;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.originalPrice span del {
+  color: #919191;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.finalPrice h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.finalPrice span {
+  color: #919191;
+}
+.availableBtn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #32b67a;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 5px;
 }
