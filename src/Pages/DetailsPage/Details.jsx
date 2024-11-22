@@ -39,28 +39,6 @@ const Details = () => {
     setShowMap(!showMap);
   };
 
-  const handleScroll = () => {
-    const nav = navRef.current;
-    const scrollY = window.scrollY;
-
-    
-    if (scrollY > navTop && scrollY > lastScrollY) {
-      setIsSticky(true); 
-    } else if (scrollY < lastScrollY && scrollY <= navTop) {
-      setIsSticky(false); 
-    }
-
-    setLastScrollY(scrollY); 
-  };
-
-  useEffect(() => {
-    setNavTop(navRef.current.offsetTop); 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
 
   if (!pkg) {
     return <div>Package not found</div>; 
@@ -127,10 +105,8 @@ const Details = () => {
             <h1>Breakfast</h1>
           </div>
         </div>
-        <div>
-          <ul
-            ref={navRef}
-            className={`detail-nav ${isSticky ? "fixed" : ""}`}>
+        <div className= "detail-nav-sticky">
+          <ul>
             <li>
               <a href={"#overView"}>OverView</a>
             </li>
