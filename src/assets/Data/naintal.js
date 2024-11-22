@@ -18,6 +18,6 @@ export const travelPackage = [
     originalPrice: "₹68,000",
     nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
     featured: true,
-    description: "Uttarakhand tourism offerings rang...",
+    description: "Uttarakhand tourism....",
   },
 ];
