@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     travelPackage as kodaikanal,
 } from "../../../../assets/Data/kodaikanal";
 import Card from "../../../../Components/Card/Card";
 import "./Kodaikanal.css";
+import { useLocation } from "react-router-dom";
+
 
 const Kodaikanal = () => {
+    const location = useLocation();
+    const [locationURL] = useState(location.pathname);
+    const newUrl = locationURL
+        .split("")
+        .map((ele) => (ele === "/" ? " > " : ele))
+        .join("");
     return (
         <>
             <div className="Kodaikanal-intro">
+            <p className="Kodaikanal-destination"> Home {newUrl}</p>
                 <h1>Kodaikanal</h1>
                 <div className="KodaikanalInfo">
 

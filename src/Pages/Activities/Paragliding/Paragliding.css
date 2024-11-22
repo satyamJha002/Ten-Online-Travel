@@ -7,21 +7,38 @@
 .paragliding-container h1 {
   font-size: 2.5rem;
   margin: 2rem;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.paragliding-container h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 40%;
+  height: 3px; 
+  background-color: #32b67a;
+}
+
+.paragliding-destination{
+  margin: 1rem;
 }
 
 .paragliding-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 30px auto;
   padding-left: 0;
 }
 
-.paragliding-cards > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 28px;
-  height: 100%;
+.paragliding-cards > *:nth-last-child(-n+1) {
+  margin-right: 67%;
+  margin-left: 0; 
 }
 
 .title {
@@ -48,8 +65,8 @@
   }
 
   .paragliding-cards > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin: 0;
+    margin-right: 0;
+    margin-left: 0; 
   }
 }
 

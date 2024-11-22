@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; 
 import {
   munnarOtherTrips,
   munnarsightseeing,
@@ -6,11 +6,21 @@ import {
 } from "../../../assets/Data/munnar";
 import Card from "../../../Components/Card/Card";
 import "./Munnar.css";
+import { useLocation } from "react-router-dom";
+
 
 const Munnar = () => {
+  const location = useLocation();
+  const [locationURL] = useState(location.pathname);
+  const newUrl = locationURL
+    .split("")
+    .map((ele) => (ele === "/" ? " > " : ele))
+    .join("");
   return (
     <>
       <div className="munnar-intro">
+      <p className="munnar-destination"> Home {newUrl}</p>
+
         <h1>Munnar</h1>
         <div className="munnarInfo">
           <p>

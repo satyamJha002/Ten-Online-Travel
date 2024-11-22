@@ -37,8 +37,7 @@ export const travelPackage = [
         originalPrice: "₹15,990",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
         featured: true,
-        description: "Tamil Nadu Tamil Nadu- A land of..."
+        description: "Ooty Tour Package, once the summer..."
     },
 
 ];
-

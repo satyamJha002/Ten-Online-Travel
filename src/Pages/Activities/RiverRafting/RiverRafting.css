@@ -3,25 +3,41 @@
     padding: 20px;
     background-color: #f9f9f9;
 }
-
 .riverrafting-container h1 {
     font-size: 2.5rem;
     margin: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
+.riverrafting-container h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40%;
+    height: 3px;
+    background-color: #32b67a;
+}
+
+.riverrafting-destination {
+    margin: 1rem;
+}
 
 .riverrafting-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center; 
+    justify-content: space-evenly; 
     margin: 30px auto;
     padding-left: 0;
 }
 
 .riverrafting-cards > *:nth-last-child(-n+1) {
-    margin-right: auto;
-    margin-left: 28px; 
+    margin-right: 68.5%;
+    margin-left: 1.5%; 
 }
 
 
@@ -197,7 +213,7 @@
     }
     .riverrafting-cards > *:nth-last-child(-n+1) {
         margin-right: auto;
-        margin-left: 28px; 
+        margin-left: 2%; 
     }
 }
 

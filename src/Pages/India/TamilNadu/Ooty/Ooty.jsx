@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     travelPackage as ooty,
 } from "../../../../assets/Data/ooty";
 import Card from "../../../../Components/Card/Card";
 import "./Ooty.css";
+import { useLocation } from "react-router-dom";
+
 
 const Ooty = () => {
+    const location = useLocation();
+    const [locationURL] = useState(location.pathname);
+    const newUrl = locationURL
+        .split("")
+        .map((ele) => (ele === "/" ? " > " : ele))
+        .join("");
     return (
         <>
             <div className="Ooty-intro">
+            <p className="Kodaikanal-destination"> Home {newUrl}</p>
                 <h1>Ooty</h1>
                 <div className="OotyInfo">
 
