@@ -123,7 +123,7 @@ export const packages = [
     originalPrice: "₹17,500",
     nextDepartures: ["Nov 30", "Dec 1"],
     featured: true,
-    description: "Bask the charm of the 'Queen of Hills'...",
+    description: "The charm of the 'Queen of Hills'...",
   },
   {
     id: 8,
