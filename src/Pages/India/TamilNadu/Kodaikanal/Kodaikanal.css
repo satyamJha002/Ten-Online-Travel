@@ -2,7 +2,7 @@
     padding: 20px 40px;
 }
 
-.kodailkanal-intro h1 {
+.Kodaikanal-intro h1 {
     font-size: 2.5rem;
     margin: 2rem;
     margin-left: 0.5rem;
@@ -11,7 +11,7 @@
     margin-bottom: 1rem;
 }
 
-.kodailkanal-intro h1::after {
+.Kodaikanal-intro h1::after {
     content: "";
     position: absolute;
     left: 0;
@@ -21,7 +21,7 @@
     background-color: #32b67a;
 }
 
-.kodailkanal-destination {
+.kodaikanal-destination {
     margin: 0.5rem;
 }
 
