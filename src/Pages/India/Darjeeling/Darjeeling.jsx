@@ -6,7 +6,7 @@ import styles from "./Darjeeling.module.css";
 const Darjeeling = () => {
   return (
     <>
-      <section className={styles["main"]}>
+      <section>
         <div className={styles["title-content"]}>
           <h1 className={styles["darjeeling-heading"]}>
             Darjeeling
@@ -26,10 +26,8 @@ const Darjeeling = () => {
           </div>
         </div>
 
-        <div className={styles["sightseeing-container"]}>
-          <div className={styles["divider"]}></div>
-          <span className={styles["sightseeing-title"]}>Sightseeing</span>
-          <div className={styles["divider"]}></div>
+        <div className={styles["sightseeing-divider"]}>
+          <h2>Sightseeing</h2>
         </div>
 
         {/* flex flex-wrap gap-5 ml-0 justify-center max-lg:justify-start max-lg:ml-7 max-lg:pl-5     max-md:justify-center max-md:ml-7 max-md:pl-5 max-xl:justify-start  max-2xl:justify-start max-sm:ml-0 */}
