@@ -152,4 +152,8 @@
   .friAndFam h2 {
     padding: 0 15px;
   }
+  .maldivesCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 15px;
+  }
 }
