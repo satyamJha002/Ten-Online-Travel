@@ -15,7 +15,7 @@ export const packages = [
     originalPrice: "₹19,500",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
-    description: "Enjoy happy charm of Shimla Mana...",
+    description: "Enjoy happy charm...",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const packages = [
     originalPrice: "₹14,500",
     nextDepartures: ["Nov 19", "Nov 20"],
     featured: true,
-    description: "Soar through the skies of Bir Billing, the...",
+    description: "The skies of Bir Bill...",
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ export const packages = [
     originalPrice: "₹22,500",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
-    description: "Dive into the scenic beauty of Manali...",
+    description: "Dive into the sceni...",
   },
   {
     id: 4,
@@ -69,7 +69,7 @@ export const packages = [
     originalPrice: "₹11,500",
     nextDepartures: ["Nov 17", "Nov 18"],
     featured: true,
-    description: "Fly above serene lakes or lush green...",
+    description: "Fly above serene...",
   },
   {
     id: 5,
@@ -87,7 +87,7 @@ export const packages = [
     originalPrice: "₹20,000",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
-    description: "Relax in the serene lakes and breat...",
+    description: "Relax in the sere...",
   },
   {
     id: 6,
@@ -105,7 +105,7 @@ export const packages = [
     originalPrice: "₹11,500",
     nextDepartures: ["Nov 22", "Nov 23"],
     featured: true,
-    description: "Wake up to beautiful sunrise and...",
+    description: "Wake up to beaut...",
   },
   {
     id: 7,
@@ -123,7 +123,7 @@ export const packages = [
     originalPrice: "₹17,500",
     nextDepartures: ["Nov 30", "Dec 1"],
     featured: true,
-    description: "The charm of the 'Queen of Hills'...",
+    description: "The 'Queen of Hills'...",
   },
   {
     id: 8,
@@ -141,7 +141,7 @@ export const packages = [
     originalPrice: "₹10,000",
     nextDepartures: ["Nov 12", "Nov 13"],
     featured: true,
-    description: "Escape to this serene hill station...",
+    description: "Escape to this sere...",
   },
   {
     id: 9,
@@ -159,7 +159,7 @@ export const packages = [
     originalPrice: "₹23,000",
     nextDepartures: ["Nov 24", "Nov 25"],
     featured: true,
-    description: "Discover the Scotland of the East w...",
+    description: "Discover the Scotl...",
   },
   {
     id: 10,
@@ -177,6 +177,6 @@ export const packages = [
     originalPrice: "₹15,000",
     nextDepartures: ["Nov 28", "Nov 30"],
     featured: true,
-    description: "Sunbathe and revel in the party capit...",
+    description: "Sunbathe and revel...",
   },
 ];
