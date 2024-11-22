@@ -1,0 +1,92 @@
+.title-content {
+  padding: 0rem 2rem;
+  margin-top: 2rem;
+}
+
+.darjeeling-heading {
+  font-size: 2.25rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.darjeeling-heading .underline {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 5%;
+  background-color: #32b67a;
+  margin-top: 0.5rem;
+  position: absolute;
+}
+
+.darjeeling-description {
+  margin-top: 0.5rem;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.sightseeing-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.divider {
+  flex-grow: 1;
+  border-top: 1px solid #4a5568;
+}
+
+.sightseeing-title {
+  margin: 1rem 1rem;
+  font-size: 1.5rem;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .sightseeing-title {
+    font-size: 1.875rem;
+  }
+  .container > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 639px) {
+  .sightseeing-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* General Styles */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    min-width: 111%;
+    margin: 0px -10px;
+    justify-content: center;
+  }
+}

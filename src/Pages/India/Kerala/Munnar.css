@@ -4,14 +4,16 @@
 
 .munnar-intro h1 {
   font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .munnar-intro h1::after {
   content: "";
   padding: 2px;
   width: 10%;
-  display: flex;
+  display: block;
   background-color: #32b67a;
+  margin-top: 10px;
 }
 
 .munnarInfo {
@@ -59,27 +61,59 @@
   width: 100%;
   background-color: #7c7c8b;
 }
-.friAndFam::after {
+
+.Sightseeing::after {
   content: "";
   top: 45%;
 }
-.friAndFam::before {
+
+.Sightseeing::before {
   content: "";
   top: 55%;
 }
 
 .munnarCardsContainer {
   width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+.munnarCardsContainer > *:nth-last-child(-n + 1) {
+  display: flex;
+  justify-content: start;
+}
+
+.sightseeingCardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sightseeingCardsContainer > * {
+  margin: 0;
+}
+
+.sightseeingCardsContainer > *:nth-last-child(1) {
+  margin-right: auto;
+  margin-left: 26px;
+  margin-top: 20px;
+}
+
+.otherCardsContainer {
+  display: flex;
+  justify-content: start;
+  margin-left: 26px;
+}
+
+@media screen and (max-width: 1024px) {
   .munnar-intro {
     padding: 15px 30px;
   }
@@ -91,9 +125,32 @@
   .Sightseeing {
     font-size: 36px;
   }
+
+  .munnarCardsContainer {
+    gap: 20px;
+  }
+
+  .munnarCardsContainer > *:nth-last-child(-n + 1) {
+    margin: 0;
+    margin-right: 50%;
+  }
+
+  .sightseeingCardsContainer {
+    gap: 20px;
+  }
+
+  .sightseeingCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin: 0;
+  }
+  .otherCardsContainer {
+    display: flex;
+    justify-content: start;
+    margin-left: 15px;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .munnar-intro {
     padding: 10px 20px;
   }
@@ -106,30 +163,22 @@
     font-size: 32px;
   }
 
-  .munnnarCardsContainer {
+  .munnarCardsContainer {
     gap: 20px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .munnar-intro h1 {
-    font-size: 1.8rem;
+  .sightseeingCardsContainer {
+    gap: 20px;
   }
-
-  .Sightseeing {
-    font-size: 28px;
-  }
-
-  .Sightseeing h2 {
-    padding: 0 20px;
-  }
-
-  .munnnarCardsContainer {
-    justify-content: center;
+  .otherCardsContainer {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    margin-left: 45px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   .munnar-intro {
     padding: 10px;
   }
@@ -148,5 +197,10 @@
 
   .Sightseeing h2 {
     padding: 0 15px;
+  }
+
+  .munnarCardsContainer > *:nth-last-child(-n + 1) {
+    margin: auto;
+    margin-right: 20px;
   }
 }

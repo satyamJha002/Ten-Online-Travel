@@ -10,7 +10,7 @@ export const travelPackage = [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Aerial-4-600x400-1.jpg",
     ],
     title: "Uttarakhand (Haridwar-Mussoorie-Nainital)",
-    location: "Mussoorie,Nainital,",
+    location: "Mussoorie,Nainital,Rishikesh,Uttarakhand",
     duration: "6 Days - 5 Nights",
     people: "4 People",
     discount: "12% Off",

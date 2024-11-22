@@ -94,11 +94,12 @@ const Kashmir = () => {
         </span>
         <div class="flex-grow border-t border-gray-300"></div>
       </div>
-      <div className="flex flex-wrap gap-4 md:justify-between sm:justify-center justify-center">
-        {kashmirPackages.map((pckg) => (
-          <Card key={pckg.id} pkg={pckg} />
-        ))}
-      </div>
+
+      {kashmirPackages.map((pckg) => (
+        <div className="flex gap-4 justify-start max-md:justify-center max-lg:justify-start max-xl:justify-start max-2xl:justify-start">
+          <Card pkg={pckg} />
+        </div>
+      ))}
     </div>
   );
 };

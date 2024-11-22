@@ -29,34 +29,14 @@ const AboutUs = () => {
       <div className='About-description'>
         <img
           src='https://b4holiday.com/wp-content/uploads/2022/02/Why-Book-with-before-holiday.jpeg'
-          alt='Why Book with Before Holiday'
+          alt='Why Book with Ten Travel'
         />
         <p>
-          TEN Travel is a Delhi-NCR-based online travel agency, proudly serving
-          travelers since 2016. We specialize in delivering a diverse range of
-          world-class travel services at competitive prices. With years of
-          experience, innovative tour packages, and a long list of happy
-          clients, we’ve earned our place as one of India’s leading tour
-          companies. Our approach is guided by the principle of “leaving no
-          stone unturned,” which has cemented our reputation in the travel
-          industry.
+        At The Entrepreneurship Network (TEN), we are passionate about transforming ideas into impactful realities. Our mission is to empower aspiring entrepreneurs through our Virtual Incubator Program, a comprehensive initiative that offers accessible resources, expert mentorship, and practical guidance. From idea validation and market research to strategic business planning and funding opportunities, we are dedicated to supporting individuals at every stage of their entrepreneurial journey, bridging the gap between ambition and success.
         </p>
-        <p>
-          Whether you have a clear idea of your dream vacation, want to
-          customize a multi-destination itinerary, or are interested in
-          theme-based travel, we make planning effortless. Our romantic couple
-          packages are thoughtfully crafted to make every journey feel like a
-          second honeymoon, complete with exclusive perks and surprises. For our
-          corporate partners, we guarantee seamless planning and execution for
-          all events and retreats.
-        </p>
-        <p>
-          At TEN Travel, we’re more than just a travel agency. We’re creators of
-          lifelong memories—whether it’s a getaway with friends, a family
-          adventure, or a corporate outing. Since 2016, thousands of satisfied
-          travelers have embarked on unforgettable experiences with us, and
-          we’re dedicated to continuing this tradition for all future trips.
-        </p>
+<p>To further enhance our offerings and diversify our impact, we established TEN Travel, a subsidiary that blends entrepreneurship with travel excellence. Since its inception, TEN Travel has been redefining travel experiences, providing personalized itineraries, theme-based packages, and seamless corporate travel solutions. Together, TEN and TEN Travel create a unique ecosystem where dreams are nurtured—whether through business innovation or unforgettable journeys. </p>
+       
+       
         <div className='image-grid'>
           {images.map((src, index) => (
             <img key={index} src={src} alt={`Travel ${index + 1}`} />

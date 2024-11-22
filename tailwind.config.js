@@ -6,6 +6,7 @@ export default {
       content: {
         empty: '""',
       },
+
       animation: {
         fadeInUp: "fadeInUp 1.5s ease-out forwards",
       },

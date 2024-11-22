@@ -145,26 +145,6 @@ export const munnarsightseeing = [
         featured: true,
         description: "Kerala has an endless lis..."
     },
-    {
-        id: 5,
-        images: [
-            "https://b4holiday.com/wp-content/uploads/2021/02/Houseboat_in_Alleppey_n_Kumarakom_Backwaters.jpg",
-            "https://b4holiday.com/wp-content/uploads/2021/02/Munnar_Tea_Gardens.jpg",
-            "https://b4holiday.com/wp-content/uploads/2021/02/Munnar_Tea_Gardens-2.jpg",
-            "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
-            "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
-        ],
-        title: "Kerala Full Tour Packages",
-        location: "Alleppey, India, Kerala",
-        duration: "9 Days - 8 Nights",
-        people: "2-8 People",
-        discount: "34% Off",
-        price: "₹27,900",
-        originalPrice: "₹42,000",
-        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
-        featured: true,
-        description: "Kerala Full Tour Packag..."
-    },
 
 
 ];

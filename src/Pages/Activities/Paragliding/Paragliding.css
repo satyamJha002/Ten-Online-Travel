@@ -18,9 +18,9 @@
   padding-left: 0;
 }
 
-.paragliding-cards > *:nth-last-child(-n+1) {
+.paragliding-cards > *:nth-last-child(-n + 1) {
   margin-right: auto;
-  margin-left: 28px; 
+  margin-left: 28px;
   height: 100%;
 }
 

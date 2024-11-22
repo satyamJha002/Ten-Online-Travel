@@ -183,7 +183,6 @@ const Home = () => {
                     type="date"
                     id="return-date"
                     className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring focus:ring-green-300"
-                    disabled
                   />
                 </div>
               </div>
