@@ -81,7 +81,7 @@ export const Bali = [
       "https://b4holiday.com/wp-content/uploads/2021/10/Bali-Pool-Villa-Seminayak.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/Bali-Indonesia-2.jpg",
     ],
-    title: "TBali",
+    title: "Bali",
     location: "Bali",
     duration: "7 Days - 6 Nights",
     people: "2 People",

@@ -2,6 +2,7 @@ import "./detail.css";
 import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
 import { useState } from "react";
+import { FaCheckCircle } from "react-icons/fa";
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -121,15 +122,24 @@ const Details = () => {
               </div>
             </div>
             <div id="Inclusions" className="inclusions-container">
-              <h1>Package Inclusions</h1>
-              <h2> Inclusion</h2>
-              <div className="inclusion">
+              <h1> Inclusion</h1>
+              <h2>Package Inclusions</h2>
+              <div className="inclusions">
                 {item.packageInclusion.map((inc, index) => (
-                  <div key={index}>
-                    <p>{inc}</p>
+                  <div key={index} className="inclusion">
+                    <p>
+                      <FaCheckCircle className="text-green-500 overflow-hidden text-xl" />{" "}
+                      {inc}
+                    </p>
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="exclusion-container">
+              <h2>Package Exclusion</h2>
+              {item.packageExclusion.map((exc, index) => (
+                <div key={index}>{exc}</div>
+              ))}
             </div>
           </div>
           <div className="detail-left">
