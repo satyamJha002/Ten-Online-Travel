@@ -152,11 +152,19 @@
 
 
   }
+  @media (max-width: 321px) and (min-width:346px) {
+    .list-name {
+      column-gap: 14px !important;
+
+        margin-left: -3% !important;
+    }
+  }
+  
   @media (max-width: 334px) and (min-width:351px) {
     .list-name {
       column-gap: 15px !important;
 
-        margin-left: -3%;
+        margin-left: -3% !important;
     }
   }
   @media (max-width: 388px) {
@@ -237,13 +245,53 @@
       margin-top: -24% !important;
   }
 }
-
-@media (max-width: 398px)  and (min-width:321px){
+@media (max-width: 324px) and (min-width:321px){
   .sightseeing-div .sightseeing-title {
-      margin-top: 104% !important;
+      margin-top: 106% !important;
+  }
+}
+@media (max-width: 358px) and (min-width:338px){
+  .sightseeing-div .sightseeing-title {
+      margin-top: 106% !important;
+  }
+}
+@media (max-width: 370px) and (min-width:358px){
+  .sightseeing-div .sightseeing-title {
+      margin-top: 88% !important;
   }
 }
 
+@media (max-width: 398px) and (min-width:370px){
+  .sightseeing-div .sightseeing-title {
+      margin-top: 88% !important;
+  }
+}
+
+@media (max-width: 339px)  and (min-width: 325px){
+  .sightseeing-div .sightseeing-title {
+      margin-top: 106% !important;
+  }
+  .list-name{
+    margin-bottom: 57% !important;
+  }
+}
+@media (max-width: 470px)  and (min-width: 440px){
+  .sightseeing-div .sightseeing-title {
+      margin-top: 44% !important;
+  }
+  .list-name{
+    margin-bottom: 57% !important;
+  }
+}
+
+@media (max-width: 480px)  and (min-width: 470px){
+  .sightseeing-div .sightseeing-title {
+      margin-top: 44% !important;
+  }
+  .list-name{
+    margin-bottom: 50% !important;
+  }
+}
 
   @media (max-width: 480px) {
   
@@ -252,7 +300,7 @@
   
     }
     .list-name{
-      column-gap: 27px;
+      column-gap: 14px;
       text-align: center;
       margin-bottom: 71%;    
     }
@@ -286,9 +334,7 @@
   }
   }
   @media(max-width:600px) and (min-width:481px){
-    .Andaman-tour{
-      /* padding: 10px !important; */
-    }
+  
     .sightseeing-div .sightseeing-title{
       margin-top: 30% !important;
   
