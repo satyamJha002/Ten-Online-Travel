@@ -15,7 +15,35 @@ export const packages = [
     originalPrice: "₹13,500",
     nextDepartures: ["Dec 10", "Dec 20", "Jan 5"],
     featured: true,
-    description: "Experience the breathtaking beaut..."
+    description: "Experience the breathtaking beaut...",
+    detailDescription: "Explore the enchanting valleys and natural beauty of Meghalaya...",
+    subDescription: "Perfect for nature enthusiasts, this trek takes you through lush landscapes...",
+    overView: "The Seven Sisters trek offers a unique blend of culture, nature, and adventure...",
+    qna: [
+      {
+        question: "What is the best time to visit Meghalaya?",
+        answer: "The best time to visit Meghalaya is from October to April for clear skies and pleasant weather.",
+      },
+      {
+        question: "Are trekking permits required?",
+        answer: "Yes, permits are required for certain areas and will be arranged by the tour organizers.",
+      },
+      {
+        question: "What fitness level is required for this trek?",
+        answer: "A moderate level of fitness is required as the trek involves some steep climbs.",
+      },
+    ],
+    packageInclusion: [
+      "Accommodation during the trek.",
+      "All meals during the trek.",
+      "Trekking permits and entry fees.",
+      "Guides and support staff.",
+    ],
+    packageExclusion: [
+      "Personal expenses like tips, drinks, and souvenirs.",
+      "Travel insurance.",
+      "Anything not mentioned in inclusions.",
+    ],
   },
   {
     id: 2,
@@ -33,7 +61,35 @@ export const packages = [
     originalPrice: "₹11,500",
     nextDepartures: ["Dec 12", "Dec 18", "Jan 8"],
     featured: true,
-    description: "Crossing the majestic Hampta Pass..."
+    description: "Crossing the majestic Hampta Pass...",
+    detailDescription: "The Hampta Pass trek offers panoramic views of lush valleys...",
+    subDescription: "An adventure in Himachal's serene landscapes...",
+    overView: "Hampta Pass trek is a perfect blend of adventure and nature...",
+    qna: [
+      {
+        question: "What is the altitude of Hampta Pass?",
+        answer: "Hampta Pass reaches a maximum altitude of 4,270 meters.",
+      },
+      {
+        question: "What should I pack for the trek?",
+        answer: "Warm clothing, trekking shoes, and essential gear are necessary.",
+      },
+      {
+        question: "Is prior trekking experience needed?",
+        answer: "No, beginners can also participate with adequate preparation.",
+      },
+    ],
+    packageInclusion: [
+      "Accommodation in tents.",
+      "Meals during the trek.",
+      "Trekking permits and guides.",
+      "First aid support.",
+    ],
+    packageExclusion: [
+      "Personal expenses.",
+      "Insurance coverage.",
+      "Travel to the starting point.",
+    ],
   },
   {
     id: 3,
@@ -51,7 +107,35 @@ export const packages = [
     originalPrice: "₹9,000",
     nextDepartures: ["Dec 14", "Dec 21", "Jan 9"],
     featured: true,
-    description: "Experience the offbeat beauty of Kedarka..."
+    description: "Experience the offbeat beauty of Kedarka...",
+    detailDescription: "Nestled in the Himalayas, the Valley of Flowers is a UNESCO World Heritage Site...",
+    subDescription: "A paradise for nature lovers and photographers...",
+    overView: "A scenic trek showcasing vibrant flowers and serene landscapes...",
+    qna: [
+      {
+        question: "Is the Valley of Flowers open year-round?",
+        answer: "No, the Valley of Flowers is accessible from June to October.",
+      },
+      {
+        question: "How difficult is the trek?",
+        answer: "It is an easy to moderate trek, suitable for beginners.",
+      },
+      {
+        question: "What kind of clothing should I carry?",
+        answer: "Carry comfortable trekking gear and layered clothing for varying temperatures.",
+      },
+    ],
+    packageInclusion: [
+      "Accommodation in guesthouses/tents.",
+      "All meals during the trek.",
+      "Entry fees and permits.",
+      "Experienced trek leaders.",
+    ],
+    packageExclusion: [
+      "Transportation to the base camp.",
+      "Personal expenses.",
+      "Tips and donations.",
+    ],
   },
   {
     id: 4,
@@ -69,6 +153,34 @@ export const packages = [
     originalPrice: "₹10,000",
     nextDepartures: ["Dec 16", "Dec 23", "Jan 10"],
     featured: true,
-    description: "Trek the scenic Kuari Pass from Joshim..."
+    description: "Trek the scenic Kuari Pass from Joshim...",
+    detailDescription: "The Chadar Trek is one of the most unique and thrilling experiences...",
+    subDescription: "An adventurous journey over a frozen river in Ladakh...",
+    overView: "Experience the magic of trekking over ice, with temperatures as low as -15°C...",
+    qna: [
+      {
+        question: "What is the best time for the Chadar Trek?",
+        answer: "The trek is best done in January and February when the river is frozen.",
+      },
+      {
+        question: "What is the level of difficulty for the trek?",
+        answer: "This is a challenging trek that requires good physical fitness.",
+      },
+      {
+        question: "Are special shoes needed for the trek?",
+        answer: "Yes, insulated and waterproof trekking boots are essential.",
+      },
+    ],
+    packageInclusion: [
+      "Accommodation in camps.",
+      "All meals during the trek.",
+      "Trekking permits and medical kits.",
+      "Support staff including guides and porters.",
+    ],
+    packageExclusion: [
+      "Personal expenses and gear rentals.",
+      "Travel insurance.",
+      "Transport to and from Leh.",
+    ],
   },
 ];
