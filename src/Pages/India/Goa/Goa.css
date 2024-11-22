@@ -20,6 +20,7 @@
      color: #666666;
      width: 97%;
      margin-bottom: 4%;
+     text-align: justify;
   }
 
 
@@ -61,7 +62,7 @@
   }
   .friendfamily-heading{
     width: 64%;
-
+    font-weight: 500;
   }
 
   .other-div .other-title {
@@ -140,6 +141,16 @@
       width: 332% !important;
     }
 }
+@media screen and (max-width: 373px){
+  .otherstrip-heading {
+    font-size: 100% !important;
+    min-width: 44% !important;
+
+}
+}
+
+
+
 @media screen and (max-width: 390px){
   .friendfamily-heading{
     font-size: 20% !important;
@@ -153,16 +164,28 @@
 }
 @media screen and (max-width: 600px) {
   .goa{
-    padding: 10px;
+    padding: 10px 20px;
   }
   .otherstrip-heading {
     font-size: 100% !important;
-    min-width: 26% !important;
+    min-width: 66% !important;
 
 }
 
 }
+@media(max-width:499px){
+  .friendfamily-heading{
+  
+      width: 537%;
+ 
+  }
+}
+@media(max-width:480px) and(min-width:320px){
+  .otherstrip-heading{
+  font-size: 35px !important;
 
+  }
+}
   @media (max-width: 480px){
     .goa-heading::after {
       width: 13%;
@@ -178,7 +201,7 @@
       text-align: justify;
       }
       .friendfamily-heading {
-        width: 410%;
+        width: 472%;
     }
     .Friends-div .Friends-title::before {
       border-top: none ;
@@ -202,11 +225,14 @@ border-bottom:none ;
   justify-content: center;
 
 }
+
 .otherstrip-heading{
   text-align: center;
 
-  font-size: 200% !important;
-  width: 146% !important;
+  /* font-size: 200% !important; */
+  width: 190% !important;
+ 
+    font-size: 270% !important;
 }
 .other-div .other-title {
   min-width: 35% !important;
@@ -217,16 +243,102 @@ border-bottom:none ;
 }
 
   }
+  @media (width:499px) {
+    .friendfamily-heading {
+      min-width: 304px !important;
+  }
+}
+@media (max-width:500px) and (min-width:495px){
+  .otherstrip-heading{
+    width: 133% !important;
+  }
 
-  @media (max-width:768px)  and (min-width:500px){
+}
+  @media (max-width:500px)  and (min-width:481px){
+    .friendfamily-heading {
+      min-width: 303px !important;
+  }
+    .Friends-div .Friends-title::before {
+      border-top: none ;
+     border-bottom:none ;
+  }
+  .Friends-div .Friends-title::after {
+    border-top: none ;
+    border-bottom:none ;
+}
+.other-div .other-title::before{
+  border-top: none ;
+ border-bottom:none ;
+}
+.other-div .other-title::after{
+border-top: none ;
+border-bottom:none ;
+}
+
+  }
+
+  @media (max-width:700px)  and (min-width:500px){
+    .otherstrip-heading{
+      width: 133% !important;
+    }
+
+    }
+  
+    @media (max-width:495px)  and (min-width:481px){
+       .otherstrip-heading{
+          width: 135%;
+      
+        /* min-width: 36px !important; */
+       }
+    }
+  @media (max-width:650px) and (min-width:700px){
+    .otherstrip-heading {
+      font-size: 94% !important;
+      min-width: 32% !important;
+
+
+  }
+  }
+  @media (max-width:671px) and (min-width:570px){
+    .otherstrip-heading {
+      /* font-size: 94% !important; */
+      min-width: 28% !important;
+
+
+  }
+  }
+  @media (min-width:711px){
+      .otherstrip-heading{
+        /* min-width: 24% !important; */
+
+      }
+  }
+  @media (max-width:600px) and (min-width:500px){
+    .otherstrip-heading{
+      width:107% !important;
+    }
+  }
+  @media (max-width:700px) and (min-width:600px){
+    .otherstrip-heading{
+      width: 88% !important;
+    }
+  }
+@media (max-width:800px) and (min-width:797px){
+  .otherstrip-heading{
+    width: 63% !important;
+  }
+}
+
+  @media (max-width:768px) and (min-width:481px){
  
       .friendfamily-heading {
-          min-width: 303px !important;
+          min-width: 315px !important;
       }
   
     .otherstrip-heading {
-      font-size: 62% !important;
-      min-width: 22% !important;
+      font-size: 94% !important;
+      min-width: 24% !important;
+
 
   }
   .GoaContainer{
@@ -264,19 +376,92 @@ border-bottom:none ;
           width: 56% !important;
 }
    }
-
-  @media only screen and (max-width:884px)  and (min-width:500px){
+   @media(max-width:900px) and (min-width:800px){
     .friendfamily-heading {
-      width: 137% !important;
-      }
-  .otherstrip-heading {
-    font-size: 94% !important;
-    width: 47% !important;
+      width: 109% !important;
+  }
+   }
+
+ 
+
+
+
+  
+  @media only screen and (max-width: 797px) and (min-width: 769px){
+    .friendfamily-heading {
+        width: 108% !important;
+        font-size: 88% !important;
+    }
+    .otherstrip-heading{
+      width: 63% !important;
+
+    }
+}
+  @media only screen and (max-width: 826px) and (min-width:801x){
+    .friendfamily-heading {
+        width: 108% !important;
+        font-size: 88% !important;
+    }
+}
+  @media only screen and (max-width: 835px) and (min-width:769px){
+    .friendfamily-heading {
+        width: 108% !important;
+        font-size: 88% !important;
+    }
+}
+  @media only screen and (max-width: 1000px) and (min-width:901px){
+    .friendfamily-heading {
+        width: 108% !important;
+        font-size: 88% !important;
+    }
+    .otherstrip-heading{
+      width: 50% !important;
+  }
+}
+  @media only screen and (max-width: 1137px) and (min-width:1000px){
+    .friendfamily-heading {
+        width: 91% !important;
+        font-size: 88% !important;
+    }
+    .otherstrip-heading{
+      width: 43% !important;
+  }
+}
+  @media only screen and (max-width: 1207px) and (min-width:1137px){
+    .friendfamily-heading {
+        width: 71% !important;
+        font-size: 88% !important;
+    }
+    .otherstrip-heading{
+      width: 36% !important;
+  }
+}
+  @media only screen and (max-width: 1245px) and  (min-width:1207px) {
+    .friendfamily-heading {
+        width: 65% !important;
+        font-size: 88% !important;
+    }
+    .otherstrip-heading{
+      width: 34% !important;
+  }
 
 }
+  @media only screen and (max-width:1569px) and (min-width:1245px){
+    
+    .Friends-div{
+      font-size: 91%;
+  }
+    .friendfamily-heading {
+     width: 65% !important;
+      font-size: 100% !important;
+    }
+    .Friends-div .Friends-title{
+      font-size: 175%;
 
-
-
+    }
+    .otherstrip-heading{
+      width: 32% !important;
+  }
   }
   @media (width:1280px){
     .Friends-div{
@@ -288,11 +473,6 @@ border-bottom:none ;
       font-size: 63%;
   }
   
-    .friendfamily-heading {
-      min-width: 65% !important;
-      font-size: 72px !important;
-
-  }
   .otherstrip-heading {
     font-size: 234% !important;
     width: 49% !important;
@@ -301,7 +481,13 @@ border-bottom:none ;
 
 
   }
-  @media (max-width:900px) and (min-width:500px){
+  @media (max-width:800px) and (min-width:769px){
+    .friendfamily-heading{
+      width: 140% !important;
+    }
+  }
+
+  @media (max-width:900px) and (min-width:800px){
     .goa {
       padding: 10px 20px;
   }
@@ -315,10 +501,32 @@ border-bottom:none ;
     width: 56% !important;
 }
 .friendfamily-heading {
-  width: 166% !important;
+  font-size: 89%;
+  width: 127% !important;
 }
 .goa-content {
   text-align: justify;
   }
 
   }
+  @media (max-width: 900px) {
+    .Andaman-tour {
+        padding: 10px 20px;
+    }
+}
+@media only screen and (max-width:901px) and (min-width:984){
+  .friendfamily-heading {
+    /* width: 159% !important; */
+    /* font-size: 114% !important; */
+  }
+}
+@media only screen and (max-width:1800px) and (min-width:1700px) {
+  .otherstrip-heading {
+    
+    /* width: 21% !important; */
+}
+  .friendfamily-heading {
+    /* width: 159% !important; */
+    /* font-size: 114% !important; */
+  }
+}
