@@ -6,6 +6,7 @@ import {
 } from "../../../assets/Data/data";
 import { famousLakes } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
+import styles from "./Ladakh.module.css";
 
 const Ladakh = () => {
   const listPlaces = [
@@ -63,14 +64,14 @@ const Ladakh = () => {
   ];
 
   return (
-    <div className="px-3">
-      <h1 className="text-4xl my-4 relative sikkim-heading">
+    <section className={styles["custom-container"]}>
+      <h1 className={styles["custom-heading"]}>
         Ladakh
-        <span class="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
+        <span className={styles["underline"]}></span>
       </h1>
 
-      <div className="">
-        <p className="mt-2 px-2 text-gray-700 leading-tight sm:leading-snug">
+      <div>
+        <p className={styles["custom-paragraph"]}>
           Ladakh, <strong>India's dramatic crown, entices adventurers</strong>{" "}
           with its barren beauty, snow-capped peaks, azure skies, and vibrant
           culture. Since opening to tourists in the 1970s, it has enchanted
@@ -88,43 +89,47 @@ const Ladakh = () => {
           </strong>
           .
         </p>
-        <p className="mt-2 px-2 text-gray-700 leading-7 sm:leading-snug">
+        <p className={styles["custom-paragraph-secondary"]}>
           Be a part of an unforgettable travel story with us and relish our
           legacy to travel, explore and celebrate life.
         </p>
       </div>
 
-      <div className="mx-2 my-3">
-        <h3 className="text-xl font-semibold text-gray-600 ">
+      <div className={styles["custom-section"]}>
+        <h3 className={styles["custom-subheading"]}>
           Best Places to Visit in Ladakh
         </h3>
-        <ul className="mx-4 list-disc marker:text-gray-600 space-y-2">
+        <ul className={styles["custom-list"]}>
           {listPlaces.map((item) => (
-            <li className="text-green-500">{item}</li>
+            <li className={styles["custom-list-item"]}>{item}</li>
           ))}
         </ul>
       </div>
 
-      <div className="">
-        <div className="my-4">
-          <span className="text-2xl font-semibold text-gray-600">
-            <u className="w-5 text-gray-600">Things to do in Ladakh</u>
+      <div>
+        <div className={styles["custom-highlight"]}>
+          <span className={styles["custom-highlight-item"]}>
+            <u>Things to do in Ladakh</u>
           </span>{" "}
-          <span className="text-2xl font-semibold text-gray-600">|</span>{" "}
-          <span className="text-2xl font-semibold text-gray-600">
-            <u className="w-5 text-gray-600">Attraction in Ladakh</u>
+          <span className={styles["custom-divider"]}>|</span>{" "}
+          <span className={styles["custom-highlight-item"]}>
+            <u>Attraction in Ladakh</u>
           </span>
         </div>
         {thingsTodoInLadakh.map((list, index) => (
-          <div key={index} className="">
-            <div className="mx-2 mb-9">
-              <p className="text-xl font-semibold mt-4">{list.placeName}</p>
-              <p>{list.description}</p>
+          <div key={index} className={styles["custom-item"]}>
+            <div className={styles["custom-item-content"]}>
+              <p className={styles["custom-place-name"]}>{list.placeName}</p>
+              <p className={styles["custom-item-description"]}>
+                {list.description}
+              </p>
 
-              <ul className="list-disc mx-4">
-                <li className="text-md font-semibold text-gray-600">
+              <ul className={styles["custom-details-list"]}>
+                <li className={styles["custom-details-item"]}>
                   Location:{" "}
-                  <span className="font-normal">{list.description}</span>
+                  <span className={styles["custom-location"]}>
+                    {list.description}
+                  </span>
                 </li>
               </ul>
             </div>
@@ -133,23 +138,25 @@ const Ladakh = () => {
       </div>
 
       <div>
-        <span className="text-2xl font-semibold text-gray-600">
-          <u className="w-5 text-gray-600">Famous Lakes in Leh Ladakh</u>
+        <span className={styles["custom-highlight-item"]}>
+          <u>Famous Lakes in Leh Ladakh</u>
         </span>{" "}
         {famousLakes.map((item, index) => (
-          <div key={index}>
-            <div className="mx-2 mb-9">
-              <p className="text-xl font-semibold mt-4">{item.lakesName}</p>
-              <p className="">{item.description}</p>
+          <div key={index} className="mt-3">
+            <div className={styles["custom-item-content"]}>
+              <p className={styles["custom-place-name"]}>{item.lakesName}</p>
+              <p className={styles["custom-item-description"]}>
+                {item.description}
+              </p>
 
               <div>
-                <p className="font-semibold text-gray-600">
+                <p className={styles["custom-attraction"]}>
                   Attraction of {item.lakesName}:
                 </p>
-                <ul className="mx-4">
+                <ul className={styles["custom-details-list"]}>
                   {item.attraction.length === 1
                     ? item.attraction.map((list) => (
-                        <li className="text-md font-semibold text-gray-600">
+                        <li className="text-md list-none font-semibold text-gray-600">
                           <span className="font-normal">{list}</span>
                         </li>
                       ))
@@ -160,12 +167,10 @@ const Ladakh = () => {
                       ))}
                 </ul>
               </div>
-              <div className="my-3">
-                <p className="font-semibold">
+              <div className={styles["custom-visit-time"]}>
+                <p className={styles["custom-visitTime-name"]}>
                   Best time to visit {item.lakesName}:{" "}
-                  <span className="text-[1.1rem] font-normal">
-                    {item.timeVisit}
-                  </span>
+                  <span className="font-normal">{item.timeVisit}</span>
                 </p>
               </div>
             </div>
@@ -173,32 +178,36 @@ const Ladakh = () => {
         ))}
       </div>
 
-      <div className="my-3">
-        <span className="text-2xl m-2  font-semibold text-gray-600">
-          <u className="w-5 text-gray-600">List of Monasteries in Leh ladakh</u>
+      <div className={styles["custom-section-leh"]}>
+        <span className={styles["custom-highlight-item-ladakh"]}>
+          <u>List of Monasteries in Leh ladakh</u>
         </span>{" "}
-        <ul className="mx-4 my-3 list-disc marker:text-gray-600 space-y-2">
-          {listMonasteries.map((item, index) => (
-            <li className="text-md text-gray-500" key={index}>
-              {item}
-            </li>
-          ))}
-        </ul>
-        <div className="my-4">
-          <span className="text-xl font-semibold text-gray-600">
-            List of popular Mountain Passes in Leh ladakh
-          </span>
-          <ul className="mx-4 my-4 list-disc marker:text-gray-600 space-y-2">
-            {listOfMountains.map((item, index) => (
-              <li className="text-md text-gray-500" key={index}>
+        <div className="py-3">
+          <ul className={styles["custom-list-leh"]}>
+            {listMonasteries.map((item, index) => (
+              <li className={styles["custom-list-item"]} key={index}>
                 {item}
               </li>
             ))}
           </ul>
         </div>
+        <div className="py-3">
+          <span className={styles["custom-subheading-name"]}>
+            List of popular Mountain Passes in Leh ladakh
+          </span>
+          <div className="mt-3">
+            <ul className={styles["custom-list-mountains"]}>
+              {listOfMountains.map((item, index) => (
+                <li className={styles["custom-list-mountain-item"]} key={index}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div className="mx-auto mt-10 px-2">
+      <div className="mx-auto my-10 px-2">
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse border  border-gray-300 text-left text-sm lg:text-base">
             <tbody>
@@ -267,34 +276,26 @@ const Ladakh = () => {
         </div>
       </div>
 
-      <div className="flex items-center my-8">
-        <div className="flex-grow border-t border-gray-700"></div>
-        <span className="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700">
-          Friends & Family Tour
-        </span>
-        <div className="flex-grow border-t border-gray-700"></div>
+      <div className={styles["custom-divider-container"]}>
+        <h2>Friends & Family Tour</h2>
       </div>
 
-      <div className="flex flex-wrap gap-5 ml-0 justify-center max-lg:justify-start max-lg:ml-7 max-md:justify-center max-xl:justify-start  max-2xl:justify-start max-sm:ml-0">
+      <div className={styles["custom-flex-container"]}>
         {ladakhFamilyTrips.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
       </div>
 
-      <div className="flex items-center my-8">
-        <div className="flex-grow border-t border-gray-700"></div>
-        <span className="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700">
-          The Other Trips
-        </span>
-        <div className="flex-grow border-t border-gray-700"></div>
+      <div className={styles["custom-divider-container"]}>
+        <h2>Other Trips</h2>
       </div>
 
-      <div className="flex flex-wrap gap-5 justify-center md:justify-start lg:justify-start xl:justify-start 2xl:justify-start">
+      <div className={styles["custom-flex-other-container"]}>
         {ladakhOtherTrip.map((pckg) => (
           <Card key={pckg.id} pkg={pckg} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

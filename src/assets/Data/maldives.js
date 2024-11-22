@@ -9,7 +9,7 @@ export const maldives = [
       "https://b4holiday.com/wp-content/uploads/2021/12/Jacuzzi-Water-Villa-3-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Aerial-4-600x400-1.jpg",
     ],
-    title: "VILAMENDHOO ISLAND RESORT AND SPA | 4 Star",
+    title: "VILAMENDHOO ISLAND RESORT",
     location: "Maldives",
     duration: "5 Days - 4 Nights",
     people: "2-4 People",

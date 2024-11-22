@@ -18,7 +18,7 @@ const Hiking = () => {
       <h1>Hiking</h1>
       <div className="hiking-cards">
         {packages.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg} />
+          <Card key={pkg.id} pkg={pkg} locationURL={locationURL}/>
         ))}
       </div>
     </div>

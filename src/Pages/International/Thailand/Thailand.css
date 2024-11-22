@@ -33,6 +33,7 @@
   text-align: center;
   position: relative;
 }
+
 .friAndFam h2 {
   background-color: #f4f4f4;
   display: inline-block;
@@ -98,7 +99,7 @@
     font-size: 32px;
   }
   .thailandCardsContainer {
-    gap: 25px;
+    gap: 20px;
   }
   .thailandCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;

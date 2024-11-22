@@ -97,7 +97,7 @@
   }
   .dubaiCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 35px;
+    margin-left: 15px;
   }
 }
 

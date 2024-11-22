@@ -1,24 +1,65 @@
-import "./detail.css";
 import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import { IoCloseCircleSharp } from "react-icons/io5";
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [showMap, setShowMap] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const navRef = useRef(null);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [navTop, setNavTop] = useState(0);
 
   const { id } = useParams();
 
   const filteredObjects = dubai.filter((obj) => obj.id === Number(id));
-  console.log(filteredObjects);
+  const pkg = filteredObjects.length > 0 ? filteredObjects[0] : null;
 
   const handlePrevImage = () => {
-    setCurrentImage((prev) => (prev === 0 ? item.images.length - 1 : prev - 1));
+    if (pkg?.images) {
+      setCurrentImage((prev) =>
+        prev === 0 ? pkg.images.length - 1 : prev - 1
+      );
+    }
   };
 
   const handleNextImage = () => {
-    setCurrentImage((prev) => (prev === item.images.length - 1 ? 0 : prev + 1));
+    if (pkg?.images) {
+      setCurrentImage((prev) =>
+        prev === pkg.images.length - 1 ? 0 : prev + 1
+      );
+    }
   };
+
+  const toggleMap = () => {
+    setShowMap(!showMap);
+  };
+
+  const handleScroll = () => {
+    const nav = navRef.current;
+    const scrollY = window.scrollY;
+
+    if (scrollY > navTop && scrollY > lastScrollY) {
+      setIsSticky(true);
+    } else if (scrollY < lastScrollY && scrollY <= navTop) {
+      setIsSticky(false);
+    }
+
+    setLastScrollY(scrollY);
+  };
+
+  useEffect(() => {
+    setNavTop(navRef.current.offsetTop);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
+  if (!pkg) {
+    return <div>Package not found</div>;
+  }
 
   return (
     <>
@@ -36,7 +77,6 @@ const Details = () => {
                 </div>
               </div>
             </div>
-            {/* slider */}
             <div className="detail-image-slider">
               <img
                 src={item.images[currentImage]}
@@ -130,7 +170,7 @@ const Details = () => {
                 {item.packageInclusion.map((inc, index) => (
                   <div key={index} className="inclusion">
                     <p>
-                      <FaCheckCircle className="text-green-500  text-xl" />{" "}
+                      <FaCheckCircle className="text-green-500 overflow-hidden text-xl" />{" "}
                       {inc}
                     </p>
                   </div>
@@ -139,45 +179,9 @@ const Details = () => {
             </div>
             <div className="exclusion-container">
               <h2>Package Exclusion</h2>
-              <div className="">
-                {item.packageExclusion.map((exc, index) => (
-                  <p key={index} className="exclusion">
-                    <IoCloseCircleSharp className="text-red-500 text-2xl" />{" "}
-                    {exc}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div id="Accommodation" className="mt-4 text-2xl">
-              <h1>Accommodation</h1>
-              <div>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <h3>
-                          <b>Location</b>
-                        </h3>
-                      </td>
-                      <td>
-                        <h3>
-                          <b>Hotel / Resort Name</b>
-                        </h3>
-                      </td>
-                      <td>
-                        <h3>
-                          <b>Room Type</b>
-                        </h3>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>DUBAI</td>
-                      <td>GOLDEN SAND HOTEL APARTMENTS</td>
-                      <td>01 Room Studio GS 3</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              {item.packageExclusion.map((exc, index) => (
+                <div key={index}>{exc}</div>
+              ))}
             </div>
           </div>
           <div className="detail-left">
@@ -188,7 +192,7 @@ const Details = () => {
               <div className="originalPrice">
                 <span className="from">From</span>
                 <span>
-                  <del>{item.originalPrice}</del>
+                  <del> {item.originalPrice}</del>
                 </span>
               </div>
               <div className="finalPrice">
@@ -198,11 +202,6 @@ const Details = () => {
               <div className="availableBtn">
                 <button>Check Availability</button>
               </div>
-            </div>
-            <div className="mt-5 tex flex ml-20 items-center w-full  justify-center">
-              <h2 className="text-3xl font-medium">
-                Check our reviews on TripAdvisor!
-              </h2>
             </div>
           </div>
         </div>
