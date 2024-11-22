@@ -47,7 +47,8 @@
 .detail-left {
   width: 40%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-left: 30px;
 }
 .card-image {
@@ -152,6 +153,16 @@
   margin-top: 10px;
 }
 .inclusion p {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.exclusion-container {
+  margin-top: 50px;
+}
+.exclusion {
   margin-top: 10px;
   font-size: 1rem;
   display: flex;

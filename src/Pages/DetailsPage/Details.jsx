@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { IoCloseCircleSharp } from "react-icons/io5";
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -35,6 +36,7 @@ const Details = () => {
                 </div>
               </div>
             </div>
+            {/* slider */}
             <div className="detail-image-slider">
               <img
                 src={item.images[currentImage]}
@@ -128,7 +130,7 @@ const Details = () => {
                 {item.packageInclusion.map((inc, index) => (
                   <div key={index} className="inclusion">
                     <p>
-                      <FaCheckCircle className="text-green-500 overflow-hidden text-xl" />{" "}
+                      <FaCheckCircle className="text-green-500  text-xl" />{" "}
                       {inc}
                     </p>
                   </div>
@@ -137,9 +139,45 @@ const Details = () => {
             </div>
             <div className="exclusion-container">
               <h2>Package Exclusion</h2>
-              {item.packageExclusion.map((exc, index) => (
-                <div key={index}>{exc}</div>
-              ))}
+              <div className="">
+                {item.packageExclusion.map((exc, index) => (
+                  <p key={index} className="exclusion">
+                    <IoCloseCircleSharp className="text-red-500 text-2xl" />{" "}
+                    {exc}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div id="Accommodation" className="mt-4 text-2xl">
+              <h1>Accommodation</h1>
+              <div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h3>
+                          <b>Location</b>
+                        </h3>
+                      </td>
+                      <td>
+                        <h3>
+                          <b>Hotel / Resort Name</b>
+                        </h3>
+                      </td>
+                      <td>
+                        <h3>
+                          <b>Room Type</b>
+                        </h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>DUBAI</td>
+                      <td>GOLDEN SAND HOTEL APARTMENTS</td>
+                      <td>01 Room Studio GS 3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           <div className="detail-left">
@@ -150,7 +188,7 @@ const Details = () => {
               <div className="originalPrice">
                 <span className="from">From</span>
                 <span>
-                  <del> {item.originalPrice}</del>
+                  <del>{item.originalPrice}</del>
                 </span>
               </div>
               <div className="finalPrice">
@@ -160,6 +198,11 @@ const Details = () => {
               <div className="availableBtn">
                 <button>Check Availability</button>
               </div>
+            </div>
+            <div className="mt-5 tex flex ml-20 items-center w-full  justify-center">
+              <h2 className="text-3xl font-medium">
+                Check our reviews on TripAdvisor!
+              </h2>
             </div>
           </div>
         </div>

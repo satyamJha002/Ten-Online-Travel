@@ -16,7 +16,7 @@ export const dubai = [
     people: "2 People",
     discount: "8% Off",
     price: "₹28,000",
-    originalPrice: "₹30,000",
+    originalPrice: "₹27,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     detailDescription:
       "A city of many faces, Dubai is one of the most popular tourist destinations in the world. Home to the tallest tower in the world, the Burj Khalifa, this global city is known for its lavish architecture, incredible skylines and a plethora of tourist attractions that break records to be the tallest, longest and biggest. Dubai has abundant opportunities when it comes to adventure activities like Desert Safaris through golden Arabian Dunes, Skydiving over the beautiful Palm Islands, Reef and wreck diving, kite surfing, wakeboarding, etc.",
