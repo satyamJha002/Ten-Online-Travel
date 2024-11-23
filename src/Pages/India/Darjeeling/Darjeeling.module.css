@@ -94,9 +94,21 @@
   margin-left: 17px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 2560px) {
+  .container > *:nth-last-child(-n + 1) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
   .container {
     padding: 0rem 1rem;
+  }
+
+  .container > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 17px;
   }
 }
 

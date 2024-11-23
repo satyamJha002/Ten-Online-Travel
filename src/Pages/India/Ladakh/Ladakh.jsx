@@ -207,7 +207,7 @@ const Ladakh = () => {
         </div>
       </div>
 
-      <div className="mx-auto my-10 px-2">
+      <div className="mx-auto my-10 px-1">
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse border  border-gray-300 text-left text-sm lg:text-base">
             <tbody>
