@@ -126,14 +126,18 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 65px;
+  gap: 60px;
   margin-top: 30px;
+
 }
 
 .last-company {
-  flex: 0 0 calc(50% - 15px);
+  flex: 0 0 calc(50% - 15px); 
 }
 
+.WaterSportContainer:last-child {
+  justify-content: flex-start; 
+}
 @media screen and (max-width: 320px) {
   .list-name {
     column-gap: 9px !important;
@@ -305,15 +309,9 @@
       margin-bottom: 71%;    
     }
     .AndamanContainer{
-      width: 111%;
-      margin-left: -5%;
+      justify-content: center;
+    
       
-    }
-    .WaterSportContainer{
-      width: 111%;
-      margin-left: -5%;
-      
-
     }
     .andaman-content{
       
@@ -325,12 +323,19 @@
     width: 21%;
   }
 }
+@media screen and (max-width: 576px) {
+  .AndamanContainer {
+      justify-content: center;
+      gap: 15px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .AndamanContainer {
     justify-content: center;
   }
   .WaterSportContainer {
-    justify-content: center;
+    justify-content: center !important;
   }
   }
   @media(max-width:600px) and (min-width:481px){
@@ -364,22 +369,156 @@
     margin-top: 10% !important;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .Andaman-tour {
     padding: 10px 20px;
   }
   .AndamanContainer {
-    gap: 47px;
-    padding: 10px !important;
+    display: flex;
+    justify-content: space-evenly;
 }
-.WaterSportContainer{
-  padding: 10px !important;
-   
+.WaterSportContainer {
+  justify-content: space-evenly !important;
 }
-  }
-  @media(max-width:1379px) and (min-width:1025px){
-.WaterSportContainer{
-  gap: 48px !important;
 
+  }
+
+  @media (max-width: 1024px) and (min-width:993px) {
+     .AndamanContainer{
+      display: flex;
+     }
+    .WaterSportContainer {
+      column-gap: 10%;
+        display: flex;
+    }
+  }
+
+  @media(max-width:1379px) and (min-width:1025px){ 
+  
+    .WaterSportContainer .last-company {
+      flex: 0 0 calc(50% - 15px); 
+      order: -1; 
+    }
+
+  }
+
+    @media(max-width:1079px) and (min-width:1025px){
+    .WaterSportContainer .Card {
+      column-gap: 40px; 
+    }
+  }
+  @media(max-width:1360px) and (min-width:1200px){
+    .WaterSportContainer .Card {
+      flex: 0 0 calc(33.33% - 40px) !important; 
+    }
+  }
+  @media (max-width: 1100px) and (min-width: 1025px) {
+    .WaterSportContainer {
+      column-gap: 47px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+  }
+  @media (max-width: 1180px) and (min-width: 1100px) {
+    .WaterSportContainer {
+      column-gap: 50px !important;
+      
+      
+    }
+    
+  }
+  @media (width: 1179px)  {
+    .WaterSportContainer {
+      column-gap: 54px !important;
+   
+    }
+    
+  }
+
+  @media (max-width: 1200px) and (min-width: 1180px) {
+    .WaterSportContainer {
+      column-gap: 55px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+    
+  }
+  @media (max-width: 1220px) and (min-width: 1200px) {
+    .WaterSportContainer {
+      column-gap: 56px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+    
+  }
+  @media (max-width: 1240px) and (min-width: 1220px) {
+    .WaterSportContainer {
+      column-gap: 57px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+    
+  }
+  @media (max-width: 1251px) and (min-width: 1240px) {
+    .WaterSportContainer {
+      column-gap: 58px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+    
+  }
+  @media (max-width: 1280px) and (min-width: 1251px) {
+    .WaterSportContainer {
+      column-gap: 58px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+    
+  }
+  /* @media (max-width: 1280px) and (min-width: 1200px) {
+    .WaterSportContainer {
+      column-gap: 55px !important;
+      flex: 0 0 calc(33.33% - 20px) !important; 
+    }
+    
+  } */
+  @media (max-width:1320px) and (min-width:1300px){
+    .WaterSportContainer{
+      column-gap: 60px;
+    }
+  }
+  @media (max-width:1359px) and (min-width:1320px){
+    .WaterSportContainer{
+      column-gap: 62px;
+    }
+  }
+  @media (max-width:1380px) and (min-width:1359px){
+    .WaterSportContainer{
+      column-gap: 64px;
+    }
+  }
+@media (max-width:1389px) and (min-width:1380px){
+  .WaterSportContainer{
+    column-gap: 65px;
+  }
 }
+
+  @media (max-width:1420px) and (min-width:1390px){
+    .WaterSportContainer{
+      column-gap: 65px;
+    }
+  }
+
+  @media (max-width:1439px) and (min-width:1420px){
+    .WaterSportContainer{
+      column-gap: 67px;
+    }
+  }
+
+  @media (max-width:1460px) and (min-width:1440px){
+    .WaterSportContainer{
+      column-gap: 68px;
+    }
+  }
+
+  @media (max-width:1500px) and (min-width:1460px){
+    .WaterSportContainer{
+      column-gap: 69px;
+
+      
+    }
   }

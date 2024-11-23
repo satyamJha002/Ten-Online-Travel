@@ -79,7 +79,7 @@ console.log("locationURL={locationURL}",locationURL);
 
 
       {/* card */}
-      <div className="WaterSportContainer">
+      <div className="WaterSportContainer" style={{justifyContent:"space-evenly !important"}}>
   {watertourPackages.map((pkg, index) => {
     const isLastTwo = index >= watertourPackages.length - 2;
     return (

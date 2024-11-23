@@ -27,7 +27,7 @@ const Goa = () => {
         <h2 className="Friends-title"><span className='friendfamily-heading'>Friends & Family Tour</span></h2>
       </div>
       {/* card */}
-      <div className="GoaContainer">
+      <div className="GoaContainer1">
         {tourGoaPackages.map((pkg) => (
           <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
         ))}
@@ -39,7 +39,7 @@ const Goa = () => {
       </div>
 
      
-      <div className="GoaContainer">
+      <div className="GoaContainer2">
         {tourotherPackages.map((pkg) => (
           <Card key={pkg.id} pkg={pkg} />
         ))}
