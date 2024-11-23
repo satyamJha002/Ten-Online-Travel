@@ -8,16 +8,16 @@ export const travelPackage = [
 
 
         ],
-        title: "5 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala, Munnar, Thekkady",
-        duration: "5 Days - 4 Nights",
-        people: "2 People",
-        discount: "19% Off",
-        price: "₹12,990",
-        originalPrice: "₹15,990",
-        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
+        title: "Ooty – Kodaikanal Tour Package",
+        location: "India, Kodaikanal, Ooty, Tamil Nadu",
+        duration: "6 Days - 5 Nights",
+        people: "2-20 People",
+        discount: "18% Off",
+        price: "₹24,500",
+        originalPrice: "₹30,000",
+        nextDepartures: ["Nov 23", "Nov 24", "Nov 25"],
         featured: true,
-        description: "Ooty Tour Package, once the summer..."
+        description: "Ooty Tour Package, once the..."
     },
     {
         id: 2,
@@ -28,16 +28,16 @@ export const travelPackage = [
 
 
         ],
-        title: "5 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala, Munnar, Thekkady",
+        title: "Ooty – Kodaikanal Package",
+        location: "India, Kodaikanal, Ooty, Tamil Nadu",
         duration: "5 Days - 4 Nights",
-        people: "2 People",
-        discount: "19% Off",
-        price: "₹12,990",
-        originalPrice: "₹15,990",
-        nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
+        people: "2-20 People",
+        discount: "12% Off",
+        price: "₹14,500",
+        originalPrice: "₹16,500",
+        nextDepartures: ["Nov 23", "Nov 24", "Nov 25"],
         featured: true,
-        description: "Ooty Tour Package, once the summer..."
+        description: "Tamil Nadu Tamil Nadu- A land of..."
     },
 
 ];
