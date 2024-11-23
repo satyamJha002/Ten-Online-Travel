@@ -94,13 +94,9 @@
   .friAndFam {
     font-size: 32px;
   }
+
   .singaporeCardsContainer {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 35px;
+    gap: 20px;
   }
 }
 
@@ -119,6 +115,10 @@
   }
   .singaporeCardsContainer {
     gap: 20px;
+  }
+  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 35px;
   }
 }
 
@@ -157,7 +157,7 @@
   .friAndFam h2 {
     padding: 0 15px;
   }
-  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
+  .thailandCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
     margin-left: 15px;
   }

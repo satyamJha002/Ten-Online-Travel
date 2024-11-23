@@ -1,27 +1,32 @@
-.goa{
-  padding: 20px 40px;
+.nani{
+
+  padding: 0 10px 0 20px;
+
 
   
   }
-  .goa-heading{
+  
+  .nani-heading{
+    margin-top: 2%;
     font-size: 2.5rem;
     margin-bottom: 2%;
    
   }
-  .goa-heading::after {
+  .nani-heading::after {
     content: "";
     padding: 2px;
     width: 3%;
     display: flex;
     background-color: #32b67a;
   }
-  .goa-content{
+  .nani-content{
      font-size: 16px;
      color: #666666;
      width: 97%;
+     text-align: justify;
      margin-bottom: 4%;
   }
-.goa-content p{
+.nani-content p{
   padding-right: 20px;
     padding-left: 30px;
 }
@@ -68,14 +73,14 @@
   top: 55%;
 }
 
-.maldivesCardsContainer {
+.naniCardsContainer {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start  ;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
   margin-top: 30px;
 }
 
@@ -94,7 +99,7 @@
       font-size: 32px;
   }
 
-  .maldivesCardsContainer {
+  .naniCardsContainer {
       gap: 20px;
   }
 }
@@ -110,8 +115,10 @@
       padding: 0 20px;
   }
 
-  .maldivesCardsContainer {
+  .naniCardsContainer {
       justify-content: center;
+      margin: -5px;
+      /* padding:0 0 0 10px; */
   }
 }
 

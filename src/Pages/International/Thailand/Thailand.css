@@ -71,10 +71,7 @@
   gap: 30px;
   margin-top: 30px;
 }
-.thailandCardsContainer > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 15px;
-}
+/*  */
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
   .thailandIntro {
@@ -101,10 +98,6 @@
   .thailandCardsContainer {
     gap: 20px;
   }
-  .thailandCardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 35px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -122,6 +115,10 @@
   }
   .thailandCardsContainer {
     gap: 20px;
+  }
+  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 35px;
   }
 }
 

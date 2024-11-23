@@ -117,11 +117,34 @@
   background-color: rgb(255, 255, 255);
 }
 
-.detail-nav {
+.detail-nav-sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.5em;
   margin-top: 20px;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   justify-content: space-around;
   height: 10vh;
+  display: flex !important;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.detail-nav-sticky ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  height: 100%;
+}
+
+.detail-nav-sticky ul li {
   display: flex;
   align-items: center;
   position: relative;
