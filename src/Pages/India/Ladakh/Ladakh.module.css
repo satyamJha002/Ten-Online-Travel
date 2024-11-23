@@ -239,12 +239,12 @@
 
   .custom-flex-container > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 33px;
+    margin-left: 21px;
   }
 
   .custom-flex-other-container > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 21px;
   }
 }
 
@@ -269,19 +269,9 @@
     font-size: 1.3rem;
   }
 
-  .custom-flex-container {
-    min-width: 111%;
-    margin: 0px -20px;
-  }
-
   .custom-flex-container > *:nth-last-child(-n + 1) {
     margin-right: auto;
     margin-left: 17px;
-  }
-
-  .custom-flex-other-container {
-    min-width: 111%;
-    margin: 0px -20px;
   }
 
   .custom-flex-other-container > *:nth-last-child(-n + 1) {

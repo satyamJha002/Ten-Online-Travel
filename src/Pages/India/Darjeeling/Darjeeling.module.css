@@ -112,17 +112,17 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
     justify-content: center;
   }
   .container > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 2rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .title-content {
     margin: 0rem 1rem;
   }
@@ -140,6 +140,6 @@
 
   .container > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 1em;
   }
 }
