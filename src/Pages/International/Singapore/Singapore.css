@@ -1,6 +1,7 @@
 .singaporeIntro {
   padding: 20px 40px;
 }
+
 .singaporeIntro > p {
   color: black;
   font-size: 1.1rem;
@@ -30,13 +31,14 @@
   text-align: center;
   position: relative;
 }
+
 .friAndFam h2 {
   background-color: #f4f4f4;
   display: inline-block;
   position: relative;
   color: rgb(0, 0, 0);
   padding: 0 30px;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 1;
   font-size: 2rem;
 }
@@ -67,10 +69,7 @@
   gap: 30px;
   margin-top: 30px;
 }
-.singaporeCardsContainer > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 17px;
-}
+/*  */
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
   .singaporeIntro {
@@ -94,7 +93,6 @@
   .friAndFam {
     font-size: 32px;
   }
-
   .singaporeCardsContainer {
     gap: 20px;
   }
@@ -129,7 +127,7 @@
   .singaporeIntro h1 {
     font-size: 1.7rem;
   }
-  .BaliIntro h1::after {
+  .singaporeIntro h1::after {
     width: 15%;
   }
   .friAndFam {
@@ -157,7 +155,7 @@
   .friAndFam h2 {
     padding: 0 15px;
   }
-  .thailandCardsContainer > *:nth-last-child(-n + 1) {
+  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
     margin-left: 15px;
   }

@@ -1,6 +1,9 @@
 .malaysiaIntro {
   padding: 20px 40px;
 }
+.malaysiaIntro {
+  padding: 20px 40px;
+}
 .malaysiaIntro > p {
   color: black;
   font-size: 1.1rem;
@@ -30,13 +33,14 @@
   text-align: center;
   position: relative;
 }
+
 .friAndFam h2 {
   background-color: #f4f4f4;
   display: inline-block;
   position: relative;
   color: rgb(0, 0, 0);
   padding: 0 30px;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 1;
   font-size: 2rem;
 }
@@ -62,21 +66,20 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 30px;
 }
-
+/*  */
+/* Responsive adjustments */
 @media screen and (max-width: 1200px) {
   .malaysiaIntro {
-    padding: 15px 30px;
+    padding: 18px 35px;
   }
-
   .malaysiaIntro h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
-
   .friAndFam {
     font-size: 36px;
   }
@@ -84,58 +87,73 @@
 
 @media screen and (max-width: 992px) {
   .malaysiaIntro {
-    padding: 10px 20px;
+    padding: 16px 30px;
   }
-
   .malaysiaIntro h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
-
   .friAndFam {
     font-size: 32px;
   }
-
   .malaysiaCardsContainer {
-    display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .malaysiaIntro h1 {
-    font-size: 1.8rem;
+  .malaysiaIntro {
+    padding: 14px 25px;
   }
-
+  .malaysiaIntro h1 {
+    font-size: 1.9rem;
+  }
   .friAndFam {
     font-size: 28px;
   }
-
   .friAndFam h2 {
-    padding: 0 20px;
+    padding: 0 25px;
   }
-
   .malaysiaCardsContainer {
-    justify-content: center;
+    gap: 20px;
+  }
+  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 35px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .malaysiaIntro {
-    padding: 10px;
+    padding: 12px 20px;
   }
-
   .malaysiaIntro h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
-
   .malaysiaIntro h1::after {
     width: 15%;
   }
-
   .friAndFam {
     font-size: 24px;
   }
+  .friAndFam h2 {
+    padding: 0 20px;
+  }
+  .malaysiaCardsContainer {
+    justify-content: center;
+    gap: 15px;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .malaysiaIntro {
+    padding: 10px 15px;
+  }
+  .malaysiaIntro h1 {
+    font-size: 1.5rem;
+  }
+  .friAndFam {
+    font-size: 22px;
+  }
   .friAndFam h2 {
     padding: 0 15px;
   }
