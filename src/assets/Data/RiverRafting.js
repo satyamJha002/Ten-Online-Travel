@@ -9,7 +9,7 @@ export const packages = [
         title: "Honeymoon Escape",
         location: "Himachal",
         duration: "6 Days - 5 Nights",
-        people: "2 People",
+        people: "2-10 People",
         discount: "35% Off",
         price: "₹16,700",
         originalPrice: "₹25,500",
@@ -56,7 +56,7 @@ export const packages = [
         title: "Shimla Manali",
         location: "Himachal",
         duration: "5 Days - 4 Nights",
-        people: "7 People",
+        people: "7-15 People",
         discount: "15% Off",
         price: "₹9,800",
         originalPrice: "₹11,500",
@@ -80,7 +80,7 @@ export const packages = [
         originalPrice: "₹14,000",
         nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
         featured: true,
-        description: "Explore Kullu's charm, Manali's thrilling..."
+        description: "Explore Kullu's and Manali's thrilling..."
     },
     {
         id: 5,
@@ -128,7 +128,7 @@ export const packages = [
         title: "Shimla Manali",
         location: "Himachal",
         duration: "5 Days - 4 Nights",
-        people: "7 People",
+        people: "7-18 People",
         discount: "8% Off",
         price: "₹22,000",
         originalPrice: "₹24,000",
