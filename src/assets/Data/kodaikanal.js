@@ -11,7 +11,7 @@ export const travelPackage = [
         title: "Ooty – Kodaikanal Tour Package",
         location: "India, Kodaikanal, Ooty, Tamil Nadu",
         duration: "6 Days - 5 Nights",
-        people: "2-20 People",
+        people: "20 People",
         discount: "18% Off",
         price: "₹24,500",
         originalPrice: "₹30,000",
@@ -31,7 +31,7 @@ export const travelPackage = [
         title: "Ooty – Kodaikanal Package",
         location: "India, Kodaikanal, Ooty, Tamil Nadu",
         duration: "5 Days - 4 Nights",
-        people: "2 -20 People",
+        people: "20 People",
         discount: "12% Off",
         price: "₹14,500",
         originalPrice: "₹16,500",
@@ -41,4 +41,3 @@ export const travelPackage = [
     },
 
 ];
-
