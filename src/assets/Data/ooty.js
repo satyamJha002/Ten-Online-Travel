@@ -8,7 +8,7 @@ export const travelPackage = [
 
 
         ],
-        title: "Ooty – Kodaikanal Tour Package",
+        title: "Ooty – Kodaikanal Package",
         location: "India, Kodaikanal, Ooty, Tamil Nadu",
         duration: "6 Days - 5 Nights",
         people: "2-20 People",
