@@ -379,6 +379,8 @@
 }
 .WaterSportContainer {
   justify-content: space-evenly !important;
+  column-gap: 31px !important;
+
 }
 
   }
