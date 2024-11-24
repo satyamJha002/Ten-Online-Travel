@@ -6,7 +6,7 @@ import styles from "./Darjeeling.module.css";
 const Darjeeling = () => {
   return (
     <>
-      <section>
+      <section className={styles["main"]}>
         <div className={styles["title-content"]}>
           <h1 className={styles["darjeeling-heading"]}>
             Darjeeling
