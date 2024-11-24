@@ -156,6 +156,7 @@
 
 
   }
+ 
   @media (max-width: 321px) and (min-width:346px) {
     .list-name {
       column-gap: 14px !important;
