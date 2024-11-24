@@ -107,7 +107,7 @@ export const munnarsightseeing = [
     {
         id: 3,
         images: [
-            
+
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_Harmonia_Kovalam_1.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_Harmonia_Kovalam_4.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_copper_castle-1024x576.jpg",
@@ -162,7 +162,7 @@ export const munnarOtherTrips = [
             "https://b4holiday.com/wp-content/uploads/2021/02/Houseboat_in_Alleppey_n_Kumarakom_Backwaters.jpg",
 
         ],
-        title: "Kerala Tree House Honeymoon Package 3 Night",
+        title: "Kerala Tree House Honeymoon Package",
         location: "Alleppey, Kerala, Munnar",
         duration: "4 Days - 3 Nights",
         people: "6 People",

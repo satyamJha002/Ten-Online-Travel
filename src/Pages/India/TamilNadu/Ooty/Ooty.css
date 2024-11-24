@@ -26,6 +26,7 @@
 .OotyInfo p {
     color: #7c7c8b;
     padding: 10px;
+    font-size: 1.1em;
 }
 
 .OotyInfo p span {
@@ -94,13 +95,15 @@
 
     .OotyCardsContainer {
         display: flex;
-        justify-content: space-evenly;
-        margin-left: 20px;
+        justify-content: start;
+        margin-left: 15px;
     }
 
     .OotyCardsContainer>*:nth-last-child(-n + 1) {
-        margin-right: auto !important;
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-right: 4%;
+        /* margin-left: 18px !important; */
     }
 
 
