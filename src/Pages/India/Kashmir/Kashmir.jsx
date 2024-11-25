@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { kashmirPackages } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
 import styles from "./Kashmir.module.css";
+import { useLocation } from "react-router-dom";
 
 const Kashmir = () => {
+  const location = useLocation();
+  const [locationURL] = useState(location.pathname);
+  const newUrl = locationURL
+    .split("")
+    .map((ele) => (ele === "/" ? " > " : ele))
+    .join("");
   return (
     <div className="px-3">
+      <p className="text-black my-4 text-lg">Home {newUrl}</p>
       <h1 className="ext-4xl my-4 relative sikkim-heading">
         Kashmir
         <span class="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
@@ -92,7 +100,7 @@ const Kashmir = () => {
       </div>
 
       {kashmirPackages.map((pckg) => (
-        <div className="flex gap-4 justify-start max-md:justify-center max-lg:justify-start max-xl:justify-start max-2xl:justify-start">
+        <div className={styles["flex-container"]}>
           <Card pkg={pckg} />
         </div>
       ))}

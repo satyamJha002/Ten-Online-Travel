@@ -2,6 +2,12 @@
   margin: 0rem 1.875rem;
 }
 
+.main > p {
+  color: black;
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
 .darjeeling-heading {
   font-size: 2.25rem;
   position: relative;
