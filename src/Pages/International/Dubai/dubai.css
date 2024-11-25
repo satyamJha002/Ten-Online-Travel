@@ -117,6 +117,10 @@
   .dubaiCardsContainer {
     gap: 20px;
   }
+  .dubaiCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 35px;
+  }
 }
 
 @media screen and (max-width: 576px) {

@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
 import { useState } from "react";
+
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
@@ -8,6 +10,12 @@ import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detail.css";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+} from "@material-ui/core";
 
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -15,6 +23,7 @@ const Details = () => {
 
   const filteredObjects = dubai.filter((obj) => obj.id === Number(id));
 
+  console.log(filteredObjects);
   const handlePrevImage = () => {
     if (filteredObjects?.images) {
       setCurrentImage((prev) =>
@@ -89,7 +98,9 @@ const Details = () => {
             <div>
               <ul className="detail-nav-sticky">
                 <li>
-                  <a href={"#overView"}>OverView</a>
+                  <a href={"#overView"}>
+                    {items.overView === " " ? null : "overView"}
+                  </a>
                 </li>
                 <li>
                   <a href={"#Itinerary"}>Itinerary</a>
@@ -103,45 +114,28 @@ const Details = () => {
               </ul>
             </div>
             <div id="overView" className="detail-overview">
-              <h1>Overview</h1>
+              <h1> {items.overView === " " ? null : "overView"}</h1>
               <p>{items.overView}</p>
             </div>
             <div id="Itinerary" className="detail-itinerary">
               <h1>Itinerary</h1>
               <div className="itinerary-container">
                 {items.qna.map((ele, index) => (
-                  <div key={index} className="qna-container">
-                    <div className="question">
-                      <h2>{ele.question1}</h2>
-                    </div>
-                    <div className="answer">
-                      <p>{ele.answer1} </p>
-                    </div>
-                    <div className="question">
-                      <h2>{ele.question2}</h2>
-                    </div>
-                    <div className="answer">
-                      <p>{ele.answer2} </p>
-                    </div>
-                    <div className="question">
-                      <h2>{ele.question3}</h2>
-                    </div>
-                    <div className="answer">
-                      <p>{ele.answer3}</p>
-                    </div>
-                    <div className="question">
-                      <h2>{ele.question4}</h2>
-                    </div>
-                    <div className="answer">
-                      <p>{ele.answer4} </p>
-                    </div>
-                    <div className="question">
-                      <h2>{ele.question5}</h2>
-                    </div>
-                    <div className="answer">
-                      <p>{ele.answer5} </p>
-                    </div>
-                  </div>
+                  <Accordion key={index} className="qna-container">
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      className="question">
+                      <Typography>
+                        <h2>{ele.question}</h2>
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className="answer">
+                      <Typography>
+                        <p>{ele.answer}</p>
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
                 ))}
               </div>
             </div>
