@@ -218,10 +218,10 @@
       grid-template-rows: 100px 106px 0px !important;
      }
     .sightseeing-div {
-      margin-top: -12% !important;
+      /* margin-top: -12% !important; */
   }
   .sightseeing-div .sightseeing-title {
-    margin-top: -15% !important;
+    /* margin-top: -15% !important; */
   }
   .list-name {
     margin-bottom: 12px;
@@ -235,16 +235,16 @@
     margin-bottom: 2% !important;
   }
   .sightseeing-div {
-    margin-top: -14% !important;
+    /* margin-top: -14% !important; */
   }
 }
 
 @media (max-width: 360px) {
   .sightseeing-div .sightseeing-title {
-    margin-top: 77% !important;
+    /* margin-top: 77% !important; */
   }
   .sightseeing-div {
-    margin-top: -12% !important;
+    /* margin-top: -12% !important; */
   }
 }
 
@@ -257,34 +257,34 @@
       margin-bottom: -31% !important;
     }
     .sightseeing-div {
-      margin-top: -24% !important;
+      /* margin-top: -24% !important; */
   }
 }
 @media (max-width: 324px) and (min-width:321px){
   .sightseeing-div .sightseeing-title {
-      margin-top: 106% !important;
+      /* margin-top: 106% !important; */
   }
 }
 @media (max-width: 358px) and (min-width:338px){
   .sightseeing-div .sightseeing-title {
-      margin-top: 106% !important;
+      /* margin-top: 106% !important; */
   }
 }
 @media (max-width: 370px) and (min-width:358px){
   .sightseeing-div .sightseeing-title {
-      margin-top: 88% !important;
+      /* margin-top: 88% !important; */
   }
 }
 
 @media (max-width: 398px) and (min-width:370px){
   .sightseeing-div .sightseeing-title {
-      margin-top: 88% !important;
+      /* margin-top: 88% !important; */
   }
 }
 
 @media (max-width: 339px)  and (min-width: 325px){
   .sightseeing-div .sightseeing-title {
-      margin-top: 106% !important;
+      /* margin-top: 106% !important; */
   }
   .list-name{
     margin-bottom: 57% !important;
