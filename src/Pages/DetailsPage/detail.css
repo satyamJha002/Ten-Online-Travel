@@ -281,3 +281,31 @@
   line-height: 10px;
   color: black;
 }
+
+
+/* Accordation Itinerary Css */
+
+.qna-container {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.accordion-content p{
+  font-size: 1em;
+  padding: 15px;
+}

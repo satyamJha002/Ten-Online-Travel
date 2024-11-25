@@ -19,25 +19,23 @@ import "./detail.css";
 
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
   const { id } = useParams();
 
   const filteredObjects = dubai.filter((obj) => obj.id === Number(id));
 
   console.log(filteredObjects);
-  const handlePrevImage = () => {
-    if (filteredObjects?.images) {
-      setCurrentImage((prev) =>
-        prev === 0 ? filteredObjects.images.length - 1 : prev - 1
-      );
-    }
+
+  const handlePrevImage = (images) => {
+    setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  const handleNextImage = () => {
-    if (filteredObjects?.images) {
-      setCurrentImage((prev) =>
-        prev === filteredObjects.images.length - 1 ? 0 : prev + 1
-      );
-    }
+  const handleNextImage = (images) => {
+    setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   if (!filteredObjects) {
@@ -66,10 +64,16 @@ const Details = () => {
                 alt={items.title}
                 className="details-card-image"
               />
-              <button className="details-arrow left" onClick={handlePrevImage}>
+              <button
+                className="details-arrow left"
+                onClick={() => handlePrevImage(items.images)}
+              >
                 ❮
               </button>
-              <button className="details-arrow right" onClick={handleNextImage}>
+              <button
+                className="details-arrow right"
+                onClick={() => handleNextImage(items.images)}
+              >
                 ❯
               </button>
             </div>
@@ -95,11 +99,11 @@ const Details = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <ul className="detail-nav-sticky">
+            <div className="detail-nav-sticky">
+              <ul>
                 <li>
                   <a href={"#overView"}>
-                    {items.overView === " " ? null : "overView"}
+                    {items.overView === " " ? null : "OverView"}
                   </a>
                 </li>
                 <li>
@@ -114,31 +118,50 @@ const Details = () => {
               </ul>
             </div>
             <div id="overView" className="detail-overview">
-              <h1> {items.overView === " " ? null : "overView"}</h1>
+              <h1> {items.overView === " " ? null : "OverView"}</h1>
               <p>{items.overView}</p>
             </div>
+
             <div id="Itinerary" className="detail-itinerary">
               <h1>Itinerary</h1>
               <div className="itinerary-container">
-                {/* {items.qna.map((ele, index) => (
-                  <Accordion key={index} className="qna-container">
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel1a-content"
-                      className="question">
-                      <Typography>
-                        <h2>{ele.question}</h2>
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails className="answer">
-                      <Typography>
+                {items.qna.map((ele, index) => (
+                  <div key={index} className="qna-container">
+                    <div
+                      className="accordion-header"
+                      onClick={() => toggleAccordion(index)} 
+                      style={{
+                        cursor: 'pointer',
+                        background: '#f0f0f0',
+                        padding: '10px',
+                        borderBottom: '1px solid #ccc',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <h2>{ele.question}</h2>
+                      <span>
+                        {openIndex === index ? '-' : '+'} 
+                      </span>
+                    </div>
+                    {openIndex === index && (
+                      <div
+                        className="accordion-content"
+                        style={{
+                          padding: '10px',
+                          background: '#fff',
+                          border: '1px solid #ccc',
+                        }}
+                      >
                         <p>{ele.answer}</p>
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                ))} */}
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
+
             <div id="Inclusions" className="inclusions-container">
               <h1> Inclusion</h1>
               <h2>Package Inclusions</h2>
