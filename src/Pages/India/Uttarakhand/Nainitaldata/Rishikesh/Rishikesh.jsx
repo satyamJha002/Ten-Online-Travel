@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Rishikesh.css";
-import { rishikeshcamping, rishikeshfriend, rishikeshhiking, rishikeshrafting, rishikeshwatersports } from '../../../../../assets/Data/risihikesh';
+import { rishikeshcamping  } from '../../../../../assets/Data/risihikesh';
 import Card from '../../../../../Components/Card/Card';
 
 const Rishikesh = () => {
@@ -30,7 +30,7 @@ const Rishikesh = () => {
                     ))}
                 </div>
 
-
+{/* 
                 <div className="friendtour">
                     <h2>Friend &
                        Family tour
@@ -70,7 +70,7 @@ const Rishikesh = () => {
                     {(rishikeshwatersports || []).map((pkg) => (
                         <Card key={pkg.id} pkg={pkg} />
                     ))}
-                </div>     
+                </div>      */}
 
 
 
