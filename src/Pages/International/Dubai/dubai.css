@@ -143,6 +143,10 @@
     justify-content: center;
     gap: 15px;
   }
+  .dubaiCardsContainer > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 5%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -160,6 +164,6 @@
   }
   .dubaiCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 15px;
+    margin-left: 5%;
   }
 }
