@@ -147,10 +147,7 @@
     margin-left: -4%;
      padding-left: 10px;
   }
-  .GoaContainer2{
-    /* margin-left: -2%; */
 
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -172,8 +169,7 @@
 }
 @media screen and (min-width: 330px) and (max-width:333px) {
   .GoaContainer1 {
-    /* margin-left: -6% !important;
-    width: 108% !important; */
+  
     padding-left: 10px;
     margin-left: -4% !important;
     width: 105% !important;
@@ -225,6 +221,12 @@
       justify-content: space-evenly;
 
 }
+
+}
+@media (max-width:1024px) and (min-width:769px){
+  .GoaContainer2:last-child {
+    justify-content: flex-start; 
+  }
 
 }
 @media (max-width: 1024px) and (min-width:788px) {
