@@ -69,7 +69,7 @@
   margin-top: 30px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1028px) {
   .dubaiIntro {
     padding: 18px 35px;
   }
