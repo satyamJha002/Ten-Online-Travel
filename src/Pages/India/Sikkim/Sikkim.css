@@ -33,6 +33,10 @@
      margin-bottom: 4%;
      text-align: justify;
   }
+  .sikkim-div > p {
+    color: black;
+    font-size: 1.1rem;
+  }
   .sightseeing-sikkim-div .sightseeing-sikkim-title {
     display: flex;
     align-items: center;
