@@ -22,13 +22,13 @@ const Rishikesh = () => {
 
 
       <div className="camping">
-                    <h2>Camping</h2>
+                    <h2>Family & Friends Tour</h2>
                 </div>
                 <div className="camping-div">
-                    {(rishikeshcamping || []).map((pkg) => (
-                        <Card key={pkg.id} pkg={pkg} />
-                    ))}
-                </div>
+        {rishikeshcamping.map((pkg) => (
+          <Card key={pkg.id} pkg={pkg} />
+        ))}
+      </div>
 
 {/* 
                 <div className="friendtour">
