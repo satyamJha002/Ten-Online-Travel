@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
 import { useState } from "react";
-
-// import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
@@ -10,12 +8,6 @@ import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detail.css";
-// import {
-//   Accordion,
-//   AccordionDetails,
-//   AccordionSummary,
-//   Typography,
-// } from "@material-ui/core";
 
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -66,14 +58,12 @@ const Details = () => {
               />
               <button
                 className="details-arrow left"
-                onClick={() => handlePrevImage(items.images)}
-              >
+                onClick={() => handlePrevImage(items.images)}>
                 ❮
               </button>
               <button
                 className="details-arrow right"
-                onClick={() => handleNextImage(items.images)}
-              >
+                onClick={() => handleNextImage(items.images)}>
                 ❯
               </button>
             </div>
@@ -101,11 +91,12 @@ const Details = () => {
             </div>
             <div className="detail-nav-sticky">
               <ul>
-                <li>
-                  <a href={"#overView"}>
-                    {items.overView === " " ? null : "OverView"}
-                  </a>
-                </li>
+                {items.overView === " " ? null : (
+                  <li>
+                    <a href={"#overView"}>OverView</a>
+                  </li>
+                )}
+
                 <li>
                   <a href={"#Itinerary"}>Itinerary</a>
                 </li>
@@ -129,31 +120,27 @@ const Details = () => {
                   <div key={index} className="qna-container">
                     <div
                       className="accordion-header"
-                      onClick={() => toggleAccordion(index)} 
+                      onClick={() => toggleAccordion(index)}
                       style={{
-                        cursor: 'pointer',
-                        background: '#f0f0f0',
-                        padding: '10px',
-                        borderBottom: '1px solid #ccc',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                      }}
-                    >
+                        cursor: "pointer",
+                        background: "#f0f0f0",
+                        padding: "10px",
+                        borderBottom: "1px solid #ccc",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                      }}>
                       <h2>{ele.question}</h2>
-                      <span>
-                        {openIndex === index ? '-' : '+'} 
-                      </span>
+                      <span>{openIndex === index ? "-" : "+"}</span>
                     </div>
                     {openIndex === index && (
                       <div
                         className="accordion-content"
                         style={{
-                          padding: '10px',
-                          background: '#fff',
-                          border: '1px solid #ccc',
-                        }}
-                      >
+                          padding: "10px",
+                          background: "#fff",
+                          border: "1px solid #ccc",
+                        }}>
                         <p>{ele.answer}</p>
                       </div>
                     )}
