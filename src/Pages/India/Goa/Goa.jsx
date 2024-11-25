@@ -38,7 +38,7 @@ const Goa = () => {
         <h2 className="other-title"><span className='otherstrip-heading'>Other Trips</span></h2>
       </div>
 
-      <div className="GoaContainer2">
+      {/* <div className="GoaContainer2">
   {tourotherPackages.map((pkg, index) => (
     <Card
       key={pkg.id}
@@ -47,7 +47,24 @@ const Goa = () => {
     />
   ))}
 </div>
-     
+      */}
+
+
+<div className="GoaContainer2">
+  {tourotherPackages.map((pkg, index) => {
+    const isLast = index >= tourotherPackages.length - 1; // Check for the last card
+    return (
+      <Card
+        key={pkg.id}
+        pkg={pkg}
+        locationURL={locationURL}
+        className={isLast ? 'goalast' : ''}
+      />
+    );
+  })}
+</div>
+
+
   
 
     </div>
