@@ -271,7 +271,7 @@ export const Singapore = [
       "https://b4holiday.com/wp-content/uploads/2021/10/cameron-highlands-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/batu_caves_bh.jpg",
     ],
-    title: "3N Singapore/ 2N Cruise / 4N Kuala ",
+    title: "3N Singapore/ 2N Cruise / 4N Kuala Lumpur",
     location: "Malaysia, Singapore",
     duration: "10 Days - 9 Nights",
     people: "2 People",
