@@ -224,12 +224,19 @@
 }
 
 }
-@media (max-width:789px) and (min-width:768px){
+@media (max-width:780px) and (min-width:768px){
   .GoaContainer2{
-  column-gap: 57px !important;
+  column-gap: 68px !important;
 
   }
 }
+@media (max-width:790px) and (min-width:780px){
+  .GoaContainer2{
+  column-gap: 70px !important;
+
+  }
+}
+
 @media (max-width:800px) and (min-width:790px){
   .GoaContainer2{
   column-gap: 71px !important;
@@ -276,7 +283,7 @@
 
   }
 }
-@media (max-width:1026px) and (min-width:769px){
+@media (max-width:1025px) and (min-width:769px){
 
 
   .GoaContainer2:last-child {
