@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
 import { useState } from "react";
 
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+// import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
@@ -10,12 +10,12 @@ import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detail.css";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Typography,
-} from "@material-ui/core";
+// import {
+//   Accordion,
+//   AccordionDetails,
+//   AccordionSummary,
+//   Typography,
+// } from "@material-ui/core";
 
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -120,7 +120,7 @@ const Details = () => {
             <div id="Itinerary" className="detail-itinerary">
               <h1>Itinerary</h1>
               <div className="itinerary-container">
-                {items.qna.map((ele, index) => (
+                {/* {items.qna.map((ele, index) => (
                   <Accordion key={index} className="qna-container">
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
@@ -136,7 +136,7 @@ const Details = () => {
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
-                ))}
+                ))} */}
               </div>
             </div>
             <div id="Inclusions" className="inclusions-container">
