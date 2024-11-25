@@ -73,8 +73,7 @@
   margin-right: auto;
   margin-left: 15px;
 }
-/*  */
-/* Responsive adjustments */
+
 @media screen and (max-width: 1024px) {
   .singaporeIntro {
     padding: 18px 35px;
