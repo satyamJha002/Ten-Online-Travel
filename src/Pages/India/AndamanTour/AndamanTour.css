@@ -201,12 +201,18 @@
  }
   }
  
-  @media(width:390px){
+  @media (max-width: 400px) {
     .list-name{
-      margin-bottom: 12px;
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-template-rows: 100px 106px 0px !important;
      }
-  }
+    }
+
   @media (max-width: 390px) {
+    .list-name{
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-template-rows: 100px 106px 0px !important;
+     }
     .sightseeing-div {
       margin-top: -12% !important;
   }
