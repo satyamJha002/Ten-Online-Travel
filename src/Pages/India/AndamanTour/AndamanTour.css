@@ -156,6 +156,7 @@
 
 
   }
+ 
   @media (max-width: 321px) and (min-width:346px) {
     .list-name {
       column-gap: 14px !important;
@@ -379,6 +380,8 @@
 }
 .WaterSportContainer {
   justify-content: space-evenly !important;
+  column-gap: 31px !important;
+
 }
 
   }
