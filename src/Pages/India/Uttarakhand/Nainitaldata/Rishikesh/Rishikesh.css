@@ -21,7 +21,6 @@
   color: #666666;
   margin-left: 25px;
   margin-right: 25px;
-  
 }
 
 .App {
@@ -116,10 +115,12 @@ h2 {
     min-width: 200px; /* Ensures cards have a minimum width */
     max-width: 300px;
     padding: 15px 0 15px 0;
+    /* padding-left: 20px; */
   }
   .camping-div {
     margin: 0 -15px 0 -10px;
     /* padding: 10px !important; */
+    padding-left: 20px;
     
   }
 }
@@ -170,6 +171,7 @@ h2 {
   }
   .camping-div {
     margin-left: -3%;
+    padding-left: 5px;
 
         width: 105%
   }
@@ -246,11 +248,11 @@ h2 {
     display: flex;
   }
 } */
-@media(max-width:900px){
+/* @media(max-width:900px){ */
   
-
+/* 
 }
 .camping-div{
-  /* padding: 0 0 0 50px  !important; */
-}
+   padding: 0 0 0 50px  !important;
+} */
 
