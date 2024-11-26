@@ -23,6 +23,7 @@
 
 .munnar-destination {
   margin: 0.5rem;
+  font-size: 1em;
 }
 
 .munnarInfo {
@@ -184,6 +185,7 @@
   .munnarCardsContainer>*:nth-last-child(-n + 1) {
     display: flex;
     justify-content: center;
+    margin-right: 0;
   }
 
   .sightseeingCardsContainer {
