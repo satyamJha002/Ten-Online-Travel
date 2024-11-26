@@ -1,6 +1,10 @@
+import { v4 as uuidv4 } from "uuid";
+
+const randomNumericId = parseInt(uuidv4().replace(/-/g, "").slice(0, 12), 16);
+
 export const maldives = [
   {
-    id: 1,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-3-600x400-1.jpg",
@@ -40,7 +44,7 @@ export const maldives = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-3-600x400-1.jpg",

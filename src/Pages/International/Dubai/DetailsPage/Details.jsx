@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { dubai } from "../../assets/Data/dubai";
+import { dubai } from "../../../../assets/Data/dubai";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";

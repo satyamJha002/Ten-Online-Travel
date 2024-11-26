@@ -17,7 +17,6 @@ import PrivacyPolicy from "./Components/Footer/FooterLink/PrivacyPolicy";
 import Footer from "./Components/Footer/Footer";
 import Kashmir from "./Pages/India/Kashmir/Kashmir";
 import Ladakh from "./Pages/India/Ladakh/Ladakh";
-import Maldives from "./Pages/International/Maldives/Maldives";
 import Review from "./Pages/Review/Review";
 import AndamanTour from "./Pages/India/AndamanTour/AndamanTour";
 import Goa from "./Pages/India/Goa/Goa";
@@ -26,13 +25,14 @@ import Kasol from "./Pages/India/Himachal/Kasol";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import Singapore from "./Pages/International/Singapore/Singapore";
-import Details from "./Pages/DetailsPage/Details";
+import Details from "./Pages/International/Dubai/DetailsPage/Details";
+import Maldives from "./Pages/International/Maldives/Maldives";
+import MaldivesDetails from "./Pages/International/Maldives/DetailsPage/MaldivesDetails";
 import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
 import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
-
 
 function App() {
   return (
@@ -51,6 +51,10 @@ function App() {
           <Route path="/international/thailand" element={<Thailand />} />
           <Route path="/international/singapore" element={<Singapore />} />
           <Route path="/:id/:id/trip/:id" element={<Details />} />
+          <Route
+            path="/international/maldives/trip/:id"
+            element={<MaldivesDetails />}
+          />
           <Route path="/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
@@ -60,8 +64,8 @@ function App() {
           <Route path="/india/tamilnadu/Ooty" element={<Ooty />} />
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
           <Route path="/munnar" element={<Munnar />} />
-          <Route path="/india/uttarakhand/nainital" element={< Naintal/>} />
-          <Route path="/india/uttarakhand/rishikesh" element={<Rishikesh/>}/>
+          <Route path="/india/uttarakhand/nainital" element={<Naintal />} />
+          <Route path="/india/uttarakhand/rishikesh" element={<Rishikesh />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
           <Route path="/activities/RiverRafting" element={<RiverRafting />} />
           <Route path="/activities/Hiking" element={<Hiking />} />
