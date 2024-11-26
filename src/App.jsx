@@ -33,7 +33,6 @@ import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
-import DetailsPage from "./Pages/International/Malaysia/MalaysiaDetailsPage/DetailsPage";
 
 function App() {
   return (
@@ -72,6 +71,11 @@ function App() {
           <Route path="/india/uttarakhand/nainital" element={<Naintal />} />
           <Route path="/india/uttarakhand/rishikesh" element={<Rishikesh />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
+          <Route
+            path="/activities/paragliding/trip/:id"
+            element={<ParaglidingDetails />}
+          />
+
           <Route path="/activities/RiverRafting" element={<RiverRafting />} />
           <Route path="/activities/Hiking" element={<Hiking />} />
           <Route path="/Termpage" element={<Termpage />} />
