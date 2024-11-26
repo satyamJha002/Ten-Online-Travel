@@ -1,6 +1,10 @@
+import { v4 as uuidv4 } from "uuid";
+
+const randomNumericId = parseInt(uuidv4().replace(/-/g, "").slice(0, 12), 16);
+
 export const packages = [
   {
-    id: 1,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbQbA6pFKZID9NyuOezrCefNYZyP9nQlcxw&s",
@@ -16,6 +20,30 @@ export const packages = [
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
     description: "Enjoy happy charm...",
+    detailDescription: "During winter, the valley transforms into a magical wonderland blanketed in powdery snow, making it perfect for winter sports and scenic hikes. Adventure enthusiasts can indulge in activities like paragliding, zorbing, and open jeep rides, as Solang in Kullu Manali emerges as a natural haven. Similarly, Kufri near Shimla attracts countless visitors annually with its snow-covered slopes, ideal for skiing. Plan your Himachal Pradesh tour packages to immerse yourself in breathtaking natural beauty and romantic scenic vistas.",
+    subDescription: "Perfect for couples and honeymooners seeking a blend of nature and tranquility.",
+    overView: "For an unforgettable winter vacation in the majestic Himalayas, Shimla and Manali make the perfect destinations. With stunning lakes, snow-capped peaks, rich wildlife, ancient temples, and thrilling adventure activities, these towns attract countless visitors every year. Before Holiday offers exclusive winter tour packages, allowing you to fully experience the charm of Shimla and Manali as they transform into snow-covered paradises.",
+    qna: [
+      { question: "Is this package suitable for families?", answer: "Yes, it’s great for families and couples." },
+      { question: "What activities are included?", answer: "Temple visits, local sightseeing, and adventure sports." },
+      { question: "Is transportation provided?", answer: "Yes, transportation is included as per the itinerary." },
+      { question: "Are meals included?", answer: "Breakfast and dinner are included in this package." },
+      { question: "Can we extend our stay?", answer: "Yes, extensions can be arranged with additional charges." },
+    ],
+    packageInclusion: [
+      "5-star accommodation",
+      "Daily breakfast and dinner",
+      "Sightseeing tours",
+      "Private transportation",
+      "Guide services",
+    ],
+    packageExclusion: [
+      "Airfare",
+      "Personal expenses",
+      "Entry fees to monuments",
+      "Anything not mentioned in inclusions",
+      "Travel insurance",
+    ],
   },
   {
     id: 2,
@@ -34,6 +62,30 @@ export const packages = [
     nextDepartures: ["Nov 19", "Nov 20"],
     featured: true,
     description: "The skies of Bir Bill...",
+    detailDescription: "Bir Billing, located in Himachal Pradesh's Kangra Valley, is a renowned adventure hub, famous as India’s paragliding capital. With stunning views of the Dhauladhar range, lush tea gardens, and forests, it offers world-class paragliding from October to June. Visitors can also enjoy camping under the stars, bonfires, and serene treks like the Rajgundha Valley Trek. Combining thrills and natural beauty, Bir Billing is the perfect destination for adventure seekers and nature lovers.",
+    subDescription: "Perfect for adventure enthusiasts and nature lovers.",
+    overView: "Bir Billing, in Himachal Pradesh's Kangra Valley, is famed as India’s paragliding capital, offering stunning views of the Dhauladhar range. Ideal for adventure and nature lovers, it also features camping, trekking, and serene Himalayan landscapes.",
+    qna: [
+      { question: "Is paragliding included?", answer: "Yes, it is part of the package." },
+      { question: "Are kids allowed?", answer: "Paragliding is not suitable for kids below 12." },
+      { question: "Are guides available?", answer: "Yes, experienced guides are included." },
+      { question: "What should I pack?", answer: "Comfortable clothes, hiking shoes, and sunglasses." },
+      { question: "Can we book for a larger group?", answer: "Yes, group bookings are available." },
+    ],
+    packageInclusion: [
+      "4-star accommodation",
+      "Daily breakfast and dinner",
+      "Paragliding session",
+      "Camping gear",
+      "Local guide",
+    ],
+    packageExclusion: [
+      "Travel to and from Bir Billing",
+      "Personal expenses",
+      "Optional activities",
+      "Tips and gratuities",
+      "Travel insurance",
+    ],
   },
   {
     id: 3,
@@ -52,6 +104,28 @@ export const packages = [
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
     description: "Dive into the sceni...",
+    detailDescription: "Manali, nestled in the Himalayas, is a serene destination known for its snow-capped peaks, lush valleys, and tranquil atmosphere. It offers a perfect blend of natural beauty, adventure activities, and peaceful retreats, making it an ideal getaway for relaxation.",
+    subDescription: "Enjoy sun, sand, and sea with a touch of history.",
+    overView:
+      "Manali, in Himachal Pradesh, is a beautiful hill station known for its snow-capped mountains, lush valleys, and peaceful atmosphere. It offers a mix of adventure activities and serene retreats, making it a perfect destination for relaxation and exploration.",
+    qna: [
+      { question: "Activities included?", answer: "Beach tours, water sports, and nightlife exploration." },
+      { question: "Family-friendly?", answer: "Yes, suitable for families and groups." },
+      { question: "Best time to visit?", answer: "October to March for pleasant weather." },
+      { question: "Meals included?", answer: "Only breakfast is included." },
+    ],
+    packageInclusion: [
+      "3 Nights accommodation",
+      "Daily breakfast",
+      "Beach tours",
+      "Private transfers",
+    ],
+    packageExclusion: [
+      "Airfare/train fare",
+      "Water sports charges",
+      "Personal expenses",
+      "Entry fees to clubs",
+    ],
   },
   {
     id: 4,
@@ -70,6 +144,28 @@ export const packages = [
     nextDepartures: ["Nov 17", "Nov 18"],
     featured: true,
     description: "Fly above serene...",
+    detailDescription: "Kamshet, in Maharashtra, is a popular adventure destination known for paragliding, offering stunning views of the Western Ghats and surrounding valleys. It also features trekking, camping, and ancient forts, making it a perfect spot for adventure and nature lovers.",
+    subDescription: "Discover Rajasthan's royal legacy and desert charm.",
+    overView:
+      "Kamshet, nestled in Maharashtra, is a picturesque destination famous for paragliding, offering panoramic views of the lush Western Ghats. Beyond flying high, it’s also ideal for trekking, camping, and exploring ancient forts, making it a great getaway for adventure and nature lovers alike.",
+    qna: [
+      { question: "What cities are covered?", answer: "Jaipur, Udaipur, Jodhpur, and Jaisalmer." },
+      { question: "Best time to visit?", answer: "October to March for cool weather." },
+      { question: "Is this a family package?", answer: "Yes, it's perfect for families." },
+      { question: "Are meals included?", answer: "Breakfast and dinner are included." },
+    ],
+    packageInclusion: [
+      "6 Nights accommodation",
+      "Daily breakfast and dinner",
+      "Local sightseeing",
+      "Cultural shows",
+    ],
+    packageExclusion: [
+      "Airfare/train fare",
+      "Personal expenses",
+      "Entry tickets to monuments",
+      "Anything not mentioned in inclusions",
+    ],
   },
   {
     id: 5,
@@ -88,6 +184,28 @@ export const packages = [
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
     description: "Relax in the sere...",
+    detailDescription: "Nainital, in Uttarakhand, is a serene hill station known for its beautiful lakes, lush hills, and peaceful atmosphere. Visitors can enjoy boating on Naini Lake, explore scenic viewpoints, and stroll through the charming town.",
+    subDescription: "A scenic getaway to Uttarakhand's famous lake city.",
+    overView:
+      " Nainital is also known for its rich history and culture. The town is home to ancient temples, colonial-era architecture, and vibrant local markets. Whether you’re looking to unwind amidst nature or experience the town’s unique charm, Nainital is an ideal destination for a refreshing getaway.",
+    qna: [
+      { question: "Activities included?", answer: "Boating, sightseeing, and nature walks." },
+      { question: "Best time to visit?", answer: "March to June and September to November." },
+      { question: "Suitable for families?", answer: "Yes, ideal for families and couples." },
+      { question: "Meals included?", answer: "Breakfast and dinner are included." },
+    ],
+    packageInclusion: [
+      "3 Nights accommodation",
+      "Daily breakfast and dinner",
+      "Boating charges",
+      "Private transfers",
+    ],
+    packageExclusion: [
+      "Airfare/train fare",
+      "Personal expenses",
+      "Entry fees to attractions",
+      "Insurance",
+    ],
   },
   {
     id: 6,
@@ -106,6 +224,28 @@ export const packages = [
     nextDepartures: ["Nov 22", "Nov 23"],
     featured: true,
     description: "Wake up to beaut...",
+    detailDescription: "Nandi Hills, near Bangalore, is a serene hill station offering stunning views, nature walks, and historical sites like the Nandi Temple and Nandi Fort. Known for its peaceful atmosphere and cool climate, it’s a perfect retreat for relaxation and exploration.",
+    subDescription: "The ultimate rejuvenating escape near Bangalore.",
+    overView:
+      " Nandi Hills is rich in history, featuring the Nandi Temple and remnants of the Nandi Fort. Its cool climate, lush greenery, and peaceful atmosphere make it a perfect retreat for relaxation and exploration away from the city bustle.",
+    qna: [
+      { question: "Activities included?", answer: "Sightseeing, trekking, and nature photography." },
+      { question: "Best time to visit?", answer: "October to February for misty mornings." },
+      { question: "Group-friendly?", answer: "Yes, perfect for small groups or families." },
+      { question: "Meals included?", answer: "Breakfast is included." },
+    ],
+    packageInclusion: [
+      "2 Nights accommodation",
+      "Breakfast",
+      "Trekking guides",
+      "Local transfers",
+    ],
+    packageExclusion: [
+      "Airfare/train fare",
+      "Personal expenses",
+      "Entry fees to parks",
+      "Lunch and dinner",
+    ],
   },
   {
     id: 7,
@@ -124,6 +264,28 @@ export const packages = [
     nextDepartures: ["Nov 30", "Dec 1"],
     featured: true,
     description: "The 'Queen of Hills'...",
+    detailDescription: "Mussoorie, the 'Queen of Hills,' offers stunning Himalayan views, scenic spots like Kempty Falls, and activities such as trekking and boating. Known for its colonial architecture and vibrant markets, it’s a perfect destination for nature lovers and those seeking a peaceful retreat.",
+    subDescription: "A hill-station retreat to rejuvenate your soul.",
+    overView:
+      " Mussoorie boasts colonial-era architecture, vibrant markets, and historic landmarks. With its cool climate and serene atmosphere, Mussoorie is an ideal destination for those seeking a peaceful retreat or a blend of nature and culture.",
+    qna: [
+      { question: "Activities included?", answer: "Trekking, sightseeing, and shopping." },
+      { question: "Best time to visit?", answer: "March to June and September to November." },
+      { question: "Meals included?", answer: "Breakfast and dinner are included." },
+      { question: "Is transportation provided?", answer: "Yes, private transfers are included." },
+    ],
+    packageInclusion: [
+      "3 Nights accommodation",
+      "Daily breakfast and dinner",
+      "Trekking guide",
+      "Transfers to/from Mussoorie",
+    ],
+    packageExclusion: [
+      "Personal expenses",
+      "Airfare/train fare",
+      "Entry fees to parks",
+      "Lunch",
+    ],
   },
   {
     id: 8,
@@ -142,6 +304,28 @@ export const packages = [
     nextDepartures: ["Nov 12", "Nov 13"],
     featured: true,
     description: "Escape to this sere...",
+    detailDescription: "Yelagiri, a peaceful hill station in Tamil Nadu, is known for its lush landscapes, cool climate, and outdoor activities like trekking, boating, and paragliding. It’s the perfect eco-escape for nature lovers seeking tranquility and adventure.",
+    subDescription: "An eco-retreat perfect for a nature-inspired holiday.",
+    overView:
+      "Apart from its natural charm, Yelagiri also offers opportunities for paragliding, cycling, and visiting temples and parks. With its serene atmosphere and cool climate, Yelagiri serves as an ideal eco-escape for those looking to relax and connect with nature.",
+    qna: [
+      { question: "What activities are included?", answer: "Trekking, bird watching, and sightseeing." },
+      { question: "Best time to visit?", answer: "October to February for pleasant weather." },
+      { question: "Are meals included?", answer: "Breakfast and dinner are included." },
+      { question: "Is it suitable for kids?", answer: "Yes, the eco-retreat is family-friendly." },
+    ],
+    packageInclusion: [
+      "2 Nights accommodation",
+      "Breakfast and dinner",
+      "Guided trekking tours",
+      "Local transfers",
+    ],
+    packageExclusion: [
+      "Personal expenses",
+      "Lunch",
+      "Travel insurance",
+      "Adventure activity charges",
+    ],
   },
   {
     id: 9,
@@ -160,6 +344,28 @@ export const packages = [
     nextDepartures: ["Nov 24", "Nov 25"],
     featured: true,
     description: "Discover the Scotl...",
+    detailDescription: "Shillong, known as the 'Scotland of the East,' is a serene hill station in Meghalaya, famous for its lush landscapes, waterfalls, and cool climate. ",
+    subDescription: "A cultural and scenic escape in the northeast.",
+    overView:
+      "Shillong has a rich cultural heritage, with vibrant markets, local tribes, and historic churches. Its peaceful atmosphere and stunning vistas make it an ideal destination for those seeking relaxation amidst the beauty of the Northeast.",
+    qna: [
+      { question: "What are the key attractions?", answer: "Elephant Falls, Shillong Peak, and Umiam Lake." },
+      { question: "Best time to visit?", answer: "October to March for pleasant weather." },
+      { question: "Are meals included?", answer: "Breakfast and dinner are included." },
+      { question: "Is it safe for solo travelers?", answer: "Yes, it's a safe destination." },
+    ],
+    packageInclusion: [
+      "4 Nights accommodation",
+      "Daily breakfast and dinner",
+      "Local sightseeing tours",
+      "Transfers from Guwahati",
+    ],
+    packageExclusion: [
+      "Personal expenses",
+      "Airfare/train fare",
+      "Lunch",
+      "Entry fees to attractions",
+    ],
   },
   {
     id: 10,
@@ -178,5 +384,27 @@ export const packages = [
     nextDepartures: ["Nov 28", "Nov 30"],
     featured: true,
     description: "Sunbathe and revel...",
+    detailDescription: "Goa offers thrilling paragliding experiences with stunning views of the Arabian Sea and its beaches. Popular spots like Baga, Calangute, and Anjuna provide an unforgettable adventure for both beginners and experienced paragliders.",
+    subDescription: "The perfect blend of relaxation and adventure in Goa.",
+    overView:
+      " Goa is known for its vibrant beach culture, water sports, and lively atmosphere, making it a popular destination for adventure seekers. Whether you're flying over the coastline or relaxing on the beach, Goa combines excitement and relaxation, offering something for everyone.",
+    qna: [
+      { question: "What activities are included?", answer: "Beach sports, parasailing, and sightseeing." },
+      { question: "Best time to visit?", answer: "November to February for cooler weather." },
+      { question: "Are meals included?", answer: "Breakfast is included." },
+      { question: "Is it suitable for groups?", answer: "Yes, perfect for groups and families." },
+    ],
+    packageInclusion: [
+      "4 Nights accommodation",
+      "Breakfast",
+      "Water sports activities",
+      "Local transfers",
+    ],
+    packageExclusion: [
+      "Lunch and dinner",
+      "Airfare/train fare",
+      "Personal expenses",
+      "Alcoholic beverages",
+    ],
   },
 ];
