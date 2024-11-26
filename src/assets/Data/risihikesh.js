@@ -203,7 +203,8 @@ export const rishikeshcamping = [
       originalPrice: "₹3,500",
       nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
       featured: true,
-      description: "Thrilling river rafting/scenic camping..."}
+      description: "Thrilling river rafting/scenic wild night camping and fun..."
+    }
     
 
     ];
