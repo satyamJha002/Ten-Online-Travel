@@ -206,7 +206,12 @@
   }
 
   .munnar-intro h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .friAndFam h2 {
+    font-size: 20px;
+
   }
 
   .munnar-intro h1::after {
