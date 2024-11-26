@@ -42,7 +42,7 @@ export const rishikeshcamping = [
       originalPrice: "₹2,250",
       nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
       featured: true,
-      description: "Uttarakhand tourism offers everything from breathtaking natural beauty..."
+      description: "Experience the ultimate camping adventure in Rishikesh..."
     },
     
 
@@ -111,7 +111,7 @@ export const rishikeshcamping = [
       people: "2-60 People",
       price: "₹2,900",
       originalPrice: "₹3,750",
-      nextDepartures: ["Nov 20, Nov 21, Nov 22"],
+      nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
       featured: true,
       description: "Experience the ultimate camping adventure in Rishikesh..."
 
@@ -130,7 +130,7 @@ export const rishikeshcamping = [
         "https://b4holiday.com/wp-content/uploads/2021/03/2018-03-10.jpg",
       ],
       title: "Rishikesh Camping",
-      location: "India, Rishikesh, Uttarakhand ",
+      location: "Rishikesh",
       duration: "2 Days - 1 Nights",
       discount: "33% Off ",
       people: "2-60 People",
