@@ -148,6 +148,7 @@ h2 {
 @media (max-width: 375px) {
   .camping-div {
     width: 400px;
+    margin-left: -40px;
   }
 }
 @media (max-width: 480px) {
@@ -255,4 +256,3 @@ h2 {
 .camping-div{
    padding: 0 0 0 50px  !important;
 } */
-
