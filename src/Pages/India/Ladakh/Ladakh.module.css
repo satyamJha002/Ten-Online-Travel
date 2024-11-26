@@ -2,6 +2,12 @@
   margin: 0rem 1.875rem;
 }
 
+.custom-container > p {
+  color: black;
+  font-size: 1.1rem;
+  margin: 1rem 0rem;
+}
+
 .custom-heading {
   font-size: 2.25rem;
   position: relative;

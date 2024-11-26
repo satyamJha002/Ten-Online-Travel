@@ -187,6 +187,23 @@ export const rishikeshcamping = [
       nextDepartures: ["Nov 20", "Nov 21", "Nov 22"],
       featured: true,
       description: "Experience the ultimate camping adventure in Rishikesh...."
-    }
+    },
+     { id: 9,
+      images: [
+          "https://b4holiday.com/wp-content/uploads/2017/11/holly-mandarich-3266802-1024x681.jpg",
+          "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
+          "https://d2qa7a8q0vuocm.cloudfront.net/images/36941120190611050808.png",
+      ],
+      title: "Rishikesh Adventure",
+      location: "Rishikesh",
+      duration: "3 Days - 2 Nights",
+      people: "2-60 People",
+      discount: "16% Off",
+      price: "₹2,950",
+      originalPrice: "₹3,500",
+      nextDepartures: ["Nov 14", "Nov 15", "Nov 16"],
+      featured: true,
+      description: "Thrilling river rafting/scenic camping..."}
+    
 
     ];
