@@ -282,7 +282,6 @@
   color: black;
 }
 
-
 /* Accordation Itinerary Css */
 
 .qna-container {
@@ -305,7 +304,7 @@
   border: 1px solid #ccc;
 }
 
-.accordion-content p{
+.accordion-content p {
   font-size: 1em;
   padding: 15px;
 }

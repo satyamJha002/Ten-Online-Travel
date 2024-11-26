@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { malaysia } from "../../../../assets/Data/malaysia";
 import { useParams } from "react-router-dom";
 import styles from "./detailsPage.module.css";
+import {
+  FaBusAlt,
+  FaCheckCircle,
+  FaHotel,
+  FaStar,
+  FaStarHalfAlt,
+} from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
+import { MdRestaurant } from "react-icons/md";
 
 const DetailsPage = () => {
   const [currentImages, setCurrentImages] = useState(0);
@@ -23,9 +32,10 @@ const DetailsPage = () => {
   return (
     <>
       {filteredObjects.map((items, index) => (
-        <div key={index} className={styles["malaysia-container"]}>
-          <div className={styles["malaysia-right"]}>
-            <div className={styles["malaysia-title"]}>
+        <div key={index} className={styles["datails-container"]}>
+          {/* Right side */}
+          <div className={styles["detail-right"]}>
+            <div className={styles["detail-title"]}>
               <h1>{items.title}</h1>
               <div>
                 <div className={styles["no-days"]}>
@@ -37,7 +47,259 @@ const DetailsPage = () => {
               </div>
             </div>
             <div className={styles["details-images-slider"]}>
-              <img src={items.images[currentImages]} />
+              <img
+                src={items.images[currentImages]}
+                alt={items.title}
+                className={styles["details-card-image"]}
+              />
+              <button
+                className={`${styles["details-arrow"]} ${styles["left"]}`}
+                onClick={() => handlePrevImage(items.images)}
+              >
+                ❮
+              </button>
+              <button
+                className={`${styles["details-arrow"]} ${styles["right"]}`}
+                onClick={() => handleNextImage(items.images)}
+              >
+                ❯
+              </button>
+            </div>
+
+            <div className={styles["detail-description"]}>
+              <p>{items.detailDescription}</p>
+              <br />
+              <p>{items.subDescription}</p>
+            </div>
+
+            <div className={styles["info-details"]}>
+              <div className="flex gap-2">
+                <FaBusAlt className="text-2xl text-green-500" />
+                <div>
+                  <p>Transport</p>
+                  <h1>SIC</h1>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <MdRestaurant className="text-2xl text-green-500" />
+                <div>
+                  <p>Meals</p>
+                  <h1>Breakfast</h1>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <FaHotel className="text-2xl text-green-500" />
+                <div>
+                  <p>Accomodation</p>
+                  <h1>3 Star</h1>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles["detail-nav-sticky"]}>
+              <ul>
+                {items.overView === " " ? null : (
+                  <li>
+                    <a href={"#overView"}>OverView</a>
+                  </li>
+                )}
+                {items.itIneary === " " ? null : (
+                  <li>
+                    <a href={"#itIneary"}>Itineary</a>
+                  </li>
+                )}
+                {items.inClusions === " " ? null : (
+                  <li>
+                    <a href={"#inClusions"}>Inclusions</a>
+                  </li>
+                )}
+                {items.hotels === " " ? null : (
+                  <li>
+                    <a href={"#hotels"}>Hotels</a>
+                  </li>
+                )}
+              </ul>
+            </div>
+
+            {/* Mine css */}
+            <div id="overView" className={styles["detail-overview"]}>
+              <h1>{items.overView === " " ? null : "OverView"}</h1>
+              <div>
+                {items.overView.map((list, index) => (
+                  <div key={index}>
+                    <h3 className="text-md font-semibold text-[#6b6b74]">
+                      {list.listTitle}
+                    </h3>
+                    <ul>
+                      {list.listItems.length === 1
+                        ? list.listItems.map((item, index) => (
+                            <li
+                              key={index}
+                              className="list-none text-[#75757d]"
+                            >
+                              {item}
+                            </li>
+                          ))
+                        : list.listItems.map((item, index) => (
+                            <li
+                              key={index}
+                              className="list-disc text-[#80818b]"
+                            >
+                              {item}
+                            </li>
+                          ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div
+              id="inClusions"
+              className={styles["both-inclusions-containers"]}
+            >
+              <h1>Inclusions</h1>
+              {items.inClusions.map((item, index) => (
+                <>
+                  <Fragment key={index}>
+                    <div className={styles["packageInclusions-container"]}>
+                      {item.packageInclusion.map((ele, index) => (
+                        <div
+                          key={index}
+                          className={styles["packageInclusions"]}
+                        >
+                          <h3 className="text-[1.1rem] font-[500]">
+                            {ele.title}
+                          </h3>
+                          <ul className={styles["packageInclusion"]}>
+                            {ele.points.map((point, index) => (
+                              <p
+                                key={index}
+                                className="flex items-center gap-2 text-[1rem]"
+                              >
+                                <FaCheckCircle className="text-green-500 overflow-hidden text-2xl" />
+                                {point}
+                              </p>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </Fragment>
+
+                  <div className={styles["packageExclusion-container"]}>
+                    {item.packageExclusion.map((ele, index) => (
+                      <div key={index}>
+                        <h3 className="text-[1.1rem] font-[500]">
+                          {ele.title}
+                        </h3>
+                        <ul className={styles["exclusion"]}>
+                          {ele.points.map((point, index) => (
+                            <p
+                              key={index}
+                              className="flex items-center gap-2 text-[1rem]"
+                            >
+                              <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" />
+                              {point}
+                            </p>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              ))}
+            </div>
+
+            <div id="hotels" className={styles["hotels"]}>
+              <h1>Hotel</h1>
+              <table className="min-w-full table-auto border-collapse border  border-gray-300 text-left text-sm lg:text-base">
+                <tbody>
+                  <tr>
+                    <td className="py-2 px-4 border-b font-semibold border-gray-300">
+                      PLACE
+                    </td>
+                    <td className="py-2 px-4 border-b font-semibold border-gray-300">
+                      HOTEL
+                    </td>
+                    <td className="py-2 px-4 border-b font-semibold border-gray-300">
+                      ROOM TYPE
+                    </td>
+                  </tr>
+                  {items.hotels.map((hotel, index) => (
+                    <Fragment key={index}>
+                      <tr>
+                        <td className="py-2 px-4 border-b  border-gray-300">
+                          {hotel.place}
+                        </td>
+                        <td className="py-2 px-4 border-b border-gray-300">
+                          {hotel.hotelName}
+                        </td>
+                        <td className="py-2 px-4 border-b  border-gray-300">
+                          {hotel.roomType}
+                        </td>
+                      </tr>
+                    </Fragment>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Left Side */}
+          <div className={styles["detail-left"]}>
+            <div className={styles["detail-price-container"]}>
+              <div className={styles["detail-discount"]}>
+                <h1>{items.discount}</h1>
+              </div>
+              <div className={styles["original-price"]}>
+                <span className={styles["from"]}>From</span>
+                <span>
+                  <del>{items.originalPrice}</del>
+                </span>
+              </div>
+              <div className={styles["finalPrice"]}>
+                <h1>{items.price}</h1>
+                <span>/Adult</span>
+              </div>
+              <div className={styles["availableBtn"]}>
+                <button>Check Availability</button>
+              </div>
+            </div>
+            <div className="mt-10 text-2xl font-semibold text-center">
+              <h2>Check our reviews on TripAdvisor!</h2>
+            </div>
+            <div className={styles["tripAdvisor-container"]}>
+              <div className={styles["tripAdvisor-img"]}>
+                <img
+                  src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svghttps://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                  alt=""
+                />
+              </div>
+              <div className={styles["tripAdvisor-content"]}>
+                <h2>TEN TRAVELS |</h2>
+                <h2>Online Travel</h2>
+                <h2>Agency</h2>
+                <div>
+                  <p>Trip Advisor Traveler Rating</p>
+                  <span className="flex gap-1 text-green-500">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStarHalfAlt />
+                  </span>
+                </div>
+                <div>
+                  <span>Trip Advisor Review</span>
+                  <p>"Ten Travel Holiday Review"</p>
+                  <p>"very bad experience"</p>
+                  <p>"Trip to Bali and Singapore"</p>
+                  <p>"Comfortable experince"</p>
+                  <p>"Nicely planned trip to bali"</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

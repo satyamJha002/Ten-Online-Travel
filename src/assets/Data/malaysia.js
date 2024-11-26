@@ -56,25 +56,52 @@ export const malaysia = [
         ],
       },
     ],
-    packageInclusion: [
-      "04 nights accommodation",
-      "Dailey breakfast at hotel",
-      "Airport pick and drop",
-      "Sightseeing",
-      "Transfers",
-      "Genting Highlands Day trip with One way cable car (Subject to Maintenance) Enroute Batu cave visit (30 mins)",
-      "Half day city tour KUL",
-      "Langkawi Half day Round Island Tour (Mahsuri Tomb, Atma Alam, Kuah Town, Eagle Square, Underwater World (Exclude Entrance Fee))",
+    itIneary: " ",
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "04 nights accommodation",
+              "Dailey breakfast at hotel",
+              "Airport pick and drop",
+              "Sightseeing",
+              "Transfers",
+              "Genting Highlands Day trip with One way cable car (Subject to Maintenance) Enroute Batu cave visit (30 mins)",
+              "Half day city tour KUL",
+              "Langkawi Half day Round Island Tour (Mahsuri Tomb, Atma Alam, Kuah Town, Eagle Square, Underwater World (Exclude Entrance Fee))",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "All personal expenses, optional tours and extra meals",
+              "Anything not mentioned under 'Inclusions'",
+              "All alcoholic/aerated beverages, mineral water and starters",
+              "Medical and travel insurance",
+            ],
+          },
+        ],
+      },
     ],
-    packageExclusion: [
-      "All personal expenses, optional tours and extra meals",
-      "Anything not mentioned under 'Inclusions'",
-      "All alcoholic/aerated beverages, mineral water and starters",
-      "Medical and travel insurance",
+    hotels: [
+      {
+        place: "KUALA LUMPUR (2N)",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE STAR",
+      },
+      {
+        place: "LANGKAWI (2N)",
+        hotelName: "BELLA VISTA WATERFRONT RESORT",
+        roomType: "DELUXE",
+      },
     ],
   },
   {
-    id: randomNumericId,
+    id: 2,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -96,7 +123,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 3,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -118,7 +145,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 4,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -140,7 +167,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 5,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -162,7 +189,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 6,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -184,7 +211,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 7,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -206,7 +233,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 8,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -228,7 +255,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 9,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -250,7 +277,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: randomNumericId,
+    id: 10,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",

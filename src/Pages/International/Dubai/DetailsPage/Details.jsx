@@ -58,12 +58,14 @@ const Details = () => {
               />
               <button
                 className="details-arrow left"
-                onClick={() => handlePrevImage(items.images)}>
+                onClick={() => handlePrevImage(items.images)}
+              >
                 ❮
               </button>
               <button
                 className="details-arrow right"
-                onClick={() => handleNextImage(items.images)}>
+                onClick={() => handleNextImage(items.images)}
+              >
                 ❯
               </button>
             </div>
@@ -129,7 +131,8 @@ const Details = () => {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
-                      }}>
+                      }}
+                    >
                       <h2>{ele.question}</h2>
                       <span>{openIndex === index ? "-" : "+"}</span>
                     </div>
@@ -140,7 +143,8 @@ const Details = () => {
                           padding: "10px",
                           background: "#fff",
                           border: "1px solid #ccc",
-                        }}>
+                        }}
+                      >
                         <p>{ele.answer}</p>
                       </div>
                     )}
