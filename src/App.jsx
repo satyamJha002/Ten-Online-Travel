@@ -33,6 +33,7 @@ import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
+import DetailsPage from "./Pages/International/Malaysia/MalaysiaDetailsPage/DetailsPage";
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
           <Route path="/reviews" element={<Review />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
+          <Route
+            path="/international/malaysia/trip/:id"
+            element={<DetailsPage />}
+          />
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/international/bali" element={<Bali />} />
           <Route path="/international/thailand" element={<Thailand />} />

@@ -1,6 +1,10 @@
+import { v4 as uuidv4 } from "uuid";
+
+const randomNumericId = parseInt(uuidv4().replace(/-/g, "").slice(0, 12), 16);
+
 export const malaysia = [
   {
-    id: 1,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -14,15 +18,63 @@ export const malaysia = [
     title: "2N Kuala Lumpur and 2N Langkawi",
     location: "Malaysia",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     people: "2 People",
     discount: "13% Off",
     price: "₹17,000",
     originalPrice: "₹19,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription:
+      "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+    subDescription:
+      "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track untamed forests, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+
+    overView: [
+      {
+        listTitle: "Things to do in Malaysia",
+        listItems: [
+          "Eat Roti Canai – Malaysian cuisine has amazing flavor. Indian, Chinese, Thai, and Malay tastes are all mixed together in the cuisine. Roti canai, which is bread served with a hot curry, is a food you should definitely try.",
+          "Explore the Petronas Towers At Night – These skyscrapers need no introduction, and every list must include these enormous twin structures. Cross the connecting bridge between these two enormous skyscrapers for a breathtaking vista.",
+          "Go Scuba Diving – This southeast nation offers a wide variety of scuba diving and snorkeling opportunities. It will be a fantastic addition to your honeymoon package to Malaysia.",
+          "Explore the Streets of Malacca – This city will transport you back to a bygone era when people had plenty of free time and life moved at a leisurely pace. Bicycles can be rented so you can explore Malacca. You will fall in love with the old theme building and the winding driveway.",
+        ],
+      },
+      {
+        listTitle: "Places to visit in Malaysia",
+        listItems: [
+          "Langkawi – This group of islands is well-known as Malaysia's top travel destination. Each island has unique features. There are several sandy beaches, thick forests, and other stunning locations.",
+          "Kuala Lumpur – Malaysia's capital city has a wonderful blend of traditional and contemporary culture. Known as KL, it is unquestionably one of Malaysia's top tourism destinations. There are many of options for mall shopping, nightlife, and superb cuisine.",
+          "Kota Kinabalu – Kota Kinabalu, one of Malaysia's fastest-growing towns, is well-known for its fantastic fishing spots. You can visit Mount Kinabalu, the nation's tallest peak, from this city.",
+          "Penang – Among travelers who are foodies, this city is well-known. The best Malaysian cuisine in a variety of forms can be found in this city. Because so many different religions coexist in this city, you will be able to witness some truly remarkable cultural scenes.",
+        ],
+      },
+      {
+        listTitle: "Best time to visit Malaysia",
+        listItems: [
+          "Traveling to Malaysia is most enjoyable from March to September. This country is a must-see because of its abundance of tropical vegetation after the rainy season. The dry season, which runs from March to October, is the ideal time of year to come if you enjoy animals. Bird watching is available in March and July.",
+        ],
+      },
+    ],
+    packageInclusion: [
+      "04 nights accommodation",
+      "Dailey breakfast at hotel",
+      "Airport pick and drop",
+      "Sightseeing",
+      "Transfers",
+      "Genting Highlands Day trip with One way cable car (Subject to Maintenance) Enroute Batu cave visit (30 mins)",
+      "Half day city tour KUL",
+      "Langkawi Half day Round Island Tour (Mahsuri Tomb, Atma Alam, Kuah Town, Eagle Square, Underwater World (Exclude Entrance Fee))",
+    ],
+    packageExclusion: [
+      "All personal expenses, optional tours and extra meals",
+      "Anything not mentioned under 'Inclusions'",
+      "All alcoholic/aerated beverages, mineral water and starters",
+      "Medical and travel insurance",
+    ],
   },
   {
-    id: 2,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -44,7 +96,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 3,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -66,7 +118,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 4,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -88,7 +140,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 5,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -110,7 +162,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 6,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -132,7 +184,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 7,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -154,7 +206,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 8,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -176,7 +228,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 9,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
@@ -198,7 +250,7 @@ export const malaysia = [
     featured: true,
   },
   {
-    id: 10,
+    id: randomNumericId,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/petronas-towers-kuala-lumpur-malaysia.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/langkawi_sky_bridge_malaysia.jpg",
