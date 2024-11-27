@@ -1,32 +1,32 @@
 import { useParams } from "react-router-dom";
-import { packages } from "../../../../assets/Data/paragliding";
+import { packages } from "../../../../assets/Data/RiverRafting";
 import { useState } from "react";
 import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
-import "./ParaglidingDetails.css";
+import "./RiDetails.css";
 
-const ParaglidingDetails = () => {
+const RiverRaftingDetails = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [openIndex, setOpenIndex] = useState(null);
     const { id } = useParams();
 
-    const paraglidingObject = packages.find((obj) => obj.id === Number(id));
+    const riverraftingObjects = packages.find((obj) => obj.id === Number(id));
 
-    if (!paraglidingObject) {
+    if (!riverraftingObjects) {
         return <div>Package not found</div>;
     }
 
 
     const handlePrevImage = () => {
         setCurrentImage((prevIndex) =>
-            prevIndex === 0 ? paraglidingObject.images.length - 1 : prevIndex - 1
+            prevIndex === 0 ? riverraftingObjects.images.length - 1 : prevIndex - 1
         );
     };
 
     const handleNextImage = () => {
         setCurrentImage((prevIndex) =>
-            prevIndex === paraglidingObject.images.length - 1 ? 0 : prevIndex + 1
+            prevIndex === riverraftingObjects.images.length - 1 ? 0 : prevIndex + 1
         );
     };
 
@@ -35,45 +35,45 @@ const ParaglidingDetails = () => {
     };
 
     return (
-        <div className="paragliding-details-container">
-            <div className="paragliding-detail-right">
-                <div className="paragliding-detail-title">
-                    <h1>{paraglidingObject.title}</h1>
-                    <div className="paragliding-no-days">
+        <div className="riverrafting-details-container">
+            <div className="riverrafting-detail-right">
+                <div className="riverrafting-detail-title">
+                    <h1>{riverraftingObjects.title}</h1>
+                    <div className="riverrafting-no-days">
                         <div className="bg-green-600 w-full pt-1 flex justify-center items-center">
-                            <h2 className="text-white text-3xl">{paraglidingObject.noOfDays}</h2>
+                            <h2 className="text-white text-3xl">{riverraftingObjects.noOfDays}</h2>
                         </div>
                         <span>Days</span>
                     </div>
                 </div>
 
-                <div className="paragliding-details-images-slider">
+                <div className="riverrafting-details-images-slider">
                     <img
-                        src={paraglidingObject.images[currentImage]}
-                        alt={paraglidingObject.title}
-                        className="paragliding-details-card-image"
+                        src={riverraftingObjects.images[currentImage]}
+                        alt={riverraftingObjects.title}
+                        className="riverrafting-details-card-image"
                     />
                     <button
-                        className="paragliding-details-arrow left"
+                        className="riverrafting-details-arrow left"
                         onClick={handlePrevImage}
                     >
                         ❮
                     </button>
                     <button
-                        className="paragliding-details-arrow right"
+                        className="riverrafting-details-arrow right"
                         onClick={handleNextImage}
                     >
                         ❯
                     </button>
                 </div>
 
-                <div className="paragliding-detail-description">
-                    <p>{paraglidingObject.detailDescription}</p>
+                <div className="riverrafting-detail-description">
+                    <p>{riverraftingObjects.detailDescription}</p>
                     <br />
-                    <p>{paraglidingObject.subDescription}</p>
+                    <p>{riverraftingObjects.subDescription}</p>
                 </div>
 
-                <div className="paragliding-info-details p-4">
+                <div className="riverrafting-info-details p-4">
                     <div className="flex gap-2 ">
                         <FaBusAlt className="text-2xl text-green-500" />
                         <div>
@@ -90,9 +90,9 @@ const ParaglidingDetails = () => {
                     </div>
                 </div>
 
-                <div className="paragliding-detail-nav-sticky">
+                <div className="riverrafting-detail-nav-sticky">
                     <ul>
-                        {paraglidingObject.overView && (
+                        {riverraftingObjects.overView && (
                             <li>
                                 <a href="#overView">OverView</a>
                             </li>
@@ -109,18 +109,18 @@ const ParaglidingDetails = () => {
                     </ul>
                 </div>
 
-                <div id="overView" className="paragliding-detail-overview">
-                    <h1>{paraglidingObject.overView ? "OverView" : null}</h1>
-                    <p>{paraglidingObject.overView}</p>
+                <div id="overView" className="riverrafting-detail-overview">
+                    <h1>{riverraftingObjects.overView ? "OverView" : null}</h1>
+                    <p>{riverraftingObjects.overView}</p>
                 </div>
 
-                <div id="Itinerary" className="paragliding-detail-itinerary">
+                <div id="Itinerary" className="riverrafting-detail-itinerary">
                     <h1>Itinerary</h1>
-                    <div className="paragliding-itinerary-container">
-                        {paraglidingObject.qna.map((ele, index) => (
-                            <div key={index} className="paragliding-qna-container">
+                    <div className="itinerary-container">
+                        {riverraftingObjects.qna.map((ele, index) => (
+                            <div key={index} className="riverrafting-qna-container">
                                 <div
-                                    className="paragliding-accordion-header"
+                                    className="riverrafting-accordion-header"
                                     onClick={() => toggleAccordion(index)}
                                     style={{
                                         cursor: "pointer",
@@ -136,7 +136,7 @@ const ParaglidingDetails = () => {
                                 </div>
                                 {openIndex === index && (
                                     <div
-                                        className="paragliding-accordion-content"
+                                        className="riverrafting-accordion-content"
                                         style={{
                                             padding: "10px",
                                             background: "#fff",
@@ -150,12 +150,12 @@ const ParaglidingDetails = () => {
                     </div>
                 </div>
 
-                <div id="Inclusions" className="paragliding-inclusions-container">
+                <div id="Inclusions" className="riverrafting-inclusions-container">
                     <h1> Inclusion</h1>
                     <h2>Package Inclusions</h2>
-                    <div className="paragliding-inclusions">
-                        {paraglidingObject.packageInclusion.map((inc, index) => (
-                            <div key={index} className="paragliding-inclusion">
+                    <div className="riverrafting-inclusions">
+                        {riverraftingObjects.packageInclusion.map((inc, index) => (
+                            <div key={index} className="riverrafting-inclusion">
                                 <p>
                                     <FaCheckCircle className="text-green-500 overflow-hidden text-xl" /> {inc}
                                 </p>
@@ -164,11 +164,11 @@ const ParaglidingDetails = () => {
                     </div>
                 </div>
 
-                <div className="paragliding-exclusion-container">
+                <div className="riverrafting-exclusion-container">
                     <h2>Package Exclusion</h2>
-                    <div className="paragliding-inclusions">
-                        {paraglidingObject.packageExclusion.map((exc, index) => (
-                            <div key={index} className="paragliding-inclusion">
+                    <div className="riverrafting-inclusions">
+                        {riverraftingObjects.packageExclusion.map((exc, index) => (
+                            <div key={index} className="riverrafting-inclusion">
                                 <p>
                                     <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" /> {exc}
                                 </p>
@@ -178,22 +178,22 @@ const ParaglidingDetails = () => {
                 </div>
             </div>
 
-            <div className="paragliding-detail-left">
-                <div className="paragliding-detail-price-container">
-                    <div className="paragliding-detail-discount">
-                        <h1>{paraglidingObject.discount}</h1>
+            <div className="riverrafting-detail-left">
+                <div className="riverrafting-detail-price-container">
+                    <div className="riverrafting-detail-discount">
+                        <h1>{riverraftingObjects.discount}</h1>
                     </div>
-                    <div className="paragliding-originalPrice">
-                        <span className="paragliding-from">From</span>
+                    <div className="riverrafting-originalPrice">
+                        <span className="riverrafting-from">From</span>
                         <span>
-                            <del>{paraglidingObject.originalPrice}</del>
+                            <del>{riverraftingObjects.originalPrice}</del>
                         </span>
                     </div>
-                    <div className="paragliding-finalPrice">
-                        <h1>{paraglidingObject.price}</h1>
+                    <div className="riverrafting-finalPrice">
+                        <h1>{riverraftingObjects.price}</h1>
                         <span>/Adult</span>
                     </div>
-                    <div className="paragliding-availableBtn">
+                    <div className="riverrafting-availableBtn">
                         <button>Check Availability</button>
                     </div>
                 </div>
@@ -201,17 +201,17 @@ const ParaglidingDetails = () => {
                 <div className="mt-10 text-2xl font-semibold text-center">
                     <h2>Check our reviews on TripAdvisor!</h2>
                 </div>
-                <div className="paragliding-tripAdvisor-container">
-                    <div className="paragliding-tripAdvisor-img">
+                <div className="riverrafting-tripAdvisor-container">
+                    <div className="tripAdvisor-img">
                         <img
                             src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-                            alt=""
+                            alt="TripAdvisor"
                         />
                     </div>
-                    <div className="paragliding-tripAdvisor-content">
+                    <div className="riverrafting-tripAdvisor-content">
                         <h2>Before Holiday |</h2>
                         <h2>Online Travel</h2>
-                        <h2>Agency</h2>
+                        <h2>Agency</h2>                        
                         <div>
                             <p>Trip Advisor Traveler Rating</p>
                             <span className="flex gap-1 text-green-500">
@@ -223,12 +223,10 @@ const ParaglidingDetails = () => {
                             </span>
                         </div>
                         <div>
-                            <span>Trip Advisor Review</span>
-                            <p>"Before Holiday Review"</p>
-                            <p>"very bad experience"</p>
-                            <p>"Trip to Bali and Singapore"</p>
-                            <p>"Comfortable experience"</p>
-                            <p>"Nicely planned trip to Bali"</p>
+                            <span>Trip Advisor Reviews</span>
+                            {["Before Holiday Review", "Very bad experience", "Trip to Bali and Singapore", "Comfortable experience", "Nicely planned trip to Bali"].map((review, index) => (
+                                <p key={index}>{review}</p>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -237,4 +235,4 @@ const ParaglidingDetails = () => {
     );
 };
 
-export default ParaglidingDetails;
+export default RiverRaftingDetails;

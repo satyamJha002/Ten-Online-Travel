@@ -35,6 +35,7 @@ import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
+import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
 
 function App() {
   return (
@@ -78,7 +79,8 @@ function App() {
             element={<ParaglidingDetails />}
           />
 
-          <Route path="/activities/RiverRafting" element={<RiverRafting />} />
+          <Route path="/activities/riverrafting" element={<RiverRafting />} />
+          <Route path="/activities/riverrafting/trip/:id" element={<RiverRaftingDetails />} />
           <Route path="/activities/Hiking" element={<Hiking />} />
           <Route path="/Termpage" element={<Termpage />} />
           <Route path="/DocumentVisa" element={<DocumentVisa />} />

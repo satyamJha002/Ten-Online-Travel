@@ -1,10 +1,7 @@
-import { v4 as uuidv4 } from "uuid";
-
-const randomNumericId = parseInt(uuidv4().replace(/-/g, "").slice(0, 12), 16);
 
 export const packages = [
   {
-    id: randomNumericId,
+    id: 8001,
     images: [
       "https://b4holiday.com/wp-content/uploads/2017/11/Hadimba-Devi-Mandir-Manali-1024x683.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbQbA6pFKZID9NyuOezrCefNYZyP9nQlcxw&s",
@@ -19,6 +16,7 @@ export const packages = [
     originalPrice: "₹19,500",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
+    noOfDays: "6",
     description: "Enjoy happy charm...",
     detailDescription: "During winter, the valley transforms into a magical wonderland blanketed in powdery snow, making it perfect for winter sports and scenic hikes. Adventure enthusiasts can indulge in activities like paragliding, zorbing, and open jeep rides, as Solang in Kullu Manali emerges as a natural haven. Similarly, Kufri near Shimla attracts countless visitors annually with its snow-covered slopes, ideal for skiing. Plan your Himachal Pradesh tour packages to immerse yourself in breathtaking natural beauty and romantic scenic vistas.",
     subDescription: "Perfect for couples and honeymooners seeking a blend of nature and tranquility.",
@@ -46,7 +44,7 @@ export const packages = [
     ],
   },
   {
-    id: 2,
+    id: 8002,
     images: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjF7z3ZQDBAgx_EimMTo3Viz2wZyVdeIzgA&s",
       "https://royalskyholidays.com/wp-content/uploads/2021/12/Leh-Ladakh-Packages.jpg",
@@ -58,6 +56,7 @@ export const packages = [
     people: "6 People",
     discount: "15% Off",
     price: "₹12,000",
+    noOfDays: "5",
     originalPrice: "₹14,500",
     nextDepartures: ["Nov 19", "Nov 20"],
     featured: true,
@@ -88,7 +87,7 @@ export const packages = [
     ],
   },
   {
-    id: 3,
+    id: 8003,
     images: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEQRF_C1Q3p-CirIrccQtgmnS_bUpRLZY59g&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGmGQgKbyNlVJ0ecuJ0DInmIVfAFsViqKcQ&s",
@@ -103,6 +102,7 @@ export const packages = [
     originalPrice: "₹22,500",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
+    noOfDays: "6",
     description: "Dive into the sceni...",
     detailDescription: "Manali, nestled in the Himalayas, is a serene destination known for its snow-capped peaks, lush valleys, and tranquil atmosphere. It offers a perfect blend of natural beauty, adventure activities, and peaceful retreats, making it an ideal getaway for relaxation.",
     subDescription: "Enjoy sun, sand, and sea with a touch of history.",
@@ -128,7 +128,7 @@ export const packages = [
     ],
   },
   {
-    id: 4,
+    id: 8004,
     images: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNf-8AO7xWkA1qKMdMNnB4GorVhc57apmFwQ&s",
       "https://www.himalayanecotourism.com/wp-content/uploads/2023/06/spiti-link-1.jpg",
@@ -143,6 +143,7 @@ export const packages = [
     originalPrice: "₹11,500",
     nextDepartures: ["Nov 17", "Nov 18"],
     featured: true,
+    noOfDays: "5",
     description: "Fly above serene...",
     detailDescription: "Kamshet, in Maharashtra, is a popular adventure destination known for paragliding, offering stunning views of the Western Ghats and surrounding valleys. It also features trekking, camping, and ancient forts, making it a perfect spot for adventure and nature lovers.",
     subDescription: "Discover Rajasthan's royal legacy and desert charm.",
@@ -168,7 +169,7 @@ export const packages = [
     ],
   },
   {
-    id: 5,
+    id: 8005,
     images: [
       "https://ihplb.b-cdn.net/wp-content/uploads/2014/06/Best-Things-to-do-in-Shimla.jpg",
       "https://media1.thrillophilia.com/filestore/l5stwgse3qt889ohvpojpa13ftp0_Mall_Road_Shimla_1.jpg?w=400&dpr=2",
@@ -183,6 +184,7 @@ export const packages = [
     originalPrice: "₹20,000",
     nextDepartures: ["Nov 14", "Nov 15"],
     featured: true,
+    noOfDays: "4",
     description: "Relax in the sere...",
     detailDescription: "Nainital, in Uttarakhand, is a serene hill station known for its beautiful lakes, lush hills, and peaceful atmosphere. Visitors can enjoy boating on Naini Lake, explore scenic viewpoints, and stroll through the charming town.",
     subDescription: "A scenic getaway to Uttarakhand's famous lake city.",
@@ -208,7 +210,7 @@ export const packages = [
     ],
   },
   {
-    id: 6,
+    id: 8006,
     images: [
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f927fce-7c99-46d0-abe6-c44ddbd85f4c/dfse9eb-d11c24d8-404a-4061-8340-446ab5991eaf.jpg/v1/fill/w_1095,h_730,q_70,strp/feel_the_thrill_of_paragliding_in_nandi_hill_by_mithleshsahu_dfse9eb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvNGY5MjdmY2UtN2M5OS00NmQwLWFiZTYtYzQ0ZGRiZDg1ZjRjXC9kZnNlOWViLWQxMWMyNGQ4LTQwNGEtNDA2MS04MzQwLTQ0NmFiNTk5MWVhZi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.-ae07EAhCcRK1Ig7eevzhOKYUx3bWCXeAdGHpemAGF4",
       "https://www.zingbus.com/blog/wp-content/uploads/2024/01/nandi-hills-sunrise-view-point-karnataka.jpg",
@@ -223,6 +225,7 @@ export const packages = [
     originalPrice: "₹11,500",
     nextDepartures: ["Nov 22", "Nov 23"],
     featured: true,
+    noOfDays: "3",
     description: "Wake up to beaut...",
     detailDescription: "Nandi Hills, near Bangalore, is a serene hill station offering stunning views, nature walks, and historical sites like the Nandi Temple and Nandi Fort. Known for its peaceful atmosphere and cool climate, it’s a perfect retreat for relaxation and exploration.",
     subDescription: "The ultimate rejuvenating escape near Bangalore.",
@@ -248,7 +251,7 @@ export const packages = [
     ],
   },
   {
-    id: 7,
+    id: 8007,
     images: [
       "https://www.bizarexpedition.com/images/homepage/mussoorie/things-to-do/paragliding.jpg",
       "https://www.holidify.com/images/cmsuploads/compressed/28914055032_3af059e8b7_b_20190810144832.jpg",
@@ -263,6 +266,7 @@ export const packages = [
     originalPrice: "₹17,500",
     nextDepartures: ["Nov 30", "Dec 1"],
     featured: true,
+    noOfDays: "4",
     description: "The 'Queen of Hills'...",
     detailDescription: "Mussoorie, the 'Queen of Hills,' offers stunning Himalayan views, scenic spots like Kempty Falls, and activities such as trekking and boating. Known for its colonial architecture and vibrant markets, it’s a perfect destination for nature lovers and those seeking a peaceful retreat.",
     subDescription: "A hill-station retreat to rejuvenate your soul.",
@@ -288,7 +292,7 @@ export const packages = [
     ],
   },
   {
-    id: 8,
+    id: 8008,
     images: [
       "https://www.bogmallobeachresort.com/wp-content/uploads/2024/07/F8A4669.webp",
       "https://d26dp53kz39178.cloudfront.net/media/uploads/products/6_result_1-1675320548210.webp",
@@ -303,6 +307,7 @@ export const packages = [
     originalPrice: "₹10,000",
     nextDepartures: ["Nov 12", "Nov 13"],
     featured: true,
+    noOfDays: "3",
     description: "Escape to this sere...",
     detailDescription: "Yelagiri, a peaceful hill station in Tamil Nadu, is known for its lush landscapes, cool climate, and outdoor activities like trekking, boating, and paragliding. It’s the perfect eco-escape for nature lovers seeking tranquility and adventure.",
     subDescription: "An eco-retreat perfect for a nature-inspired holiday.",
@@ -328,7 +333,7 @@ export const packages = [
     ],
   },
   {
-    id: 9,
+    id: 8009,
     images: [
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/118731953.jpg?k=77d29d026819a08c7ffef720c0d3963e2d85361fac9f024c31dacfa255a5c266&o=&hp=1",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb9MyRZ0-k1TTXgMD2pNHYOSVAw7C26RESA&s",
@@ -343,6 +348,7 @@ export const packages = [
     originalPrice: "₹23,000",
     nextDepartures: ["Nov 24", "Nov 25"],
     featured: true,
+    noOfDays: "5",
     description: "Discover the Scotl...",
     detailDescription: "Shillong, known as the 'Scotland of the East,' is a serene hill station in Meghalaya, famous for its lush landscapes, waterfalls, and cool climate. ",
     subDescription: "A cultural and scenic escape in the northeast.",
@@ -368,7 +374,7 @@ export const packages = [
     ],
   },
   {
-    id: 10,
+    id: 8010,
     images: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJohgFga9S6EU04TqbpgR_qqVsQ1adGqKyBA&s",
       "https://seaadventuretrips.com/wp-content/uploads/2023/09/Paragliding-in-goa-4.webp",
@@ -383,6 +389,7 @@ export const packages = [
     originalPrice: "₹15,000",
     nextDepartures: ["Nov 28", "Nov 30"],
     featured: true,
+    noOfDays: "5",
     description: "Sunbathe and revel...",
     detailDescription: "Goa offers thrilling paragliding experiences with stunning views of the Arabian Sea and its beaches. Popular spots like Baga, Calangute, and Anjuna provide an unforgettable adventure for both beginners and experienced paragliders.",
     subDescription: "The perfect blend of relaxation and adventure in Goa.",
