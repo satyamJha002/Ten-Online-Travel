@@ -2,14 +2,14 @@ export const travelPackage = [
     {
         id: 1,
         images: [
-            "https://b4holiday.com/wp-content/uploads/2022/02/1565782355_kerala_app-1024x576.jpg",
+            "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1580120936851-PSBXELUMYHN6ALK0X2T6/The+tea+plantation+town+high+in+the+hills+is+a+welcome+break+from+the+Kerala+heat+-+but+sometimes+a+tricky+place+to+get+to+grips+with%21+Here+are+the+best+things+to+do+in+Munnar+and+a+whole+bucket+load+of+useful+things+to+know+to+plan+your+stay.+%23Munnar+%23India+%23Kerala+%23TeaPlantations+%23Tea+%23Hiking+%23MunnarGuide",
             "https://b4holiday.com/wp-content/uploads/2021/02/Munnar_Tea_Gardens.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/02/Munnar_Tea_Gardens-2.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
 
         ],
         title: "5 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala",
+        location: "Alleppey, Kerala",
         duration: "5 Days - 4 Nights",
         people: "2 People",
         discount: "19% Off",
@@ -30,7 +30,7 @@ export const travelPackage = [
 
         ],
         title: "6 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala",
+        location: "Alleppey, Kerala",
         duration: "6 Days - 5 Nights",
         people: "2 People",
         discount: "21% Off",
@@ -50,7 +50,7 @@ export const travelPackage = [
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
         ],
         title: "4 Days Kerala Holiday Package",
-        location: "Alleppey, Kerala, Munnar",
+        location: "Alleppey, Munnar",
         duration: "4 Days - 3 Nights",
         people: "2 People",
         discount: "12% Off",
@@ -73,7 +73,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
         ],
         title: "6 Days Kerala Holiday Package",
-        location: "Alleppey, India, Kerala",
+        location: "Alleppey, Kerala",
         duration: "6 Days - 5 Nights",
         people: "2 People",
         discount: "21% Off",
@@ -93,7 +93,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
         ],
         title: "4 Days Kerala Holiday Package",
-        location: "Alleppey, Kerala, Munnar",
+        location: "Alleppey, Munnar",
         duration: "4 Days - 3 Nights",
         people: "2 People",
         discount: "12% Off",
@@ -107,7 +107,7 @@ export const munnarsightseeing = [
     {
         id: 3,
         images: [
-            
+
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_Harmonia_Kovalam_1.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_Harmonia_Kovalam_4.jpg",
             "https://b4holiday.com/wp-content/uploads/2021/09/Abad_copper_castle-1024x576.jpg",
@@ -115,7 +115,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/09/Bamboo_pool_villa_in_Abad_Whispering_Palms_Resort_in_Kumarakom.jpg",
         ],
         title: "Abad Hotels Kerala Packages 7 Night",
-        location: "Alleppey, Kerala, Kochi",
+        location: "Alleppey, Kochi",
         duration: "8 Days - 7 Nights",
         people: "6 People",
         discount: "10% Off",
@@ -135,7 +135,7 @@ export const munnarsightseeing = [
             "https://b4holiday.com/wp-content/uploads/2021/02/16039574381881.jpeg",
         ],
         title: "Kerala Honeymoon Package – Deluxe",
-        location: "India, Kerala, Munnar",
+        location: "Kerala, Munnar",
         duration: "8 Days - 7 Nights",
         people: "8 People",
         discount: "16% Off",
@@ -162,8 +162,8 @@ export const munnarOtherTrips = [
             "https://b4holiday.com/wp-content/uploads/2021/02/Houseboat_in_Alleppey_n_Kumarakom_Backwaters.jpg",
 
         ],
-        title: "Kerala Tree House Honeymoon Package 3 Night",
-        location: "Alleppey, Kerala, Munnar",
+        title: "Kerala Tree House Honeymoon Package",
+        location: "Alleppey, Munnar",
         duration: "4 Days - 3 Nights",
         people: "6 People",
         discount: "20% Off",

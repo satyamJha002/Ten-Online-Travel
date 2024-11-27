@@ -29,9 +29,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
-
+.submittedd_reviews{ padding-top:40px ;}
 .average-rating h3 {
   font-size: 1.5em;
   color: #f39c12;
@@ -76,15 +76,16 @@ body {
 }
 
 /* Submitted reviews */
-.submitted-reviews h2 {
+.reviews-page h2 {
   font-size: 40px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  padding: 30px;
   color: #353936;
 }
 
-.review {
+/* .review {
   padding: 10px 0;
-}
+} */
 
 .review:last-child {
   border-bottom: none;
@@ -94,11 +95,13 @@ body {
   font-size: 1.2em;
   font-weight: bold;
   color: #111111;
+  padding: 15px 0 0 0 ;
 }
 
 .review p {
   font-size: 1em;
   color: #212020;
+  margin-bottom: 10px;
 }
 
 .review p strong {
@@ -110,7 +113,7 @@ body {
 @media (max-width: 1200px) {
   .reviews-page {
     max-width: 100%;
-    padding: 10px;
+    padding: 20px;
   }
 
   .feedback-banner img {

@@ -169,7 +169,7 @@ function Review() {
           ))}
         </div>
       </div>
-      <div className="submittedd reviews">
+      <div className="submittedd_reviews">
         {reviews.map((review, index) => (
           <div key={index} className="review">
             <h3>{review.title}</h3>

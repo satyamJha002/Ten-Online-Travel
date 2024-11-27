@@ -27,7 +27,7 @@ const Goa = () => {
         <h2 className="Friends-title"><span className='friendfamily-heading'>Friends & Family Tour</span></h2>
       </div>
       {/* card */}
-      <div className="GoaContainer">
+      <div className="GoaContainer1">
         {tourGoaPackages.map((pkg) => (
           <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
         ))}
@@ -38,12 +38,34 @@ const Goa = () => {
         <h2 className="other-title"><span className='otherstrip-heading'>Other Trips</span></h2>
       </div>
 
-     
-      <div className="GoaContainer">
-        {tourotherPackages.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg} />
-        ))}
-      </div>
+      {/* <div className="GoaContainer2">
+  {tourotherPackages.map((pkg, index) => (
+    <Card
+      key={pkg.id}
+      pkg={pkg}
+      className={index === tourotherPackages.length - 1 ? "last-card" : ""}
+    />
+  ))}
+</div>
+      */}
+
+
+<div className="GoaContainer2">
+  {tourotherPackages.map((pkg, index) => {
+    const isLast = index >= tourotherPackages.length - 1; // Check for the last card
+    return (
+      <Card
+        key={pkg.id}
+        pkg={pkg}
+        locationURL={locationURL}
+        className={isLast ? 'goalast' : ''}
+      />
+    );
+  })}
+</div>
+
+
+  
 
     </div>
 

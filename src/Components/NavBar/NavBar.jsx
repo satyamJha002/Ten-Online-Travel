@@ -743,7 +743,7 @@ const Navbar = () => {
             {isActivitiesSubmenuOpen && (
               <div ref={activitiesDropdownRef}>
                 <NavLink
-                  to="/activities/riverraftingr"
+                  to="/activities/riverrafting"
                   className={({ isActive }) =>
                     `${isActive ? activeStyle : inactiveStyle} no-underline hover:no-underline focus:no-underline` }
                   onClick={() => setMobileMenuSubmenuOpen(!isActivitiesSubmenuOpen)}>

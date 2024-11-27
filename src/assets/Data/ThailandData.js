@@ -1,6 +1,6 @@
 export const Thailand = [
   {
-    id: 1,
+    id: 12,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/traveler-in-thailand.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/thailand_islands.jpg",
@@ -114,7 +114,7 @@ export const Thailand = [
       "https://b4holiday.com/wp-content/uploads/2021/10/Gardens-by-the-Bay4.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/Gardens-by-the-Bay3.jpg",
     ],
-    title: "3N Kuala Lumpur + 3N Singapore + 4N Thailand",
+    title: "3N Kuala + 3N Singapore + 4N Thailand",
     location: "Malaysia, Singapore, Thailand",
     duration: "11 Days - 10 Nights",
     people: "2 People",
@@ -136,7 +136,7 @@ export const Thailand = [
       "https://b4holiday.com/wp-content/uploads/2021/10/Koh-Samui.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/james_bond_island.jpg",
     ],
-    title: "Phuket(2N) – Krabi(2N) – Bangkok(2N)",
+    title: "Phuket 2N – Krabi 2N – Bangkok 2N ",
     location: "Thailand",
     duration: "7 Days - 6 Nights",
     people: "2 People",

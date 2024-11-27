@@ -17,7 +17,10 @@ export const andmatour = [
       originalPrice: "₹24,500",
       nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
-      description: "The Andaman Islands, located in the..."
+      description: "The Andaman Islands, located in the...",
+      detailDescription: "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
+      subDescription: "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
+      lastDescription:"Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
     },
     {
       id: 2,
@@ -37,8 +40,10 @@ export const andmatour = [
      originalPrice: "₹21,500",
      nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
-      
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
     },
     {
       id: 3,
@@ -58,8 +63,10 @@ export const andmatour = [
     originalPrice: "17,500",
       nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
-
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
     },
     {
       id: 4,
@@ -79,7 +86,10 @@ export const andmatour = [
     originalPrice: "₹22,000",
       nextDepartures: ["Nov 18", "Nov 19", "Nov 20"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
 
     }
   ];
@@ -104,7 +114,10 @@ export const andmatour = [
     originalPrice: "₹17,000",
       nextDepartures: ["Nov 19", "Nov 18", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
          },
     {
       id: 2,
@@ -124,7 +137,10 @@ export const andmatour = [
       originalPrice: "₹16,000",
       nextDepartures: ["Nov 19", "Nov 20", "Nov 20"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
       
     },
     {
@@ -145,7 +161,10 @@ export const andmatour = [
       originalPrice: "₹18,500",
       nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
      
     },
     {
@@ -166,7 +185,10 @@ export const andmatour = [
     originalPrice: "₹32,000",
       nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
       
     },
     {
@@ -187,7 +209,10 @@ export const andmatour = [
     originalPrice: "₹24,000",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
       
       },
       {
@@ -208,7 +233,10 @@ export const andmatour = [
        originalPrice: "₹16,500",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the east of..."
+      description: "The Andaman Islands, located in the east of...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
        
       },
       {
@@ -229,8 +257,10 @@ export const andmatour = [
     originalPrice: "₹43,500",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the..."
-        
+      description: "The Andaman Islands, located in the...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
       },
       {
         id: 8,
@@ -250,7 +280,10 @@ export const andmatour = [
         originalPrice: "₹30,000",
         nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: true,
-      description: "The Andaman Islands, located in the..."
+      description: "The Andaman Islands, located in the...",
+      detailDescription:"",
+      subDescription: "",
+      lastDescription:"",
       
       },
 
