@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { dubai } from "../../assets/Data/dubai";
 import { useState, useEffect, useRef } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+
 const Details = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [showMap, setShowMap] = useState(false);
@@ -12,8 +13,7 @@ const Details = () => {
 
   const { id } = useParams();
 
-  const filteredObjects = dubai.filter((obj) => obj.id === Number(id));
-  const pkg = filteredObjects.length > 0 ? filteredObjects[0] : null;
+  const pkg = dubai.find((obj) => obj.id === Number(id)) || null;
 
   const handlePrevImage = () => {
     if (pkg?.images) {
@@ -32,20 +32,24 @@ const Details = () => {
   };
 
   const handleScroll = () => {
-    const nav = navRef.current;
-    const scrollY = window.scrollY;
+    if (navRef.current) {
+      const nav = navRef.current;
+      const scrollY = window.scrollY;
 
-    if (scrollY > navTop && scrollY > lastScrollY) {
-      setIsSticky(true);
-    } else if (scrollY < lastScrollY && scrollY <= navTop) {
-      setIsSticky(false);
+      if (scrollY > navTop && scrollY > lastScrollY) {
+        setIsSticky(true);
+      } else if (scrollY < lastScrollY && scrollY <= navTop) {
+        setIsSticky(false);
+      }
+
+      setLastScrollY(scrollY);
     }
-
-    setLastScrollY(scrollY);
   };
 
   useEffect(() => {
-    setNavTop(navRef.current.offsetTop);
+    if (navRef.current) {
+      setNavTop(navRef.current.offsetTop);
+    }
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -62,17 +66,15 @@ const Details = () => {
       <div className="detail-right">
         <div className="detail-title">
           <h1>{pkg.title}</h1>
-          <div>
-            <div className="no-days">
-              <div className="bg-green-600 w-full pt-1 flex justify-center items-center">
-                <h2 className="text-white text-3xl">{pkg.noOfDays}</h2>
-              </div>
-              <span>Days</span>
+          <div className="no-days">
+            <div className="bg-green-600 w-full pt-1 flex justify-center items-center">
+              <h2 className="text-white text-3xl">{pkg.noOfDays}</h2>
             </div>
+            <span>Days</span>
           </div>
         </div>
         <div className="details-images-slider">
-          {showMap ? (
+          {showMap && pkg?.location ? (
             <iframe
               src={`https://www.google.com/maps?q=${encodeURIComponent(
                 pkg.location
@@ -81,10 +83,11 @@ const Details = () => {
               height="300"
               allowFullScreen=""
               loading="lazy"
-              title="Google Map"></iframe>
+              title="Google Map"
+            ></iframe>
           ) : (
             <img
-              src={pkg.images[currentImage]}
+              src={pkg.images?.[currentImage]}
               alt={pkg.title}
               className="details-card-image"
             />
@@ -92,13 +95,15 @@ const Details = () => {
           <button
             className="details-arrow left"
             onClick={handlePrevImage}
-            disabled={showMap}>
+            disabled={showMap}
+          >
             ❮
           </button>
           <button
             className="details-arrow right"
             onClick={handleNextImage}
-            disabled={showMap}>
+            disabled={showMap}
+          >
             ❯
           </button>
         </div>
@@ -107,94 +112,49 @@ const Details = () => {
           <br />
           <p>{pkg.subDescription}</p>
         </div>
-
-        <div className="info-details">
-          <div>
-            <p>Transport</p>
-            <h1>SIC</h1>
-          </div>
-          <div>
-            <p>Meals</p>
-            <h1>Breakfast</h1>
-          </div>
-        </div>
-        <div>
-          <ul ref={navRef} className={`detail-nav ${isSticky ? "fixed" : ""}`}>
-            <li>
-              <a href={"#overView"}>OverView</a>
-            </li>
-            <li>
-              <a href={"#Itinerary"}>Itinerary</a>
-            </li>
-            <li>
-              <a href={"#Inclusions"}>Inclusions</a>
-            </li>
-            <li>
-              <a href={"#Hotels"}>Hotels</a>
-            </li>
-          </ul>
-        </div>
+        <ul ref={navRef} className={`detail-nav ${isSticky ? "fixed" : ""}`}>
+          <li>
+            <a href="#overView">Overview</a>
+          </li>
+          <li>
+            <a href="#Itinerary">Itinerary</a>
+          </li>
+          <li>
+            <a href="#Inclusions">Inclusions</a>
+          </li>
+          <li>
+            <a href="#Hotels">Hotels</a>
+          </li>
+        </ul>
         <div id="overView" className="detail-overview">
           <h1>Overview</h1>
           <p>{pkg.overView}</p>
         </div>
         <div id="Itinerary" className="detail-itinerary">
           <h1>Itinerary</h1>
-          <div className="itinerary-container">
-            {pkg.qna.map((ele, index) => (
-              <div key={index} className="qna-container">
-                <div className="question">
-                  <h2>{ele.question1}</h2>
+          {pkg.qna?.map((qna, index) => (
+            <div key={index} className="qna-container">
+              {Object.entries(qna).map(([key, value]) => (
+                <div key={key}>
+                  <h2>{key}</h2>
+                  <p>{value}</p>
                 </div>
-                <div className="answer">
-                  <p>{ele.answer1} </p>
-                </div>
-                <div className="question">
-                  <h2>{ele.question2}</h2>
-                </div>
-                <div className="answer">
-                  <p>{ele.answer2} </p>
-                </div>
-                <div className="question">
-                  <h2>{ele.question3}</h2>
-                </div>
-                <div className="answer">
-                  <p>{ele.answer3}</p>
-                </div>
-                <div className="question">
-                  <h2>{ele.question4}</h2>
-                </div>
-                <div className="answer">
-                  <p>{ele.answer4} </p>
-                </div>
-                <div className="question">
-                  <h2>{ele.question5}</h2>
-                </div>
-                <div className="answer">
-                  <p>{ele.answer5} </p>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ))}
         </div>
         <div id="Inclusions" className="inclusions-container">
-          <h1> Inclusion</h1>
-          <h2>Package Inclusions</h2>
-          <div className="inclusions">
-            {pkg.packageInclusion.map((inc, index) => (
-              <div key={index} className="inclusion">
-                <p>
-                  <FaCheckCircle className="text-green-500 overflow-hidden text-xl" />{" "}
-                  {inc}
-                </p>
-              </div>
-            ))}
-          </div>
+          <h1>Inclusions</h1>
+          {pkg.packageInclusion?.map((inc, index) => (
+            <p key={index}>
+              <FaCheckCircle className="text-green-500 text-xl" /> {inc}
+            </p>
+          ))}
         </div>
         <div className="exclusion-container">
-          <h2>Package Exclusion</h2>
-          {pkg.packageExclusion.map((exc, index) => (
-            <div key={index}>{exc}</div>
+          <h2>Package Exclusions</h2>
+          {pkg.packageExclusion?.map((exc, index) => (
+            <p key={index}>{exc}</p>
           ))}
         </div>
       </div>
@@ -204,18 +164,14 @@ const Details = () => {
             <h1>{pkg.discount}</h1>
           </div>
           <div className="originalPrice">
-            <span className="from">From</span>
-            <span>
-              <del>{pkg.originalPrice}</del>
-            </span>
+            <span>From</span>
+            <del>{pkg.originalPrice}</del>
           </div>
           <div className="finalPrice">
             <h1>{pkg.price}</h1>
             <span>/Adult</span>
           </div>
-          <div className="availableBtn">
-            <button>Check Availability</button>
-          </div>
+          <button>Check Availability</button>
         </div>
       </div>
     </div>
