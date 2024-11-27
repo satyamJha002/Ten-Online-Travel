@@ -1,5 +1,9 @@
 import { useParams } from "react-router-dom";
-import { maldives } from "../../../../assets/Data/maldives";
+import {
+  maldives,
+  maldivesOtherTrips,
+  maldivesWaterVilla,
+} from "../../../../assets/Data/maldives";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -13,8 +17,8 @@ const MaldivesDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [openIndex, setOpenIndex] = useState(null);
   const { id } = useParams();
-
-  const filteredObjects = maldives.filter((obj) => obj.id === Number(id));
+  const allTrips = [...maldives, ...maldivesOtherTrips, ...maldivesWaterVilla];
+  const filteredObjects = allTrips.filter((obj) => obj.id === Number(id));
 
   console.log("maldives", filteredObjects);
 
@@ -37,12 +41,12 @@ const MaldivesDetails = () => {
   return (
     <>
       {filteredObjects.map((items, index) => (
-        <div key={index} className="details-container">
-          <div className="detail-right">
-            <div className="detail-title">
+        <div key={index} className="maldives-details-container">
+          <div className="maldives-detail-right">
+            <div className="maldives-detail-title">
               <h1>{items.title}</h1>
               <div>
-                <div className="no-days">
+                <div className="maldives-no-days">
                   <div className="bg-green-600 w-full pt-1 flex justify-center items-center">
                     <h2 className="text-white text-3xl">{items.noOfDays}</h2>
                   </div>
@@ -50,11 +54,11 @@ const MaldivesDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="details-images-slider">
+            <div className="maldives-details-images-slider">
               <img
                 src={items.images[currentImage]}
                 alt={items.title}
-                className="details-card-image"
+                className="maldives-details-card-image"
               />
               <button
                 className="details-arrow left"
@@ -67,13 +71,35 @@ const MaldivesDetails = () => {
                 ❯
               </button>
             </div>
-            <div className="detail-description">
+            <div className="maldives-detail-description">
+              <h1>
+                <strong>{items.details} </strong>
+              </h1>
               <p>{items.detailDescription}</p>
               <br />
               <p>{items.subDescription}</p>
             </div>
+            <div className="accommodation">
+              <h1>ACCOMMODATION: </h1>
+              <p>{items.accommodation} </p>
+            </div>
+            <div className="maldives-villas">
+              <h1>{items.AdjoiningTitle} </h1>
+              <p>{items.Adjoining} </p>
+              <br />
+              <h1>{items.StandaloneTitle}</h1>
+              <p>{items.Standalone} </p>
+              <br />
+              <h1>{items.JacuzziBeachVillasTitle}</h1>
+              <p>{items.JacuzziBeachVillas} </p>
+              <br />
+              <h1>{items.JacuzziWaterVillasTitle}</h1>
+              <p>{items.JacuzziWaterVillas} </p>
+              <h1>{items.DuniyeSpaTitle}</h1>
+              <p>{items.DuniyeSpa} </p>
+            </div>
 
-            <div className="info-details p-4">
+            <div className="maldives-info-details p-4">
               <div className="flex gap-2 ">
                 <FaBusAlt className="text-2xl text-green-500" />
                 <div>
@@ -89,7 +115,7 @@ const MaldivesDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="detail-nav-sticky">
+            <div className="maldives-detail-nav-sticky">
               <ul>
                 {items.overView === " " ? null : (
                   <li>
@@ -97,59 +123,74 @@ const MaldivesDetails = () => {
                   </li>
                 )}
 
-                <li>
-                  <a href={"#Itinerary"}>Itinerary</a>
-                </li>
-                <li>
-                  <a href={"#Inclusions"}>Inclusions</a>
-                </li>
-                <li>
-                  <a href={"#Hotels"}>Hotels</a>
-                </li>
+                {items.Itinerary == " " ? (
+                  " "
+                ) : (
+                  <li>
+                    <a href={"#Itinerary"}>Itinerary</a>
+                  </li>
+                )}
+                {items.packageInclusion === " " ? (
+                  " "
+                ) : (
+                  <li>
+                    <a href={"#Inclusions"}>Inclusions</a>
+                  </li>
+                )}
+                {items.hotels === " " ? (
+                  " "
+                ) : (
+                  <li>
+                    <a href={"#Hotels"}>Hotels</a>
+                  </li>
+                )}
               </ul>
             </div>
-            <div id="overView" className="detail-overview">
+            <div id="overView" className="maldives-detail-overview">
               <h1> {items.overView === " " ? null : "OverView"}</h1>
               <p>{items.overView}</p>
             </div>
 
-            <div id="Itinerary" className="detail-itinerary">
-              <h1>Itinerary</h1>
-              <div className="itinerary-container">
-                {items.qna.map((ele, index) => (
-                  <div key={index} className="qna-container">
-                    <div
-                      className="accordion-header"
-                      onClick={() => toggleAccordion(index)}
-                      style={{
-                        cursor: "pointer",
-                        background: "#f0f0f0",
-                        padding: "10px",
-                        borderBottom: "1px solid #ccc",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                      }}>
-                      <h2>{ele.question}</h2>
-                      <span>{openIndex === index ? "-" : "+"}</span>
-                    </div>
-                    {openIndex === index && (
-                      <div
-                        className="accordion-content"
-                        style={{
-                          padding: "10px",
-                          background: "#fff",
-                          border: "1px solid #ccc",
-                        }}>
-                        <p>{ele.answer}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+            {items.Itinerary === " " ? null : (
+              <div id="Itinerary" className="maldives-detail-itinerary">
+                <h1>Itinerary</h1>
 
-            <div id="Inclusions" className="inclusions-container">
+                <div className="maldives-inclusions-container">
+                  {items.qna.map((ele, index) => (
+                    <div key={index} className="maldives-qna-container">
+                      <div
+                        className="maldives-accordion-header"
+                        onClick={() => toggleAccordion(index)}
+                        style={{
+                          cursor: "pointer",
+                          background: "#f0f0f0",
+                          padding: "10px",
+                          borderBottom: "1px solid #ccc",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}>
+                        <h2>{ele.question}</h2>
+                        <span>{openIndex === index ? "-" : "+"}</span>
+                      </div>
+                      {openIndex === index && (
+                        <div
+                          className="maldives-accordion-content"
+                          style={{
+                            padding: "10px",
+                            background: "#fff",
+                            border: "1px solid #ccc",
+                          }}>
+                          <p>{ele.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div id="Inclusions" className="maldives-inclusions-container">
               <h1> Inclusion</h1>
               <h2>Package Inclusions</h2>
               <div className="inclusions">
@@ -163,11 +204,11 @@ const MaldivesDetails = () => {
                 ))}
               </div>
             </div>
-            <div className="exclusion-container">
+            <div className="maldives-exclusion-container">
               <h2>Package Exclusion</h2>
               <div className="inclusions">
                 {items.packageExclusion.map((exc, index) => (
-                  <div key={index} className="inclusion">
+                  <div key={index} className="maldives-inclusion">
                     <p>
                       <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" />{" "}
                       {exc}
@@ -177,20 +218,31 @@ const MaldivesDetails = () => {
               </div>
             </div>
           </div>
-          <div className="detail-left">
-            <div className="detail-price-container">
+          <div className="maldives-detail-left ">
+            <div className="maldives-detail-price-container">
               <div className="detail-discount">
-                <h1>{items.discount}</h1>
+                {items.discount === " " ? " " : <h1>{items.discount}</h1>}
               </div>
-              <div className="originalPrice">
+              <div className="maldives-originalPrice">
+                <div className="flex justify-items-start gap-4 items-center">
+                  <div className="finalPrice">
+                    <h5 className="from">From</h5>
+                    <h1>{items.price}</h1>
+                    <span>/ Adult</span>
+                  </div>
+
+                  <div className="finalPrice">
+                    <span className="from">From</span>
+                    <h1>{items.child}</h1>
+                    <span>/Child 6 - 12 Yrs</span>
+                  </div>
+                </div>
                 <span className="from">From</span>
-                <span>
-                  <del>{items.originalPrice}</del>
-                </span>
-              </div>
-              <div className="finalPrice">
-                <h1>{items.price}</h1>
-                <span>/Adult</span>
+                <span></span>
+                <div className="finalPrice">
+                  <h1>{items.child2}</h1>
+                  <span>/ Child below 6 Yrs</span>
+                </div>
               </div>
               <div className="availableBtn">
                 <button>Check Availability</button>
