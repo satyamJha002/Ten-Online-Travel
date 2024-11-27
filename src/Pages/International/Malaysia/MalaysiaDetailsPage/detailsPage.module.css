@@ -104,10 +104,21 @@
   font-size: 1rem;
 }
 
+.detail-destination {
+  margin-bottom: 1.2rem;
+}
+
+.detail-destination h1 {
+  font-size: 1.8rem;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+
 .info-details {
   display: flex;
   width: 100%;
   padding: 1rem;
+  margin-top: 2rem;
   border: 1px solid black;
   justify-content: space-evenly;
   background-color: rgb(255, 255, 255);

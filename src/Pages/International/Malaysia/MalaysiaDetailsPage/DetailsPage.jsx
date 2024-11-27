@@ -71,10 +71,46 @@ const DetailsPage = () => {
               </button>
             </div>
 
-            <div className={styles["detail-description"]}>
-              <p>{items.detailDescription}</p>
+            <div
+              className={
+                items.detailDescription === " "
+                  ? "m-0"
+                  : styles["detail-description"]
+              }
+            >
+              <p>
+                {items.detailDescription === " "
+                  ? null
+                  : items.detailDescription}
+              </p>
               <br />
-              <p>{items.subDescription}</p>
+              <p>
+                {items.subDescription === " " ? null : items.subDescription}
+              </p>
+            </div>
+
+            <div className={styles["detail-destination"]}>
+              {items.destination === " "
+                ? null
+                : items.destination &&
+                  items.destination.map((item, index) => (
+                    <div key={index}>
+                      <h1>{item.place}</h1>
+
+                      {item.favPlaces === " "
+                        ? item.desc.map((ele, index) => (
+                            <p key={index} className="text-[1.1rem]">
+                              {ele}
+                            </p>
+                          ))
+                        : item.favPlaces.map((ele, index) => (
+                            <div key={index}>
+                              <h1>{ele.title}</h1>
+                              <p className="text-[1.1rem]">{ele.desc}</p>
+                            </div>
+                          ))}
+                    </div>
+                  ))}
             </div>
 
             <div className={styles["info-details"]}>
@@ -132,28 +168,36 @@ const DetailsPage = () => {
               <div>
                 {items.overView.map((list, index) => (
                   <div key={index}>
-                    <h3 className="text-md font-semibold text-[#6b6b74]">
-                      {list.listTitle}
-                    </h3>
-                    <ul>
-                      {list.listItems.length === 1
-                        ? list.listItems.map((item, index) => (
-                            <li
-                              key={index}
-                              className="list-none text-[#75757d]"
-                            >
-                              {item}
-                            </li>
-                          ))
-                        : list.listItems.map((item, index) => (
-                            <li
-                              key={index}
-                              className="list-disc text-[#80818b]"
-                            >
-                              {item}
-                            </li>
-                          ))}
-                    </ul>
+                    {typeof list === "string" ? (
+                      <p className="text-[1.1rem] pt-3">{list}</p>
+                    ) : (
+                      list && (
+                        <div>
+                          <h3 className="text-md font-semibold text-[#6b6b74]">
+                            {list.listTitle}
+                          </h3>
+                          <ul>
+                            {list.listItems.length === 1
+                              ? list.listItems.map((item, index) => (
+                                  <li
+                                    key={index}
+                                    className="list-none text-[#75757d]"
+                                  >
+                                    {item}
+                                  </li>
+                                ))
+                              : list.listItems.map((item, index) => (
+                                  <li
+                                    key={index}
+                                    className="list-disc text-[#80818b]"
+                                  >
+                                    {item}
+                                  </li>
+                                ))}
+                          </ul>
+                        </div>
+                      )
+                    )}
                   </div>
                 ))}
               </div>

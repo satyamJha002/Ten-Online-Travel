@@ -126,7 +126,7 @@ export const malaysia = [
       "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
     subDescription:
       "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
-
+    destination: " ",
     overView: [
       {
         listTitle: "Things to do in Malaysia",
@@ -232,12 +232,116 @@ export const malaysia = [
     title: "3N Kuala Lumpur / 2N Singapore",
     location: "Malaysia, Singapore",
     duration: "6 Days - 5 Nights",
+    noOfDays: "6",
     people: "2 People",
     discount: "9% Off",
     price: "₹50,000",
     originalPrice: "₹55,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Singapore",
+        favPlaces: [
+          {
+            title: "Finest beaches",
+            desc: "The best beaches in the world may be found in Singapore. The nation has beaches because it is an island. Experience the most amazing and immaculate beach you have ever seen by traveling to Sentosa Island. Singapore's beaches are beautiful and provide tourists solace. Sentosa Island is the perfect starting point if you enjoy the sea and the sand. Your Singapore tour from Bangalore will leave you wanting more, with everything from breathtaking sunsets to water activities.",
+          },
+          {
+            title: "Shopping destinations:",
+            desc: "Singapore is a shopping haven for anyone who wants to do nothing but shop. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing. ",
+          },
+          {
+            title: "Adventure",
+            desc: "Adventure sports including water skiing, surfing, scuba diving, snorkeling, and parasailing are available on the beaches. Your time on the beaches will undoubtedly be enjoyable. Some wildlife excursions are available, especially the thrilling night safari. Jurong Bird Park is one of the most popular tourist destinations in Singapore, drawing thousands of tourists annually. You may get up close and personal with a variety of exotic bird species. There is also a stunning man-made waterfall in the park. Don't miss the opportunity to eat breakfast with the orangutans at the Singapore Zoo. The Marina Bay Stand Park's beauty is bound to leave you speechless.",
+          },
+        ],
+      },
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "For those who prefer to do nothing but shop, Singapore is a veritable heaven. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing.",
+      "This country has something to offer to everyone. You can try a different type of diving, track wild jungles, enjoy beautiful beaches, explore remarkable cities or eat delicious Malaysian food. Everything is included in Malaysia tour package.",
+    ],
+    itIneary: [
+      {
+        question: "Day 1 : Arrival in Kuala Lumpur | Half Day KUL city tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 2 : Day trip to Genting Highlands with 01 way cable car (enroute stop at Batu caves)",
+        answer: " ",
+      },
+      {
+        question: "Day 3 : Full Day Sunway Lagoon Park",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 4 : Transfer to SINGAPORE by coach | Night Safari (Animal Show + Fire Show + Tram Ride)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 : Half day city tour (Merlion photo stop, Suntec City, Fountain of Wealth, Orchard Road, Little India and Chinatown) - Sentosa (one way cable car, 2 way Luge & Skyride and Wings of Time)",
+        answer: " ",
+      },
+      {
+        question: "Day 6 : Departure from Singapore",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "05 nights accommodation on above property",
+              "Daily breakfast at Hotel",
+              "Airport pick and drop",
+              "Sightseeing",
+              "Transfers",
+              "5% Govt. service Tax",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR (3N)",
+        hotelName: "ARENAA STAR",
+        roomType: "SUPERIOR",
+      },
+      {
+        place: "SINGAPORE (2N)",
+        hotelName: "AQUEEN LAVENDER",
+        roomType: "STANDARD",
+      },
+    ],
   },
   {
     id: 4,
@@ -254,12 +358,116 @@ export const malaysia = [
     title: "3N Kuala Lumpur / 2N Singapore",
     location: "Malaysia, Singapore",
     duration: "6 Days - 5 Nights",
+    noOfDays: "5",
     people: "2 People",
     discount: "12% Off",
     price: "₹30,000",
     originalPrice: "₹34,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Singapore",
+        favPlaces: [
+          {
+            title: "Finest beaches",
+            desc: "The best beaches in the world may be found in Singapore. The nation has beaches because it is an island. Experience the most amazing and immaculate beach you have ever seen by traveling to Sentosa Island. Singapore's beaches are beautiful and provide tourists solace. Sentosa Island is the perfect starting point if you enjoy the sea and the sand. Your Singapore tour from Bangalore will leave you wanting more, with everything from breathtaking sunsets to water activities.",
+          },
+          {
+            title: "Shopping destinations:",
+            desc: "Singapore is a shopping haven for anyone who wants to do nothing but shop. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing. ",
+          },
+          {
+            title: "Adventure",
+            desc: "Adventure sports including water skiing, surfing, scuba diving, snorkeling, and parasailing are available on the beaches. Your time on the beaches will undoubtedly be enjoyable. Some wildlife excursions are available, especially the thrilling night safari. Jurong Bird Park is one of the most popular tourist destinations in Singapore, drawing thousands of tourists annually. You may get up close and personal with a variety of exotic bird species. There is also a stunning man-made waterfall in the park. Don't miss the opportunity to eat breakfast with the orangutans at the Singapore Zoo. The Marina Bay Stand Park's beauty is bound to leave you speechless.",
+          },
+        ],
+      },
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "For those who prefer to do nothing but shop, Singapore is a veritable heaven. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing.",
+      "This country has something to offer to everyone. You can try a different type of diving, track wild jungles, enjoy beautiful beaches, explore remarkable cities or eat delicious Malaysian food. Everything is included in Malaysia tour package.",
+    ],
+    itIneary: [
+      {
+        question: "Day 1 : Arrival in Kuala Lumpur | Half Day KUL city tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 2 : Day trip to Genting Highlands with 01 way cable car (enroute stop at Batu caves)",
+        answer: " ",
+      },
+      {
+        question: "Day 3 : Full Day Sunway Lagoon Park",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 4 : Transfer to SINGAPORE by coach | Night Safari (Animal Show + Fire Show + Tram Ride)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 : Half day city tour (Merlion photo stop, Suntec City, Fountain of Wealth, Orchard Road, Little India and Chinatown) - Sentosa (one way cable car, 2 way Luge & Skyride and Wings of Time)",
+        answer: " ",
+      },
+      {
+        question: "Day 6 : Departure from Singapore",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "05 nights accommodation on above property",
+              "Daily breakfast at Hotel",
+              "Airport pick and drop",
+              "Sightseeing",
+              "Transfers",
+              "5% Govt. service Tax",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR (3N)",
+        hotelName: "ARENAA STAR",
+        roomType: "SUPERIOR",
+      },
+      {
+        place: "SINGAPORE (2N)",
+        hotelName: "AQUEEN LAVENDER",
+        roomType: "STANDARD",
+      },
+    ],
   },
   {
     id: 5,
