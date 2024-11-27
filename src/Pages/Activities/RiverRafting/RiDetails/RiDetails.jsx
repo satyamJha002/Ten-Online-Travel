@@ -176,7 +176,32 @@ const RiverRaftingDetails = () => {
                         ))}
                     </div>
                 </div>
+
+                <div id="Hotels" className="riverrafting-hotels-container">
+                    <h1>Hotels</h1>
+                    <table className="hotels-table">
+                        <thead>
+                            <tr>
+                                <th>Place</th>
+                                <th>Hotel</th>
+                                <th>Room Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {riverraftingObjects.hotels.map((hotel, index) => (
+                                <tr key={index}>
+                                    <td>{hotel.place}</td>
+                                    <td>{hotel.hotelName}</td>
+                                    <td>{hotel.roomType}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
+
+
 
             <div className="riverrafting-detail-left">
                 <div className="riverrafting-detail-price-container">
@@ -211,7 +236,7 @@ const RiverRaftingDetails = () => {
                     <div className="riverrafting-tripAdvisor-content">
                         <h2>Before Holiday |</h2>
                         <h2>Online Travel</h2>
-                        <h2>Agency</h2>                        
+                        <h2>Agency</h2>
                         <div>
                             <p>Trip Advisor Traveler Rating</p>
                             <span className="flex gap-1 text-green-500">
