@@ -26,6 +26,7 @@ import Sikkim from "./Pages/India/Sikkim/Sikkim";
 import Kasol from "./Pages/India/Himachal/Kasol";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
+import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetailsPage/DetailPage";
 import Singapore from "./Pages/International/Singapore/Singapore";
 import Details from "./Pages/International/Dubai/DetailsPage/Details";
 import Maldives from "./Pages/International/Maldives/Maldives";
@@ -57,6 +58,10 @@ function App() {
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/international/bali" element={<Bali />} />
           <Route path="/international/thailand" element={<Thailand />} />
+          <Route
+            path="/international/thailand/trip/:id"
+            element={<ThailandDetailsPage />}
+          />
           <Route path="/international/singapore" element={<Singapore />} />
           <Route path="/:id/:id/trip/:id" element={<Details />} />
           <Route
