@@ -169,8 +169,41 @@
 }
 
 .detail-overview h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.detail-itinerary {
+  margin: 30px 0px;
+}
+
+.detail-itinerary h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.qna-container {
+  margin: 50px 0px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header h2 {
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+.accordion-content p {
+  font-size: 1rem;
 }
 
 .both-inclusions-containers {
@@ -178,7 +211,7 @@
 }
 
 .both-inclusions-containers h1 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -187,7 +220,7 @@
 }
 
 .hotels h1 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   margin-bottom: 1.3rem;
   font-weight: 500;
 }

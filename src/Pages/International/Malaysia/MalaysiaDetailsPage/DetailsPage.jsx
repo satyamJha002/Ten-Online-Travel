@@ -14,6 +14,7 @@ import { MdRestaurant } from "react-icons/md";
 
 const DetailsPage = () => {
   const [currentImages, setCurrentImages] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
   const { id } = useParams();
   const filteredObjects = malaysia.filter((obj) => obj.id === Number(id));
   console.log(filteredObjects);
@@ -24,6 +25,10 @@ const DetailsPage = () => {
 
   const handleNextImage = (images) => {
     setCurrentImages((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   if (!filteredObjects) {
@@ -151,6 +156,30 @@ const DetailsPage = () => {
                     </ul>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div id="itIneary" className={styles["detail-itinerary"]}>
+              <h1>{items.itIneary === " " ? null : "Itinerary"}</h1>
+              <div className={styles["itinerary-container"]}>
+                {items.itIneary === " "
+                  ? null
+                  : items.itIneary.map((ele, index) => (
+                      <div key={index} className={styles["qna-container"]}>
+                        <div
+                          className={styles["accordion-header"]}
+                          onClick={() => toggleAccordion(index)}
+                        >
+                          <h2>{ele.question}</h2>
+                          <span>{openIndex === index ? "-" : "+"}</span>
+                        </div>
+                        {openIndex === index && (
+                          <div className={styles["accordion-content"]}>
+                            <p>{ele.answer}</p>
+                          </div>
+                        )}
+                      </div>
+                    ))}
               </div>
             </div>
 

@@ -115,12 +115,107 @@ export const malaysia = [
     title: "2N Kuala Lumpur and 2N Langkawi",
     location: "Malaysia",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     people: "2 People",
     discount: "13% Off",
     price: "₹19,500",
     originalPrice: "₹22,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription:
+      "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+    subDescription:
+      "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+
+    overView: [
+      {
+        listTitle: "Things to do in Malaysia",
+        listItems: [
+          "Eat Roti Canai – Malaysian cuisine is quite delicious. Indian, Chinese, Thai, and Malay flavors are all mixed together in the food. Roti canai, which is bread served with a hot curry, is a dish you should definitely try.",
+          "Explore the Petronas Towers At Night – It is unnecessary to introduce these skyscrapers, and every list must include these enormous twin towers. Cross the connecting bridge between these two enormous towers for a breathtaking vista.",
+          "Go Scuba Diving – There are a ton of scuba diving and snorkeling opportunities in this southeast nation. It would be a fantastic addition to your honeymoon package to Malaysia.",
+          "Explore the Streets of Malacca – This city will transport you back to a time when people had more time and life moved at a steady pace. Bicycles can be rented so you can explore Malacca. You will fall in love with the old theme building and the winding driveway.",
+        ],
+      },
+      {
+        listTitle: "Places to visit in Malaysia",
+        listItems: [
+          "Langkawi – It is a group of islands and is regarded as Malaysia's top tourist attraction. Each island is unique. Numerous sandy beaches, thick forests, and other stunning locations may be found.",
+          "Kuala Lumpur – Malaysia's capital city has a wonderful blend of traditional and contemporary culture. Known as KL, it is unquestionably one of Malaysia's top tourism destinations. There are many of alternatives for mall shopping, nightlife, and superb cuisine.",
+          "Kota Kinabalu – One of Malaysia's fastest-growing towns, Kota Kinabalu is well-known for its fantastic fishing spots. You can visit Mount Kinabalu, the nation's highest peak, from this city.",
+          "Penang – This city is well-known among travelers who are foodies. The best Malaysian cuisine in a variety of forms can be found in this city. This city offers a diverse range of cultures because so many different religions coexist here.",
+        ],
+      },
+      {
+        listTitle: "Best time to visit Malaysia",
+        listItems: [
+          "Traveling to Malaysia is most enjoyable from March to September. The abundance of tropical vegetation following the rainy season makes this country an absolute must-see. The dry season, which runs from March to October, is the ideal time of year to come if you enjoy animals. Bird viewing is available in March and July.",
+        ],
+      },
+    ],
+    itIneary: [
+      {
+        question: "Day 1 : Arrival in Kuala Lumpur | Half Day KUL city tour",
+        answer: " ",
+      },
+      {
+        question: "Day 2 : Full Day Sunway Lagoon Park",
+        answer: " ",
+      },
+      {
+        question: "Day 3 : Transfer to Langkawi",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 4 :Langkawi Half day Round Island Tour (Mahsuri Tomb, Atma Alam, Kuah Town, Eagle Square, Underwater World (Exclude Entrance Fee))",
+        answer: " ",
+      },
+      {
+        question: "Day 5 : Departure from Langkawi",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "04 nights accommodation",
+              "Breakfast (except arrival day)",
+              "Airport Arrival SIC",
+              "Airport Departure SIC",
+              "Sightseeing",
+              "GST",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability.",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE STAR",
+      },
+      {
+        place: "LANGKAWI ",
+        hotelName: "BELLA VISTA WATERFRONT RESORT",
+        roomType: "DELUXE",
+      },
+    ],
   },
   {
     id: 3,
