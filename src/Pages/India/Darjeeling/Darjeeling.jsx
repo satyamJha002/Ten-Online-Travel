@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { darjeelingPackages } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
 import styles from "./Darjeeling.module.css";
-import { useLocation } from "react-router-dom";
 
 const Darjeeling = () => {
-  const location = useLocation();
-  const [locationURL] = useState(location.pathname);
-  const newUrl = locationURL
-    .split("")
-    .map((ele) => (ele === "/" ? " > " : ele))
-    .join("");
   return (
     <>
-      <section className={styles["main"]}>
-        <p>Home {newUrl}</p>
+      <section>
         <div className={styles["title-content"]}>
           <h1 className={styles["darjeeling-heading"]}>
             Darjeeling

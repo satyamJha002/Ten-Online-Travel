@@ -36,7 +36,6 @@
 .KodaikanalInfo p {
     color: #7c7c8b;
     padding: 10px;
-    font-size: 1.1em;
 }
 
 .KodaikanalInfo p span {
@@ -74,14 +73,13 @@
 
     .KodaikanalCardsContainer {
         display: flex;
-        justify-content: start;
-        margin-left: 15px;
+        justify-content: space-evenly;
+        /* margin-left: 10px; */
     }
 
     .KodaikanalCardsContainer>*:nth-last-child(-n + 1) {
-        display: flex;
-        justify-content: center;
-        margin-right: 4%;
+        margin-right: 12px !important;
+        margin: 0;
     }
 
 

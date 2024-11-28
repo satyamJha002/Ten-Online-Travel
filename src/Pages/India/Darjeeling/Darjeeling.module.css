@@ -1,11 +1,5 @@
-.main {
+.title-content {
   margin: 0rem 1.875rem;
-}
-
-.main > p {
-  color: black;
-  margin: 1rem 0rem;
-  font-size: 1.1rem;
 }
 
 .darjeeling-heading {
@@ -88,37 +82,37 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  padding: 0rem 1rem;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 30px;
 }
 
 .container > *:nth-last-child(-n + 1) {
   margin-right: auto;
-  margin-left: 15px;
+  margin-left: 17px;
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 900px) {
   .container {
-    justify-content: space-between;
+    padding: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
   }
   .container > *:nth-last-child(-n + 1) {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: 30px;
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    justify-content: space-evenly;
-  }
-}
-
-@media (max-width: 480px) {
-  .main {
-    margin: 0rem 1.275rem;
+@media screen and (max-width: 480px) {
+  .title-content {
+    margin: 0rem 1rem;
   }
 
   .darjeeling-heading {
@@ -128,8 +122,12 @@
   .darjeeling-description {
     font-size: 1rem;
   }
+  .container {
+    justify-content: center;
+  }
+
   .container > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 1rem;
+    margin-left: 20px;
   }
 }

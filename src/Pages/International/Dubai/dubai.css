@@ -69,7 +69,7 @@
   margin-top: 30px;
 }
 
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 1200px) {
   .dubaiIntro {
     padding: 18px 35px;
   }
@@ -117,10 +117,6 @@
   .dubaiCardsContainer {
     gap: 20px;
   }
-  .dubaiCardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 35px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -143,10 +139,6 @@
     justify-content: center;
     gap: 15px;
   }
-  .dubaiCardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 5%;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -164,6 +156,6 @@
   }
   .dubaiCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 5%;
+    margin-left: 15px;
   }
 }

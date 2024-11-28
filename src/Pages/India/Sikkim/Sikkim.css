@@ -33,10 +33,6 @@
      margin-bottom: 4%;
      text-align: justify;
   }
-  .sikkim-div > p {
-    color: black;
-    font-size: 1.1rem;
-  }
   .sightseeing-sikkim-div .sightseeing-sikkim-title {
     display: flex;
     align-items: center;
@@ -86,43 +82,29 @@
     gap: 30px;
     margin-top: 30px;
   }
-  @media screen and (max-width: 330px) {
-    .SikkimContainer {
-      margin-left: -3%;
-
-        width: 105%
-    }
-   
-  }
 
   @media (max-width: 480px) {
-    .sightseeing-sikkim-div .sightseeing-sikkim-title {
-      margin-top: -10%;
-    }
     .sikkim-content{
       text-align: justify;
     }
     .sightseeing-sikkim-div {
         margin-top: 24%;
     }
-   
+    .SikkimContainer{
+      width: 102%;
+    }
+    .sikkim-contentk{
+      
+      text-align: justify;
+  }
   .sikkim-heading::after {
    
     width: 15%;
 }
   }
-  @media screen and (max-width: 390px) {
-
-  .friendfamily-heading {
-    font-size: 23px;
-  }
-}
   @media screen and (max-width: 600px) {
     .sikkim{
       padding: 10px;
-    }
-    .sikkim-content{
-      text-align: justify;
     }
   }
   @media screen and (max-width: 768px){

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   ladakhFamilyTrips,
   ladakhOtherTrip,
@@ -7,7 +7,6 @@ import {
 import { famousLakes } from "../../../assets/Data/data";
 import Card from "../../../Components/Card/Card";
 import styles from "./Ladakh.module.css";
-import { useLocation } from "react-router-dom";
 
 const Ladakh = () => {
   const listPlaces = [
@@ -64,16 +63,8 @@ const Ladakh = () => {
     "Umling La Pass",
   ];
 
-  const location = useLocation();
-  const [locationURL] = useState(location.pathname);
-  const newUrl = locationURL
-    .split("")
-    .map((ele) => (ele === "/" ? " > " : ele))
-    .join("");
-
   return (
     <section className={styles["custom-container"]}>
-      <p>Home {newUrl}</p>
       <h1 className={styles["custom-heading"]}>
         Ladakh
         <span className={styles["underline"]}></span>
@@ -216,7 +207,7 @@ const Ladakh = () => {
         </div>
       </div>
 
-      <div className="mx-auto my-10 px-1">
+      <div className="mx-auto my-10 px-2">
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse border  border-gray-300 text-left text-sm lg:text-base">
             <tbody>

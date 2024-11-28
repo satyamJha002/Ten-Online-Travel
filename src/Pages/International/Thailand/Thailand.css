@@ -1,7 +1,9 @@
 .thailandIntro {
   padding: 20px 40px;
 }
-
+.thailandIntro {
+  padding: 20px 40px;
+}
 .thailandIntro > p {
   color: black;
   font-size: 1.1rem;
@@ -69,13 +71,9 @@
   gap: 30px;
   margin-top: 30px;
 }
-.thailandCardsContainer > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 15px;
-}
 /*  */
 /* Responsive adjustments */
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 1200px) {
   .thailandIntro {
     padding: 18px 35px;
   }
@@ -84,10 +82,6 @@
   }
   .friAndFam {
     font-size: 36px;
-  }
-  .thailandCardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: 0;
-    margin-left: 0;
   }
 }
 

@@ -23,7 +23,6 @@
 
 .munnar-destination {
   margin: 0.5rem;
-  font-size: 1em;
 }
 
 .munnarInfo {
@@ -36,7 +35,6 @@
 
 .munnarInfo p {
   color: #7c7c8b;
-  font-size: 1.1em;
 }
 
 .munnarInfo p span {
@@ -53,7 +51,6 @@
   text-align: center;
   position: relative;
 }
-
 .friAndFam h2 {
   background-color: #f4f4f4;
   display: inline-block;
@@ -64,7 +61,6 @@
   z-index: 1;
   font-size: 2rem;
 }
-
 .friAndFam::after,
 .friAndFam::before {
   content: "";
@@ -95,7 +91,7 @@
   margin-bottom: 20px;
 }
 
-.munnarCardsContainer>*:nth-last-child(-n + 1) {
+.munnarCardsContainer > *:nth-last-child(-n + 1) {
   display: flex;
   justify-content: start;
 }
@@ -110,7 +106,7 @@
   margin-bottom: 20px;
 }
 
-.sightseeingCardsContainer>*:nth-last-child(1) {
+.sightseeingCardsContainer > *:nth-last-child(1) {
   margin-right: 66%;
   margin-left: 0;
   margin-top: 10px;
@@ -143,7 +139,7 @@
     gap: 20px;
   }
 
-  .munnarCardsContainer>*:nth-last-child(-n + 1) {
+  .munnarCardsContainer > *:nth-last-child(-n + 1) {
     margin: 0;
     margin-right: 50%;
   }
@@ -152,11 +148,10 @@
     gap: 20px;
   }
 
-  .sightseeingCardsContainer>*:nth-last-child(-n + 1) {
+  .sightseeingCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
     margin: 0;
   }
-
   .otherCardsContainer {
     display: flex;
     justify-content: start;
@@ -181,17 +176,14 @@
   .munnarCardsContainer {
     gap: 20px;
   }
-
-  .munnarCardsContainer>*:nth-last-child(-n + 1) {
-    display: flex;
-    justify-content: center;
+  .munnarCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: 0;
+    margin: 0;
   }
 
   .sightseeingCardsContainer {
     gap: 20px;
   }
-
   .otherCardsContainer {
     display: flex;
     justify-content: center;
@@ -206,12 +198,7 @@
   }
 
   .munnar-intro h1 {
-    font-size: 2rem;
-  }
-
-  .friAndFam h2 {
-    font-size: 20px;
-
+    font-size: 1.5rem;
   }
 
   .munnar-intro h1::after {
@@ -227,14 +214,8 @@
     padding: 0 15px;
   }
 
-  .munnarCardsContainer>*:nth-last-child(-n + 1) {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    margin-left: 14px;
-    margin-right: 15px;
-    width: 100%;
+  .munnarCardsContainer > *:nth-last-child(-n + 1) {
+    margin: auto;
+    margin-right: 20px;
   }
-
-
 }

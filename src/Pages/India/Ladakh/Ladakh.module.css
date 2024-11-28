@@ -2,12 +2,6 @@
   margin: 0rem 1.875rem;
 }
 
-.custom-container > p {
-  color: black;
-  font-size: 1.1rem;
-  margin: 1rem 0rem;
-}
-
 .custom-heading {
   font-size: 2.25rem;
   position: relative;
@@ -203,57 +197,48 @@
   width: 100%;
   height: 100%;
   display: flex;
+  padding: 0rem 1rem;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-.custom-flex-container > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 15px;
 }
 
 .custom-flex-other-container {
   width: 100%;
   height: 100%;
   display: flex;
+  padding: 0rem 1rem;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-/* .custom-flex-other-container > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 0px;
-} */
-
-@media (max-width: 2560px) {
+@media screen and (max-width: 1200px) {
+  .custom-container {
+    margin: 0rem 1rem;
+  }
   .custom-flex-container {
     justify-content: space-between;
-  }
-  .custom-flex-container > *:nth-last-child(-n + 1) {
-    margin-right: 0;
-    margin-left: 0;
   }
 }
 
 @media (max-width: 768px) {
   .custom-flex-container {
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .custom-flex-other-container {
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
-  .custom-container {
-    margin: 0rem 1.275rem;
-  }
+@media screen and (max-width: 480px) {
   .custom-heading {
     font-size: 1.8rem;
+  }
+
+  .custom-secion .custom-subheading {
+    font-size: 1rem;
   }
 
   .custom-paragraph,
@@ -261,16 +246,13 @@
     font-size: 1rem;
   }
 
-  .custom-highlight-item {
-    font-size: 1.1rem;
+  .custom-flex-container {
+    min-width: 111%;
+    margin: 0px -20px;
   }
 
-  .custom-divider-container h2 {
-    font-size: 1.3rem;
-  }
-
-  .custom-flex-other-container > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 1rem;
+  .custom-flex-other-container {
+    min-width: 111%;
+    margin: 0px -20px;
   }
 }
