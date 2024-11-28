@@ -99,11 +99,14 @@ const Kashmir = () => {
         <h2>Friends and Family Tour</h2>
       </div>
 
-      {kashmirPackages.map((pckg) => (
-        <div className={styles["flex-container"]}>
-          <Card pkg={pckg} />
+      {kashmirPackages.map((pckg,index) => {
+        console.log(pckg,">>>>>>>>>");
+        
+        return(
+        <div key={index} className={styles["flex-container"]}>
+          <Card pkg={pckg} locationURL={locationURL} />
         </div>
-      ))}
+      )})}
     </div>
   );
 };

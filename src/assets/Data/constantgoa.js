@@ -21,7 +21,9 @@ export const tourGoaPackages = [
       originalPrice: "₹10,750",
       nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: false,
-      description: "Located at Calangute – Candolim..."
+      description: "Located at Calangute – Candolim...",
+     
+     
 
     },
 ]
@@ -240,7 +242,7 @@ export const tourotherPackages = [
       nextDepartures: ["Nov 19", "Nov 20", "Nov 21"],
       featured: false,
       description: "Stone Wood Riverfront...",
-
+      
       },
       
       

@@ -176,7 +176,38 @@ const ParaglidingDetails = () => {
                         ))}
                     </div>
                 </div>
+
+                <div id="Hotels" className="paragliding-hotels-container">
+                    <h1>Hotels</h1>
+                    {paraglidingObject.hotels && paraglidingObject.hotels.length > 0 ? (
+                        <table className="hotels-table">
+                            <thead>
+                                <tr>
+                                    <th>Place</th>
+                                    <th>Hotel</th>
+                                    <th>Room Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {paraglidingObject.hotels.map((hotels, index) => (
+                                    <tr key={index}>
+                                        <td>{hotels.place}</td>
+                                        <td>{hotels.hotelName}</td>
+                                        <td>{hotels.roomType}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    ) : (
+                        <p>No hotels available</p>
+                    )}
+                </div>
+
+
+
+
             </div>
+
 
             <div className="paragliding-detail-left">
                 <div className="paragliding-detail-price-container">

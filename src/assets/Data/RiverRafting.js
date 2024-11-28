@@ -18,7 +18,7 @@ export const packages = [
         noOfDays: "6",
         description: "Chill night, sunny days, calm hills await...",
         detailDescription: "Nestled in the Himachal Himalayas, Shimla and Kullu Manali are top hill stations offering stunning views. In 5 nights and 6 days, explore attractions like the Hadimba and Jakhu Temples, and enjoy the scenic beauty.",
-        subDescription: "Relax and unwind in a romantic setting amidst picturesque landscapes.",
+        subDescription: "Relax and unwind with your partner in a serene, romantic destination surrounded by majestic mountains and fresh air.",
         overview: "For a perfect summer getaway in the majestic Himalayas, the Shimla – Kullu – Manali tour is your ideal choice. With stunning lakes, snow-capped peaks, rich wildlife, ancient temples, and thrilling adventure activities, this destination attracts tourists year-round. Before Holiday offers winter packages for Shimla Kullu Manali, allowing you to explore the town’s beauty while it is blanketed in snow.",
         qna: [
             { question: "What activities are included?", answer: "Activities include sightseeing, romantic dinners, and guided tours." },
@@ -36,6 +36,18 @@ export const packages = [
             "Personal expenses such as laundry, tips, and beverages",
             "Airfare or train fare to Himachal",
             "Optional adventure activities",
+        ],
+        hotels: [
+            {
+                place: "Shimla (2N)",
+                hotelName: "Hotel Snowflake",
+                roomType: "Deluxe Room",
+            },
+            {
+                place: "Manali (3N)",
+                hotelName: "Mountain Retreat",
+                roomType: "Luxury Suite",
+            },
         ],
     },
     {
@@ -61,7 +73,7 @@ export const packages = [
         noOfDays: "2",
         description: "Memorable camp trip, great river views...",
         detailDescription: "Experience the ultimate camping adventure in Rishikesh! Rishikesh Camping offers the perfect opportunity to explore untouched nature while enjoying quality time with family and friends. Nestled in a peaceful riverside location, it's an ideal spot for corporate events, family gatherings, bird watchers, nature enthusiasts, and adventure lovers. Join us for a camping experience like no other!",
-        subDescription: "Enjoy a weekend of adventure, river rafting, and relaxing bonfire nights.",
+        subDescription: "Experience adrenaline-filled camping adventures with scenic views, thrilling river rafting, and peaceful surroundings in Rishikesh.",
         overview: "Experience the serenity of riverside camping in Rishikesh — a perfect location for corporate parties, family gatherings, bird watching, nature exploration, and adventure seekers. Come and discover camping like never before.",
         qna: [
             { question: "What activities are included?", answer: "Activities include river rafting, bonfire, and nature walks." },
@@ -79,6 +91,13 @@ export const packages = [
             "Transportation to and from the campsite",
             "Personal expenses such as laundry, beverages, and tips",
             "Optional adventure activities not mentioned",
+        ],
+        hotels: [
+            {
+                place: "Rishikesh (3N)",
+                hotelName: "Riverfront Camp",
+                roomType: "Tent",
+            },
         ],
     },
     {
@@ -126,6 +145,18 @@ export const packages = [
             "Personal expenses and optional tours",
             "Travel insurance",
         ],
+        hotels: [
+            {
+                place: "Srinagar (2N)",
+                hotelName: "Dal View Resort",
+                roomType: "Premium Room",
+            },
+            {
+                place: "Pahalgam (2N)",
+                hotelName: "Valley Retreat",
+                roomType: "Deluxe Cottage",
+            },
+        ],
     },
     {
         id: 7004,
@@ -146,7 +177,7 @@ export const packages = [
         noOfDays: "4",
         description: "Explore Kullu's and Manali's thrilling...",
         detailDescription: " Nestled in the heart of the Himachal Himalayas, Kullu Manali is one of India’s most captivating hill stations. Plan your Himachal Pradesh tour to experience the breathtaking natural beauty and romantic scenic views. The charming town of Manali attracts adventurers, nature enthusiasts, and those seeking peace. ",
-        subDescription: "Soak up the sun, enjoy beachside relaxation, and party like never before.",
+        subDescription: "Relax on golden beaches, indulge in water sports, and explore the lively culture of Goa.",
         overview: "If you’re looking to spend your summer vacation in the majestic Himalayas, then Kullu – Manali is the perfect destination. The region's stunning lakes, snow-covered mountains, diverse wildlife, historic temples, and thrilling adventure activities draw countless tourists each year. Before Holiday offers winter tour packages for Kullu Manali, allowing you to explore this enchanting town in all its snow-covered glory.",
         qna: [
             { question: "What activities are included?", answer: "Beachside relaxation, local sightseeing, and nightlife exploration." },
@@ -164,6 +195,13 @@ export const packages = [
             "Airfare or train fare to Goa",
             "Entry fees for specific attractions",
             "Personal expenses like tips and laundry",
+        ],
+        hotels: [
+            {
+                place: "Goa (2N)",
+                hotelName: "Sea Breeze Resort",
+                roomType: "Beach View Room",
+            },
         ],
     },
     {
@@ -185,7 +223,7 @@ export const packages = [
         noOfDays: "3",
         description: "Relax unwind in Dalhousie's peaceful...",
         detailDescription: "Dalhousie, nestled in the Chamba district at 1,854 meters, offers stunning views of snow-capped mountains and Victorian-style architecture. Surrounded by lush greenery and serene landscapes, it’s a peaceful escape with attractions like Panch Pulla, Satdhara Falls, and Daikund Peak.",
-        subDescription: "Discover the snow-capped mountains, lush valleys, and tranquil lakes.",
+        subDescription: "Embark on an adventurous trip exploring rugged terrains, ancient monasteries, and stunning high-altitude landscapes.",
         overview: "",
         qna: [
             { question: "What activities are included?", answer: "Houseboat stay, shikara rides, and guided sightseeing." },
@@ -203,6 +241,23 @@ export const packages = [
             "Airfare to and from Srinagar",
             "Personal expenses and additional tours",
             "Travel insurance",
+        ],
+        hotels: [
+            {
+                place: "Leh (3N)",
+                hotelName: "Mountain Glory Hotel",
+                roomType: "Superior Room",
+            },
+            {
+                place: "Nubra Valley (2N)",
+                hotelName: "Desert Oasis Camp",
+                roomType: "Tent",
+            },
+            {
+                place: "Pangong (1N)",
+                hotelName: "Pangong Lake Camp",
+                roomType: "Luxury Tent",
+            },
         ],
     },
     {
@@ -224,7 +279,7 @@ export const packages = [
         noOfDays: "3",
         description: "Thrilling river rafting/scenic camping...",
         detailDescription: "Tucked away in the scenic Himachal Himalayas, Shimla and Kullu Manali offer some of the most enchanting hill stations in India. Explore the divine Hadimba Temple in Kullu Manali and the spiritual Jakhu Temple in Shimla. With a 4-night, 5-day itinerary, experience the stunning beauty of nature, adventure, and rich cultural heritage. Plan your Himachal Pradesh trip to discover its majestic mountains, serene landscapes, and unforgettable vistas.",
-        subDescription: "Explore the serene beauty and cultural richness of Sikkim.",
+        subDescription: "Sail through tranquil backwaters, enjoy houseboat stays, and explore Kerala's lush greenery and unique culture.",
         overview: "Escape to the serene beauty of the Shimla – Kullu – Manali region for an unforgettable Himalayan experience. From tranquil lakes and snow-capped peaks to lush greenery, ancient temples, and thrilling adventure activities, this destination offers something for everyone. With Before Holiday’s winter tour packages, you can explore these charming hill stations, fully immersed in the magical snowy landscape, for an unforgettable vacation.",
         qna: [
             { question: "What activities are included?", answer: "Guided treks, sightseeing, and cultural tours." },
@@ -242,6 +297,18 @@ export const packages = [
             "Airfare or train fare to Sikkim",
             "Personal expenses and optional treks",
             "Travel insurance",
+        ],
+        hotels: [
+            {
+                place: "Alleppey (2N)",
+                hotelName: "Backwater Retreat",
+                roomType: "Houseboat",
+            },
+            {
+                place: "Kumarakom (2N)",
+                hotelName: "Lakeview Resort",
+                roomType: "Lakefront Cottage",
+            },
         ],
     },
     {
@@ -263,7 +330,7 @@ export const packages = [
         noOfDays: "5",
         description: "Relax in Shimla's charm, Manali wonders...",
         detailDescription: "Situated in the stunning Himachal Himalayas, Shimla and Kullu Manali are among India’s most picturesque hill stations. Discover the serene Hadimba Temple in Kullu Manali and the vibrant Jakhu Temple in Shimla. In 4 nights and 5 days, explore all the must-see spots. Plan your trip to Himachal Pradesh for a perfect blend of natural beauty and romantic landscapes.",
-        subDescription: "Experience tranquility and rejuvenation in Kerala's backwaters.",
+        subDescription: "Explore waterfalls, caves, and lush green landscapes in the enchanting hills of Meghalaya.",
         overview: "Escape to the serene beauty of the Shimla – Kullu – Manali region, nestled in the majestic Himalayas. This breathtaking destination offers snow-covered peaks, tranquil lakes, rich wildlife, ancient temples, and a variety of adventurous activities, making it the perfect retreat. Before Holiday presents carefully curated winter tour packages to Shimla Kullu Manali, ensuring you explore this enchanting region in its pristine, snow-dusted glory.",
         qna: [
             { question: "What activities are included?", answer: "Backwater cruises, houseboat stay, and cultural performances." },
@@ -281,6 +348,18 @@ export const packages = [
             "Travel to and from Kerala",
             "Personal expenses and additional activities",
             "Travel insurance",
+        ],
+        hotels: [
+            {
+                place: "Shillong (2N)",
+                hotelName: "Pine Hill Hotel",
+                roomType: "Deluxe Room",
+            },
+            {
+                place: "Cherrapunjee (3N)",
+                hotelName: "Rainforest Resort",
+                roomType: "Cottage",
+            },
         ],
     },
 ];

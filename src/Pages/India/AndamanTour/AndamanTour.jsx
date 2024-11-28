@@ -7,12 +7,13 @@ import { useLocation } from 'react-router-dom';
 const AndamanTour = () => {
   const location = useLocation();
   const [locationURL] = useState(location.pathname);
+  console.log("locationURL",locationURL);
+  
   const newUrl = locationURL
     .split("")
     .map((ele) => (ele === "/" ? " > " : ele))
     .join("");
  
-console.log("locationURL={locationURL}",locationURL);
 
   return (
     <div className='Andaman-tour'>
@@ -67,7 +68,7 @@ console.log("locationURL={locationURL}",locationURL);
 
       <div className="AndamanContainer">
         {andmatour.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg}  locationURL={locationURL} />
+          <Card key={pkg.id} pkg={pkg}  locationURL={locationURL+'/andmatour'} />
         ))}
       </div>
 
@@ -83,7 +84,7 @@ console.log("locationURL={locationURL}",locationURL);
   {watertourPackages.map((pkg, index) => {
     const isLastTwo = index >= watertourPackages.length - 2;
     return (
-      <Card key={pkg.id} pkg={pkg} locationURL={locationURL} className={isLastTwo ? 'last-company' : ''} />
+      <Card key={pkg.id} pkg={pkg} locationURL={locationURL+'/watercontainer'} className={isLastTwo ? 'last-company' : ''} />
     );
   })}
 </div>

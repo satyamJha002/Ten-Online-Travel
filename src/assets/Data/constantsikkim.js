@@ -10,7 +10,7 @@ export const tourssightPackages = [
         "https://b4holiday.com/wp-content/uploads/2017/11/Tsomgo-Lake.jpg",
         
       ],
-      title: "Sikkim Darjeeling Honeymoon Package",
+      title: "Sikkim Darjeeling Package",
       location: "Darjeeling, Sikkim",
       duration: "5 Days - 4 Nights",
       price: "₹18,590",
