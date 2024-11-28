@@ -38,7 +38,6 @@ const Detailsandaman = () => {
     }, [locationURL]); 
     
   
-    console.log(">>>>>>>>>>>>>",detailsData);
   
 
 useEffect(()=>{
@@ -151,11 +150,7 @@ useEffect(()=>{
                 <li>
                   <a href={"#Optional"}>Optional Services</a>
                 </li>
-                <li>
-                  <a href={"#faq"}>FAQs</a>
-                </li>
-               
-
+            
               </ul>
             </div>
             <div id="overView" className="detail-overview">
@@ -336,7 +331,7 @@ return(
                 />
               </div>
               <div className="tripAdvisor-content">
-                <h2>Before Holiday |</h2>
+                <h2>Ten Travel |</h2>
                 <h2>Online Travel</h2>
                 <h2>Agency</h2>
                 <div>
