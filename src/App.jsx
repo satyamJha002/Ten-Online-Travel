@@ -27,7 +27,7 @@ import Kasol from "./Pages/India/Himachal/Kasol";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import Singapore from "./Pages/International/Singapore/Singapore";
-import Details from "./Pages/International/Dubai/DetailsPage/Details";
+import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
 import Maldives from "./Pages/International/Maldives/Maldives";
 import MaldivesDetails from "./Pages/International/Maldives/DetailsPage/MaldivesDetails";
 import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
@@ -48,22 +48,26 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Review />} />
-          <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
           <Route
             path="/international/malaysia/trip/:id"
             element={<DetailsPage />}
           />
           <Route path="/international/maldives" element={<Maldives />} />
-          <Route path="/international/bali" element={<Bali />} />
-          <Route path="/international/thailand" element={<Thailand />} />
-          <Route path="/international/singapore" element={<Singapore />} />
-          <Route path="/:id/:id/trip/:id" element={<Details />} />
+
           <Route
             path="/international/maldives/trip/:id"
             element={<MaldivesDetails />}
           />
-
+          <Route path="/international/bali" element={<Bali />} />
+          <Route path="/international/thailand" element={<Thailand />} />
+          <Route path="/international/singapore" element={<Singapore />} />
+          <Route path="/international/dubai" element={<Dubai />} />
+          <Route
+            path="/international/Dubai/trip/:id"
+            element={<DubaiDetails />}
+          />
+          {/* <Route path="/india" element={<AndamanTour />} /> */}
           <Route path="/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/sikkim" element={<Sikkim />} />

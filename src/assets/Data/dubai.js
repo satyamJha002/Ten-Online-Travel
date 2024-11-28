@@ -9,8 +9,8 @@ export const dubai = [
       "https://b4holiday.com/wp-content/uploads/2021/10/Burj-Khalifa-Dubai-UAE.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/Burj-Al-Arab-Dubai-UAE.png",
     ],
-    title: "Seven Sisters Trek",
-    location: "Meghalaya",
+    title: "Dubai",
+    location: "Dubai",
     noOfDays: "5",
     duration: "5 Days - 4 Nights",
     people: "2 People",
@@ -27,7 +27,7 @@ export const dubai = [
     featured: true,
     qna: [
       {
-        question1: " Day 1 : Arrival in Dubai",
+        question: " Day 1 : Arrival in Dubai",
         answer1:
           "After your arrival at Dubai airport , get transferred to hotel. Overnight stay.",
       },
@@ -85,7 +85,6 @@ export const dubai = [
     noOfDays: "5",
     duration: "5 Days - 4 Nights",
     people: "2 People",
-    noOfDays: "5",
 
     discount: "8% Off",
     price: "₹28,000",
@@ -99,14 +98,12 @@ export const dubai = [
           "Arrival at the campsite; leisurely walk along the river to Chalal; Manikaran Sulphur Springs and Kasol Market; Evening bonfire and DJ music; Dinner and overnight stay at comfortable camps",
       },
       {
-        question2:
-          "Day 2 :Touring Tosh, Kheerganga, or Malana is optional.",
-        answer2:
+        question1: "Day 2 :Touring Tosh, Kheerganga, or Malana is optional.",
+        answer1:
           "- Camp breakfast - Tosh, Kheerganga, or Malana are optional local sightseeing destinations Reentering the camp for an exciting evening, having dinner, and spending the night there",
       },
       {
-        question3:
-          "Day 3 : Departure",
+        question3: "Day 3 : Departure",
         answer3:
           "After breakfast at camp, check out and make plans for the next journey..",
       },
@@ -128,7 +125,7 @@ export const dubai = [
       "Breakfast in the morning",
       "Dinner (Veggie + Non-Vegetarian)",
       "free game activities, such as carrom, chess, badminton, etc.",
-      "Common Hot Water restrooms"
+      "Common Hot Water restrooms",
     ],
     packageExclusion: [
       "Alcoholic Beverages",
@@ -157,9 +154,12 @@ export const dubai = [
     price: "₹27,500",
     originalPrice: "₹30,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
-    detailDescription: "Take advantage of Rishikesh's greatest camping experience. One of those leisure pursuits that is ideal for exploring the unknown and enjoying the companionship of loved ones in the purest surroundings is camping.",
-    subDescription: "Rishikesh Riverside Camping in a Calm Setting. For corporate gatherings, family and friend gatherings, bird watching, nature lovers, and adventure seekers, this location is ideal. Come experience camping with us like never before..",
-    overView: "Discover a serene riverside camping destination in Rishikesh, perfect for corporate events, gatherings with friends and family, birdwatching enthusiasts, nature lovers, and adventure seekers. Join us for an unforgettable camping experience like no other!.",
+    detailDescription:
+      "Take advantage of Rishikesh's greatest camping experience. One of those leisure pursuits that is ideal for exploring the unknown and enjoying the companionship of loved ones in the purest surroundings is camping.",
+    subDescription:
+      "Rishikesh Riverside Camping in a Calm Setting. For corporate gatherings, family and friend gatherings, bird watching, nature lovers, and adventure seekers, this location is ideal. Come experience camping with us like never before..",
+    overView:
+      "Discover a serene riverside camping destination in Rishikesh, perfect for corporate events, gatherings with friends and family, birdwatching enthusiasts, nature lovers, and adventure seekers. Join us for an unforgettable camping experience like no other!.",
     featured: true,
     qna: [
       {
@@ -168,8 +168,7 @@ export const dubai = [
           "Check-in at the camp, beach volleyball, a fun treasure hunt or tug-of-war, cricket, basketball, badminton, and photography in the Ganga Tributary river, which is 25 meters from the camp, are the activities for the remainder of the day,At 1400 hours, lunch,Tea and snacks in the evening at 5:30,Dinner is served after a bonfire and music in the late evening,Sleep in the tents",
       },
       {
-        question2:
-          "Day 2 :Departure",
+        question2: "Day 2 :Departure",
         answer2:
           "Once breakfast is finished, leave the camp. Continue to your next destination.",
       },
@@ -225,7 +224,7 @@ export const dubai = [
     discount: "8% Off",
     price: "₹22,000",
     originalPrice: "₹19,500",
-    noOfDays: "5",
+
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
   },

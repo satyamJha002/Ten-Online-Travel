@@ -9,7 +9,7 @@ import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detail.css";
 
-const Details = () => {
+const DubaiDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [openIndex, setOpenIndex] = useState(null);
   const { id } = useParams();
@@ -58,14 +58,12 @@ const Details = () => {
               />
               <button
                 className="details-arrow left"
-                onClick={() => handlePrevImage(items.images)}
-              >
+                onClick={() => handlePrevImage(items.images)}>
                 ❮
               </button>
               <button
                 className="details-arrow right"
-                onClick={() => handleNextImage(items.images)}
-              >
+                onClick={() => handleNextImage(items.images)}>
                 ❯
               </button>
             </div>
@@ -131,8 +129,7 @@ const Details = () => {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
-                      }}
-                    >
+                      }}>
                       <h2>{ele.question}</h2>
                       <span>{openIndex === index ? "-" : "+"}</span>
                     </div>
@@ -143,8 +140,7 @@ const Details = () => {
                           padding: "10px",
                           background: "#fff",
                           border: "1px solid #ccc",
-                        }}
-                      >
+                        }}>
                         <p>{ele.answer}</p>
                       </div>
                     )}
@@ -241,4 +237,4 @@ const Details = () => {
   );
 };
 
-export default Details;
+export default DubaiDetails;
