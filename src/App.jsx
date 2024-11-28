@@ -27,7 +27,6 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import Singapore from "./Pages/International/Singapore/Singapore";
 import Details from "./Pages/International/Dubai/DetailsPage/Details";
-import Maldives from "./Pages/International/Maldives/Maldives";
 import MaldivesDetails from "./Pages/International/Maldives/DetailsPage/MaldivesDetails";
 import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
 import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
