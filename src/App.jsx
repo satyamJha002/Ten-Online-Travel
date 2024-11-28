@@ -37,6 +37,9 @@ import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
+import Detailsandaman from "./Pages/India/AndamanTour/DeatailsAndamantour/Detailsandaman";
+import DetailsKashmir from "./Pages/India/Kashmir/DeatailsKashmir/DetailsKashmir";
+// import DetailsWaterBody from "./Pages/India/AndamanTour/DeatailsAndamantour/DetailsWater";
 import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
 
 function App() {
@@ -68,6 +71,10 @@ function App() {
             path="/international/maldives/trip/:id"
             element={<MaldivesDetails />}
           />
+          <Route path="/andaman-tour/andmatour/trip/:id" element={<Detailsandaman />} />
+          <Route path="/andaman-tour/watercontainer/trip/:id" element={<Detailsandaman />} />
+          <Route path="/india/kashmir/trip/:id" element={<DetailsKashmir />} />
+  
 
           <Route path="/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
