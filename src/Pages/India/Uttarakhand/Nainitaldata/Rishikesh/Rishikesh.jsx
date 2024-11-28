@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Rishikesh.css";
-import { rishikeshcamping, rishikeshfriend, rishikeshhiking, rishikeshrafting, rishikeshwatersports } from '../../../../../assets/Data/risihikesh';
+import { rishikeshcamping  } from '../../../../../assets/Data/risihikesh';
 import Card from '../../../../../Components/Card/Card';
 
 const Rishikesh = () => {
@@ -13,24 +13,24 @@ const Rishikesh = () => {
       <div className='rishikesh-div'>
         <h1 className='rishikesh-heading'>Rishikesh</h1>
         <p className='rishikesh-content'>
-          <strong><h1>Uttarakhand Tour is incomplete if you are not going to Rishikesh. </h1></strong>
-          Rishikesh is also an important pilgrimage town for Hindus. Surrounded by three districts, Tehri Garhwal, Pauri Garhwal and Haridwar, legend has it that Lord Rama imposed a penance on himself in Rishikesh for killing Ravana, the king of Lanka. From yoga and meditation to rafting and bungee jumping, there are numerous answers for what to do in Rishikesh.
-          <strong>Rishikesh is a vegetarian city by law and also alcohol-free.</strong>
+          <strong><h1>A trip to Uttarakhand feels incomplete without a visit to Rishikesh.</h1></strong>
+          Rishikesh holds great significance as a Hindu pilgrimage town. Enclosed by the districts of Tehri Garhwal, Pauri Garhwal, and Haridwar, it is believed to be the place where Lord Rama performed penance for slaying Ravana, the king of Lanka. Whether it's yoga and meditation or thrilling activities like rafting and bungee jumping, Rishikesh offers countless experiences to explore.
+          <strong><h5>By law, Rishikesh is a vegetarian city and prohibits alcohol.</h5></strong>
           </p>
       </div>
       <div className="App"> <h2>Things to Do in Rishikesh:</h2> <ul className="things-to-do"> <li>Neer Garh Waterfall</li> <li>Garud Chati Waterfall</li> <li>Phool Chatti Waterfall</li> <li className="highlight">White Water Rafting</li> <li>‘Maha Aarti’ at Triveni Ghat</li> <li>Visit Lakshman Jhula</li> <li>Visit Beatles Ashram</li> <li>Visit Cafes and interact with people all over the world</li> </ul> </div>
 
 
       <div className="camping">
-                    <h2>Camping</h2>
+                    <h2>Family & Friends Tour</h2>
                 </div>
                 <div className="camping-div">
-                    {(rishikeshcamping || []).map((pkg) => (
-                        <Card key={pkg.id} pkg={pkg} />
-                    ))}
-                </div>
+        {rishikeshcamping.map((pkg) => (
+          <Card key={pkg.id} pkg={pkg} />
+        ))}
+      </div>
 
-
+{/* 
                 <div className="friendtour">
                     <h2>Friend &
                        Family tour
@@ -70,7 +70,7 @@ const Rishikesh = () => {
                     {(rishikeshwatersports || []).map((pkg) => (
                         <Card key={pkg.id} pkg={pkg} />
                     ))}
-                </div>     
+                </div>      */}
 
 
 

@@ -19,55 +19,55 @@ export const dubai = [
     originalPrice: "₹27,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     detailDescription:
-      "The greatest camping experience in Rishikesh is not to be missed. One of the greatest ways to appreciate the company of friends and family in the most pristine natural environment and to explore the unknown is through camping.",
+      "Dubai, a metropolis with numerous facets, is among the world's most visited tourist attractions. This international metropolis, which is home to the Burj Khalifa, the highest structure in the world, is renowned for its opulent architecture, breathtaking skylines, and an abundance of tourist attractions that set records for being the largest, longest, and tallest. Adventure sports abound in Dubai, including skydiving over the stunning Palm Islands, reef and wreck diving, kite surfing, wakeboarding, and desert safaris through the golden Arabian dunes.",
     subDescription:
-      "A serene spot to camp by the river in Rishikesh. An ideal location for business gatherings, family and friend reunions, bird watching, nature enthusiasts, and adventurers. Come experience camping like never before with us.",
+      "Once a desolate place, Dubai today boasts a sparkling infrastructure within the magnificent Arabian desert. This man-made wonder is now teeming with glistening skyscrapers, upscale hotels, shopping centers, and dining establishments. Among the most popular tourist attractions in Dubai are the Burj Khalifa, the tallest man-made structure, the Atlantis, the Palm, the aquarium resort, and the Dubai Fountain, which has jets and lights that are timed to music. Dubai, the second largest of the seven emirates in terms of size and population, will wow you with its fusion of traditional Arabian customs and contemporary wonders.",
     overView:
-      "Rishikesh Riverside Camping in a Calm Setting. For corporate gatherings, family and friend gatherings, bird watching, nature lovers, and adventure seekers, this location is ideal. Come experience camping with us like never before.",
+      "Once a desolate place, Dubai today boasts a sparkling infrastructure within the magnificent Arabian desert. This man-made wonder is now teeming with glistening skyscrapers, upscale hotels, shopping centers, and dining establishments. Among the most popular tourist attractions in Dubai are the Burj Khalifa, the tallest man-made structure, the Atlantis, the Palm, the aquarium resort, and the Dubai Fountain, which has jets and lights that are timed to music. Dubai, the second largest of the seven emirates in terms of size and population, will wow you with its fusion of traditional Arabian customs and contemporary wonders.",
     featured: true,
     qna: [
       {
         question: " Day 1 : Arrival in Dubai",
-        answer1:
-          "After your arrival at Dubai airport , get transferred to hotel. Overnight stay.",
+        answer:
+          "Once you arrive at the airport in Dubai, you will be taken to your hotel. Spend the night.",
       },
       {
-        question2: "Day 2 :Ganga River Rafting",
-        answer2:
-          "The rafting trip from Shivpuri to the camp site (approximately 16 km) begins after breakfast.Following the Trip Leader's briefing, we begin an exciting adventure on the rapids. You can traverse Mickey Mouse, the Golf Course (Real Rapid Names), Back to Sender, and numerous other locations along a 16-kilometer rafting route. Don't miss the opportunity to go body surfing and swimming in still waters. At NIM Beach, the rafting excursion will come to an end.   Return to the campsite to change and wash (you will be responsible for your own transportation). The remainder of the day is spent relaxing.",
+        question:
+          "Day 2 : Half Day city tour - 0800 hrs to 1300 hrs | Dhow Marina Cruise -1900 hrs to 2300 hrs",
+        answer:
+          "A fantastic chance to explore both contemporary Dubai and the historic city of merchants. After driving into the Palm Jumeirah, known as the eighth wonder of the world, we pause for a short picture op in front of the Atlantis Hotel to start our tour. Next, following the tradition of Egypt's Fatimi mosques, we drive to the stunning Jumeirah Mosque, which was constructed in 1979. In order to have a long-distance perspective of the world's tallest structure, the Burj Khalifa Tower, our group is traveling towards the well-known Sheikh Zayed road expressway. On our route to the well-known Dubai Creek, we continue our journey through the city's historic district, passing the magnificent mansions of Dubai's royal family. After that, our guide guides us.",
       },
       {
-        question3: "Day 3 :Departure",
-        answer3:
-          "breakfast in the morning. Later, check out and continue to your next location.",
+        question:
+          "Day 3 : Desert Safari with BBQ Dinner, Tanoura Show & Belly Dance",
+        answer:
+          "A thrilling roller coaster ride over the desert, skimming over the stunning Sand Dunes, kicks off your trip. We pause for photos amidst the excitement and activity as we make our way to Ali's camel farm for a quick halt. We then make our way to our tent, stopping along the way to witness a breathtaking desert sunset. As the charcoal fires and the traditional oven are lighted in preparation for our evening meal, our visitors are greeted in the traditional manner with Arabic coffee, tea, and dates. Spend some time unwinding by the campfire or in our Arabic tents, which are equipped with cushions and carpets for your pleasure. Enjoy a memorable camel ride or get a henna tattoo while we wait for the highlight of the evening, which features a unique belly dance performance set to the rhythmic pulse of Arabia and a Tanoura dance display. A delectable three-course barbecue dinner including a range of meats and salads is served outside under the stars as real Arabic music plays as our evening comes to a close. We take a car back to the city after supper.",
       },
       {
-        question4:
+        question:
           "Day 4 : Shopping Visit To Dubai Mall and Burj Khalifa (124th Floor)",
-        answer4:
-          "The Burj Khalifa, the tallest construction in the world You will discover that no structure in contemporary history has sparked as much interest and fascination as the Burj Khalifa when you climb to the summit. Your visit to the At The Top, Burj Khalifa will provide all the answers you need. Located on level 124 of the tallest building in the world, you will be able to witness this contemporary architectural and engineering wonder firsthand and finally understand what it's like to look out over the world from such a high altitude.",
+        answer:
+          "The Burj Khalifa, the highest structure in the world When you climb to the summit of the Burj Khalifa, you'll realize that no structure in contemporary history has sparked as much interest and fascination. Your visit to the Burj Khalifa will provide the answers to all of your queries. Experience this contemporary architectural and technical wonder firsthand from your perch on level 124 of the highest skyscraper in the world, and finally understand what it's like to look out over the globe from such a high altitude.",
       },
       {
-        question5: "Day 5 :  Departure from Dubai",
-        answer5: "Departure from Dubai",
+        question: "Day 5 :  Departure from Dubai",
+        answer: "Departure from Dubai",
       },
     ],
     packageInclusion: [
-      "Accommodations for two nights at Camp on Triple Sharing",
-      "Every meal is served buffet style.",
-      "Drink of Welcome",
-      "Veggie Breakfast in the Morning Lunch.",
-      "Veggie and non-vegetarian dinner",
-      "Snacks and bonfire in the evening",
-      " River rafting for one session.",
-      "While rafting, enjoy cliff jumping and body surfing.",
+      "Four nights in lodging",
+      "Breakfast (except from the day of arrival)",
+      "Arrival at the Airport",
+      "Departure from the Airport",
+      "Seeing the sights",
+      "GST",
     ],
     packageExclusion: [
-      "Drinks with alcohol",
-      "Transportation of any kind, personal costs such as laundry, etc.",
-      "Any kind of insurance",
-      "Any claim brought on by natural disasters like landslides, blocked roads, etc.",
-      "Anything else that wasn't covered above.",
+      "everything that isn't listed in the package's contents.",
+      "fees for travel insurance.",
+      "personal expenses, laundry, phone bills, tipping, cruise gratuities, minibar in the accommodation, etc.",
+      "There are fees associated with trade shows, conventions, and special events.",
+      "Subject to accommodation availability, early check-in and late check-out are only available by request.",
     ],
   },
   {
@@ -82,64 +82,65 @@ export const dubai = [
     ],
     title: "Dubai",
     location: "Dubai",
-    noOfDays: "5",
     duration: "5 Days - 4 Nights",
     people: "2 People",
+    noOfDays: "5",
 
     discount: "8% Off",
-    price: "₹19,500",
-    originalPrice: "₹30,000",
+    price: "₹28,000",
+    originalPrice: "₹30,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     detailDescription:
-      "This serene and heavenly spot in the center of the Parvati Valley is only 4 km from Kasol town and 7 km from Gurudwara Manikaran Sahib. There is plenty of free parking available and it is directly on the Kasol main highway.",
+      "Dubai, a metropolis with numerous facets, is among the world's most visited tourist attractions. This international metropolis, which is home to the Burj Khalifa, the highest structure in the world, is renowned for its opulent architecture, breathtaking skylines, and an abundance of tourist attractions that set records for being the largest, longest, and tallest. Adventure sports abound in Dubai, including skydiving over the stunning Palm Islands, reef and wreck diving, kite surfing, wakeboarding, and desert safaris through the golden Arabian dunes.",
     subDescription:
-      "We provide affordable alpine and dome camps for travelers on a tight budget in addition to the finest luxury Swiss tents that are furnished with all the latest conveniences. To satisfy your appetite, there is a sizable cafe on site that serves delicious, mouthwatering food.",
-    overView:
-      "Whether your goal is to hike nearby nature trails, enjoy a romantic evening barbecue, take a break for a good meal, or simply relax in the lap of nature, you can fulfill your long-standing desire to camp.",
-    featured: true,
+      "Once a desolate place, Dubai today boasts a sparkling infrastructure within the magnificent Arabian desert. This man-made wonder is now teeming with glistening skyscrapers, upscale hotels, shopping centers, and dining establishments. Among the most popular tourist attractions in Dubai are the Burj Khalifa, the tallest man-made structure, the Atlantis, the Palm, the aquarium resort, and the Dubai Fountain, which has jets and lights that are timed to music. Dubai, the second largest of the seven emirates in terms of size and population, will wow you with its fusion of traditional Arabian customs and contemporary wonders.",
+    overView: " ",
+
     qna: [
       {
-        question1: " Day 1 :Arrival & Check-in",
-        answer1:
-          "Arrival at the campsite; leisurely walk along the river to Chalal; Manikaran Sulphur Springs and Kasol Market; Evening bonfire and DJ music; Dinner and overnight stay at comfortable camps",
+        question: " Day 1 : Arrival in Dubai",
+        answer:
+          "Once you arrive at the airport in Dubai, you will be taken to your hotel. Spend the night.",
       },
       {
-        question1: "Day 2 :Touring Tosh, Kheerganga, or Malana is optional.",
-        answer1:
-          "- Camp breakfast - Tosh, Kheerganga, or Malana are optional local sightseeing destinations Reentering the camp for an exciting evening, having dinner, and spending the night there",
+        question:
+          "Day 2 : Half Day city tour - 0800 hrs to 1300 hrs | Dhow Marina Cruise -1900 hrs to 2300 hrs",
+        answer:
+          "A fantastic chance to explore both contemporary Dubai and the historic city of merchants. After driving into the Palm Jumeirah, known as the eighth wonder of the world, we pause for a short picture op in front of the Atlantis Hotel to start our tour. Next, following the tradition of Egypt's Fatimi mosques, we drive to the stunning Jumeirah Mosque, which was constructed in 1979. In order to have a long-distance perspective of the world's tallest structure, the Burj Khalifa Tower, our group is traveling towards the well-known Sheikh Zayed road expressway. On our route to the well-known Dubai Creek, we continue our journey through the city's historic district, passing the magnificent mansions of Dubai's royal family. After that, our guide guides us.",
       },
       {
-        question3: "Day 3 : Departure",
-        answer3:
-          "After breakfast at camp, check out and make plans for the next journey..",
+        question:
+          "Day 3 : Desert Safari with BBQ Dinner, Tanoura Show & Belly Dance",
+        answer:
+          "A thrilling roller coaster ride over the desert, skimming over the stunning Sand Dunes, kicks off your trip. We pause for photos amidst the excitement and activity as we make our way to Ali's camel farm for a quick halt. We then make our way to our tent, stopping along the way to witness a breathtaking desert sunset. As the charcoal fires and the traditional oven are lighted in preparation for our evening meal, our visitors are greeted in the traditional manner with Arabic coffee, tea, and dates. Spend some time unwinding by the campfire or in our Arabic tents, which are equipped with cushions and carpets for your pleasure. Enjoy a memorable camel ride or get a henna tattoo while we wait for the highlight of the evening, which features a unique belly dance performance set to the rhythmic pulse of Arabia and a Tanoura dance display. A delectable three-course barbecue dinner including a range of meats and salads is served outside under the stars as real Arabic music plays as our evening comes to a close. We take a car back to the city after supper.",
       },
       {
-        question4:
+        question:
           "Day 4 : Shopping Visit To Dubai Mall and Burj Khalifa (124th Floor)",
-        answer4:
-          "The world tallest tower ‘Burj Khalifa’ Visit the top of Burj Khalifa and you will know that no building in modern history has aroused so much curiosity and intrigue as has Burj Khalifa. Your At The Top, Burj Khalifa visit will answer all your questions. From your vantage point on level 124 of the world’s tallest building, you will experience first-hand this modern architectural and engineering marvel and know at last what it is like to see the world from such a lofty height.",
+        answer:
+          "The Burj Khalifa, the highest structure in the world When you climb to the summit of the Burj Khalifa, you'll realize that no structure in contemporary history has sparked as much interest and fascination. Your visit to the Burj Khalifa will provide the answers to all of your queries. Experience this contemporary architectural and technical wonder firsthand from your perch on level 124 of the highest skyscraper in the world, and finally understand what it's like to look out over the globe from such a high altitude.",
       },
       {
-        question5: "Day 5 :  Departure from Dubai",
-        answer5: "Departure from Dubai",
+        question: "Day 5 :  Departure from Dubai",
+        answer: "Departure from Dubai",
       },
     ],
     packageInclusion: [
-      "Two nights at the Camp on Triple Sharing",
-      "Every meal is served at a buffet.",
-      "Welcome Drink",
-      "Breakfast in the morning",
-      "Dinner (Veggie + Non-Vegetarian)",
-      "free game activities, such as carrom, chess, badminton, etc.",
-      "Common Hot Water restrooms",
+      "Four nights in lodging",
+      "Breakfast (except from the day of arrival)",
+      "Arrival at the Airport",
+      "Departure from the Airport",
+      "Seeing the sights",
+      "GST",
     ],
     packageExclusion: [
-      "Alcoholic Beverages",
-      "Any form of conveyance.",
-      "Any personal costs, such as laundry.",
-      "Any kind of insurance.",
-      "Any claims resulting from natural disasters like landslides, blocked roads, etc.",
+      "everything that isn't listed in the package's contents.",
+      "fees for travel insurance.",
+      "personal expenses, laundry, phone bills, tipping, cruise gratuities, minibar in the accommodation, etc.",
+      "There are fees associated with trade shows, conventions, and special events.",
+      "Subject to accommodation availability, early check-in and late check-out are only available by request.",
     ],
+    featured: true,
   },
   {
     id: 3,
@@ -153,133 +154,63 @@ export const dubai = [
     ],
     title: "Dubai",
     location: "Dubai",
-    noOfDays: "5",
-    duration: "5 Days - 4 Nights",
-    people: "2 People",
-    discount: "8% Off",
-    price: "₹27,500",
-    originalPrice: "₹30,000",
-    nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
-    detailDescription:
-      "Take advantage of Rishikesh's greatest camping experience. One of those leisure pursuits that is ideal for exploring the unknown and enjoying the companionship of loved ones in the purest surroundings is camping.",
-    subDescription:
-      "Rishikesh Riverside Camping in a Calm Setting. For corporate gatherings, family and friend gatherings, bird watching, nature lovers, and adventure seekers, this location is ideal. Come experience camping with us like never before..",
-    overView:
-      "Discover a serene riverside camping destination in Rishikesh, perfect for corporate events, gatherings with friends and family, birdwatching enthusiasts, nature lovers, and adventure seekers. Join us for an unforgettable camping experience like no other!.",
-    featured: true,
-    qna: [
-      {
-        question1: " Day 1 : Arrival and Check-in",
-        answer1:
-          "Check-in at the camp, beach volleyball, a fun treasure hunt or tug-of-war, cricket, basketball, badminton, and photography in the Ganga Tributary river, which is 25 meters from the camp, are the activities for the remainder of the day,At 1400 hours, lunch,Tea and snacks in the evening at 5:30,Dinner is served after a bonfire and music in the late evening,Sleep in the tents",
-      },
-      {
-        question2: "Day 2 :Departure",
-        answer2:
-          "Once breakfast is finished, leave the camp. Continue to your next destination.",
-      },
-      {
-        question3:
-          "Day 3 : Desert Safari with BBQ Dinner, Tanoura Show & Belly Dance",
-        answer3:
-          "Your tour begins with an unforgettable roller coaster drive in the desert skimming over the magnificent Sand Dunes. Amidst all the fun and action we stop for pictures while we head towards Ali’s camel farm for a short visit. After which we proceed towards our camp with a stop en route to experience a memorable desert sunset. A traditional welcome awaits our guests with Arabic coffee, and tea and dates while the charcoal fires and the traditional oven is lit in preparation for our evening dinner. Take some time out to relax in our Arabic tents furnished with carpets and pillows for your comfort or chill out by the campfire. Get a henna tattoo or experience an unforgettable camel ride while we wait for the highlight of the evening which includes a Tanoura dance show and an exotic belly performance to the rhythmic beat of Arabia. Our evening ends with a delicious three course barbeque meal with a variety of meats and salads served beneath the starlit skies, accompanied by authentic Arabic music. After dinner we drive back to the back to the city.",
-      },
-      {
-        question4:
-          "Day 4 : Shopping Visit To Dubai Mall and Burj Khalifa (124th Floor)",
-        answer4:
-          "The world tallest tower ‘Burj Khalifa’ Visit the top of Burj Khalifa and you will know that no building in modern history has aroused so much curiosity and intrigue as has Burj Khalifa. Your At The Top, Burj Khalifa visit will answer all your questions. From your vantage point on level 124 of the world’s tallest building, you will experience first-hand this modern architectural and engineering marvel and know at last what it is like to see the world from such a lofty height.",
-      },
-      {
-        question5: "Day 5 :  Departure from Dubai",
-        answer5: "Departure from Dubai",
-      },
-    ],
-    packageInclusion: [
-      "One night at the Camp on Triple Sharing.",
-      "Every meal is served at a buffet.",
-      "Riverside Camp Parking Fee",
-      "Snacks in the evening with Bonfire",
-      "Friendly to Pets",
-      "Common restrooms with hot water and charging stations",
-    ],
-    packageExclusion: [
-      "Consuming alcoholic beverages.",
-      "Any form of transportation Personal costs such as laundry.",
-      "Any kind of security.",
-      "Any claim brought about by a landslide, a blocked road, etc.",
-      "Anything else not covered in the above list.",
-    ],
-  },
-
-  {
-    id: 4,
-    images: [
-      "https://b4holiday.com/wp-content/uploads/2021/10/The-Palms-Dubai.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/10/dubai-skyline-at-night.jpeg",
-      "https://b4holiday.com/wp-content/uploads/2021/10/dubai_marina_united_arab_emirates-wallpaper-960x540-1.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/10/dhow-cruise-dinner-dubai-.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/10/Burj-Khalifa-Dubai-UAE.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/10/Burj-Al-Arab-Dubai-UAE.png",
-    ],
-    title: "singapore",
-    location: "Dubai",
-    noOfDays: "5",
     duration: "5 Days - 4 Nights",
     people: "2 People",
     discount: "8% Off",
     price: "₹22,000",
     originalPrice: "₹19,500",
-
+    noOfDays: "5",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     detailDescription:
-      "Experience the ultimate camping adventure in Rishikesh! Camping is a perfect way to explore hidden gems and cherish quality time with family and friends amidst pristine natural surroundings.",
+      "Dubai, a metropolis with numerous facets, is among the world's most visited tourist attractions. This international metropolis, which is home to the Burj Khalifa, the highest structure in the world, is renowned for its opulent architecture, breathtaking skylines, and an abundance of tourist attractions that set records for being the largest, longest, and tallest. Adventure sports abound in Dubai, including skydiving over the stunning Palm Islands, reef and wreck diving, kite surfing, wakeboarding, and desert safaris through the golden Arabian dunes.",
     subDescription:
-      "Enjoy a tranquil riverside camping retreat in Rishikesh, ideal for corporate events, family and friends’ gatherings, birdwatching, nature enthusiasts, and adventure lovers. Come and immerse yourself in a camping experience like no other!",
+      "Once a desolate place, Dubai today boasts a sparkling infrastructure within the magnificent Arabian desert. This man-made wonder is now teeming with glistening skyscrapers, upscale hotels, shopping centers, and dining establishments. Among the most popular tourist attractions in Dubai are the Burj Khalifa, the tallest man-made structure, the Atlantis, the Palm, the aquarium resort, and the Dubai Fountain, which has jets and lights that are timed to music. Dubai, the second largest of the seven emirates in terms of size and population, will wow you with its fusion of traditional Arabian customs and contemporary wonders.",
     overView:
-      "Escape to a serene riverside camping spot in Rishikesh, the perfect destination for corporate outings, family and friends' reunions, birdwatching, nature enthusiasts, and adventure lovers. Join us for a truly unique camping experience.",
+      "Once a desolate place, Dubai today boasts a sparkling infrastructure within the magnificent Arabian desert. This man-made wonder is now teeming with glistening skyscrapers, upscale hotels, shopping centers, and dining establishments. Among the most popular tourist attractions in Dubai are the Burj Khalifa, the tallest man-made structure, the Atlantis, the Palm, the aquarium resort, and the Dubai Fountain, which has jets and lights that are timed to music. Dubai, the second largest of the seven emirates in terms of size and population, will wow you with its fusion of traditional Arabian customs and contemporary wonders.",
     featured: true,
     qna: [
       {
-        question1: " Day 1 : Getting there and checking in",
-        answer1:
-          "Upon arriving at camp and checking in, Beach volleyball, cricket, basketball, badminton, and photography in the Ganga Tributary river, which is 25 meters from the camp, are the remaining camp activities for the day, Lunch at 1400 hours, At 5:30 in the evening, tea and snacks, After a late-night bonfire and music, dinner is served,A night in the tents, perhaps..",
+        question: " Day 1 : Arrival in Dubai",
+        answer:
+          "Once you arrive at the airport in Dubai, you will be taken to your hotel. Spend the night.",
       },
       {
-        question2: "Day 2 : Day at Leisure",
-        answer2:
-          "Leisure for the remainder of the day At camp, you can play sports. Beach volleyball, basketball, and cricket 25 meters from the camp, you can play badminton and take pictures in the Ganga Tributary river. Walk beside the river or hike to an ashram, a nearby mountain. peak in the immediate vicinity, Breakfast is at 8:00 a.m. ,Lunch at 1400 hours, At 5:30 in the evening, tea and snacks, After a late-night bonfire and music, dinner is served, A night in the tents, perhaps.",
+        question:
+          "Day 2 : Half Day city tour - 0800 hrs to 1300 hrs | Dhow Marina Cruise -1900 hrs to 2300 hrs",
+        answer:
+          "A fantastic chance to explore both contemporary Dubai and the historic city of merchants. After driving into the Palm Jumeirah, known as the eighth wonder of the world, we pause for a short picture op in front of the Atlantis Hotel to start our tour. Next, following the tradition of Egypt's Fatimi mosques, we drive to the stunning Jumeirah Mosque, which was constructed in 1979. In order to have a long-distance perspective of the world's tallest structure, the Burj Khalifa Tower, our group is traveling towards the well-known Sheikh Zayed road expressway. On our route to the well-known Dubai Creek, we continue our journey through the city's historic district, passing the magnificent mansions of Dubai's royal family. After that, our guide guides us.",
       },
       {
-        question3: "Day 3 : Departure",
-        answer3:
-          "Breakfast in the morning. After checking out, continue on to your next destination. Tour is coming to an end! ",
+        question:
+          "Day 3 : Desert Safari with BBQ Dinner, Tanoura Show & Belly Dance",
+        answer:
+          "A thrilling roller coaster ride over the desert, skimming over the stunning Sand Dunes, kicks off your trip. We pause for photos amidst the excitement and activity as we make our way to Ali's camel farm for a quick halt. We then make our way to our tent, stopping along the way to witness a breathtaking desert sunset. As the charcoal fires and the traditional oven are lighted in preparation for our evening meal, our visitors are greeted in the traditional manner with Arabic coffee, tea, and dates. Spend some time unwinding by the campfire or in our Arabic tents, which are equipped with cushions and carpets for your pleasure. Enjoy a memorable camel ride or get a henna tattoo while we wait for the highlight of the evening, which features a unique belly dance performance set to the rhythmic pulse of Arabia and a Tanoura dance display. A delectable three-course barbecue dinner including a range of meats and salads is served outside under the stars as real Arabic music plays as our evening comes to a close. We take a car back to the city after supper.",
       },
       {
-        question4:
+        question:
           "Day 4 : Shopping Visit To Dubai Mall and Burj Khalifa (124th Floor)",
-        answer4:
-          "The world tallest tower ‘Burj Khalifa’ Visit the top of Burj Khalifa and you will know that no building in modern history has aroused so much curiosity and intrigue as has Burj Khalifa. Your At The Top, Burj Khalifa visit will answer all your questions. From your vantage point on level 124 of the world’s tallest building, you will experience first-hand this modern architectural and engineering marvel and know at last what it is like to see the world from such a lofty height.",
+        answer:
+          "The Burj Khalifa, the highest structure in the world When you climb to the summit of the Burj Khalifa, you'll realize that no structure in contemporary history has sparked as much interest and fascination. Your visit to the Burj Khalifa will provide the answers to all of your queries. Experience this contemporary architectural and technical wonder firsthand from your perch on level 124 of the highest skyscraper in the world, and finally understand what it's like to look out over the globe from such a high altitude.",
       },
       {
-        question5: "Day 5 :  Departure from Dubai",
-        answer5: "Departure from Dubai",
+        question: "Day 5 :  Departure from Dubai",
+        answer: "Departure from Dubai",
       },
     ],
     packageInclusion: [
-      "Accommodations at Deluxe Cottage for two nights on double sharing",
-      "Every meal is served at a buffet.",
-      "Breakfast in the morning, lunch, and dinner (vegetarian and non-vegetarian)",
-      "free game activities, such as carrom, chess, badminton, etc.",
-      "Common Bathrooms with Hot Water",
-      "Free of charge The bonfire",
+      "Four nights in lodging",
+      "Breakfast (except from the day of arrival)",
+      "Arrival at the Airport",
+      "Departure from the Airport",
+      "Seeing the sights",
+      "GST",
     ],
     packageExclusion: [
-      "Anything that isn't listed in the details of the package.",
-      "Costs of travel insurance.",
-      "Consuming alcoholic beverages.",
-      "Any form of transportation Personal costs such as laundry.",
-      "Any claim brought about by a landslide, a blocked road, etc.",
+      "everything that isn't listed in the package's contents.",
+      "fees for travel insurance.",
+      "personal expenses, laundry, phone bills, tipping, cruise gratuities, minibar in the accommodation, etc.",
+      "There are fees associated with trade shows, conventions, and special events.",
+      "Subject to accommodation availability, early check-in and late check-out are only available by request.",
     ],
   },
 ];

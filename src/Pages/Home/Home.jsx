@@ -84,16 +84,15 @@ const Home = () => {
               Thousands of happy families have travelled with us!
             </h2>
             <div className="mt-2 w-20 h-1 bg-green-500"></div>
-            <p className="mt-4 text-gray-600 text-md leading-7">
-              Born from a single inspiring idea—to craft joyful travel
-              experiences—Before Holiday | Online Travel Agency has been
-              empowering Indian travelers since its inception. By offering a
-              diverse range of premium travel services at trustworthy and
-              affordable prices, it ensures that everyone can embrace the joy of
-              traveling. Its specially designed couple packages create a
-              romantic atmosphere, rekindling the magic of newlywed bliss. With
-              meticulous planning and flawless execution, it also excels in
-              organizing events for corporate partners.
+            <p className="mt-4 text-gray-600 text-md leading-relaxed text-lg items-center">
+              TEN TRAVELS | Online Travel Agency was founded with the simple
+              goal of creating happy travel experiences, and since then, it has
+              been empowering Indian tourists. By providing a Offering a wide
+              choice of first-rate travel services at reliable and reasonably
+              priced costs, it guarantees that everyone can enjoy the pleasures
+              of travel. Its specially crafted couple packages revive the
+              enchantment of newlywed happiness by fostering a romantic
+              ambiance.
             </p>
           </div>
           <div className="mt-10 md:mt-0 md:w-1/2 bg-white p-6 shadow-lg rounded-lg">

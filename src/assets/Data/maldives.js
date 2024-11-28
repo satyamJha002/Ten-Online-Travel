@@ -1,8 +1,6 @@
-import { v4 as uuidv4 } from "uuid";
-
 export const maldives = [
   {
-    id: 1,
+    id: 651230541,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-3-600x400-1.jpg",
@@ -13,11 +11,12 @@ export const maldives = [
     ],
     title: "VILAMENDHOO ISLAND RESORT",
     location: "Maldives",
+    noOfDays: "5",
     duration: "5 Days - 4 Nights",
     people: "2-4 People",
     discount: " ",
     price: "₹135,000",
-    originalPrice: "",
+    originalPrice: " ",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
     featured: true,
     details:
@@ -47,8 +46,8 @@ export const maldives = [
     Itinerary: " ",
     hotels: " ",
     child: "₹95,000",
+    AccommodationObj: " ",
     child2: "₹45,000",
-
     packageInclusion: [
       "Arrival drink for four nights and five days",
       "Twin or triple sharing accommodations",
@@ -66,7 +65,7 @@ export const maldives = [
     ],
   },
   {
-    id: 2,
+    id: 9861320,
     images: [
       "https://b4holiday.com/wp-content/uploads/2022/07/Veligandu-Island-Resort-Overview-1024x1024.jpg",
       "https://b4holiday.com/wp-content/uploads/2022/07/VeliganduIslandResort-JacuzziWaterVillas-Gallery-2.jpg",
@@ -80,6 +79,7 @@ export const maldives = [
     duration: "5 Days - 4 Nights",
     people: "2-4 People",
     discount: " ",
+    noOfDays: "5",
     price: "₹135,000",
     originalPrice: "",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
@@ -112,6 +112,7 @@ export const maldives = [
     hotels: " ",
     child: "₹95,000",
     child2: "₹45,000",
+    AccommodationObj: " ",
 
     packageInclusion: [
       "Arrival drink for four nights and five days",
@@ -130,7 +131,7 @@ export const maldives = [
     ],
   },
   {
-    id: 2,
+    id: 98793216,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-3-600x400-1.jpg",
@@ -144,6 +145,7 @@ export const maldives = [
     duration: "5 Days - 4 Nights",
     people: "2-4 People",
     discount: " ",
+    noOfDays: "5",
     price: "₹135,000",
     originalPrice: "",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
@@ -176,6 +178,7 @@ export const maldives = [
     hotels: " ",
     child: "₹95,000",
     child2: "₹45,000",
+    AccommodationObj: " ",
 
     packageInclusion: [
       "Arrival drink for four nights and five days",
@@ -197,7 +200,7 @@ export const maldives = [
 
 export const maldivesWaterVilla = [
   {
-    id: 1,
+    id: 99635222330,
     images: [
       "https://b4holiday.com/wp-content/uploads/2022/07/Veligandu-Island-Resort-Overview-1024x1024.jpg",
       "https://b4holiday.com/wp-content/uploads/2022/07/VeliganduIslandResort-JacuzziWaterVillas-Gallery-2.jpg",
@@ -211,6 +214,7 @@ export const maldivesWaterVilla = [
     duration: "5 Days - 4 Nights",
     people: "2-4 People",
     discount: " ",
+    noOfDays: "5",
     price: "₹135,000",
     originalPrice: "",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
@@ -243,7 +247,7 @@ export const maldivesWaterVilla = [
     hotels: " ",
     child: "₹95,000",
     child2: "₹45,000",
-
+    AccommodationObj: " ",
     packageInclusion: [
       "Arrival drink for four nights and five days",
       "Twin or triple sharing accommodations",
@@ -264,22 +268,104 @@ export const maldivesWaterVilla = [
 
 export const maldivesOtherTrips = [
   {
-    id: 1,
+    id: 789321654,
     images: [
-      "https://b4holiday.com/wp-content/uploads/2021/08/140816_Paradise_Island_1191-scaled-1.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/08/140816_Paradise_Island_1180-scaled-1.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/08/Paradise_Island_Ocean-Suite-Interior-03-scaled-1.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/08/Paradise_Island_Swimming-Pool-04-scaled-1.jpg",
+      "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0024.jpg",
+      "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0066-edit.jpg",
+      "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0206.jpg",
+      "https://b4holiday.com/wp-content/uploads/2021/08/2.jpg",
+      "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_food.jpg",
+      "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_watervilla_0088-edit.jpg",
     ],
-    title: "Paradise Island Resort and Spa | 4 Nights",
+    title: "EMBUDU VILLAGE MALDIVES | 4 Nights",
     location: "Maldives",
     duration: "5 Days - 4 Nights",
     people: "2-4 People",
-    discount: "27% off",
-    price: "₹84,000",
-    originalPrice: "115000",
+    discount: "36% off",
+    price: "₹48,000",
+    originalPrice: "75,000",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
     featured: true,
+    child: " ",
+    child2: " ",
+    details: "A COMPLETE LIVING AREA WHERE ADVENTURE AWARES",
+    detailDescription:
+      "The vast island of Sun Siyam Olhuveli is only a 45-minute speedboat cruise from where you landed. You may explore our three islands right away without using a seaplane, or you can just unwind blissfully. You have all of this time together.",
+    subDescription:
+      "Sun Siyam Olhuveli offers accommodations ranging from sleek modern villas to Maldivian-inspired suites, fusing the traditional Maldives with modern style. Our three pools, which are all designed to satisfy your every need, including an adults-only infinity pool that never fails to wow. However, be advised that the lagoon can tempt you to embark on an adventure.",
+    noOfDays: "5",
+    overView: " ",
+    Itinerary: " ",
+    hotels: " ",
+    accommodationTitle: " Sun Siyam Olhuveli",
+    packageInclusion: [
+      "Arrival drink for four nights and five days",
+      "Twin or triple sharing accommodations",
+      "All-inclusive (breakfast, lunch, and dinner)",
+      "Only combined airport/resort/airport transfers (by seaplane)",
+      "The rates include 12% GST, service fees, and green tax, which is US$6 per person (adult and kid).",
+    ],
+    packageExclusion: [
+      "everything that isn't listed in the package's contents.",
+      "fees for travel insurance.",
+      "charges for personal expenses, laundry, a minibar in the accommodation, phone bills, tips, cruise gratuities, etc.",
+      "Trade shows, conventions, and special events are all subject to surcharges.",
+      "Early check-in and late check-out are on a request basis only and subject to room availability",
+      "5% GST",
+      "5% TCS",
+    ],
+    AccommodationObj: [
+      {
+        title: "DELUXE ROOM",
+        text1: "Terrace or balcony",
+        text2: "Right on the beach",
+      },
+      {
+        title: "GRAND BEACH VILLA",
+        text1: "Beachfront terrace",
+        text2: "Open-air bathroom",
+      },
+      {
+        title: "GRAND BEACH VILLA WITH POOL",
+        text1: "Private pool",
+        text2: "Sunrise views",
+      },
+      {
+        title: "GRAND BEACH SUITE WITH POOL",
+        text1: "Private pool",
+        text2: "Spectacular sunsets",
+      },
+      {
+        title: "DELUXE WATER VILLA",
+        text1: "Spacious sun deck",
+        text2: "Steps to the lagoon",
+      },
+      {
+        title: "JACUZZI WATER VILLA",
+        text1: "Outdoor jet tub",
+        text2: "Private sun deck",
+      },
+      {
+        title: "GRAND WATER VILLA WITH POOL",
+        text1: "Direct lagoon access",
+        text2: "Private outdoor deck",
+      },
+      {
+        title: "GRAND WATER VILLA WITH POOL",
+        text1: "Private pool",
+        text2: "Steps to the lagoon",
+      },
+      {
+        title: "PRESTIGE JACUZZI WATER VILLA",
+        text1: "Outdoor jacuzzi",
+        text2: "Spacious deck",
+      },
+      {
+        title: "PRESIDENTIAL WATER SUITE",
+        text1: "Ultimate privacy",
+        text2: "Large private pool",
+      },
+    ],
   },
   {
     id: 2741852,
@@ -300,6 +386,87 @@ export const maldivesOtherTrips = [
     originalPrice: "75,000",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
     featured: true,
+    // new data
+    child: " ",
+    child2: " ",
+    details: "A COMPLETE LIVING AREA WHERE ADVENTURE AWARES",
+    detailDescription:
+      "The vast island of Sun Siyam Olhuveli is only a 45-minute speedboat cruise from where you landed. You may explore our three islands right away without using a seaplane, or you can just unwind blissfully. You have all of this time together.",
+    subDescription:
+      "Sun Siyam Olhuveli offers accommodations ranging from sleek modern villas to Maldivian-inspired suites, fusing the traditional Maldives with modern style. Our three pools, which are all designed to satisfy your every need, including an adults-only infinity pool that never fails to wow. However, be advised that the lagoon can tempt you to embark on an adventure.",
+    noOfDays: "5",
+    overView: " ",
+    Itinerary: " ",
+    hotels: " ",
+    accommodationTitle: " Sun Siyam Olhuveli",
+    packageInclusion: [
+      "Arrival drink for four nights and five days",
+      "Twin or triple sharing accommodations",
+      "All-inclusive (breakfast, lunch, and dinner)",
+      "Only combined airport/resort/airport transfers (by seaplane)",
+      "The rates include 12% GST, service fees, and green tax, which is US$6 per person (adult and kid).",
+    ],
+    packageExclusion: [
+      "everything that isn't listed in the package's contents.",
+      "fees for travel insurance.",
+      "charges for personal expenses, laundry, a minibar in the accommodation, phone bills, tips, cruise gratuities, etc.",
+      "Trade shows, conventions, and special events are all subject to surcharges.",
+      "Early check-in and late check-out are on a request basis only and subject to room availability",
+      "5% GST",
+      "5% TCS",
+    ],
+    AccommodationObj: [
+      {
+        title: "DELUXE ROOM",
+        text1: "Terrace or balcony",
+        text2: "Right on the beach",
+      },
+      {
+        title: "GRAND BEACH VILLA",
+        text1: "Beachfront terrace",
+        text2: "Open-air bathroom",
+      },
+      {
+        title: "GRAND BEACH VILLA WITH POOL",
+        text1: "Private pool",
+        text2: "Sunrise views",
+      },
+      {
+        title: "GRAND BEACH SUITE WITH POOL",
+        text1: "Private pool",
+        text2: "Spectacular sunsets",
+      },
+      {
+        title: "DELUXE WATER VILLA",
+        text1: "Spacious sun deck",
+        text2: "Steps to the lagoon",
+      },
+      {
+        title: "JACUZZI WATER VILLA",
+        text1: "Outdoor jet tub",
+        text2: "Private sun deck",
+      },
+      {
+        title: "GRAND WATER VILLA WITH POOL",
+        text1: "Direct lagoon access",
+        text2: "Private outdoor deck",
+      },
+      {
+        title: "GRAND WATER VILLA WITH POOL",
+        text1: "Private pool",
+        text2: "Steps to the lagoon",
+      },
+      {
+        title: "PRESTIGE JACUZZI WATER VILLA",
+        text1: "Outdoor jacuzzi",
+        text2: "Spacious deck",
+      },
+      {
+        title: "PRESIDENTIAL WATER SUITE",
+        text1: "Ultimate privacy",
+        text2: "Large private pool",
+      },
+    ],
   },
   {
     id: 147852,
@@ -320,5 +487,85 @@ export const maldivesOtherTrips = [
     originalPrice: "75,000",
     nextDepartures: ["Nov 16", "Nov 17", "Nov 18"],
     featured: true,
+    child: " ",
+    child2: " ",
+    details: "A COMPLETE LIVING AREA WHERE ADVENTURE AWARES",
+    detailDescription:
+      "The vast island of Sun Siyam Olhuveli is only a 45-minute speedboat cruise from where you landed. You may explore our three islands right away without using a seaplane, or you can just unwind blissfully. You have all of this time together.",
+    subDescription:
+      "Sun Siyam Olhuveli offers accommodations ranging from sleek modern villas to Maldivian-inspired suites, fusing the traditional Maldives with modern style. Our three pools, which are all designed to satisfy your every need, including an adults-only infinity pool that never fails to wow. However, be advised that the lagoon can tempt you to embark on an adventure.",
+    noOfDays: "5",
+    overView: " ",
+    Itinerary: " ",
+    hotels: " ",
+    accommodationTitle: " Sun Siyam Olhuveli",
+    packageInclusion: [
+      "Arrival drink for four nights and five days",
+      "Twin or triple sharing accommodations",
+      "All-inclusive (breakfast, lunch, and dinner)",
+      "Only combined airport/resort/airport transfers (by seaplane)",
+      "The rates include 12% GST, service fees, and green tax, which is US$6 per person (adult and kid).",
+    ],
+    packageExclusion: [
+      "everything that isn't listed in the package's contents.",
+      "fees for travel insurance.",
+      "charges for personal expenses, laundry, a minibar in the accommodation, phone bills, tips, cruise gratuities, etc.",
+      "Trade shows, conventions, and special events are all subject to surcharges.",
+      "Early check-in and late check-out are on a request basis only and subject to room availability",
+      "5% GST",
+      "5% TCS",
+    ],
+    AccommodationObj: [
+      {
+        title: "DELUXE ROOM",
+        text1: "Terrace or balcony",
+        text2: "Right on the beach",
+      },
+      {
+        title: "GRAND BEACH VILLA",
+        text1: "Beachfront terrace",
+        text2: "Open-air bathroom",
+      },
+      {
+        title: "GRAND BEACH VILLA WITH POOL",
+        text1: "Private pool",
+        text2: "Sunrise views",
+      },
+      {
+        title: "GRAND BEACH SUITE WITH POOL",
+        text1: "Private pool",
+        text2: "Spectacular sunsets",
+      },
+      {
+        title: "DELUXE WATER VILLA",
+        text1: "Spacious sun deck",
+        text2: "Steps to the lagoon",
+      },
+      {
+        title: "JACUZZI WATER VILLA",
+        text1: "Outdoor jet tub",
+        text2: "Private sun deck",
+      },
+      {
+        title: "GRAND WATER VILLA WITH POOL",
+        text1: "Direct lagoon access",
+        text2: "Private outdoor deck",
+      },
+      {
+        title: "GRAND WATER VILLA WITH POOL",
+        text1: "Private pool",
+        text2: "Steps to the lagoon",
+      },
+      {
+        title: "PRESTIGE JACUZZI WATER VILLA",
+        text1: "Outdoor jacuzzi",
+        text2: "Spacious deck",
+      },
+      {
+        title: "PRESIDENTIAL WATER SUITE",
+        text1: "Ultimate privacy",
+        text2: "Large private pool",
+      },
+    ],
   },
 ];

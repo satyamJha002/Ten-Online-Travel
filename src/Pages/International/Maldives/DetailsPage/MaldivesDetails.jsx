@@ -17,6 +17,7 @@ const MaldivesDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [openIndex, setOpenIndex] = useState(null);
   const { id } = useParams();
+
   const allTrips = [...maldives, ...maldivesOtherTrips, ...maldivesWaterVilla];
   const filteredObjects = allTrips.filter((obj) => obj.id === Number(id));
 
@@ -80,9 +81,24 @@ const MaldivesDetails = () => {
               <p>{items.subDescription}</p>
             </div>
             <div className="accommodation">
-              <h1>ACCOMMODATION: </h1>
+              <h1>ACCOMMODATION: {items.accommodationTitle}</h1>
               <p>{items.accommodation} </p>
             </div>
+            {items.AccommodationObj === " " ? (
+              " "
+            ) : (
+              <div className="accommodation">
+                {items.AccommodationObj.map((ele, index) => (
+                  <div key={index} className="mt-4">
+                    <h1 className="mb-2 ml-1">{ele.title} </h1>
+                    <lu>
+                      <li className="mb-1 ml-4">{ele.text1}</li>
+                      <li className="ml-4">{ele.text2} </li>
+                    </lu>
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="maldives-villas">
               <h1>{items.AdjoiningTitle} </h1>
               <p>{items.Adjoining} </p>
@@ -231,18 +247,30 @@ const MaldivesDetails = () => {
                     <span>/ Adult</span>
                   </div>
 
-                  <div className="finalPrice">
+                  {items.child === " " ? (
+                    " "
+                  ) : (
+                    <>
+                      <div className="finalPrice">
+                        <span className="from">From</span>
+                        <h1>{items.child}</h1>
+                        <span>/Child 6 - 12 Yrs</span>
+                      </div>
+                    </>
+                  )}
+                </div>
+                {items.child2 === " " ? (
+                  " "
+                ) : (
+                  <>
                     <span className="from">From</span>
-                    <h1>{items.child}</h1>
-                    <span>/Child 6 - 12 Yrs</span>
-                  </div>
-                </div>
-                <span className="from">From</span>
-                <span></span>
-                <div className="finalPrice">
-                  <h1>{items.child2}</h1>
-                  <span>/ Child below 6 Yrs</span>
-                </div>
+                    <span></span>
+                    <div className="finalPrice">
+                      <h1>{items.child2}</h1>
+                      <span>/ Child below 6 Yrs</span>
+                    </div>
+                  </>
+                )}
               </div>
               <div className="availableBtn">
                 <button>Check Availability</button>

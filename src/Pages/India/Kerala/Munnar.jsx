@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import {
   munnarOtherTrips,
   munnarsightseeing,
@@ -19,26 +19,14 @@ const Munnar = () => {
   return (
     <>
       <div className="munnar-intro">
-      <p className="munnar-destination"> Home {newUrl}</p>
+        <p className="munnar-destination"> Home {newUrl}</p>
 
         <h1>Munnar</h1>
         <div className="munnarInfo">
           <p>
-            Munnar is the most happening hill station in Kerala in South India
-            located 110 km from the nearest Cochin airport. Situated at 6000
-            feet above sea level, Munnar has enchanting weather, tea
-            plantations, and scenic views. The serenity spells magic for all who
-            visit here. Treehouses in Munnar are popular with tourists. Munnar
-            tourism is about celebrating the holidays in the cool green
-            environment of the Nilgiri hills of Munnar. The tourists can access
-            several sightseeing spots in Munnar, right from National Parks,
-            ancient churches, dams, lakes, temples, scenic viewing spots, tea
-            plantations & tea museums, cardamom fields, echo spots, waterfalls
-            and various other places where you would love to pay a visit. A
-            perfect resort town with the full galore of flora & fauna. Just
-            perfect for nature lovers who would love to stay in the wonderful
-            Treehouses in Munnar. These would give them lots of reasons to
-            cherish the memorable time spent here enjoying vacations.
+            Munnar, a picturesque hill station in Kerala, South India, is just 110 km from Cochin International Airport. Located 6,000 feet above sea level, it is renowned for its cool climate, scenic landscapes, and sprawling tea plantations. Visitors are enchanted by Munnar’s tranquility and natural beauty.
+
+            Treehouses, a popular attraction, provide a unique stay amid lush greenery, offering a perfect retreat for those seeking relaxation. Munnar's highlights include National Parks, ancient churches, serene lakes, dams, temples, and vibrant tea gardens. With its echo points, waterfalls, and rich flora and fauna, Munnar is a haven for nature lovers and a memorable getaway.
           </p>
         </div>
         <div className="friAndFam">

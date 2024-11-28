@@ -1,10 +1,12 @@
 .rishikesh {
-  padding: 20px 40px;
+  padding: 0 20px 0 20px;
 }
 
 .rishikesh-heading {
   font-size: 2.5rem;
-  margin-bottom: 2%;
+ padding:20px;
+  
+  margin-left: 25px;
 }
 
 .rishikesh-heading::after {
@@ -16,8 +18,10 @@
 }
 
 .rishikesh-content {
-  font-size: 16px;
+  font-size: 20px;
   color: #666666;
+/*   margin-left: 25px; */
+  margin-right: 25px;
 }
 
 .App {
@@ -48,9 +52,10 @@ h2 {
 }
 
 /* Sub-section styles */
-.camping, .friendtour, .hiking, .rafting, .sports {
+.camping {
   margin-top: 20px;
   font-size: 40px;
+
   line-height: 1.125em;
   font-weight: 500;
   margin-bottom: 30px;
@@ -58,8 +63,8 @@ h2 {
   position: relative;
 }
 
-.camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
-  background-color: #fafafa;
+.camping h2 {
+  background-color: #f6f6f6;
   display: inline-block;
   position: relative;
   color: rgb(0, 0, 0);
@@ -69,11 +74,7 @@ h2 {
   font-size: 2rem;
 }
 
-.camping::after, .camping::before,
-.friendtour::after, .friendtour::before,
-.hiking::after, .hiking::before,
-.rafting::after, .rafting::before,
-.sports::after, .sports::before {
+.camping::after, .camping::before {
   content: "";
   padding: 0.5px;
   display: flex;
@@ -82,58 +83,102 @@ h2 {
   background-color: rgb(144, 144, 144);
 }
 
-.hiking-div {
+.camping-div  {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-  gap: 20px; /* Space between cards */
-  flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 /* Individual card styles */
-.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 1px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  flex: 1;
-  min-width: 200px; /* Ensures cards have a minimum width */
-  max-width: 300px; /* Limits the maximum width of the cards */
-}
+/* .card { */
+  /* background-color: #f4f4f4;/ */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 1px; */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  /* padding: 20px; */
+  /* flex: 1; */
+  /* min-width: 100px;  */
+  /* max-width: 100px;  */
+  /* display: grid; */
+  
+
+/* } */
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px ) {
   .card-container {
     justify-content: space-around;
     min-width: 200px; /* Ensures cards have a minimum width */
     max-width: 300px;
     padding: 15px 0 15px 0;
+    /* padding-left: 20px; */
   }
+  .camping-div {
+    margin: 0 -15px 0 -10px;
+    /* padding: 10px !important; */
+    padding-left: 20px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  .camping-div{ justify-content: center;}
 }
 
 @media (max-width: 425px) {
   .card-container {
-    display: 100%;
-    min-width: 200px; /* Ensures cards have a minimum width */
-    max-width: 300px;
-    padding: 50px 10px;
+    /* display: 100%;
+    width:  100%;
+    padding: 50px 10px; */
+    width: 425px;
+    margin-left: -20px;
+    margin-right: 50px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+  .camping-div {
+    width: 400px;
+    margin-left: -40px;
+  }
+}
+@media (max-width: 480px) {
   .card-container {
     justify-content: space-around;
     display: contents;
     font-display: 120%;
-    min-width: 200px; /* Ensures cards have a minimum width */
-    max-width: 1000px;
-    padding: 100px 0 0 0;
+    width: 200px; 
+    margin-bottom: 15px;
+    height: 100%;
+    width: 350px;
+    margin-left: -30px;
+    margin-right: -30px; 
   }
 }
 
-.camping-div, .friend-div, .rafting-div, .sports-div {
+@media (max-width: 320px) {
+  .rishikish-content {
+    width: 390px;;
+    margin: 0 0 0 5px
+  }
+  .camping-div {
+    margin-left: -3%;
+    padding-left: 5px;
+
+        width: 105%
+  }
+}
+/* .camping-div, .friend-div, .rafting-div, .sports-div {
   justify-content: space-around;
   align-items: flex-start;
   padding: 20px;
@@ -143,12 +188,12 @@ h2 {
 .camping-div, .friend-div, .rafting-div, .sports-div {
   min-width: 100%;
   max-width: 100%;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card-container {
     justify-content: space-around;
-    min-width: 200px; /* Ensures cards have a minimum width */
+    min-width: 200px; 
     max-width: 300px;
   }
 }
@@ -156,7 +201,7 @@ h2 {
 @media (max-width: 425px) {
   .card-container {
     display: 100%;
-    min-width: 200px; /* Ensures cards have a minimum width */
+    min-width: 200px; 
     max-width: 300px;
   }
 }
@@ -168,40 +213,47 @@ h2 {
     font-display: 120%;
     justify-content: center;
   }
-}
+} */
 
-.camping::after, .friendtour::after, .hiking::after, .rafting::after, .sports::after {
+.camping::after {
   top: 45%;
 }
 
-.camping::before, .friendtour::before, .hiking::before, .rafting::before, .sports::before {
+.camping::before {
   top: 50%;
 }
 
 /* Responsive section styles */
 @media (max-width: 768px) {
-  .camping, .friendtour, .hiking, .rafting, .sports {
+  .camping {
     font-size: 30px;
   }
 
-  .camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
+  .camping h2 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .camping, .friendtour, .hiking, .rafting, .sports {
+  .camping {
     font-size: 25px;
   }
 
-  .camping h2, .friendtour h2, .hiking h2, .rafting h2, .sports h2 {
+  .camping h2 {
     font-size: 1.2rem;
     padding: 0 20px;
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .camping-div {
     display: flex;
   }
+} */
+/* @media(max-width:900px){ */
+  
+/* 
 }
+.camping-div{
+   padding: 0 0 0 50px  !important;
+} */
