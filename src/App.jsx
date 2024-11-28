@@ -8,7 +8,7 @@ import Dubai from "./Pages/International/Dubai/Dubai";
 import Bali from "./Pages/International/Bali/Bali";
 import Darjeeling from "./Pages/India/Darjeeling/Darjeeling";
 import Malaysia from "./Pages/International/Malaysia/Malaysia";
-import DetailsPage from "./Pages/International/Malaysia/MalaysiaDetailsPage/DetailsPage";
+import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 import Paragliding from "./Pages/Activities/Paragliding/Paragliding";
 import ParaglidingDetails from "./Pages/Activities/Paragliding/ParaglidingDetails/ParaglidingDetails";
 import RiverRafting from "./Pages/Activities/RiverRafting/RiverRafting";
@@ -26,7 +26,7 @@ import Sikkim from "./Pages/India/Sikkim/Sikkim";
 import Kasol from "./Pages/India/Himachal/Kasol";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
-import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetailsPage/DetailPage";
+import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetails/ThailandDetailsPage";
 import Singapore from "./Pages/International/Singapore/Singapore";
 import Details from "./Pages/International/Dubai/DetailsPage/Details";
 import Maldives from "./Pages/International/Maldives/Maldives";
@@ -53,7 +53,7 @@ function App() {
           <Route path="/international/malaysia" element={<Malaysia />} />
           <Route
             path="/international/malaysia/trip/:id"
-            element={<DetailsPage />}
+            element={<MalaysiaDetailsPage />}
           />
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/international/bali" element={<Bali />} />

@@ -484,12 +484,115 @@ export const malaysia = [
     title: "2N Kuala Lumpur / 3N Singapore",
     location: "Malaysia, Singapore",
     duration: "6 Days - 5 Nights",
+    noOfDays: "6",
     people: "2 People",
     discount: "8% Off",
     price: "₹37,000",
     originalPrice: "₹40,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+      {
+        place: "Singapore",
+        favPlaces: [
+          {
+            title: "Finest beaches",
+            desc: "The best beaches in the world may be found in Singapore. The nation has beaches because it is an island. Experience the most amazing and immaculate beach you have ever seen by traveling to Sentosa Island. Singapore's beaches are beautiful and provide tourists solace. Sentosa Island is the perfect starting point if you enjoy the sea and the sand. Your Singapore tour from Bangalore will leave you wanting more, with everything from breathtaking sunsets to water activities.",
+          },
+          {
+            title: "Shopping destinations:",
+            desc: "Singapore is a shopping haven for anyone who wants to do nothing but shop. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing. ",
+          },
+          {
+            title: "Adventure",
+            desc: "Adventure sports including water skiing, surfing, scuba diving, snorkeling, and parasailing are available on the beaches. Your time on the beaches will undoubtedly be enjoyable. Some wildlife excursions are available, especially the thrilling night safari. Jurong Bird Park is one of the most popular tourist destinations in Singapore, drawing thousands of tourists annually. You may get up close and personal with a variety of exotic bird species. There is also a stunning man-made waterfall in the park. Don't miss the opportunity to eat breakfast with the orangutans at the Singapore Zoo. The Marina Bay Stand Park's beauty is bound to leave you speechless.",
+          },
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "For those who prefer to do nothing but shop, Singapore is a veritable heaven. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing.",
+      "This country has something to offer to everyone. You can try a different type of diving, track wild jungles, enjoy beautiful beaches, explore remarkable cities or eat delicious Malaysian food. Everything is included in Malaysia tour package.",
+    ],
+    itIneary: [
+      {
+        question: "Day 1 : Arrival in Kuala Lumpur | Half Day KUL city tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 2 : Day trip to Genting Highlands with 01 way cable car (enroute stop at Batu caves)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 3 : Departure from Kuala Lumpur to Singapore | Night Safari (Animal Show + Fire Show + Tram Ride)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 4 : Half day city tour (Merlion photo stop, Suntec City, Fountain of Wealth, Orchard Road, Little India and Chinatown) Sentosa Extreme including admission (one way cable car, S.E.A Aquarium, 2 way Luge & Skyride, Butterfly Park & Insect Kingdom and Wings of Time) ",
+        answer: " ",
+      },
+      {
+        question: "Day 5 : Universal Studio",
+        answer: " ",
+      },
+      {
+        question: "Day 6 : Departure from Singapore",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "05 nights accommodation on above property",
+              "Daily breakfast at Hotel",
+              "Airport pick and drop",
+              "Sightseeing",
+              "Transfers",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR",
+        hotelName: "ARENAA STAR",
+        roomType: "SUPERIOR STAR",
+      },
+      {
+        place: "SINGAPORE",
+        hotelName: "FRAGRANCE HOTEL -IMPERIAL",
+        roomType: "STANDARD",
+      },
+    ],
   },
   {
     id: 6,
@@ -512,6 +615,110 @@ export const malaysia = [
     originalPrice: "₹54,500",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Singapore",
+        favPlaces: [
+          {
+            title: "Finest beaches",
+            desc: "The best beaches in the world may be found in Singapore. The nation has beaches because it is an island. Experience the most amazing and immaculate beach you have ever seen by traveling to Sentosa Island. Singapore's beaches are beautiful and provide tourists solace. Sentosa Island is the perfect starting point if you enjoy the sea and the sand. Your Singapore tour from Bangalore will leave you wanting more, with everything from breathtaking sunsets to water activities.",
+          },
+          {
+            title: "Shopping destinations:",
+            desc: "Singapore is a shopping haven for anyone who wants to do nothing but shop. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing. ",
+          },
+          {
+            title: "Adventure",
+            desc: "Adventure sports including water skiing, surfing, scuba diving, snorkeling, and parasailing are available on the beaches. Your time on the beaches will undoubtedly be enjoyable. Some wildlife excursions are available, especially the thrilling night safari. Jurong Bird Park is one of the most popular tourist destinations in Singapore, drawing thousands of tourists annually. You may get up close and personal with a variety of exotic bird species. There is also a stunning man-made waterfall in the park. Don't miss the opportunity to eat breakfast with the orangutans at the Singapore Zoo. The Marina Bay Stand Park's beauty is bound to leave you speechless.",
+          },
+        ],
+      },
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "For those who prefer to do nothing but shop, Singapore is a veritable heaven. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing.",
+      "This country has something to offer to everyone. You can try a different type of diving, track wild jungles, enjoy beautiful beaches, explore remarkable cities or eat delicious Malaysian food. Everything is included in Malaysia tour package.",
+    ],
+    itIneary: [
+      {
+        question:
+          "Day 1 :Arrival in Singapore | Night Safari (Animal Show + Fire Show + Tram Ride)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 2 :Half day city tour (Merlion photo stop, Suntec City, Fountain of Wealth, Orchard Road, Little India and Chinatown) -Sentosa (one way cable car, S.E.A Aquarium, 2 way Luge & Skyride, Butterfly Park & Insect Kingdom and Wings of Time)",
+        answer: " ",
+      },
+      {
+        question: "Day 3 :Universal Studio",
+        answer: " ",
+      },
+      {
+        question: "Day 4 : Transfer to Kuala lumpur By Coach",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 : Day trip to Genting Highlands with 01 way cable car (enroute stop at Batu caves)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 6 : Half day KUL city tour | Drop at airport for return flight",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "05 nights accommodation on above property",
+              "Daily breakfast at Hotel",
+              "Airport pick and drop",
+              "Sightseeing",
+              "Transfers",
+              "5% Govt. service Tax",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "SINGAPORE (3N)",
+        hotelName: "AQUEEN LAVENDER",
+        roomType: "STANDARD",
+      },
+      {
+        place: "KUALA LUMPUR (2N)",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE STAR",
+      },
+    ],
   },
   {
     id: 7,
@@ -528,12 +735,118 @@ export const malaysia = [
     title: "2N Kuala Lumpur/4N Bali",
     location: "Bali, Malaysia",
     duration: "7 Days - 6 Nights",
+    noOfDays: "7",
     people: "2 People",
     discount: "12% Off",
     price: "₹25,500",
     originalPrice: "₹29,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+      {
+        place: "Bali",
+        favPlaces: " ",
+        desc: [
+          "Without a doubt, Indonesia's most visited tourist attraction is the Island of the Gods. It is the epitome of tropical bliss. Small offerings of flowers and sticks of burning incense are placed outside the island's hotels, pubs, and dining establishments every day. A parade of Balinese in white robes passes by with the soft sound of a gong. This vibrant culture has been enthralling visitors to the island for the past many centuries.",
+          "Bali is among them. Bali's southern towns and beaches are the main destinations for tourists. Young partygoers are drawn to Kuta, hipsters are drawn to Canggu, yogis congregate in Ubud, the young and wealthy congregate in Seminyak, and all-inclusive five-star resorts can be found in Nusa Dua. Bali is a great option for a restful vacation because of its diversity.",
+          "Paddy fields and densely forested hills soon encircle you as you leave the city. The roads wind through tiny towns and remote temples atop the hillsides; it's the ideal location for a bike tour. Numerous falling waterfalls in the highlands are suitable for swimming, and they lead into rushing rivers where white water rafting is popular. Alternatively, if you're feeling particularly daring, you may spend the day canyoning, abseiling, and jumping down waterfalls.",
+          "The Republic of Indonesia is made up of thousands of islands. This little island has remained primarily Hindu in the middle of the world's most populated Islamic nation. In Southeast Asia, Hinduism was widely practiced a millennium ago. The only location in the whole region where these formerly common customs are still practiced today is Bali.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "Everyone can find something to enjoy in Malaysia. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+      "Bali is among them. Bali's southern towns and beaches are the main destinations for tourists. Young partygoers are drawn to Kuta, hipsters are drawn to Canggu, yogis congregate in Ubud, the young and wealthy congregate in Seminyak, and all-inclusive five-star resorts can be found in Nusa Dua. Bali is a great option for a restful vacation because of its diversity.",
+    ],
+    itIneary: [
+      {
+        question:
+          "Day 1 : Arrival in Kuala Lumpur | Genting Highland Day trip with 2 way cable car)",
+        answer: " ",
+      },
+      {
+        question: "Day 2 : Sunway Lagoon Park",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 3 : Half Day KUL city tour with KL Tower | Transfer from Kuala Lumpur to Bali",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 4 : Watersports @ Benoa beach (1 x Jet ski,Flying fish/parasailing,banana boat) - Sunset Tanah lot temple tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 : Full Day Ubud - Kintamani Tour | Transfer to Private Pool Villa",
+        answer: " ",
+      },
+      {
+        question: "Day 6 : Day at leisure in Pool Villa",
+        answer: " ",
+      },
+      {
+        question: "Day 7 : Departure from Bali",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "06 nights accommodation in above property",
+              "Daily breakfast at Hotel",
+              "Airport pick and drop",
+              "Sightseeing as per itinerary",
+              "Transfers",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR (2N)",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE",
+      },
+      {
+        place: "KUTA(2N)",
+        hotelName: "HORISON LEGIAN",
+        roomType: "DELUXE",
+      },
+      {
+        place: "UBUD (2N)",
+        hotelName: "VRINDAVAN UBUD VILLA",
+        roomType: "DELUXE",
+      },
+    ],
   },
   {
     id: 8,
@@ -550,12 +863,118 @@ export const malaysia = [
     title: "2N Kuala Lumpur/4N Bali",
     location: "Bali, Malaysia",
     duration: "7 Days - 6 Nights",
+    noOfDays: "7",
     people: "2 People",
     discount: "11% Off",
     price: "₹24,000",
     originalPrice: "₹27,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+      {
+        place: "Bali",
+        favPlaces: " ",
+        desc: [
+          "Without a doubt, Indonesia's most visited tourist attraction is the Island of the Gods. It is the epitome of tropical bliss. Small offerings of flowers and sticks of burning incense are placed outside the island's hotels, pubs, and dining establishments every day. A parade of Balinese in white robes passes by with the soft sound of a gong. This vibrant culture has been enthralling visitors to the island for the past many centuries.",
+          "Bali is among them. Bali's southern towns and beaches are the main destinations for tourists. Young partygoers are drawn to Kuta, hipsters are drawn to Canggu, yogis congregate in Ubud, the young and wealthy congregate in Seminyak, and all-inclusive five-star resorts can be found in Nusa Dua. Bali is a great option for a restful vacation because of its diversity.",
+          "Paddy fields and densely forested hills soon encircle you as you leave the city. The roads wind through tiny towns and remote temples atop the hillsides; it's the ideal location for a bike tour. Numerous falling waterfalls in the highlands are suitable for swimming, and they lead into rushing rivers where white water rafting is popular. Alternatively, if you're feeling particularly daring, you may spend the day canyoning, abseiling, and jumping down waterfalls.",
+          "The Republic of Indonesia is made up of thousands of islands. This little island has remained primarily Hindu in the middle of the world's most populated Islamic nation. In Southeast Asia, Hinduism was widely practiced a millennium ago. The only location in the whole region where these formerly common customs are still practiced today is Bali.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "Everyone can find something to enjoy in Malaysia. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+      "Bali is among them. Bali's southern towns and beaches are the main destinations for tourists. Young partygoers are drawn to Kuta, hipsters are drawn to Canggu, yogis congregate in Ubud, the young and wealthy congregate in Seminyak, and all-inclusive five-star resorts can be found in Nusa Dua. Bali is a great option for a restful vacation because of its diversity.",
+    ],
+    itIneary: [
+      {
+        question:
+          "Day 1 : Arrival in Kuala Lumpur | Genting Highland Day trip with 2 way cable car)",
+        answer: " ",
+      },
+      {
+        question: "Day 2 : Sunway Lagoon Park",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 3 : Half Day KUL city tour with KL Tower | Transfer from Kuala Lumpur to Bali",
+        answer: " ",
+      },
+      {
+        question: "Day 4 : Day at leisure",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 : Watersports @ Benoa beach (1 x Jet ski,Flying fish/parasailing,banana boat) - Sunset Tanah lot temple tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 6 : Full Day Ubud - Kintamani Tour | Transfer to Private Pool Villa",
+        answer: " ",
+      },
+      {
+        question: "Day 7 : Departure from Bali",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "06 nights accommodation in above property",
+              "Daily breakfast at Hotel",
+              "Airport pickup and drop",
+              "Sightseeing as per itinerary",
+              "Transfers",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR (2N)",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE",
+      },
+      {
+        place: "KUTA(3N)",
+        hotelName: "HORISON LEGIAN",
+        roomType: "DELUXE",
+      },
+      {
+        place: "KORI MAHARANI VILLA",
+        hotelName: "1 BR POOL VILLA",
+        roomType: "DELUXE",
+      },
+    ],
   },
   {
     id: 9,
@@ -572,12 +991,120 @@ export const malaysia = [
     title: "3N Kuala Lumpur / 3N Singapore",
     location: "Malaysia, Singapore",
     duration: "7 Days - 6 Nights",
+    noOfDays: "7",
     people: "2 People",
     discount: "7% Off",
     price: "₹50,000",
     originalPrice: "₹54,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Singapore",
+        favPlaces: [
+          {
+            title: "Finest beaches",
+            desc: "The best beaches in the world may be found in Singapore. The nation has beaches because it is an island. Experience the most amazing and immaculate beach you have ever seen by traveling to Sentosa Island. Singapore's beaches are beautiful and provide tourists solace. Sentosa Island is the perfect starting point if you enjoy the sea and the sand. Your Singapore tour from Bangalore will leave you wanting more, with everything from breathtaking sunsets to water activities.",
+          },
+          {
+            title: "Shopping destinations:",
+            desc: "Singapore is a shopping haven for anyone who wants to do nothing but shop. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing. ",
+          },
+          {
+            title: "Adventure",
+            desc: "Adventure sports including water skiing, surfing, scuba diving, snorkeling, and parasailing are available on the beaches. Your time on the beaches will undoubtedly be enjoyable. Some wildlife excursions are available, especially the thrilling night safari. Jurong Bird Park is one of the most popular tourist destinations in Singapore, drawing thousands of tourists annually. You may get up close and personal with a variety of exotic bird species. There is also a stunning man-made waterfall in the park. Don't miss the opportunity to eat breakfast with the orangutans at the Singapore Zoo. The Marina Bay Stand Park's beauty is bound to leave you speechless.",
+          },
+        ],
+      },
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "For those who prefer to do nothing but shop, Singapore is a veritable heaven. The nation boasts the largest and most well-known retail destinations. Some great places to shop are Orchard Road, China Town, and Little India. These offer a fantastic look into Singapore's cosmopolitan culture in addition to being excellent places to buy. Here, people of different ethnic backgrounds coexist peacefully. You can shop until you drop under Singapore travel packages from Bangalore. There are many of the best restaurants in the retail areas. The nicest thing about the nation is that you may sample a variety of cuisines, all of which are tasty and appealing.",
+      "This country has something to offer to everyone. You can try a different type of diving, track wild jungles, enjoy beautiful beaches, explore remarkable cities or eat delicious Malaysian food. Everything is included in Malaysia tour package.",
+    ],
+    itIneary: [
+      {
+        question: "Day 1 : Arrival in Kuala Lumpur | KUL night city tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 2 :Day trip to Genting Highlands with 01 way cable car (enroute stop at Batu caves)",
+        answer: " ",
+      },
+      {
+        question: "Day 3 : Full Day Sunway Lagoon theme park",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 4 :Transfer to SINGAPORE By Coach | Night Safari (Animal Show + Fire Show + Tram Ride)",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 :Half day city tour (Merlion photo stop, Suntec City, Fountain of Wealth, Orchard Road, Little India and Chinatown) -Sentosa (one way cable car, S.E.A Aquarium, 2 way Luge & Skyride, Butterfly Park & Insect Kingdom and Wings of Time)",
+        answer: " ",
+      },
+      {
+        question: "Day 6 : Universal Studio",
+        answer: " ",
+      },
+      {
+        question: "Day 7 : Drop at airport for return flight",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "05 nights accommodation on above property",
+              "Daily breakfast at Hotel",
+              "Airport pick and drop",
+              "Sightseeing",
+              "Transfers",
+              "5% Govt. service Tax",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR (3N)",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE STAR",
+      },
+      {
+        place: "SINGAPORE (3N)",
+        hotelName: "AQUEEN LAVENDER",
+        roomType: "STANDARD",
+      },
+    ],
   },
   {
     id: 10,
@@ -594,11 +1121,120 @@ export const malaysia = [
     title: "3N Kuala Lumpur/4N Bali",
     location: "Bali, Malaysia",
     duration: "8 Days - 7 Nights",
+    noOfDays: "8",
     people: "2 People",
     discount: "7% Off",
     price: "₹31,500",
     originalPrice: "₹35,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription: " ",
+    destination: [
+      {
+        place: "Malaysia",
+        favPlaces: " ",
+        desc: [
+          "One of the most popular travel destinations in Southeast Asia is Malaysia, and Malaysian tour packages are among the most sought-after products on the internet. This stunning nation is visited and explored by hundreds of thousands of people each year. Malaysia is home to some of the world's most intriguing tourist spots. Malaysia is a diverse country with a wide range of vacation packages for tourists to choose from.",
+          "Everyone can find something to like in our nation. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+        ],
+      },
+      {
+        place: "Bali",
+        favPlaces: " ",
+        desc: [
+          "Without a doubt, Indonesia's most visited tourist attraction is the Island of the Gods. It is the epitome of tropical bliss. Small offerings of flowers and sticks of burning incense are placed outside the island's hotels, pubs, and dining establishments every day. A parade of Balinese in white robes passes by with the soft sound of a gong. This vibrant culture has been enthralling visitors to the island for the past many centuries.",
+          "Bali is among them. Bali's southern towns and beaches are the main destinations for tourists. Young partygoers are drawn to Kuta, hipsters are drawn to Canggu, yogis congregate in Ubud, the young and wealthy congregate in Seminyak, and all-inclusive five-star resorts can be found in Nusa Dua. Bali is a great option for a restful vacation because of its diversity.",
+          "Paddy fields and densely forested hills soon encircle you as you leave the city. The roads wind through tiny towns and remote temples atop the hillsides; it's the ideal location for a bike tour. Numerous falling waterfalls in the highlands are suitable for swimming, and they lead into rushing rivers where white water rafting is popular. Alternatively, if you're feeling particularly daring, you may spend the day canyoning, abseiling, and jumping down waterfalls.",
+          "The Republic of Indonesia is made up of thousands of islands. This little island has remained primarily Hindu in the middle of the world's most populated Islamic nation. In Southeast Asia, Hinduism was widely practiced a millennium ago. The only location in the whole region where these formerly common customs are still practiced today is Bali.",
+        ],
+      },
+    ],
+    subDescription: " ",
+    overView: [
+      "Everyone can find something to enjoy in Malaysia. You may enjoy stunning beaches, discover amazing towns, go diving, track wild jungles, or eat delectable Malaysian cuisine. The travel package for Malaysia includes everything.",
+      "Bali is among them. Bali's southern towns and beaches are the main destinations for tourists. Young partygoers are drawn to Kuta, hipsters are drawn to Canggu, yogis congregate in Ubud, the young and wealthy congregate in Seminyak, and all-inclusive five-star resorts can be found in Nusa Dua. Bali is a great option for a restful vacation because of its diversity.",
+    ],
+    itIneary: [
+      {
+        question: "Day 1 :Arrival in Kuala Lumpur | Half day KUL city tour",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 2 : Day trip to Genting Highlands with 01 way cable car (enroute stop at Batu caves)",
+        answer: " ",
+      },
+      {
+        question: "Day 3 : Full Day Sunway Lagoon theme park",
+        answer: " ",
+      },
+      {
+        question: "Day 4 : Departure to Bali",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 5 : Watersports @ Benoa beach (1 x Jet ski,Flying fish/parasailing,banana boat) - Sunset Tanah lot temple tour",
+        answer: " ",
+      },
+      {
+        question: "Day 6 : Ubud - Kintamani Tour | Transfer to Pool Villa",
+        answer: " ",
+      },
+      {
+        question:
+          "Day 7 :Morning at leisure in Pool villa | Sunset Tanah Lot Temple Tour",
+        answer: " ",
+      },
+      {
+        question: "Day 8 : Departure from Bali",
+        answer: " ",
+      },
+    ],
+    inClusions: [
+      {
+        packageInclusion: [
+          {
+            title: "Package Inclusions",
+            points: [
+              "07 nights accommodation in above property",
+              "Daily breakfast at Hotel",
+              "Airport pickup and drop",
+              "Sightseeing as per itinerary",
+              "Transfers",
+            ],
+          },
+        ],
+        packageExclusion: [
+          {
+            title: "Package Exclusion",
+            points: [
+              "Anything not mentioned in the package inclusions.",
+              "Travel Insurance charges.",
+              "Expenses of personal nature, mini bar in the room, laundry, telephone bills, tips, gratuities fee in cruise etc.",
+              "Surcharges applicable during Conventions, Special Events and Trade fairs.",
+              "Early check-in and late check-out are on request basis only and subject to room availability",
+            ],
+          },
+        ],
+      },
+    ],
+    hotels: [
+      {
+        place: "KUALA LUMPUR (3N)",
+        hotelName: "ARENAA STAR",
+        roomType: "DELUXE STAR",
+      },
+      {
+        place: "NUSA DUA (2N)",
+        hotelName: "AMAROOSSA SUITES",
+        roomType: "EXECUTIVE SUITE",
+      },
+      {
+        place: "UBUD (2N)",
+        hotelName: "ABIRAMA UBUD",
+        roomType: "1 BR POOL VILLA",
+      },
+    ],
   },
 ];
