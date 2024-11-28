@@ -1,4 +1,4 @@
-.datails-container {
+.details-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -63,7 +63,6 @@
 }
 
 /* Arrow buttons */
-
 .details-arrow {
   position: absolute;
   top: 45%;
@@ -87,8 +86,8 @@
 
 /* Positioning for left and right arrows */
 .details-arrow.left {
-  padding: 8px 16px;
   left: 10px;
+  padding: 8px 16px;
 }
 
 .details-arrow.right {
@@ -97,28 +96,16 @@
 }
 
 .detail-description {
-  margin: 30px 0px;
+  margin-top: 50px;
 }
 
 .detail-description p {
   font-size: 1rem;
 }
 
-.detail-destination {
-  margin-bottom: 1.2rem;
-}
-
-.detail-destination h1 {
-  font-size: 1.8rem;
-  margin: 10px 0px;
-  font-weight: 600;
-}
-
 .info-details {
   display: flex;
   width: 100%;
-  padding: 1rem;
-  margin-top: 2rem;
   border: 1px solid black;
   justify-content: space-evenly;
   background-color: rgb(255, 255, 255);
@@ -176,64 +163,53 @@
 }
 
 .detail-overview {
-  margin: 30px 0px;
+  margin-top: 50px;
 }
 
-.detail-overview h1 {
-  font-size: 1.8rem;
-  font-weight: 500;
+.detail-overview p {
+  font-size: 1rem;
 }
 
-.detail-itinerary {
-  margin: 30px 0px;
-}
-
-.detail-itinerary h1 {
+.detail-overview h1,
+.detail-itinerary h1,
+.inclusions-container h1 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
+.detail-itinerary {
+  margin-top: 50px;
+}
+
 .qna-container {
-  margin: 50px 0px;
+  margin-top: 50px;
 }
 
-.accordion-header {
-  cursor: pointer;
-  background: #f0f0f0;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.accordion-header h2 {
+.question h2 {
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-.accordion-content p {
+.answer p {
   font-size: 1rem;
 }
 
-.both-inclusions-containers {
-  margin: 30px 0px;
+.exclusion-container,
+.inclusions-container {
+  margin-top: 50px;
 }
 
-.both-inclusions-containers h1 {
-  font-size: 1.8rem;
-  font-weight: 500;
+.inclusion {
+  margin-top: 10px;
 }
 
-.hotels {
-  margin: 40px 0px;
-}
-
-.hotels h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1.3rem;
-  font-weight: 500;
+.inclusion p {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .detail-price-container {
@@ -290,21 +266,45 @@
   height: 50px;
   border-radius: 5px;
 }
-
 .tripAdvisor-container {
   width: 250px;
   padding: 20px;
   margin-top: 20px;
   border: 1px solid green;
 }
-
 .tripAdvisor-img {
   width: 100px;
 }
-
 .tripAdvisor-content h2 {
   font-weight: 700;
   margin-top: 20px;
   line-height: 10px;
   color: black;
+}
+
+/* Accordation Itinerary Css */
+
+.qna-container {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.accordion-content p {
+  font-size: 1em;
+  padding: 15px;
 }

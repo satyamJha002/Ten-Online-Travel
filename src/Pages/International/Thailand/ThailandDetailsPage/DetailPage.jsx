@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
-import { malaysia } from "../../../../assets/Data/malaysia";
+import { Thailand } from "../../../../assets/Data/ThailandData";
 import { useParams } from "react-router-dom";
-import styles from "./detailsPage.module.css";
+import styles from "./detailPage.module.css";
 import {
   FaBusAlt,
   FaCheckCircle,
@@ -12,11 +12,11 @@ import {
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 
-const DetailsPage = () => {
+const ThailandDetailsPage = () => {
   const [currentImages, setCurrentImages] = useState(0);
   const [openIndex, setOpenIndex] = useState(null);
   const { id } = useParams();
-  const filteredObjects = malaysia.filter((obj) => obj.id === Number(id));
+  const filteredObjects = Thailand.filter((obj) => obj.id === Number(id));
   console.log(filteredObjects);
 
   const handlePrevImage = (images) => {
@@ -381,4 +381,4 @@ const DetailsPage = () => {
   );
 };
 
-export default DetailsPage;
+export default ThailandDetailsPage;
