@@ -8,6 +8,7 @@
 .dubaiIntro h1 {
   font-size: 2.5rem;
 }
+
 .dubaiIntro h1::after {
   content: "";
   padding: 2px;

@@ -30,6 +30,7 @@ const Dubai = () => {
             kite surfing, wakeboarding, and desert safaris over the golden
             Arabian dunes are all quite common in Dubai.
           </p>
+
           <br />
           <p>
             Once a desolate place, Dubai now boasts a sparkling infrastructure

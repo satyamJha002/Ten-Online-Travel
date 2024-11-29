@@ -326,17 +326,19 @@ const MalaysiaDetailsPage = () => {
                 <h1>{items.discount}</h1>
               </div>
               <div className={styles["original-price"]}>
-                <span className={styles["from"]}>From</span>
+                <span className={styles["from"]}>From </span>
                 <span>
                   <del>{items.originalPrice}</del>
                 </span>
               </div>
-              <div className={styles["finalPrice"]}>
-                <h1>{items.price}</h1>
-                <span>/Adult</span>
-              </div>
-              <div className={styles["availableBtn"]}>
-                <button>Check Availability</button>
+              <div className={styles["responsive-detail-price"]}>
+                <div className={styles["finalPrice"]}>
+                  <h1>{items.price}</h1>
+                  <span>/Adult</span>
+                </div>
+                <div className={styles["availableBtn"]}>
+                  <button>Check Availability</button>
+                </div>
               </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">

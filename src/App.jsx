@@ -38,6 +38,8 @@ import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikes
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
 import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
 import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
+// import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
+// import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 
 function App() {
   return (
