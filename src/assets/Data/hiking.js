@@ -1,10 +1,10 @@
 export const packages = [
   {
-    id: 7801,
+    id: 1,
     images: [
-      "https://media1.thrillophilia.com/filestore/09h2fb6tdpti310y0nyfqzm8n7we_shutterstock_2080591984.jpg",
-      "https://c1.wallpaperflare.com/preview/818/839/609/seven-sisters-sussex-england-white-cliffs.jpg",
-      "https://www.mirygiramondo.com/wp-content/uploads/2020/06/la-spiaggia-di-Birling-Gap-1024x683.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmwJceo3QV4wn58tU966mG045cuMX5yA-QA&s",
+      "https://media1.thrillophilia.com/filestore/xnzom62v218b22j8g8loqovaj5s5_goodbye-20by-20deepak-20bhatia-20flickr.jpg",
+      "https://shewalksinengland.com/wp-content/uploads/2019/11/seven-sisters-hike-29.jpg",
     ],
     title: "Seven Sisters Trek",
     location: "Meghalaya",
@@ -15,12 +15,10 @@ export const packages = [
     originalPrice: "₹13,500",
     nextDepartures: ["Dec 10", "Dec 20", "Jan 5"],
     featured: true,
-    noOfDays: 7,
     description: "Experience the breathtaking beaut...",
-    detailDescription:
-      "Explore the enchanting valleys and natural beauty of Meghalaya with the Seven Sisters Trek. This trek takes you through lush forests, pristine waterfalls, and vibrant local villages. Experience the cultural richness of the region as you interact with friendly locals and indulge in traditional cuisine. Along the way, you'll encounter mesmerizing vistas of the surrounding hills and valleys, making it a paradise for nature enthusiasts. Whether you are an experienced trekker or a beginner, this trek offers an unforgettable journey through one of India's most scenic regions.",
-    subDescription: "Perfect for nature enthusiasts, this trek takes you through lush green landscapes, picturesque valleys, and cascading waterfalls. Experience the serenity and beauty of untouched nature at its finest.",
-    overView: "The Seven Sisters trek is a breathtaking journey through one of the most enchanting regions of India. This trek offers an unparalleled blend of vibrant cultures, untouched natural beauty, and thrilling adventures. From the verdant hills and cascading waterfalls to the rich traditions of the indigenous communities, every step unveils a unique story. Whether you're a seasoned trekker or a nature enthusiast, this experience promises to leave you with unforgettable memories and a deeper connection to the wonders of the Northeast.",
+    detailDescription: "Explore the enchanting valleys and natural beauty of Meghalaya...",
+    subDescription: "Perfect for nature enthusiasts, this trek takes you through lush landscapes...",
+    overView: "The Seven Sisters trek offers a unique blend of culture, nature, and adventure...",
     qna: [
       {
         question: "What is the best time to visit Meghalaya?",
@@ -48,11 +46,11 @@ export const packages = [
     ],
   },
   {
-    id: 7802,
+    id: 2,
     images: [
-      "https://www.advenchar.com/wp-content/uploads/2019/05/Hampta-Pass-Trek-7-1-1000x580.jpg",
-      "https://blog.moustachescapes.com/wp-content/uploads/2022/11/chirag-vashist-l_KPRh8Zscs-unsplash-2-1.jpg",
-      "https://img.freepik.com/premium-photo/balu-ka-ghera-campsite-unraveling-beauty-hampta-pass-trek-india_1034537-30644.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6lYuEz9yaKlsy9KJU9Q7CsxpYj3CnKr98nQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3bros-ntAE60opkWLv4Mm0uBY-jlDxW2Jg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qYfs4-sxSZH-fEuFTUQCoxIvi6ib_qTOLQ&s",
     ],
     title: "Hampta Pass Trek",
     location: "Himachal",
@@ -63,12 +61,10 @@ export const packages = [
     originalPrice: "₹11,500",
     nextDepartures: ["Dec 12", "Dec 18", "Jan 8"],
     featured: true,
-    noOfDays: 5,
     description: "Crossing the majestic Hampta Pass...",
-    detailDescription:
-      "The Hampta Pass Trek is one of the most picturesque and rewarding trekking routes in Himachal Pradesh. It offers stunning views of lush green valleys, snow-capped mountains, and serene rivers. Starting from Manali, the trek leads to the beautiful Spiti Valley, transitioning from lush greenery to stark landscapes. Participants will cross the Hampta Pass, a high-altitude pass at 4,270 meters, providing breathtaking panoramic views. The trek also includes camping by rivers, stargazing, and experiencing the pristine beauty of Chandratal Lake. Suitable for both beginners and seasoned trekkers, this adventure is truly unforgettable.",
-    subDescription: "An adventure through Himachal's serene and tranquil landscapes, offering breathtaking beauty, thrilling trails, and unforgettable experiences at every turn.",
-    overView: "The Hampta Pass trek is a perfect fusion of adventure and natural beauty, making it an ideal choice for trekkers of all levels. This iconic trail takes you through ever-changing landscapes, from lush green valleys and dense forests to stark barren terrains and majestic snow-capped mountains. As you traverse this stunning route, you'll encounter glistening rivers, serene alpine meadows, and breathtaking vistas that redefine the meaning of beauty. Whether you're a seasoned hiker seeking a thrilling challenge or a beginner eager to explore the wilderness, the Hampta Pass trek offers an unforgettable experience that caters to everyone.",
+    detailDescription: "The Hampta Pass trek offers panoramic views of lush valleys...",
+    subDescription: "An adventure in Himachal's serene landscapes...",
+    overView: "Hampta Pass trek is a perfect blend of adventure and nature...",
     qna: [
       {
         question: "What is the altitude of Hampta Pass?",
@@ -96,11 +92,11 @@ export const packages = [
     ],
   },
   {
-    id: 7803,
+    id: 3,
     images: [
       "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1695730492/bbj/gbaf0ppp9gybaqaumgz4.jpg",
-      "https://lekhakpravin.com/wp-content/uploads/2023/12/kedarkantha-peak-upscaled-1024x585.png.webp",
-      "https://www.himalayanhikers.in/wp-content/uploads/2019/05/Kedarkantha-summit-1.jpg",
+      "https://www.adventurenation.com/blog/wp-content/uploads/2018/05/KedarkanthaTrek-900x530.jpg",
+      "https://captureatrip.s3.amazonaws.com/uploads/blog/images/cover/wbXRf1p9E2j5Y2srjpNz5MiAd2BxInw56WbqxvEe.jpeg",
     ],
     title: "Kedarkantha Trek",
     location: "Uttarakhand",
@@ -111,16 +107,14 @@ export const packages = [
     originalPrice: "₹9,000",
     nextDepartures: ["Dec 14", "Dec 21", "Jan 9"],
     featured: true,
-    noOfDays: 6,
     description: "Experience the offbeat beauty of Kedarka...",
-    detailDescription:
-      "The Kedarkantha Trek in Uttarakhand is one of the most popular winter treks in India. Known for its pristine beauty and panoramic views of snow-clad peaks, the trek takes you through dense pine forests, charming meadows, and picturesque villages. At the summit, trekkers are rewarded with a breathtaking 360-degree view of the Himalayan ranges. This trek is a haven for adventure enthusiasts, offering opportunities for photography, camping under starry skies, and connecting with nature. Its manageable difficulty level makes it ideal for both beginners and experienced trekkers.",
-    subDescription: "A trek that unveils the pristine beauty of snow-covered landscapes, serene alpine meadows, and breathtaking panoramic views of the majestic Himalayas, offering an unforgettable adventure in nature's lap.",
-    overView: "The Kedarkantha trek is a must-do winter adventure, perfect for photographers and nature lovers. With snow-covered trails, scenic alpine landscapes, and breathtaking views of the Himalayan peaks, this trek offers a magical experience through pine forests, meadows, and charming villages, culminating in stunning summit views at sunrise.",
+    detailDescription: "Nestled in the Himalayas, the Valley of Flowers is a UNESCO World Heritage Site...",
+    subDescription: "A paradise for nature lovers and photographers...",
+    overView: "A scenic trek showcasing vibrant flowers and serene landscapes...",
     qna: [
       {
-        question: "Is the Kedarkantha trek open year-round?",
-        answer: "No, it is best done during the winter months from December to April for snow-covered trails.",
+        question: "Is the Valley of Flowers open year-round?",
+        answer: "No, the Valley of Flowers is accessible from June to October.",
       },
       {
         question: "How difficult is the trek?",
@@ -128,7 +122,7 @@ export const packages = [
       },
       {
         question: "What kind of clothing should I carry?",
-        answer: "Carry warm layered clothing and sturdy trekking shoes for cold temperatures.",
+        answer: "Carry comfortable trekking gear and layered clothing for varying temperatures.",
       },
     ],
     packageInclusion: [
@@ -144,11 +138,11 @@ export const packages = [
     ],
   },
   {
-    id: 7804,
+    id: 4,
     images: [
-      "https://storage.googleapis.com/stateless-www-justwravel-com/2023/12/b6465160-kuari-pass-trek-guide.jpg",
-      "https://trekthehimalayas.com/images/HomePageImages/Desktop/2c4a861d-447e-4645-828b-75b95bf9d0f1_Why-is-Kuari-Pass-the-Best-Winter-Trek.webp",
-      "https://tsprodimages.s3.ap-south-1.amazonaws.com/v/63023583/trips/ts_202409160904400000001458861912.webp",
+      "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/93196-Kuari-Pass_KP_Zafar-Anis-Utopia_Low-resolution_.jpg?&func=crop&q=70&org_if_sml=1",
+      "https://pahadilog.com/wp-content/uploads/2023/03/Kuari-Pass-Trek-2023-Uttarakhand.jpg",
+      "https://static.wixstatic.com/media/d040db_67bb0904d7634c8a9823a415053a51d2~mv2.jpg/v1/fill/w_640,h_334,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d040db_67bb0904d7634c8a9823a415053a51d2~mv2.jpg",
     ],
     title: "Kuari Pass Trek",
     location: "Uttarakhand",
@@ -159,24 +153,22 @@ export const packages = [
     originalPrice: "₹10,000",
     nextDepartures: ["Dec 16", "Dec 23", "Jan 10"],
     featured: true,
-    noOfDays: 6,
     description: "Trek the scenic Kuari Pass from Joshim...",
-    detailDescription:
-      "The Kuari Pass Trek is a scenic journey through the beautiful landscapes of Uttarakhand. Starting from Joshimath, the trek offers a magnificent view of some of the highest peaks in India, including Nanda Devi and Dronagiri. The route traverses dense oak and rhododendron forests, alpine meadows, and remote villages, giving trekkers a glimpse of the Himalayan culture and wilderness. The Kuari Pass itself is a perfect spot for photography and relaxation. This trek is ideal for those seeking an easy-to-moderate adventure with unforgettable memories.",
-    subDescription: "An adventurous journey through Uttarakhand’s most scenic trekking trails, offering stunning views of snow-capped peaks, lush forests, and picturesque valleys.",
-    overView: "The Kuari Pass Trek offers a perfect blend of cultural exploration and stunning Himalayan vistas. As you trek through charming villages and lush meadows, you'll be immersed in the rich traditions of the local communities while enjoying panoramic views of towering peaks like Nanda Devi and Mount Dronagiri. The trail offers a unique opportunity to experience the serene beauty of the region, making it an unforgettable adventure for both nature lovers and cultural enthusiasts.",
+    detailDescription: "The Chadar Trek is one of the most unique and thrilling experiences...",
+    subDescription: "An adventurous journey over a frozen river in Ladakh...",
+    overView: "Experience the magic of trekking over ice, with temperatures as low as -15°C...",
     qna: [
       {
-        question: "What is the best time for the Kuari Pass Trek?",
-        answer: "The trek is best done between April-June and September-November for clear views and pleasant weather.",
+        question: "What is the best time for the Chadar Trek?",
+        answer: "The trek is best done in January and February when the river is frozen.",
       },
       {
         question: "What is the level of difficulty for the trek?",
-        answer: "It is an easy to moderate trek suitable for all fitness levels.",
+        answer: "This is a challenging trek that requires good physical fitness.",
       },
       {
-        question: "What gear is essential for this trek?",
-        answer: "Trekking boots, warm clothing, and a good quality backpack are essential.",
+        question: "Are special shoes needed for the trek?",
+        answer: "Yes, insulated and waterproof trekking boots are essential.",
       },
     ],
     packageInclusion: [

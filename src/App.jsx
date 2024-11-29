@@ -8,6 +8,7 @@ import Dubai from "./Pages/International/Dubai/Dubai";
 import Bali from "./Pages/International/Bali/Bali";
 import Darjeeling from "./Pages/India/Darjeeling/Darjeeling";
 import Malaysia from "./Pages/International/Malaysia/Malaysia";
+import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 import Paragliding from "./Pages/Activities/Paragliding/Paragliding";
 import ParaglidingDetails from "./Pages/Activities/Paragliding/ParaglidingDetails/ParaglidingDetails";
 import RiverRafting from "./Pages/Activities/RiverRafting/RiverRafting";
@@ -25,6 +26,7 @@ import Sikkim from "./Pages/India/Sikkim/Sikkim";
 import Kasol from "./Pages/India/Himachal/Kasol";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
+import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetails/ThailandDetailsPage";
 import Singapore from "./Pages/International/Singapore/Singapore";
 import Maldives from "./Pages/International/Maldives/Maldives";
 import MaldivesDetails from "./Pages/International/Maldives/DetailsPage/MaldivesDetails";
@@ -34,8 +36,8 @@ import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
-import HikingDetails from "./Pages/Activities/Hiking/HikingDetails/HikingDetails";
-import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
+import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
+import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
 
 function App() {
   return (
@@ -49,15 +51,27 @@ function App() {
           <Route path="/reviews" element={<Review />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
+          <Route
+            path="/international/malaysia/trip/:id"
+            element={<MalaysiaDetailsPage />}
+          />
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/international/bali" element={<Bali />} />
           <Route path="/international/thailand" element={<Thailand />} />
+          <Route
+            path="/international/thailand/trip/:id"
+            element={<ThailandDetailsPage />}
+          />
           <Route path="/international/singapore" element={<Singapore />} />
-          <Route path="/:id/:id/trip/:id" element={<Details />} />
+          <Route
+            path="/international/dubai/trip/:id"
+            element={<DubaiDetails />}
+          />
           <Route
             path="/international/maldives/trip/:id"
             element={<MaldivesDetails />}
           />
+
           <Route path="/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
@@ -74,14 +88,15 @@ function App() {
             path="/activities/paragliding/trip/:id"
             element={<ParaglidingDetails />}
           />
+
           <Route path="/activities/riverrafting" element={<RiverRafting />} />
           <Route
             path="/activities/riverrafting/trip/:id"
             element={<RiverRaftingDetails />}
           />
-          <Route path="/activities/hiking" element={<Hiking />} />
+          <Route path="/activities/Hiking" element={<Hiking />} />
           <Route
-            path="/activities/hiking/trip/:id"
+            path="/activities/Hiking/trip/:id"
             element={<HikingDetails />}
           />
           <Route path="/Termpage" element={<Termpage />} />
