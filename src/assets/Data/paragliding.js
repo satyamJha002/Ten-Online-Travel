@@ -1,4 +1,3 @@
-
 export const packages = [
   {
     id: 8001,
@@ -41,6 +40,18 @@ export const packages = [
       "Entry fees to monuments",
       "Anything not mentioned in inclusions",
       "Travel insurance",
+    ],
+    hotels: [
+      {
+        place: "Shimla (3N)",
+        hotelName: "Hotel Snowview",
+        roomType: "Deluxe Room",
+      },
+      {
+        place: "Manali (2N)",
+        hotelName: "Himalayan Retreat",
+        roomType: "Premium Room",
+      },
     ],
   },
   {
@@ -85,6 +96,18 @@ export const packages = [
       "Tips and gratuities",
       "Travel insurance",
     ],
+    hotels: [
+      {
+        place: "Bir Billing",
+        hotelName: "Bir Adventure Resort",
+        roomType: "Cottage Room",
+      },
+      {
+        place: "Kangra",
+        hotelName: "Kangra Valley Hotel",
+        roomType: "Standard Room",
+      },
+    ],
   },
   {
     id: 8003,
@@ -125,6 +148,18 @@ export const packages = [
       "Water sports charges",
       "Personal expenses",
       "Entry fees to clubs",
+    ],
+    hotels: [
+      {
+        place: "Manali",
+        hotelName: "Manali Heritage Hotel",
+        roomType: "Premium Room",
+      },
+      {
+        place: "Solang Valley",
+        hotelName: "Solang Ski Resort",
+        roomType: "Deluxe Suite",
+      },
     ],
   },
   {
@@ -167,6 +202,18 @@ export const packages = [
       "Entry tickets to monuments",
       "Anything not mentioned in inclusions",
     ],
+    hotels: [
+      {
+        place: "Kamshet",
+        hotelName: "Nirvana Paragliding Resort",
+        roomType: "Adventure Suite",
+      },
+      {
+        place: "Kamshet",
+        hotelName: "Kamshet Adventure Lodge",
+        roomType: "Cottage Room",
+      },
+    ],
   },
   {
     id: 8005,
@@ -207,6 +254,18 @@ export const packages = [
       "Airfare/train fare",
       "Entry fees to parks",
       "Lunch",
+    ],
+    hotels: [
+      {
+        place: "Mussoorie",
+        hotelName: "Mussoorie Palace Hotel",
+        roomType: "Luxury Suite",
+      },
+      {
+        place: "Mussoorie",
+        hotelName: "The Himalayan Resort",
+        roomType: "Mountain View Room",
+      },
     ],
   },
 
@@ -250,6 +309,18 @@ export const packages = [
       "Entry fees to parks",
       "Lunch and dinner",
     ],
+    hotels: [
+      {
+        place: "Nandi Hills",
+        hotelName: "Nandi View Resort",
+        roomType: "Garden View Room",
+      },
+      {
+        place: "Nandi Hills",
+        hotelName: "Hilltop Retreat",
+        roomType: "Mountain View Room",
+      },
+    ],
   },
   {
     id: 8007,
@@ -290,6 +361,18 @@ export const packages = [
       "Personal expenses",
       "Entry fees to attractions",
       "Insurance",
+    ],
+    hotels: [
+      {
+        place: "Nainital",
+        hotelName: "Lakeview Resort",
+        roomType: "Lake View Room",
+      },
+      {
+        place: "Nainital",
+        hotelName: "The Naini Retreat",
+        roomType: "Garden View Room",
+      },
     ],
   },
   {
@@ -332,6 +415,18 @@ export const packages = [
       "Travel insurance",
       "Adventure activity charges",
     ],
+    hotels: [
+      {
+        place: "Yelagiri",
+        hotelName: "Yelagiri Hills Resort",
+        roomType: "Eco-Friendly Room",
+      },
+      {
+        place: "Yelagiri",
+        hotelName: "The Nature’s Retreat",
+        roomType: "Family Suite",
+      },
+    ]
   },
   {
     id: 8009,
@@ -373,6 +468,18 @@ export const packages = [
       "Lunch",
       "Entry fees to attractions",
     ],
+    hotels: [
+      {
+        place: "Shillong",
+        hotelName: "Shillong Heights Resort",
+        roomType: "Deluxe Room",
+      },
+      {
+        place: "Shillong",
+        hotelName: "The Pinewood Hotel",
+        roomType: "Executive Suite",
+      },
+    ],
   },
   {
     id: 8010,
@@ -413,6 +520,18 @@ export const packages = [
       "Airfare/train fare",
       "Personal expenses",
       "Alcoholic beverages",
+    ],
+    hotels: [
+      {
+        place: "Goa",
+        hotelName: "Beachside Resort Goa",
+        roomType: "Standard Room",
+      },
+      {
+        place: "Goa",
+        hotelName: "The Sun N Sand Goa",
+        roomType: "Oceanview Suite",
+      },
     ],
   },
 ];

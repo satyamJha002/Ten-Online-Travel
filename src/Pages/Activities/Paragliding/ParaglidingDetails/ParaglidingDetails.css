@@ -79,7 +79,7 @@
   cursor: pointer;
   font-size: 2em;
   border-radius: 50%;
-  z-index: 10;
+  z-index: 10; 
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -95,7 +95,7 @@
   padding: 8px 16px;
 }
 
-.rparagliding-details-arrow.right {
+.paragliding-details-arrow.right {
   right: 10px;
   padding: 8px 16px;
 }
@@ -305,7 +305,7 @@
   align-items: center;
 }
 
-.rparagliding-accordion-content {
+.paragliding-accordion-content {
   padding: 10px;
   background: #fff;
   border: 1px solid #ccc;
@@ -314,6 +314,7 @@
 .paragliding-accordion-content p {
   font-size: 1.3em;
 }
+
 
 /* Hotel Css */
 
@@ -359,4 +360,207 @@
 
 .hotels-table td {
   color: #555;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .paragliding-detail-price-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      z-index: 1000;
+      border-top: 1px solid #ddd;
+      font-size: 0.8em;
+      border-radius: 0;
+  }
+
+  .paragliding-details-container {
+      padding-bottom: 80px;
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .paragliding-detail-left,
+  .paragliding-detail-right {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 0;
+
+  }
+
+  .paragliding-detail-title h1 {
+      font-size: 1.8em;
+  }
+
+  .paragliding-detail-description p,
+  .paragliding-detail-overview p {
+      font-size: 1.2em;
+  }
+
+  .paragliding-finalPrice h1 {
+      font-size: 1.2em;
+  }
+
+  .paragliding-details-images-slider {
+      height: 300px;
+  }
+
+  .paragliding-originalPrice span {
+      font-size: 0.9em;
+  }
+
+  .paragliding-detail-discount {
+      margin: 10px;
+  }
+
+  .paragliding-details-card-image {
+      height: 100%;
+  }
+
+  .paragliding-detail-nav-sticky {
+      font-size: 1rem;
+      margin-top: 8%;
+      width: 100%;
+  }
+
+  .paragliding-detail-nav-sticky ul {
+      flex-direction: row;
+  }
+
+  .paragliding-detail-nav-sticky ul li {
+      padding: 5px;
+      font-size: 1.2em;
+  }
+
+  .paragliding-availableBtn {
+      font-size: 0.9em;
+      padding: 10px;
+      margin-top: 0;
+      margin-left: 8px;
+  }
+
+  .paragliding-tripAdvisor-heading {
+      font-size: 1em;
+  }
+
+  .paragliding-tripAdvisor-content h2 {
+      margin-top: 5%;
+  }
+
+  .paragliding-tripAdvisor-container {
+      width: 100%;
+      padding: 20px;
+      margin-top: 20px;
+      border: 1px solid green;
+      text-align: center;
+  }
+  .paragliding-tripAdvisor-container p{
+      font-size: 1.2em;
+      margin-top: 5%;
+  }
+  .paragliding-tripAdvisor-img img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .paragliding-tripAdvisor-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .paragliding-tripAdvisor-content .text-green-500 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      margin-bottom: 8%;
+
+  }
+
+  .paragliding-availableBtn {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #32b67a;
+      color: white;
+      font-weight: 500;
+      font-size: 1.2rem;
+      height: 50px;
+      border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paragliding-detail-nav-sticky {
+      font-size: 0.8rem; 
+  }
+
+  .paragliding-detail-price-container {
+      font-size: 0.7rem; 
+  }
+
+  .paragliding-detail-title h1 {
+      font-size: 1.5em; 
+  }
+
+  .paragliding-detail-description p,
+  .paragliding-detail-overview p {
+      font-size: 0.9em;
+  }
+  .paragliding-tripAdvisor-img img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     text-align: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .paragliding-detail-nav-sticky {
+      font-size: 0.75rem; 
+      padding: 8px;
+  }
+
+  .paragliding-detail-price-container {
+      flex-direction: row; 
+      align-items: center;
+      font-size: 0.7rem; 
+      padding: 8px;
+  }
+
+  .paragliding-detail-title h1 {
+      font-size: 1.3em;
+  }
+
+  .paragliding-detail-description p,
+  .paragliding-detail-overview p {
+      font-size: 0.9em;
+  }
+  .paragliding-tripAdvisor-img img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  .paragliding-inclusion{
+      font-size: 0.9em;
+  }
 }

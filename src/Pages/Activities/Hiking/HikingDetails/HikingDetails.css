@@ -1,0 +1,532 @@
+.hiking-details-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px 50px;
+    scroll-behavior: smooth;
+}
+
+.hiking-detail-right {
+    width: 60%;
+}
+
+.hiking-detail-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.hiking-detail-title {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hiking-detail-title h1 {
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hiking-detail-title h1::after {
+    content: "";
+    display: flex;
+    padding: 2px;
+    width: 50%;
+    background-color: #32b67a;
+}
+
+.hiking-no-days {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px rgb(211, 210, 210);
+}
+
+.hiking-details-images-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    /* Adjust height as needed */
+}
+
+.hiking-details-card-image {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hiking-details-arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 50%;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.hiking-details-images-slider:hover .hiking-details-arrow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hiking-details-arrow.left {
+    left: 10px;
+    padding: 8px 16px;
+}
+
+.hiking-details-arrow.right {
+    right: 10px;
+    padding: 8px 16px;
+}
+
+.hiking-detail-description {
+    margin-top: 50px;
+}
+
+.hiking-detail-description p {
+    font-size: 1.3em;
+}
+
+.hiking-info-details {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+
+.hiking-detail-nav-sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-top: 20px;
+    width: auto;
+    max-width: 100%;
+    justify-content: space-around;
+    height: 10vh;
+    display: flex !important;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.hiking-detail-nav-sticky ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    height: 100%;
+}
+
+.hiking-detail-nav-sticky ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.hiking-detail-nav-sticky ul li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    bottom: -2px;
+    width: 1px;
+    background-color: black;
+}
+
+.hiking-detail-nav-sticky ul li:last-child::after {
+    display: none;
+}
+
+.hiking-detail-overview {
+    margin-top: 50px;
+}
+
+.hiking-detail-overview p {
+    font-size: 1.3em;
+}
+
+.hiking-detail-overview h1,
+.hiking-detail-itinerary h1,
+.hiking-inclusions-container h1 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hiking-detail-itinerary {
+    margin-top: 50px;
+}
+
+.hiking-qna-container {
+    margin-top: 50px;
+}
+
+.hiking-question h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.hiking-answer p {
+    font-size: 1.3em;
+}
+
+.hiking-exclusion-container,
+.hiking-inclusions-container {
+    margin-top: 50px;
+}
+
+.hiking-inclusion {
+    margin-top: 10px;
+}
+
+.hiking-inclusion p {
+    margin-top: 1.5rem;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hiking-detail-price-container {
+    width: 80%;
+    height: 300px;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.hiking-detail-discount {
+    margin-bottom: 20px;
+}
+
+.hiking-detail-discount h1 {
+    padding: 5px 10px;
+    display: inline;
+    background-color: #fceaea;
+    color: #e75040;
+    font-weight: 500;
+}
+
+.hiking-originalPrice span {
+    display: inline-flex;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.hiking-originalPrice span del {
+    color: #919191;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.hiking-finalPrice h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.hiking-finalPrice span {
+    color: #919191;
+}
+
+.hiking-availableBtn {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #32b67a;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.hiking-tripAdvisor-container {
+    width: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid green;
+}
+
+.hiking-tripAdvisor-img {
+    width: 100px;
+}
+
+.hiking-tripAdvisor-content h2 {
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 10px;
+    color: black;
+}
+
+/* Accordion Itinerary Css */
+.hiking-qna-container {
+    margin: 10px;
+}
+
+.hiking-accordion-header {
+    cursor: pointer;
+    background: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hikingg-accordion-content {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.hiking-accordion-content p {
+    font-size: 1.3em;
+}
+
+
+.hiking-booking-terms-container h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.hiking-booking-terms-container ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+    color: rgb(87, 87, 87);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hiking-detail-price-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        z-index: 1000;
+        border-top: 1px solid #ddd;
+        font-size: 0.8em;
+        border-radius: 0;
+    }
+
+    .hiking-details-container {
+        padding-bottom: 80px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hiking-detail-left,
+    .hiking-detail-right {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+
+    }
+
+    .hiking-detail-title h1 {
+        font-size: 1.8em;
+    }
+
+    .hiking-detail-description p,
+    .hiking-detail-overview p {
+        font-size: 1.2em;
+    }
+
+    .hiking-finalPrice h1 {
+        font-size: 1.2em;
+    }
+
+    .hiking-details-images-slider {
+        height: 300px;
+    }
+
+    .hiking-originalPrice span {
+        font-size: 0.9em;
+    }
+
+    .hiking-detail-discount {
+        margin: 10px;
+    }
+
+    .hiking-details-card-image {
+        height: 100%;
+    }
+
+    .hiking-detail-nav-sticky {
+        font-size: 1rem;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .hiking-detail-nav-sticky ul {
+        flex-direction: row;
+    }
+
+    .hiking-detail-nav-sticky ul li {
+        padding: 5px;
+        font-size: 1.2em;
+    }
+
+    .hiking-availableBtn {
+        font-size: 0.9em;
+        padding: 10px;
+        margin-top: 0;
+        margin-left: 8px;
+    }
+
+    .hiking-tripAdvisor-heading {
+        font-size: 1em;
+    }
+
+    .hiking-tripAdvisor-content h2 {
+        margin-top: 5%;
+    }
+
+    .hiking-tripAdvisor-container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid green;
+        text-align: center;
+    }
+    .hiking-tripAdvisor-container p{
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+    .hiking-tripAdvisor-img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hiking-tripAdvisor-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hiking-tripAdvisor-content .text-green-500 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+        margin-bottom: 8%;
+
+    }
+
+    .hiking-availableBtn {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #32b67a;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        height: 50px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hiking-detail-nav-sticky {
+        font-size: 0.8rem; 
+    }
+
+    .hiking-detail-price-container {
+        font-size: 0.7rem; 
+    }
+
+    .hiking-detail-title h1 {
+        font-size: 1.5em; 
+    }
+
+    .hiking-detail-description p,
+    .hiking-detail-overview p {
+        font-size: 0.9em;
+    }
+    .hiking-tripAdvisor-img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hiking-detail-nav-sticky {
+        font-size: 0.75rem; 
+        padding: 8px;
+    }
+
+    .hiking-detail-price-container {
+        flex-direction: row; 
+        align-items: center;
+        font-size: 0.7rem; 
+        padding: 8px;
+    }
+
+    .hiking-detail-title h1 {
+        font-size: 1.3em;
+    }
+
+    .hiking-detail-description p,
+    .hiking-detail-overview p {
+        font-size: 0.9em;
+    }
+    .hiking-tripAdvisor-img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hiking-inclusion{
+        font-size: 0.9em;
+    }
+}
