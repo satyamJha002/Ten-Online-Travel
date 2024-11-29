@@ -337,13 +337,10 @@
   }
   .detail-price-container {
     width: 100%;
-    position: sticky;
     padding: 15px 15px;
-    height: 31vh;
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    top: 100%;
   }
   .availableBtn {
     width: auto;

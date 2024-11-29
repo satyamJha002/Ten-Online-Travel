@@ -21,8 +21,6 @@ const MaldivesDetails = () => {
   const allTrips = [...maldives, ...maldivesOtherTrips, ...maldivesWaterVilla];
   const filteredObjects = allTrips.filter((obj) => obj.id === Number(id));
 
-  console.log("maldives", filteredObjects);
-
   const handlePrevImage = (images) => {
     setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
