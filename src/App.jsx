@@ -36,6 +36,8 @@ import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikes
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
 import HikingDetails from "./Pages/Activities/Hiking/HikingDetails/HikingDetails";
 import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
+import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetails/ThailandDetailsPage";
+import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 
 function App() {
   return (
@@ -49,9 +51,17 @@ function App() {
           <Route path="/reviews" element={<Review />} />
           <Route path="/international/dubai" element={<Dubai />} />
           <Route path="/international/malaysia" element={<Malaysia />} />
+          <Route
+            path="/international/malaysia/trip/:id"
+            element={<MalaysiaDetailsPage />}
+          />
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/international/bali" element={<Bali />} />
           <Route path="/international/thailand" element={<Thailand />} />
+          <Route
+            path="/international/thailand/trip/:id"
+            element={<ThailandDetailsPage />}
+          />
           <Route path="/international/singapore" element={<Singapore />} />
           <Route path="/:id/:id/trip/:id" element={<Details />} />
           <Route
