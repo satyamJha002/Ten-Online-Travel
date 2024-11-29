@@ -308,3 +308,45 @@
   font-size: 1em;
   padding: 15px;
 }
+/* responsive design  */
+/* please chang your class name */
+
+@media screen and (max-width: 1208px) {
+  .detail-price-container {
+    padding: 12% 10%;
+    height: auto;
+  }
+  .availableBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+  }
+  .detail-right {
+    width: 90%;
+  }
+  .detail-left {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .detail-price-container {
+    width: 100%;
+    position: sticky;
+    padding: 15px 15px;
+    height: 31vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 100%;
+  }
+  .availableBtn {
+    width: auto;
+    padding: 2%;
+  }
+}

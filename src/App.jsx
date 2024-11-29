@@ -28,7 +28,6 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetails/ThailandDetailsPage";
 import Singapore from "./Pages/International/Singapore/Singapore";
-import Details from "./Pages/International/Dubai/DetailsPage/Details";
 import Maldives from "./Pages/International/Maldives/Maldives";
 import MaldivesDetails from "./Pages/International/Maldives/DetailsPage/MaldivesDetails";
 import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
@@ -38,6 +37,7 @@ import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
 import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
+import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
 
 function App() {
   return (
@@ -63,7 +63,10 @@ function App() {
             element={<ThailandDetailsPage />}
           />
           <Route path="/international/singapore" element={<Singapore />} />
-          <Route path="/:id/:id/trip/:id" element={<Details />} />
+          <Route
+            path="/international/dubai/trip/:id"
+            element={<DubaiDetails />}
+          />
           <Route
             path="/international/maldives/trip/:id"
             element={<MaldivesDetails />}
