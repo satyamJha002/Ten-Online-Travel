@@ -7,7 +7,7 @@ import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { andmatour, watertourPackages } from "../../../../assets/Data/Andmantour";
-import "./detailsandaman.css"
+import "./Detailsandaman.css"
 
 
 const Detailsandaman = () => {
