@@ -310,13 +310,90 @@ export const kashmirPackages = [
 
 /* Ladakh */
 
+// export const ladakhFamilyTrips = [
+//   {
+//     id: 1,
+//     images: [
+//       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//     ],
+//     title: "Ladakh Tour Package",
+//     location: "Ladakh",
+//     duration: "8 Days - 7 Nights",
+//     people: "10 people",
+//     discount: "9% off",
+//     price: "₹24,500",
+//     originalPrice: "₹27,000",
+//     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+//     featured: true,
+//   },
+//   {
+//     id: 2,
+//     images: [
+//       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//     ],
+//     title: "Ladakh Holiday Package",
+//     location: "Ladakh",
+//     duration: "10 Days - 9 Nights",
+//     people: "10 people",
+//     discount: "11% off",
+//     price: "₹27,500",
+//     originalPrice: "₹31,000",
+//     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+//     featured: true,
+//   },
+//   {
+//     id: 3,
+//     images: [
+//       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//     ],
+//     title: "Ladakh Tour Package",
+//     location: "Ladakh",
+//     duration: "8 Days - 7 Nights",
+//     people: "2 people",
+//     discount: "10% off",
+//     price: "₹14,990",
+//     originalPrice: "₹16,655",
+//     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+//     featured: true,
+//   },
+// ];
+
+// export const ladakhOtherTrip = [
+//   {
+//     id: 1,
+//     images: [
+//       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+//     ],
+//     title: "Ladakh Tour Package",
+//     location: "Ladakh",
+//     duration: "7 Days - 6 Nights",
+//     people: "4 - 20 people",
+//     discount: "10% off",
+//     price: "₹22,500",
+//     originalPrice: "₹25,000",
+//     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+//     featured: true,
+//   },
+// ];
+
 export const ladakhFamilyTrips = [
   {
     id: 1,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
     ],
     title: "Ladakh Tour Package",
@@ -328,13 +405,57 @@ export const ladakhFamilyTrips = [
     originalPrice: "₹27,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription:
+      "An exciting 8-day journey covering the scenic beauty and cultural heritage of Ladakh. Perfect for families seeking adventure and bonding time.",
+    subDescription: "Experience Ladakh's stunning landscapes and unique culture.",
+    overview:
+      "Explore monasteries, Nubra Valley, Pangong Lake, and Leh city. Includes comfortable accommodations and guided tours.",
+    qna: [
+      {
+        question: "What is the best time to visit Ladakh?",
+        answer: "The best time is between May and September, when the weather is pleasant.",
+      },
+      {
+        question: "Are meals included in the package?",
+        answer: "Daily breakfast and dinner are included.",
+      },
+    ],
+    packageInclusion: [
+      "7 nights' accommodation",
+      "Daily breakfast and dinner",
+      "Private transportation",
+      "Sightseeing tours",
+      "Entry fees to attractions",
+    ],
+    packageExclusion: [
+      "Lunch",
+      "Personal expenses",
+      "Travel insurance",
+      "Airfare",
+    ],
+    hotels: [
+      {
+        place: "Leh (4N)",
+        hotelName: "Hotel Mountain View",
+        roomType: "Deluxe Room",
+      },
+      {
+        place: "Nubra Valley (2N)",
+        hotelName: "Valley Camp",
+        roomType: "Luxury Tent",
+      },
+      {
+        place: "Pangong Lake (1N)",
+        hotelName: "Lake View Camp",
+        roomType: "Standard Tent",
+      },
+    ],
   },
   {
     id: 2,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
     ],
     title: "Ladakh Holiday Package",
@@ -346,27 +467,120 @@ export const ladakhFamilyTrips = [
     originalPrice: "₹31,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription:
+      "A comprehensive 10-day Ladakh tour covering key attractions like Pangong Lake, Tso Moriri, and monasteries.",
+    subDescription: "Ideal for families looking for an extended vacation in Ladakh.",
+    overview:
+      "Includes visits to Nubra Valley, Tso Moriri, Pangong Lake, and famous monasteries. Comfortable stay and guided tours included.",
+    qna: [
+      {
+        question: "Is this package suitable for elderly travelers?",
+        answer: "Yes, with mild activity levels and comfortable accommodations.",
+      },
+      {
+        question: "Can we customize the itinerary?",
+        answer: "Yes, customization is possible upon request.",
+      },
+    ],
+    packageInclusion: [
+      "9 nights' accommodation",
+      "Daily breakfast and dinner",
+      "Transportation in private vehicle",
+      "Sightseeing tours with guide",
+    ],
+    packageExclusion: [
+      "Lunch",
+      "Adventure activities",
+      "Personal expenses",
+      "Travel insurance",
+    ],
+    hotels: [
+      {
+        place: "Leh (5N)",
+        hotelName: "Hotel Paradise Retreat",
+        roomType: "Superior Room",
+      },
+      {
+        place: "Nubra Valley (2N)",
+        hotelName: "Golden Sand Camp",
+        roomType: "Deluxe Tent",
+      },
+      {
+        place: "Pangong Lake (1N)",
+        hotelName: "Skyline Camp",
+        roomType: "Luxury Tent",
+      },
+      {
+        place: "Tso Moriri (1N)",
+        hotelName: "Highland Camp",
+        roomType: "Standard Tent",
+      },
+    ],
   },
   {
-    id: 3,
-    images: [
-      "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
-    ],
-    title: "Ladakh Tour Package",
-    location: "Ladakh",
-    duration: "8 Days - 7 Nights",
-    people: "2 people",
-    discount: "10% off",
-    price: "₹14,990",
-    originalPrice: "₹16,655",
-    nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
-    featured: true,
-  },
-];
-
+  id: 3,
+  images: [
+    "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
+    "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
+    "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+    "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
+  ],
+  title: "Ladakh Couple's Retreat Package",
+  location: "Ladakh",
+  duration: "8 Days - 7 Nights",
+  people: "2 people",
+  discount: "10% off",
+  price: "₹14,990",
+  originalPrice: "₹16,655",
+  nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
+  featured: true,
+  detailDescription:
+    "A romantic getaway designed for couples to explore the serene beauty of Ladakh. Enjoy peaceful moments by Pangong Lake and adventurous activities together.",
+  subDescription: "Create unforgettable memories in the heart of Ladakh.",
+  overview:
+    "This package includes a private trip to monasteries, Nubra Valley, Pangong Lake, and scenic drives through mountain passes. Ideal for couples seeking a mix of relaxation and exploration.",
+  qna: [
+    {
+      question: "Is this package suitable for honeymooners?",
+      answer: "Yes, it is tailored for couples, including honeymooners.",
+    },
+    {
+      question: "Are there any couple-friendly activities?",
+      answer: "Yes, such as private dinners, scenic walks, and stargazing.",
+    },
+  ],
+  packageInclusion: [
+    "7 nights' accommodation in premium hotels",
+    "Daily breakfast and dinner",
+    "Private transportation",
+    "Couple-friendly sightseeing tours",
+    "Entry fees to monasteries and attractions",
+  ],
+  packageExclusion: [
+    "Lunch",
+    "Personal expenses",
+    "Travel insurance",
+    "Airfare",
+  ],
+  hotels: [
+    {
+      place: "Leh (4N)",
+      hotelName: "Romance Retreat",
+      roomType: "Honeymoon Suite",
+    },
+    {
+      place: "Nubra Valley (2N)",
+      hotelName: "Valley View Camp",
+      roomType: "Luxury Tent",
+    },
+    {
+      place: "Pangong Lake (1N)",
+      hotelName: "Starlight Camp",
+      roomType: "Lake View Tent",
+    },
+  ]
+} 
+] 
 export const ladakhOtherTrip = [
   {
     id: 1,
@@ -374,9 +588,8 @@ export const ladakhOtherTrip = [
       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
-      "https://b4holiday.com/wp-content/uploads/2021/07/Gulmarg2.jpg",
     ],
-    title: "Ladakh Tour Package",
+    title: "Ladakh Adventure Trip",
     location: "Ladakh",
     duration: "7 Days - 6 Nights",
     people: "4 - 20 people",
@@ -385,8 +598,54 @@ export const ladakhOtherTrip = [
     originalPrice: "₹25,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    detailDescription:
+      "An action-packed adventure trip for thrill-seekers, covering offbeat paths and exciting experiences.",
+    subDescription: "Adventure meets nature in this Ladakh package.",
+    overview:
+      "Rafting in Zanskar, ATV rides in Nubra, and scenic treks. Includes adventure-friendly stays and guides.",
+    qna: [
+      {
+        question: "Is rafting safe for beginners?",
+        answer: "Yes, with professional guides and safety equipment provided.",
+      },
+      {
+        question: "What kind of treks are included?",
+        answer: "Moderate treks suitable for most fitness levels.",
+      },
+    ],
+    packageInclusion: [
+      "6 nights' accommodation",
+      "Adventure activities",
+      "Daily meals",
+      "Private transportation",
+      "Entry fees to attractions",
+    ],
+    packageExclusion: [
+      "Personal expenses",
+      "Travel insurance",
+      "Lunch",
+      "Airfare",
+    ],
+    hotels: [
+      {
+        place: "Leh (3N)",
+        hotelName: "Adventure Inn",
+        roomType: "Standard Room",
+      },
+      {
+        place: "Nubra Valley (2N)",
+        hotelName: "Camp Adventure",
+        roomType: "Deluxe Tent",
+      },
+      {
+        place: "Pangong Lake (1N)",
+        hotelName: "Thrill Camp",
+        roomType: "Lake View Tent",
+      },
+    ],
   },
 ];
+
 
 export const thingsTodoInLadakh = [
   {

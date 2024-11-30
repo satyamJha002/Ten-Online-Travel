@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
-import "./detailsKashmir.css";
+import "./DetailsKashmir.css";
 import { kashmirPackages } from "../../../../assets/Data/data";
 
 const DetailsKashmir = () => {
