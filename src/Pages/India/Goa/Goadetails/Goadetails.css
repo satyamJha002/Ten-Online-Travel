@@ -1,4 +1,4 @@
-/* .goa-details-container {
+.goa-details-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -570,4 +570,4 @@
     .goa-inclusion {
         font-size: 0.9em;
     }
-} */
+}

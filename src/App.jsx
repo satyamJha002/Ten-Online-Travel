@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Dubai from "./Pages/International/Dubai/Dubai";
 import Bali from "./Pages/International/Bali/Bali";
+import BaliDetails from "./Pages/International/Bali/DetailsPage/BaliDetails";
 import Darjeeling from "./Pages/India/Darjeeling/Darjeeling";
 import Malaysia from "./Pages/International/Malaysia/Malaysia";
 import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
@@ -24,10 +25,12 @@ import AndamanTour from "./Pages/India/AndamanTour/AndamanTour";
 import Goa from "./Pages/India/Goa/Goa";
 import Sikkim from "./Pages/India/Sikkim/Sikkim";
 import Kasol from "./Pages/India/Himachal/Kasol";
+import KasolDetails from "./Pages/India/Himachal/Kasol/Kasoldetails";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Thailand from "./Pages/International/Thailand/Thailand";
 import ThailandDetailsPage from "./Pages/International/Thailand/ThailandDetails/ThailandDetailsPage";
 import Singapore from "./Pages/International/Singapore/Singapore";
+import SingaporeDetails from "./Pages/International/Singapore/DetailsPage/SingaporeDetails";
 import Maldives from "./Pages/International/Maldives/Maldives";
 import MaldivesDetails from "./Pages/International/Maldives/DetailsPage/MaldivesDetails";
 import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
@@ -41,6 +44,7 @@ import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
 import Detailsandaman from "./Pages/India/AndamanTour/DetailsPage/Detailsandaman";
 import DetailsKashmir from "./Pages/India/Kashmir/DetailsPage/DetailsKashmir";
 // import Goadetails from "./Pages/India/Goa/Goadetails/Goadetails";
+import GoaDetails from "./Pages/India/Goa/Goadetails/Goadetails";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 // import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 
@@ -62,12 +66,20 @@ function App() {
           />
           <Route path="/international/maldives" element={<Maldives />} />
           <Route path="/international/bali" element={<Bali />} />
+          <Route
+            path="/international/bali/trip/:id"
+            element={<BaliDetails />}
+          />
           <Route path="/international/thailand" element={<Thailand />} />
           <Route
             path="/international/thailand/trip/:id"
             element={<ThailandDetailsPage />}
           />
           <Route path="/international/singapore" element={<Singapore />} />
+          <Route
+            path="/international/singapore/trip/:id"
+            element={<SingaporeDetails />}
+          />
           <Route
             path="/international/dubai/trip/:id"
             element={<DubaiDetails />}
@@ -76,12 +88,18 @@ function App() {
             path="/international/maldives/trip/:id"
             element={<MaldivesDetails />}
           />
- <Route path="/andaman-tour/andmatour/trip/:id" element={<Detailsandaman />} />
-          <Route path="/andaman-tour/watercontainer/trip/:id" element={<Detailsandaman />} />
+          <Route
+            path="/andaman-tour/andmatour/trip/:id"
+            element={<Detailsandaman />}
+          />
+          <Route
+            path="/andaman-tour/watercontainer/trip/:id"
+            element={<Detailsandaman />}
+          />
           <Route path="/india/kashmir/trip/:id" element={<DetailsKashmir />} />
           <Route path="/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
-{/*           <Route path="/india/goa/trip/:id" element={<Goadetails />} /> */}
+          <Route path="/india/goa/trip/:id" element={<GoaDetails />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
           <Route path="/india/kashmir" element={<Kashmir />} />
@@ -111,6 +129,7 @@ function App() {
           <Route path="/DocumentVisa" element={<DocumentVisa />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/kasol" element={<Kasol />} />
+          <Route path="/kasol/trip/:id" element={<KasolDetails />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
         <Footer />

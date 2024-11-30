@@ -4,10 +4,9 @@ import Card from "../../../Components/Card/Card";
 import "./Kasol.css";
 import { useLocation } from "react-router-dom";
 
-
 const Kasol = () => {
   const location = useLocation();
-  const [locationURL] = useState(location.pathname);
+  const [locationURL, setLocationURL] = useState(location.pathname);
   const newUrl = locationURL
     .split("")
     .map((ele) => (ele === "/" ? " > " : ele))
@@ -21,7 +20,7 @@ const Kasol = () => {
       </div>
       <div className="kasol-cards">
         {packages.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg} />
+          <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
         ))}
       </div>
     </div>

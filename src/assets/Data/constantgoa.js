@@ -24,25 +24,37 @@ export const tourGoaPackages = [
     description: "Located at Calangute – Candolim...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Located on the Calangute-Candolim Main Road, just 500 meters from the iconic Calangute Beach and close to Candolim and Baga Beaches, Resort De Coracao Goa by FIRST HALT Hotels combines traditional Indian hospitality with contemporary design. Renowned as one of Goa's finest resorts, it promises a memorable and adventurous stay.",
-    subDescription: "The resort offers a range of elegantly designed rooms, including Superior, Deluxe, Super Deluxe, Premium Rooms, and Suites, each featuring attached baths, tasteful décor, and a welcoming ambiance. Guests enjoy modern amenities, spacious accommodations, and exceptional service from the friendly and professional staff, ensuring a comfortable and luxurious experience.",
-    overview: "Offering comfort, convenience, and modern amenities, this Goa beach resort provides a selection of elegant accommodations, including Superior, Deluxe, and Super Deluxe Rooms. Each spacious guest room features an attached bath, stylish décor, and a welcoming ambiance designed to meet every guest's expectations. Enjoy unmatched service from professional and friendly staff, along with exceptional facilities for a memorable stay.",
+    detailDescription:
+      "Located on the Calangute-Candolim Main Road, just 500 meters from the iconic Calangute Beach and close to Candolim and Baga Beaches, Resort De Coracao Goa by FIRST HALT Hotels combines traditional Indian hospitality with contemporary design. Renowned as one of Goa's finest resorts, it promises a memorable and adventurous stay.",
+    subDescription:
+      "The resort offers a range of elegantly designed rooms, including Superior, Deluxe, Super Deluxe, Premium Rooms, and Suites, each featuring attached baths, tasteful décor, and a welcoming ambiance. Guests enjoy modern amenities, spacious accommodations, and exceptional service from the friendly and professional staff, ensuring a comfortable and luxurious experience.",
+    overview:
+      "Offering comfort, convenience, and modern amenities, this Goa beach resort provides a selection of elegant accommodations, including Superior, Deluxe, and Super Deluxe Rooms. Each spacious guest room features an attached bath, stylish décor, and a welcoming ambiance designed to meet every guest's expectations. Enjoy unmatched service from professional and friendly staff, along with exceptional facilities for a memorable stay.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Day at Leisure" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities", answer: ["Optional WaterSports Activitie- On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Day at Leisure",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities",
+        answer: [
+          "Optional WaterSports Activitie- On Direct Payment Basis",
           "* Parasailing",
           " * Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "" },
     ],
 
-
-    packageInclusion: ["03 Nights accommodation in well-appointed, centrally Air-Conditioned rooms with Satellite",
+    packageInclusion: [
+      "03 Nights accommodation in well-appointed, centrally Air-Conditioned rooms with Satellite",
       "Channels, LCD, Electronic Safe & Telephone.",
 
       "Buffet Breakfast & Dinner as per the Plan.",
@@ -56,7 +68,8 @@ export const tourGoaPackages = [
     packageExclusion: [
       "Anything not mentioned in the package inclusions.",
       "Travel Insurance charges.",
-      "Expenses of a personal nature, mini bar in the room, laundry", "telephone bills, tips, gratuities fee in cruise, etc.",
+      "Expenses of a personal nature, mini bar in the room, laundry",
+      "telephone bills, tips, gratuities fee in cruise, etc.",
       "Surcharges are applicable during Conventions, Special Events, and Trade fairs.",
 
       "5% GST",
@@ -73,12 +86,10 @@ export const tourGoaPackages = [
         roomType: "Luxury Suite",
       },
     ],
-
   },
-]
+];
 
 export const tourotherPackages = [
-
   {
     id: 50002,
     images: [
@@ -90,7 +101,6 @@ export const tourotherPackages = [
       "https://b4holiday.com/wp-content/uploads/2021/03/GOA_Candolim_Banyan_Tree_Courtyard_Room-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/03/GOA_Candolim_Banyan_Tree_Courtyard_Room-2.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/03/Swimming_pool2.jpg",
-
     ],
     title: "Goa – Banyan Tree Courtyard – 3 Star",
     location: "Goa, India",
@@ -104,14 +114,30 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Nestled in the Himachal Himalayas, Shimla and Kullu Manali are top hill stations offering stunning views. In 5 nights and 6 days, explore attractions like the Hadimba and Jakhu Temples, and enjoy the scenic beauty.",
-    subDescription: "Relax and unwind with your partner in a serene, romantic destination surrounded by majestic mountains and fresh air.",
-    overview: "For a perfect summer getaway in the majestic Himalayas, the Shimla – Kullu – Manali tour is your ideal choice. With stunning lakes, snow-capped peaks, rich wildlife, ancient temples, and thrilling adventure activities, this destination attracts tourists year-round. Before Holiday offers winter packages for Shimla Kullu Manali, allowing you to explore the town’s beauty while it is blanketed in snow.",
+    detailDescription:
+      "Nestled in the Himachal Himalayas, Shimla and Kullu Manali are top hill stations offering stunning views. In 5 nights and 6 days, explore attractions like the Hadimba and Jakhu Temples, and enjoy the scenic beauty.",
+    subDescription:
+      "Relax and unwind with your partner in a serene, romantic destination surrounded by majestic mountains and fresh air.",
+    overview:
+      "For a perfect summer getaway in the majestic Himalayas, the Shimla – Kullu – Manali tour is your ideal choice. With stunning lakes, snow-capped peaks, rich wildlife, ancient temples, and thrilling adventure activities, this destination attracts tourists year-round. Before Holiday offers winter packages for Shimla Kullu Manali, allowing you to explore the town’s beauty while it is blanketed in snow.",
     qna: [
-      { question: "What activities are included?", answer: "Activities include sightseeing, romantic dinners, and guided tours." },
-      { question: "Is transportation included?", answer: "Yes, private transportation is included for local travel." },
-      { question: "Are meals provided?", answer: "Yes, the package includes daily breakfast and dinner." },
-      { question: "Can the itinerary be customized?", answer: "Yes, we can customize the package as per your preferences." },
+      {
+        question: "What activities are included?",
+        answer:
+          "Activities include sightseeing, romantic dinners, and guided tours.",
+      },
+      {
+        question: "Is transportation included?",
+        answer: "Yes, private transportation is included for local travel.",
+      },
+      {
+        question: "Are meals provided?",
+        answer: "Yes, the package includes daily breakfast and dinner.",
+      },
+      {
+        question: "Can the itinerary be customized?",
+        answer: "Yes, we can customize the package as per your preferences.",
+      },
     ],
     packageInclusion: [
       "Private transport for sightseeing",
@@ -136,7 +162,6 @@ export const tourotherPackages = [
         roomType: "Luxury Suite",
       },
     ],
-
   },
   {
     id: 50003,
@@ -162,20 +187,32 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -211,7 +248,6 @@ export const tourotherPackages = [
         roomType: "Luxury Suite",
       },
     ],
-
   },
   {
     id: 50004,
@@ -237,20 +273,32 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -286,7 +334,6 @@ export const tourotherPackages = [
         roomType: "Luxury Suite",
       },
     ],
-
   },
   {
     id: 50005,
@@ -312,20 +359,32 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -361,7 +420,6 @@ export const tourotherPackages = [
         roomType: "Luxury Suite",
       },
     ],
-
   },
   {
     id: 50006,
@@ -387,20 +445,32 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -461,20 +531,32 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -535,20 +617,32 @@ export const tourotherPackages = [
     description: "Banyan Tree Courtyard...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -584,7 +678,6 @@ export const tourotherPackages = [
         roomType: "Luxury Suite",
       },
     ],
-
   },
   {
     id: 50009,
@@ -610,20 +703,32 @@ export const tourotherPackages = [
     description: "Stone Wood Riverfront...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -684,20 +789,32 @@ export const tourotherPackages = [
     description: "Stone Wood Riverfront...",
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
-    detailDescription: "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
-    subDescription: "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
-    overview: "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
+    detailDescription:
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
+    subDescription:
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
+    overview:
+      "Banyan Tree Courtyard Goa is conveniently located near top restaurants offering exotic dishes by skilled chefs and close to shopping outlets for great souvenirs. With stylish, Portuguese-inspired rooms and warm, courteous staff ensuring a comfortable stay, the hotel offers a homely ambiance, making it a memorable and heartfelt experience.",
     qna: [
-      { question: "Day 1 :Arrival in Goa | Transfer to the Hotel", answer: "Pick up from the Airport" },
-      { question: "Day 2 :Goa Sightseeing (Via Shared Coach)", answer: "From 10 AM to 5 PM" },
       {
-        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)", answer: ["Optional WaterSports Activities - On Direct Payment Basis",
+        question: "Day 1 :Arrival in Goa | Transfer to the Hotel",
+        answer: "Pick up from the Airport",
+      },
+      {
+        question: "Day 2 :Goa Sightseeing (Via Shared Coach)",
+        answer: "From 10 AM to 5 PM",
+      },
+      {
+        question: "Day 3 :Day at Leisure | WaterSports Activities (Optional)",
+        answer: [
+          "Optional WaterSports Activities - On Direct Payment Basis",
 
           "* Parasailing",
           "* Jetski Ride",
           "* Banana Ride",
           "* Speed Boat Ride",
-          "* Bumper Ride",],
+          "* Bumper Ride",
+        ],
       },
       { question: "Day 4 :Departure from Goa", answer: "Drop to the Airport." },
     ],
@@ -734,6 +851,4 @@ export const tourotherPackages = [
       },
     ],
   },
-
-
-]
+];
