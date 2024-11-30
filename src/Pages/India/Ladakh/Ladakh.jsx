@@ -291,7 +291,7 @@ const Ladakh = () => {
 
       <div className={styles["custom-flex-container"]}>
         {ladakhFamilyTrips.map((pckg) => (
-          <Card key={pckg.id} pkg={pckg} />
+          <Card key={pckg.id} pkg={pckg} locationURL={locationURL} />
         ))}
       </div>
 
@@ -301,7 +301,7 @@ const Ladakh = () => {
 
       <div className={styles["custom-flex-other-container"]}>
         {ladakhOtherTrip.map((pckg) => (
-          <Card key={pckg.id} pkg={pckg} />
+          <Card key={pckg.id} pkg={pckg} locationURL={locationURL} />
         ))}
       </div>
     </section>
