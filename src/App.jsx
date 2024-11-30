@@ -40,6 +40,7 @@ import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
 import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
 import Detailsandaman from "./Pages/India/AndamanTour/DetailsPage/Detailsandaman";
 import DetailsKashmir from "./Pages/India/Kashmir/DetailsPage/DetailsKashmir";
+import NainitalDetails from "./Pages/India/Uttarakhand/Nainitaldata/NainitalDetails/NainitalDetails";
 // import Goadetails from "./Pages/India/Goa/Goadetails/Goadetails";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 // import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
@@ -90,6 +91,7 @@ function App() {
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
           <Route path="/munnar" element={<Munnar />} />
           <Route path="/india/uttarakhand/nainital" element={<Naintal />} />
+          <Route path="/india/uttarakhand/nainital/trip/:id" element={<NainitalDetails />} />
           <Route path="/india/uttarakhand/rishikesh" element={<Rishikesh />} />
           <Route path="/activities/paragliding" element={<Paragliding />} />
           <Route
