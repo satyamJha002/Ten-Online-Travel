@@ -24,6 +24,7 @@ import Review from "./Pages/Review/Review";
 import AndamanTour from "./Pages/India/AndamanTour/AndamanTour";
 import Goa from "./Pages/India/Goa/Goa";
 import Sikkim from "./Pages/India/Sikkim/Sikkim";
+import SikkimDetails from "./Pages/India/Sikkim/SikkimDetails/SikkimDetails";
 import Kasol from "./Pages/India/Himachal/Kasol";
 import KasolDetails from "./Pages/India/Himachal/Kasol/Kasoldetails";
 import AboutUs from "./Pages/AboutUs/AboutUs";
@@ -38,6 +39,7 @@ import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
+import RishikeshDetailsPage from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/RishikeshDetails/RishikeshDetailsPage";
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
 import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
 import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
@@ -103,16 +105,25 @@ function App() {
           <Route path="/india/goa" element={<Goa />} />
           <Route path="/india/goa/trip/:id" element={<GoaDetails />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
+          <Route path="/india/sikkim/trip/:id" element={<SikkimDetails />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
           <Route path="/india/kashmir" element={<Kashmir />} />
           <Route path="/india/ladakh" element={<Ladakh />} />
-          <Route path="/india/Ladakh/trip/:id"  element={<LadakhDetails />} />
+          <Route path="/india/Ladakh/trip/:id" element={<LadakhDetails />} />
           <Route path="/india/tamilnadu/Ooty" element={<Ooty />} />
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
           <Route path="/munnar" element={<Munnar />} />
           <Route path="/india/uttarakhand/nainital" element={<Naintal />} />
-          <Route path="/india/uttarakhand/nainital/trip/:id" element={<NainitalDetails />} />
+          <Route
+            path="/india/uttarakhand/nainital/trip/:id"
+            element={<NainitalDetails />}
+          />
           <Route path="/india/uttarakhand/rishikesh" element={<Rishikesh />} />
+          <Route
+            path="/india/uttarakhand/rishikesh/trip/:id"
+            element={<RishikeshDetailsPage />}
+          />
+
           <Route path="/activities/paragliding" element={<Paragliding />} />
           <Route
             path="/activities/paragliding/trip/:id"
