@@ -114,25 +114,25 @@ const ThailandDetailsPage = () => {
             </div>
 
             <div className={styles["info-details"]}>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <FaBusAlt className="text-2xl text-green-500" />
-                <div>
-                  <p>Transport</p>
-                  <h1>SIC</h1>
+                <div className="flex flex-col">
+                  <span className="text-[1.3rem] font-[500]">Transport</span>
+                  <span className="text-sm text-[#696d75]">SIC</span>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <MdRestaurant className="text-2xl text-green-500" />
-                <div>
-                  <p>Meals</p>
-                  <h1>Breakfast</h1>
+                <div className="flex flex-col">
+                  <span className="text-[1.3rem] font-[500]">Meals</span>
+                  <span className="text-sm text-[#696d75]">Breakfast</span>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <FaHotel className="text-2xl text-green-500" />
-                <div>
-                  <p>Accomodation</p>
-                  <h1>3 Star</h1>
+                <div className="flex flex-col">
+                  <span className="text-[1.3rem] font-[500]">Accomodation</span>
+                  <span className="text-sm text-[#696d75]">3 Star</span>
                 </div>
               </div>
             </div>
@@ -286,36 +286,38 @@ const ThailandDetailsPage = () => {
 
             <div id="hotels" className={styles["hotels"]}>
               <h1>Hotel</h1>
-              <table className="min-w-full table-auto border-collapse border  border-gray-300 text-left text-sm lg:text-base">
-                <tbody>
-                  <tr>
-                    <td className="py-2 px-4 border-b font-semibold border-gray-300">
-                      PLACE
-                    </td>
-                    <td className="py-2 px-4 border-b font-semibold border-gray-300">
-                      HOTEL
-                    </td>
-                    <td className="py-2 px-4 border-b font-semibold border-gray-300">
-                      ROOM TYPE
-                    </td>
-                  </tr>
-                  {items.hotels.map((hotel, index) => (
-                    <Fragment key={index}>
-                      <tr>
-                        <td className="py-2 px-4 border-b  border-gray-300">
+              <div>
+                <table className="min-w-full table-auto border-collapse  text-left text-sm lg:text-base">
+                  <thead>
+                    <tr className="bg-gray-100">
+                      <th className="py-2 px-4 border-b font-semibold border-gray-300">
+                        PLACE
+                      </th>
+                      <th className="py-2 px-4 border-b font-semibold border-gray-300">
+                        HOTEL
+                      </th>
+                      <th className="py-2 px-4 border-b font-semibold border-gray-300">
+                        ROOM TYPE
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {items.hotels.map((hotel, index) => (
+                      <tr key={index}>
+                        <td className="py-2 px-4 border-b border-gray-300">
                           {hotel.place}
                         </td>
                         <td className="py-2 px-4 border-b border-gray-300">
                           {hotel.hotelName}
                         </td>
-                        <td className="py-2 px-4 border-b  border-gray-300">
+                        <td className="py-2 px-4 border-b border-gray-300">
                           {hotel.roomType}
                         </td>
                       </tr>
-                    </Fragment>
-                  ))}
-                </tbody>
-              </table>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
