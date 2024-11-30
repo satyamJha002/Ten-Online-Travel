@@ -16,7 +16,7 @@ const Kashmir = () => {
       <p className="text-black my-4 text-lg">Home {newUrl}</p>
       <h1 className="ext-4xl my-4 relative sikkim-heading">
         Kashmir
-        <span class="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
+        <span className="absolute after:content-empty after:block after:h-[2px] after:w-[5%] after:bg-[#32b67a] after:mt-2"></span>
       </h1>
       <div className="px-2">
         <img
@@ -99,11 +99,13 @@ const Kashmir = () => {
         <h2>Friends and Family Tour</h2>
       </div>
 
-      {kashmirPackages.map((pckg) => (
-        <div className={styles["flex-container"]}>
-          <Card pkg={pckg} />
+      {kashmirPackages.map((pckg,index) => {
+
+        return(
+          <div key={index} className={styles["flex-container"]}>
+          <Card pkg={pckg} locationURL={locationURL}/>
         </div>
-      ))}
+     )})}
     </div>
   );
 };

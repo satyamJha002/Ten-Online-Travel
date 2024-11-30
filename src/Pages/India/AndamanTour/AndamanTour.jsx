@@ -67,7 +67,7 @@ console.log("locationURL={locationURL}",locationURL);
 
       <div className="AndamanContainer">
         {andmatour.map((pkg) => (
-          <Card key={pkg.id} pkg={pkg}  locationURL={locationURL} />
+          <Card key={pkg.id} pkg={pkg}  locationURL={locationURL+'/andmatour'} />
         ))}
       </div>
 
@@ -83,7 +83,7 @@ console.log("locationURL={locationURL}",locationURL);
   {watertourPackages.map((pkg, index) => {
     const isLastTwo = index >= watertourPackages.length - 2;
     return (
-      <Card key={pkg.id} pkg={pkg} locationURL={locationURL} className={isLastTwo ? 'last-company' : ''} />
+      <Card key={pkg.id} pkg={pkg} locationURL={locationURL+'/watercontainer'} className={isLastTwo ? 'last-company' : ''} />
     );
   })}
 </div>
