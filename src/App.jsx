@@ -41,6 +41,7 @@ import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
 import Detailsandaman from "./Pages/India/AndamanTour/DetailsPage/Detailsandaman";
 import DetailsKashmir from "./Pages/India/Kashmir/DetailsPage/DetailsKashmir";
 import NainitalDetails from "./Pages/India/Uttarakhand/Nainitaldata/NainitalDetails/NainitalDetails";
+import LadakhDetails from "./Pages/India/Ladakh/LadakhDetails/LadakhDetails";
 // import Goadetails from "./Pages/India/Goa/Goadetails/Goadetails";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 // import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
@@ -87,6 +88,7 @@ function App() {
           <Route path="/india/darjeeling" element={<Darjeeling />} />
           <Route path="/india/kashmir" element={<Kashmir />} />
           <Route path="/india/ladakh" element={<Ladakh />} />
+          <Route path="/india/Ladakh/trip/:id"  element={<LadakhDetails />} />
           <Route path="/india/tamilnadu/Ooty" element={<Ooty />} />
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
           <Route path="/munnar" element={<Munnar />} />
