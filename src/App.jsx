@@ -38,6 +38,7 @@ import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikes
 import RiverRaftingDetails from "./Pages/Activities/RiverRafting/RiDetails/RiDetails";
 import HikingDetails from "./Pages/Activities/Hiking/DetailsPage/HikingDetails";
 import DubaiDetails from "./Pages/International/Dubai/DetailsPage/DubaiDetails";
+import Goadetails from "./Pages/India/Goa/Goadetails/Goadetails";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 // import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 
@@ -76,6 +77,7 @@ function App() {
 
           <Route path="/andaman-tour" element={<AndamanTour />} />
           <Route path="/india/goa" element={<Goa />} />
+          <Route path="/india/goa/trip/:id" element={<Goadetails />} />
           <Route path="/india/sikkim" element={<Sikkim />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
           <Route path="/india/kashmir" element={<Kashmir />} />
