@@ -631,7 +631,7 @@ const Navbar = () => {
               {isIndiaSubmenuOpen && (
                 <div className="ml-4" ref={indiaDropdownRef}>
                   <NavLink
-                    to="/india/andaman"
+                    to="/andaman-tour"
                     className={({ isActive }) =>
                       `${
                         isActive ? activeStyle : inactiveStyle
@@ -669,7 +669,7 @@ const Navbar = () => {
                   {isHimachalSubmenuOpen && (
                     <div className="ml-4">
                       <NavLink
-                        to="/india/Himachal/kasol"
+                        to="/india/kasol"
                         className={({ isActive }) =>
                           `${
                             isActive ? activeStyle : inactiveStyle
@@ -705,7 +705,7 @@ const Navbar = () => {
                   {isKeralaSubmenuOpen && (
                     <div className="ml-4">
                       <NavLink
-                        to="/kerala/india/Munnar"
+                        to="/Munnar"
                         className={({ isActive }) =>
                           `${
                             isActive ? activeStyle : inactiveStyle
@@ -771,7 +771,7 @@ const Navbar = () => {
                     </div>
                   )}
                   <NavLink
-                    to="/goa"
+                    to="/india/goa"
                     className={({ isActive }) =>
                       `${
                         isActive ? activeStyle : inactiveStyle
