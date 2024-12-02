@@ -7,7 +7,7 @@ import {
   tourGoaPackages,
   tourotherPackages,
 } from "../../../../assets/Data/constantgoa";
-import "./GoaDetails.css";
+import "./goaDetailsPage.css";
 
 const GoaDetails = () => {
   const { id } = useParams();
@@ -62,14 +62,12 @@ const GoaDetails = () => {
           />
           <button
             className="goa-details-arrow left"
-            onClick={() => handlePrevImage(selectedPackage.images)}
-          >
+            onClick={() => handlePrevImage(selectedPackage.images)}>
             ❮
           </button>
           <button
             className="goa-details-arrow right"
-            onClick={() => handleNextImage(selectedPackage.images)}
-          >
+            onClick={() => handleNextImage(selectedPackage.images)}>
             ❯
           </button>
         </div>
@@ -135,8 +133,7 @@ const GoaDetails = () => {
               <div key={index} className="goa-qna-container">
                 <div
                   className="goa-accordion-header"
-                  onClick={() => toggleAccordion(index)}
-                >
+                  onClick={() => toggleAccordion(index)}>
                   <h2>{item.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>

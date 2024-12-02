@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
-import "./KasolDetails.css";
+import "./kasoldetailsPage.css";
 
 const KasolDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -54,14 +54,12 @@ const KasolDetails = () => {
           />
           <button
             className="kasol-details-arrow left"
-            onClick={handlePrevImage}
-          >
+            onClick={handlePrevImage}>
             ❮
           </button>
           <button
             className="kasol-details-arrow right"
-            onClick={handleNextImage}
-          >
+            onClick={handleNextImage}>
             ❯
           </button>
         </div>
@@ -129,8 +127,7 @@ const KasolDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -141,8 +138,7 @@ const KasolDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
