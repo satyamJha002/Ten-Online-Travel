@@ -40,11 +40,6 @@ const BillingPage = () => {
           country: formData.country,
         },
       };
-
-      // Add booking to context
-      // addNewBooking(newBooking);
-
-      // Prepare email data
       const emailData = {
         access_key: "ef7d6db9-5581-4525-b98a-ca42fb0056f4", 
         subject: "Booking Details",
@@ -68,10 +63,11 @@ const BillingPage = () => {
       };
 
       try {
-        // Send email using Web3Forms
+       
         await axios.post("https://api.web3forms.com/submit", emailData, {
           headers: { "Content-Type": "application/json" },
         });
+        window.location.reload();
 
         alert("Booking details submitted and email sent!");
       } catch (error) {
@@ -87,7 +83,7 @@ const BillingPage = () => {
     <div className="billing-page p-8 bg-white">
       <div className="flex">
 
-        {/* Billing Details Form */}
+
         <div className="w-1/2 p-4 ml-60">
           <h2 className="text-xl font-semibold mb-4">Billing Details</h2>
           {["firstName", "lastName", "email", "phone","address", "city", "country"].map(
@@ -121,7 +117,7 @@ const BillingPage = () => {
           </button>
         </div>
 
-        {/* Booking Summary */}
+
         <div className="w-1/5 p-4  bg-whitw-100 items-center justify-center rounded shadow">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Booking Summary</h2>

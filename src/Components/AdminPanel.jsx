@@ -5,8 +5,6 @@ import { BookingContext } from "../BookingContext";
 
 const AdminPanel = () => {
   const { bookings, setBookings, approveBooking } = useContext(BookingContext);
-
-  // Automatically refresh bookings every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       const storedBookings = localStorage.getItem("bookings");
@@ -15,7 +13,6 @@ const AdminPanel = () => {
       }
     }, 2000);
 
-    // Clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, [setBookings]);
 

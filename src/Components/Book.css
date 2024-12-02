@@ -1,12 +1,11 @@
-/* Booking Popup container */
+
 .booking-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
-  
-  /* Button to open the popup */
+
   .booking-container button {
     background-color: #3b82f6;
     color: white;
@@ -19,8 +18,7 @@
   .booking-container button:hover {
     background-color: #2563eb;
   }
-  
-  /* Popup styles */
+
   .popup {
     width: 90%;
     max-width: 400px;
@@ -37,15 +35,13 @@
     flex-direction: column;
     align-items: center;
   }
-  
-  /* Popup heading */
+
   .popup h2 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
   }
   
-  /* Label styles */
   .popup label {
     display: block;
     font-size: 14px;
@@ -53,7 +49,6 @@
     width: 100%;
   }
   
-  /* Input and select field styles */
   .popup input[type="date"],
   .popup select {
     width: 100%;
@@ -64,7 +59,6 @@
     margin-bottom: 15px;
   }
   
-  /* Members counter buttons */
   .popup .flex {
     display: flex;
     align-items: center;
@@ -88,7 +82,6 @@
     margin: 0 10px;
   }
   
-  /* "Proceed to Checkout" button */
   .popup button.bg-green-500 {
     background-color: #10b981;
     color: white;
@@ -103,7 +96,6 @@
     background-color: #059669;
   }
   
-  /* "Close" button */
   .popup button.text-red-500 {
     color: #ef4444;
     font-size: 16px;
@@ -111,7 +103,6 @@
     margin-top: 10px;
   }
   
-  /* Popup overlay (optional: add a semi-transparent background when popup is open) */
   .popup::before {
     content: "";
     position: fixed;
