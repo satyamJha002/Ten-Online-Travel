@@ -4,7 +4,11 @@ import { useState } from "react";
 import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
+<<<<<<< HEAD
 import "./kasoldetails.css";
+=======
+import "./kasolDetails.css";
+>>>>>>> 4678e57bc4733da72aeadb3858162bcb571fa086
 
 const KasolDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
