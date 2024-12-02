@@ -586,7 +586,7 @@ export const ladakhFamilyTrips = [
 ] 
 export const ladakhOtherTrip = [
   {
-    id: 1,
+    id: 11,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/09/Leh-Ladakh-Travel1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/07/Aru-Valley-Pahalgam.jpg",
