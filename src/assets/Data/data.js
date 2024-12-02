@@ -405,6 +405,7 @@ export const ladakhFamilyTrips = [
     originalPrice: "₹27,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    noOfDays: 8,
     detailDescription:
       "An exciting 8-day journey covering the scenic beauty and cultural heritage of Ladakh. Perfect for families seeking adventure and bonding time.",
     subDescription: "Experience Ladakh's stunning landscapes and unique culture.",
@@ -467,6 +468,7 @@ export const ladakhFamilyTrips = [
     originalPrice: "₹31,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    noOfDays: 10,
     detailDescription:
       "A comprehensive 10-day Ladakh tour covering key attractions like Pangong Lake, Tso Moriri, and monasteries.",
     subDescription: "Ideal for families looking for an extended vacation in Ladakh.",
@@ -534,6 +536,7 @@ export const ladakhFamilyTrips = [
   originalPrice: "₹16,655",
   nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
   featured: true,
+    noOfDays: 8,
   detailDescription:
     "A romantic getaway designed for couples to explore the serene beauty of Ladakh. Enjoy peaceful moments by Pangong Lake and adventurous activities together.",
   subDescription: "Create unforgettable memories in the heart of Ladakh.",
@@ -598,6 +601,7 @@ export const ladakhOtherTrip = [
     originalPrice: "₹25,000",
     nextDepartures: ["Nov 15", "Nov 16", "Nov 17"],
     featured: true,
+    noOfDays: 7,
     detailDescription:
       "An action-packed adventure trip for thrill-seekers, covering offbeat paths and exciting experiences.",
     subDescription: "Adventure meets nature in this Ladakh package.",
