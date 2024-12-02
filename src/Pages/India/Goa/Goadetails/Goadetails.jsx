@@ -7,7 +7,7 @@ import {
   tourGoaPackages,
   tourotherPackages,
 } from "../../../../assets/Data/constantgoa";
-import "./goaDetails.css";
+import "./goaDetailsPage.css";
 
 const GoaDetails = () => {
   const { id } = useParams();
