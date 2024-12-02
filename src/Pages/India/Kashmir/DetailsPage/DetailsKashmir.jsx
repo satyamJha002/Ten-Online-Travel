@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-// import { dubai } from "../../../../assets/Data/dubai";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -7,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
-import "./detailsKashmir.css";
+import "./detailsKashmirPage.css";
 import { kashmirPackages } from "../../../../assets/Data/data";
 
 const DetailsKashmir = () => {
