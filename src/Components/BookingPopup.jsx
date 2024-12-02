@@ -67,7 +67,7 @@ const BookingPopup = () => {
          className="bg-green-500 text-white px-20 py-3 rounded-md hover:bg-green-600 transition"
         onClick={() => setShowPopup(true)}
       >
-        View Details
+        Check Availability
       </button>
 
     

@@ -63,18 +63,9 @@ function App() {
         <ScrollToTop />
         <NavBar />
         <Routes>
-
-
-
-
-
-
         <Route path="/book" element={<BookingPopup />} />
         <Route path="/billing" element={<BillingPage/>} />
         <Route path="/admin" element={<AdminPanel />} />
-
-
-
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Review />} />
