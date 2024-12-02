@@ -93,7 +93,7 @@ const RiverRaftingDetails = () => {
 
         <div className="riverrafting-detail-nav-sticky">
           <ul>
-            {riverraftingObjects.overView && (
+            {riverraftingObjects.overview && (
               <li>
                 <a href="#overView">OverView</a>
               </li>
