@@ -111,8 +111,8 @@ const RiverRaftingDetails = () => {
         </div>
 
         <div id="overView" className="riverrafting-detail-overview">
-          <h1>{riverraftingObjects.overView ? "OverView" : null}</h1>
-          <p>{riverraftingObjects.overView}</p>
+          <h1>{riverraftingObjects.overview ? "OverView" : null}</h1>
+          <p>{riverraftingObjects.overview}</p>
         </div>
 
         <div id="Itinerary" className="riverrafting-detail-itinerary">
