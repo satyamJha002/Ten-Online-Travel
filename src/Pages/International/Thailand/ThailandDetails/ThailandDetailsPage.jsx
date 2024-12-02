@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const ThailandDetailsPage = () => {
   const [currentImages, setCurrentImages] = useState(0);
@@ -338,8 +339,8 @@ const ThailandDetailsPage = () => {
                   <h1>{items.price}</h1>
                   <span>/Adult</span>
                 </div>
-                <div className={styles["availableBtn"]}>
-                  <button>Check Availability</button>
+                <div>
+                  <BookingPopup/>
                 </div>
               </div>
             </div>
