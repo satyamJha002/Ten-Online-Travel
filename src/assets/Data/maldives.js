@@ -1,6 +1,6 @@
 export const maldives = [
   {
-    id: 651230541,
+    id: 65122,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-3-600x400-1.jpg",
@@ -65,7 +65,7 @@ export const maldives = [
     ],
   },
   {
-    id: 9861320,
+    id: 98616,
     images: [
       "https://b4holiday.com/wp-content/uploads/2022/07/Veligandu-Island-Resort-Overview-1024x1024.jpg",
       "https://b4holiday.com/wp-content/uploads/2022/07/VeliganduIslandResort-JacuzziWaterVillas-Gallery-2.jpg",
@@ -131,7 +131,7 @@ export const maldives = [
     ],
   },
   {
-    id: 98793216,
+    id: 98793,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-2-600x400-1.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/12/Vilamendhoo-Island-3-600x400-1.jpg",
@@ -200,7 +200,7 @@ export const maldives = [
 
 export const maldivesWaterVilla = [
   {
-    id: 99635222330,
+    id: 99635,
     images: [
       "https://b4holiday.com/wp-content/uploads/2022/07/Veligandu-Island-Resort-Overview-1024x1024.jpg",
       "https://b4holiday.com/wp-content/uploads/2022/07/VeliganduIslandResort-JacuzziWaterVillas-Gallery-2.jpg",
@@ -268,7 +268,7 @@ export const maldivesWaterVilla = [
 
 export const maldivesOtherTrips = [
   {
-    id: 789321654,
+    id: 78935,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0024.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0066-edit.jpg",
@@ -368,7 +368,7 @@ export const maldivesOtherTrips = [
     ],
   },
   {
-    id: 2741852,
+    id: 27418,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0024.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0066-edit.jpg",
@@ -469,7 +469,7 @@ export const maldivesOtherTrips = [
     ],
   },
   {
-    id: 147852,
+    id: 14785,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0024.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/08/olhuveli_drone_0066-edit.jpg",

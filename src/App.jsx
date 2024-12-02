@@ -148,8 +148,8 @@ function App() {
           <Route path="/Termpage" element={<Termpage />} />
           <Route path="/DocumentVisa" element={<DocumentVisa />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="/kasol" element={<Kasol />} />
-          <Route path="/kasol/trip/:id" element={<KasolDetails />} />
+          <Route path="/india/kasol" element={<Kasol />} />
+          <Route path="/india/kasol/trip/:id" element={<KasolDetails />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
         <Footer />
