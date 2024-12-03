@@ -104,11 +104,12 @@
   }
   
   .andamn-detail-description {
+    font-family: sans-serif;
     margin-top: -32px;
   }
   
   .andamn-detail-description p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .andamn-info-details {

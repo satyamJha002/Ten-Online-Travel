@@ -12,6 +12,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Honeymoon Package",
     location: "Darjeeling, Sikkim",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     price: "₹18,590",
     originalPrice: "₹20,655",
     discount: "10% Off ",
@@ -85,6 +86,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Package",
     location: "Darjeeling, Sikkim",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     discount: "11% Off ",
     price: "₹12,500",
     originalPrice: "₹14,000",
@@ -137,7 +139,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -159,6 +161,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Honeymoon Package",
     location: "Darjeeling, Sikkim",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     discount: "9% Off ",
     price: "₹26,000",
     originalPrice: "₹28,500",
@@ -211,7 +214,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -232,6 +235,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Package",
     location: "Darjeeling, Sikkim",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     discount: "10% Off ",
     price: "₹13,500",
     originalPrice: "₹15,000",
@@ -284,7 +288,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -305,6 +309,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Package",
     location: "Darjeeling, Sikkim",
     duration: "5 Days - 4Nights",
+    noOfDays: "5",
     discount: "10% Off ",
     price: "₹17,500",
     originalPrice: "₹19,500",
@@ -357,7 +362,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -378,6 +383,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Package",
     location: "Darjeeling, Sikkim",
     duration: "6 Days - 5 Nights",
+    noOfDays: "6",
     discount: "16% Off ",
     price: "₹19,250",
     originalPrice: "₹23,500",
@@ -430,7 +436,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -451,6 +457,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Honeymoon Package",
     location: "Darjeeling, Sikkim",
     duration: "5 Days - 4 Nights",
+    noOfDays: "5",
     discount: "9% Off ",
     price: "₹26,000",
     originalPrice: "₹28,500",
@@ -503,7 +510,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -524,6 +531,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Package",
     location: "Darjeeling, Sikkim",
     duration: "6 Days - 5Nights",
+    noOfDays: "6",
     discount: "7% Off ",
     price: "₹23,250",
     originalPrice: "₹25,000",
@@ -576,7 +584,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",
@@ -597,6 +605,7 @@ export const tourssightPackages = [
     title: "Sikkim Darjeeling Package ",
     location: "Darjeeling, Sikkim",
     duration: "6 Days - 5 Nights",
+    noOfDays: "6",
     discount: "9% Off ",
     price: "₹35,000",
     originalPrice: "₹38,500",
@@ -649,7 +658,7 @@ export const tourssightPackages = [
       "Included are all transportation taxes, parking costs, and driver allowances.",
       "5% GST",
     ],
-    packageExclusion: [
+    packageExlusion: [
       "everything that isn't listed in the package's contents.",
       "fees for travel insurance.",
       "Personal expenses include laundry, telephone bills, tipping, cruise gratuities, and a minibar in the accommodation",

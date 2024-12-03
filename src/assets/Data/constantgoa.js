@@ -115,9 +115,9 @@ export const tourotherPackages = [
     noOfDays: "6",
     description: "Chill night, sunny days, calm hills await...",
     detailDescription:
-      "Nestled in the Himachal Himalayas, Shimla and Kullu Manali are top hill stations offering stunning views. In 5 nights and 6 days, explore attractions like the Hadimba and Jakhu Temples, and enjoy the scenic beauty.",
+      "Situated in Candolim, Banyan Tree Courtyard is a cozy 10-room hotel perfectly positioned for a memorable Goan getaway. Located in North Goa, between Calangute Beach and Fort Aguada, it’s just a 6-7 minute walk to Candolim Beach. Guests can also enjoy a refreshing swim in the hotel’s small pool, complete with a baby pool for kids.",
     subDescription:
-      "Relax and unwind with your partner in a serene, romantic destination surrounded by majestic mountains and fresh air.",
+      "Banyan Tree Courtyard Goa is ideally situated near some of the best restaurants, offering a delightful range of exotic dishes crafted by skilled local and professional chefs. Shopping malls and outlets are also nearby, perfect for finding unique souvenirs. With courteous staff dedicated to making your stay comfortable, the hotel provides a warm, homely atmosphere. Its stylish rooms, featuring Portuguese-inspired architecture, blend sophistication with charm for a truly memorable experience.",
     overview:
       "For a perfect summer getaway in the majestic Himalayas, the Shimla – Kullu – Manali tour is your ideal choice. With stunning lakes, snow-capped peaks, rich wildlife, ancient temples, and thrilling adventure activities, this destination attracts tourists year-round. Before Holiday offers winter packages for Shimla Kullu Manali, allowing you to explore the town’s beauty while it is blanketed in snow.",
     qna: [
