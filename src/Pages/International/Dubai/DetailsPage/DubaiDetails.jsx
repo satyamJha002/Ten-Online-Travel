@@ -89,7 +89,7 @@ const DubaiDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="detail-nav-sticky">
+            <div className="dubai-detail-nav-sticky">
               <ul>
                 {items.overView === " " ? null : (
                   <li>
@@ -175,6 +175,31 @@ const DubaiDetails = () => {
                   </div>
                 ))}
               </div>
+            </div>
+            <div id="Hotels" className="dubai-hotels-container">
+              <h1>Hotels</h1>
+              {items.hotels && items.hotels.length > 0 ? (
+                <table className="dubai-hotels-table">
+                  <thead>
+                    <tr>
+                      <th>Place</th>
+                      <th>Hotel</th>
+                      <th>Room Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {items.hotels.map((hotel, index) => (
+                      <tr key={index}>
+                        <td>{hotel.place}</td>
+                        <td>{hotel.hotelName}</td>
+                        <td>{hotel.roomType}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <p>No hotels available</p>
+              )}
             </div>
           </div>
           <div className="detail-left">

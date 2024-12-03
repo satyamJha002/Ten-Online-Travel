@@ -69,6 +69,13 @@ export const dubai = [
       "There are fees associated with trade shows, conventions, and special events.",
       "Subject to accommodation availability, early check-in and late check-out are only available by request.",
     ],
+    hotels: [
+      {
+        place: "DUBAI",
+        hotelName: "GOLDEN SAND HOTEL APARTMENTS",
+        roomType: "01 Room Studio GS 3",
+      },
+    ],
   },
   {
     id: 87552,
@@ -141,6 +148,13 @@ export const dubai = [
       "Subject to accommodation availability, early check-in and late check-out are only available by request.",
     ],
     featured: true,
+    hotels: [
+      {
+        place: "DUBAI",
+        hotelName: "GOLDEN SAND HOTEL APARTMENTS",
+        roomType: "01 Room Studio GS 3",
+      },
+    ],
   },
   {
     id: 37485,
@@ -211,6 +225,13 @@ export const dubai = [
       "personal expenses, laundry, phone bills, tipping, cruise gratuities, minibar in the accommodation, etc.",
       "There are fees associated with trade shows, conventions, and special events.",
       "Subject to accommodation availability, early check-in and late check-out are only available by request.",
+    ],
+    hotels: [
+      {
+        place: "DUBAI",
+        hotelName: "GOLDEN SAND HOTEL APARTMENTS",
+        roomType: "01 Room Studio GS 3",
+      },
     ],
   },
 ];

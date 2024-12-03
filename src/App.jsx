@@ -48,13 +48,11 @@ import Detailsandaman from "./Pages/India/AndamanTour/DetailsPage/Detailsandaman
 import DetailsKashmir from "./Pages/India/Kashmir/DetailsPage/DetailsKashmir";
 import NainitalDetails from "./Pages/India/Uttarakhand/Nainitaldata/NainitalDetails/NainitalDetails";
 import LadakhDetails from "./Pages/India/Ladakh/LadakhDetails/LadakhDetails";
-// import Goadetails from "./Pages/India/Goa/Goadetails/Goadetails";
 import GoaDetails from "./Pages/India/Goa/Goadetails/Goadetails";
-import BookingPopup from "./Components/BookingPopup";
+// import BookingPopup from "./Components/BookingPopup";
 import BillingPage from "./Components/BillingPage";
 // import AdminPanel from "./Components/AdminPanel";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
-// import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 
 function App() {
   return (
@@ -63,9 +61,9 @@ function App() {
         <ScrollToTop />
         <NavBar />
         <Routes>
-        <Route path="/book" element={<BookingPopup />} />
-        <Route path="/billing" element={<BillingPage/>} />
-        {/* <Route path="/admin" element={<AdminPanel />} /> */}
+          {/* <Route path="/book" element={<BookingPopup />} /> */}
+          <Route path="/billing" element={<BillingPage />} />
+          {/* <Route path="/admin" element={<AdminPanel />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Review />} />

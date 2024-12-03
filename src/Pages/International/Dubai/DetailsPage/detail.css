@@ -111,7 +111,7 @@
   background-color: rgb(255, 255, 255);
 }
 
-.detail-nav-sticky {
+.dubai-detail-nav-sticky {
   position: sticky;
   top: 0;
   background-color: rgb(255, 255, 255);
@@ -127,18 +127,19 @@
   z-index: 10;
 }
 
-.detail-nav-sticky ul {
+.dubai-detail-nav-sticky ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid rgb(114, 113, 113);
   position: relative;
   height: 100%;
+  border-radius: 5px;
 }
 
-.detail-nav-sticky ul li {
+.dubai-detail-nav-sticky ul li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +149,12 @@
   position: relative;
 }
 
-.detail-nav-sticky ul li::after {
+.dubai-detail-nav-sticky ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dubai-detail-nav-sticky ul li::after {
   content: "";
   position: absolute;
   right: 0;
@@ -158,7 +164,7 @@
   background-color: black;
 }
 
-.detail-nav-sticky ul li:last-child::after {
+.dubai-detail-nav-sticky ul li:last-child::after {
   display: none;
 }
 
@@ -194,7 +200,6 @@
 .answer p {
   font-size: 1rem;
 }
-
 .exclusion-container,
 .inclusions-container {
   margin-top: 50px;
@@ -211,7 +216,20 @@
   align-items: center;
   gap: 20px;
 }
+.dubai-hotels-container {
+  margin-top: 3rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.dubai-hotels-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
 .detail-price-container {
   width: 80%;
   height: 300px;
@@ -329,11 +347,32 @@
     width: 100%;
   }
   .detail-right {
-    width: 90%;
+    width: 96%;
   }
   .detail-left {
     width: 100%;
     padding: 0 10px;
+  }
+  .dubai-detail-nav-sticky {
+    font-size: 1rem;
+    margin-top: 8%;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .dubai-detail-nav-sticky ul {
+    flex-direction: row;
+  }
+
+  .dubai-detail-nav-sticky ul li {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .dubai-hotels-table {
+    width: 100%;
+  }
+  .dubai-hotels-container {
+    padding: 0;
   }
   .detail-price-container {
     position: fixed;
