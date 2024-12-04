@@ -244,7 +244,6 @@ const Home = () => {
             <p className="white-text">
               Our team ensures that your travel experience is seamless and stress-free. We offer personalized bookings, flexible options, and exceptional customer service to make your trip unforgettable. Let us take care of all the details while you focus on making memories.
             </p>
-            <hr />
           </div>
 
           {/* Right Section */}
