@@ -51,6 +51,7 @@ import LadakhDetails from "./Pages/India/Ladakh/LadakhDetails/LadakhDetails";
 import GoaDetails from "./Pages/India/Goa/Goadetails/Goadetails";
 // import BookingPopup from "./Components/BookingPopup";
 import BillingPage from "./Components/BillingPage";
+import India from "./Pages/India/India";
 // import AdminPanel from "./Components/AdminPanel";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/billing" element={<BillingPage />} />
           {/* <Route path="/admin" element={<AdminPanel />} /> */}
           <Route path="/" element={<Home />} />
+          <Route path="/india" element={<India />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Review />} />
           <Route path="/international/dubai" element={<Dubai />} />
