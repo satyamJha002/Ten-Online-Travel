@@ -38,6 +38,7 @@ import Ooty from "./Pages/India/TamilNadu/Ooty/Ooty";
 import OotyDetails from "./Pages/India/TamilNadu/Ooty/OotyDetails/OotyDetails";
 import Naintal from "./Pages/India/Uttarakhand/Nainitaldata/Naintal";
 import Kodaikanal from "./Pages/India/TamilNadu/Kodaikanal/Kodaikanal";
+import KodaikanalDetails from "./Pages/India/TamilNadu/Kodaikanal/KodaikanalDetails/KodaikanalDetails";
 import Munnar from "./Pages/India/Kerala/Munnar";
 import Rishikesh from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/Rishikesh";
 import RishikeshDetailsPage from "./Pages/India/Uttarakhand/Nainitaldata/Rishikesh/RishikeshDetails/RishikeshDetailsPage";
@@ -123,6 +124,7 @@ function App() {
             element={<OotyDetails />}
           />
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
+          <Route path="/india/tamilnadu/Kodaikanal/trip/:id" element={<KodaikanalDetails />} />
           <Route path="/munnar" element={<Munnar />} />
           <Route path="/india/uttarakhand/nainital" element={<Naintal />} />
           <Route
@@ -146,9 +148,9 @@ function App() {
             path="/activities/riverrafting/trip/:id"
             element={<RiverRaftingDetails />}
           />
-          <Route path="/activities/Hiking" element={<Hiking />} />
+          <Route path="/activities/hiking" element={<Hiking />} />
           <Route
-            path="/activities/Hiking/trip/:id"
+            path="/activities/hiking/trip/:id"
             element={<HikingDetails />}
           />
           <Route path="/Termpage" element={<Termpage />} />
