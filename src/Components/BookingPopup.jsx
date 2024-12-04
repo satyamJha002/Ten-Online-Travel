@@ -15,7 +15,6 @@ const BookingPopup = () => {
     VIP: 300,
   };
 
-
   const packageDetails = {
     Basic: {
       name: "Basic Package",
@@ -35,9 +34,9 @@ const BookingPopup = () => {
   };
 
   const proceedToCheckout = () => {
-    if (!date || !packageType || !members ) {
+    if (!date || !packageType || !members) {
       alert("Please fill in all the fields.");
-      return; 
+      return;
     }
     const totalPrice = getPackagePrice();
 
@@ -48,13 +47,12 @@ const BookingPopup = () => {
         packageType,
         members,
         totalPrice,
-       
       },
     });
   };
 
   const getPackagePrice = () => {
-    return packagePrices[packageType] * members; 
+    return packagePrices[packageType] * members;
   };
 
   const getPerPersonPrice = () => {
@@ -64,19 +62,19 @@ const BookingPopup = () => {
   return (
     <div className="booking-container relative">
       <button
-         className="bg-green-500 text-white px-20 py-3 rounded-md hover:bg-green-600 transition"
+        className="bg-green-500 text-white px-20 py-3 rounded-md hover:bg-green-600 transition"
         onClick={() => setShowPopup(true)}
       >
         Check Availability
       </button>
 
-    
       {showPopup && (
         <div className="popup bg-black bg-opacity-50 fixed inset-0 z-50 flex items-center justify-center">
           <div className="popup-content bg-white p-6 rounded-lg shadow-lg w-full sm:w-[800px] h-[450px] flex">
-
             <div className="booking-details w-full sm:w-1/2 pr-4">
-              <h2 className="text-2xl  mt-4 font-semibold mb-6 text-center">Select Booking Details</h2>
+              <h2 className="text-2xl  mt-4 font-semibold mb-6 text-center">
+                Select Booking Details
+              </h2>
 
               <label className="block text-sm font-medium mb-2">
                 Date:
@@ -105,7 +103,9 @@ const BookingPopup = () => {
               </label>
 
               <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">Members:</label>
+                <label className="block text-sm font-medium mb-2">
+                  Members:
+                </label>
                 <div className="flex items-center space-x-3">
                   <button
                     onClick={() => setMembers((prev) => Math.max(1, prev - 1))}
@@ -149,24 +149,33 @@ const BookingPopup = () => {
                   <h2 className="text-lg text-gray-700 font-medium mb-2">
                     {packageDetails[packageType]?.name}
                   </h2>
-                  <p className="text-sm text-gray-700">{packageDetails[packageType]?.description}</p>
+                  <p className="text-sm text-gray-700">
+                    {packageDetails[packageType]?.description}
+                  </p>
                   <p className="text-sm text-gray-700 font-medium mt-2">
                     Starting Date: {packageDetails[packageType]?.startDate}
                   </p>
 
                   <p className="text-lg text-gray-700 font-medium mt-4">
-                    {packageType ? `$${getPerPersonPrice()}/Person` : "Select a package to view price"}
+                    {packageType
+                      ? `$${getPerPersonPrice()}/Person`
+                      : "Select a package to view price"}
                   </p>
 
                   <hr className="my-2" />
                   <p className="text-lg text-gray-700 font-medium">
-                    Total Price: <span className="font-bold text-xl">${packageType ? getPackagePrice() : "0.00"}</span>
+                    Total Price:{" "}
+                    <span className="font-bold text-xl">
+                      ${packageType ? getPackagePrice() : "0.00"}
+                    </span>
                   </p>
                 </>
               )}
 
               {!packageType && (
-                <p className="text-sm text-gray-500">Please select a package to view details.</p>
+                <p className="text-sm text-gray-500">
+                  Please select a package to view details.
+                </p>
               )}
             </div>
           </div>

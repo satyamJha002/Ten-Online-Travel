@@ -8,6 +8,7 @@ import Dubai from "./Pages/International/Dubai/Dubai";
 import Bali from "./Pages/International/Bali/Bali";
 import BaliDetails from "./Pages/International/Bali/DetailsPage/BaliDetails";
 import Darjeeling from "./Pages/India/Darjeeling/Darjeeling";
+import DarjeelingDetailsPage from "./Pages/India/Darjeeling/DarjeelingDetails/DarjeelingDetailsPage";
 import Malaysia from "./Pages/International/Malaysia/Malaysia";
 import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
 import Paragliding from "./Pages/Activities/Paragliding/Paragliding";
@@ -49,8 +50,9 @@ import DetailsKashmir from "./Pages/India/Kashmir/DetailsPage/DetailsKashmir";
 import NainitalDetails from "./Pages/India/Uttarakhand/Nainitaldata/NainitalDetails/NainitalDetails";
 import LadakhDetails from "./Pages/India/Ladakh/LadakhDetails/LadakhDetails";
 import GoaDetails from "./Pages/India/Goa/Goadetails/Goadetails";
-// import BookingPopup from "./Components/BookingPopup";
+import BookingPopup from "./Components/BookingPopup";
 import BillingPage from "./Components/BillingPage";
+import MunnarDetailsPage from "./Pages/India/Kerala/KeralaDetails/MunnarDetailsPage";
 // import AdminPanel from "./Components/AdminPanel";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 
@@ -61,7 +63,7 @@ function App() {
         <ScrollToTop />
         <NavBar />
         <Routes>
-          {/* <Route path="/book" element={<BookingPopup />} /> */}
+          <Route path="/book" element={<BookingPopup />} />
           <Route path="/billing" element={<BillingPage />} />
           {/* <Route path="/admin" element={<AdminPanel />} /> */}
           <Route path="/" element={<Home />} />
@@ -112,6 +114,10 @@ function App() {
           <Route path="/india/sikkim" element={<Sikkim />} />
           <Route path="/india/sikkim/trip/:id" element={<SikkimDetails />} />
           <Route path="/india/darjeeling" element={<Darjeeling />} />
+          <Route
+            path="/india/darjeeling/trip/:id"
+            element={<DarjeelingDetailsPage />}
+          />
           <Route path="/india/kashmir" element={<Kashmir />} />
           <Route path="/india/ladakh" element={<Ladakh />} />
           <Route path="/india/Ladakh/trip/:id" element={<LadakhDetails />} />
@@ -122,6 +128,16 @@ function App() {
           />
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
           <Route path="/munnar" element={<Munnar />} />
+          <Route path="/munnar/trip/:id" element={<MunnarDetailsPage />} />
+          <Route
+            path="/munnar/munnarsightseeing/trip/:id"
+            element={<MunnarDetailsPage />}
+          />
+          <Route
+            path="/munnar/munnarothertrips/trip/:id"
+            element={<MunnarDetailsPage />}
+          />
+
           <Route path="/india/uttarakhand/nainital" element={<Naintal />} />
           <Route
             path="/india/uttarakhand/nainital/trip/:id"

@@ -8,7 +8,6 @@ import Card from "../../../Components/Card/Card";
 import "./Munnar.css";
 import { useLocation } from "react-router-dom";
 
-
 const Munnar = () => {
   const location = useLocation();
   const [locationURL] = useState(location.pathname);
@@ -24,9 +23,16 @@ const Munnar = () => {
         <h1>Munnar</h1>
         <div className="munnarInfo">
           <p>
-            Munnar, a picturesque hill station in Kerala, South India, is just 110 km from Cochin International Airport. Located 6,000 feet above sea level, it is renowned for its cool climate, scenic landscapes, and sprawling tea plantations. Visitors are enchanted by Munnar’s tranquility and natural beauty.
-
-            Treehouses, a popular attraction, provide a unique stay amid lush greenery, offering a perfect retreat for those seeking relaxation. Munnar's highlights include National Parks, ancient churches, serene lakes, dams, temples, and vibrant tea gardens. With its echo points, waterfalls, and rich flora and fauna, Munnar is a haven for nature lovers and a memorable getaway.
+            Munnar, a picturesque hill station in Kerala, South India, is just
+            110 km from Cochin International Airport. Located 6,000 feet above
+            sea level, it is renowned for its cool climate, scenic landscapes,
+            and sprawling tea plantations. Visitors are enchanted by Munnar’s
+            tranquility and natural beauty. Treehouses, a popular attraction,
+            provide a unique stay amid lush greenery, offering a perfect retreat
+            for those seeking relaxation. Munnar's highlights include National
+            Parks, ancient churches, serene lakes, dams, temples, and vibrant
+            tea gardens. With its echo points, waterfalls, and rich flora and
+            fauna, Munnar is a haven for nature lovers and a memorable getaway.
           </p>
         </div>
         <div className="friAndFam">
@@ -35,7 +41,7 @@ const Munnar = () => {
 
         <div className="munnarCardsContainer">
           {(munnar || []).map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
           ))}
         </div>
         <div className="friAndFam">
@@ -43,7 +49,11 @@ const Munnar = () => {
         </div>
         <div className="sightseeingCardsContainer">
           {(munnarsightseeing || []).map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card
+              key={pkg.id}
+              pkg={pkg}
+              locationURL={locationURL + "/munnarsightseeing"}
+            />
           ))}
         </div>
         <div className="friAndFam">
@@ -51,7 +61,11 @@ const Munnar = () => {
         </div>
         <div className="otherCardsContainer">
           {(munnarOtherTrips || []).map((pkg) => (
-            <Card key={pkg.id} pkg={pkg} />
+            <Card
+              key={pkg.id}
+              pkg={pkg}
+              locationURL={locationURL + "/munnarothertrips"}
+            />
           ))}
         </div>
       </div>

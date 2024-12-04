@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <section>
         <div
-          className="relative bg-cover bg-center min-h-96 flex flex-col justify-center items-center"
+          className="relative bg-cover bg-center min-h-[70vh] flex flex-col justify-center items-center"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1515888368305-5a7eba31b4e3?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",

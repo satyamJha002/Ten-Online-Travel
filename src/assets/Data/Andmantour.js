@@ -610,11 +610,11 @@ export const watertourPackages = [
     noOfDays: "5",
     description: "The Andaman Islands, located in the east of...",
     detailDescription:
-    "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
-  subDescription:
-    "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
-  lastDescription:
-    "Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
+      "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
+    subDescription:
+      "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
+    lastDescription:
+      "Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
     overView:
       "Enthusiastic divers and vacationers are drawn to Havelock because of its turquoise seas, sweet sands, and sun-drenched beaches. The ideal beginning point for your trip to the Andaman Islands would be Port Blair, which has a magnificent scenery and history and is home to the Cellular Jail outside of the extremely British Ross and Viper Islands.",
     Itinerary: "",
@@ -721,11 +721,11 @@ export const watertourPackages = [
     noOfDays: "5",
     description: "The Andaman Islands, located in the east of...",
     detailDescription:
-    "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
-  subDescription:
-    "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
-  lastDescription:
-    "Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
+      "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
+    subDescription:
+      "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
+    lastDescription:
+      "Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
     overView:
       "Enthusiastic divers and vacationers are drawn to Havelock because of its turquoise seas, sweet sands, and sun-drenched beaches. The ideal beginning point for your trip to the Andaman Islands would be Port Blair, which has a magnificent scenery and history and is home to the Cellular Jail outside of the extremely British Ross and Viper Islands.",
     Itinerary: "",
@@ -1075,11 +1075,11 @@ export const watertourPackages = [
     noOfDays: "6",
     description: "The Andaman Islands, located in the east of...",
     detailDescription:
-    "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
-  subDescription:
-    "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
-  lastDescription:
-    "Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
+      "The Andaman Islands, situated to the east of India's mainland, lie in serene isolation within the Bay of Bengal. This tropical paradise is characterized by crystal-clear waters, sunlit white sandy beaches, lush mangrove forests, and swaying coconut groves that provide a tranquil shade for your hammock.",
+    subDescription:
+      "These rolling islands are cloaked in dense, rain-fed evergreen forests teeming with diverse and exotic flora and fauna. While only a handful of islands are open to visitors, the rest remain off-limits to protect the privacy of the Sentinelese, an indigenous community that continues to avoid external contact.",
+    lastDescription:
+      "Havelock Island, renowned for its turquoise waters, pristine beaches, and golden sands, is a favorite destination for divers and relaxation seekers. Port Blair, with its fascinating history and attractions such as the Cellular Jail and the nearby British-era Ross and Viper Islands, serves as the perfect gateway for exploring the captivating Andaman Islands.",
     overView:
       "Enthusiastic divers and vacationers are drawn to Havelock because of its turquoise seas, sweet sands, and sun-drenched beaches. The ideal beginning point for your trip to the Andaman Islands would be Port Blair, which has a magnificent scenery and history and is home to the Cellular Jail outside of the extremely British Ross and Viper Islands.",
     Itinerary: "",
@@ -1138,7 +1138,7 @@ export const watertourPackages = [
       "Inclusive of GST.",
     ],
     packageExclusion: [
-     "Flight Cost Extra",
+      "Flight Cost Extra",
       "All personal expenses, optional tours and extra meals",
       "Entrance fees at all monuments and museums mentioned in the itinerary",
       "Tips, laundry and phone calls",
