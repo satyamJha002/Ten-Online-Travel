@@ -240,7 +240,7 @@ const DubaiDetails = () => {
                 <h2>Agency</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex items-center justify-center gap-1 text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

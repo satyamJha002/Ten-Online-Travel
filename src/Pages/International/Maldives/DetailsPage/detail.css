@@ -382,4 +382,14 @@
     font-weight: 600;
     font-size: 1rem;
   }
+  .tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
