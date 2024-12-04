@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const BookingPopup = () => {
+const BookingPopup = ({ pageName }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [packageType, setPackageType] = useState("");
@@ -42,6 +42,7 @@ const BookingPopup = () => {
 
     navigate("/billing", {
       state: {
+        pageName,
         date,
         time,
         packageType,
@@ -140,7 +141,7 @@ const BookingPopup = () => {
             </div>
 
             <div className="price w-full sm:w-1/2 pl-4 border-l border-gray-300 flex flex-col items-center justify-center px-4 py-6">
-              <div className="text-green-600 text-4xl   mb-4 rounded-md transition">
+              <div className="text-green-600 text-4xl mb-4 rounded-md transition">
                 Package Details
               </div>
 

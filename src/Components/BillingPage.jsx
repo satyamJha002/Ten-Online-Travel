@@ -4,7 +4,7 @@ import axios from "axios";
 
 const BillingPage = () => {
   const location = useLocation();
-  const { date, time, packageType, members, totalPrice } = location.state || {};
+  const { date, time, packageType, members, totalPrice, pageName } = location.state || {};
 
   // const { addNewBooking } = useContext(BookingContext);
 
@@ -47,6 +47,7 @@ const BillingPage = () => {
         from_email: formData.email,
         message: `
           Booking Summary:
+          - Place: ${pageName}
           - Date: ${date}
           - Package: ${packageType}
           - Members: ${members}
@@ -121,6 +122,7 @@ const BillingPage = () => {
         <div className="w-1/5 p-4  bg-whitw-100 items-center justify-center rounded shadow">
           <div>
             <h2 className="text-2xl font-semibold mb-4">Booking Summary</h2>
+            <p className="text-lg">Place: {pageName}</p>
             <p className="text-lg ">Date: {date}</p>
             <p className="text-lg ">Package: {packageType}</p>
             <p className="text-lg ">Members: {members}</p>

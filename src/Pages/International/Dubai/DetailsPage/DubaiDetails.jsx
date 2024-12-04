@@ -8,6 +8,7 @@ import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detail.css";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const DubaiDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -219,9 +220,9 @@ const DubaiDetails = () => {
                   <span>/Adult</span>
                 </div>
               </div>
-              <div className="availableBtn">
-                <button>Check Availability</button>
-              </div>
+              <div>
+                <BookingPopup pageName="Dubai" />
+                </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">
               <h2>Check our reviews on TripAdvisor!</h2>
@@ -239,7 +240,7 @@ const DubaiDetails = () => {
                 <h2>Agency</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex items-center justify-center gap-1 text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

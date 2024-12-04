@@ -340,7 +340,7 @@ const ThailandDetailsPage = () => {
                   <span>/Adult</span>
                 </div>
                 <div>
-                  <BookingPopup/>
+                <BookingPopup pageName="Thailand" />
                 </div>
               </div>
             </div>

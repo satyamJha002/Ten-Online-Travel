@@ -32,7 +32,7 @@ const Kodaikanal = () => {
                 </div>
                 <div className="KodaikanalCardsContainer">
                     {(kodaikanal || []).map((pkg) => (
-                        <Card key={pkg.id} pkg={pkg} />
+                        <Card key={pkg.id} pkg={pkg} locationURL={locationURL} />
                     ))}
                 </div>
 
