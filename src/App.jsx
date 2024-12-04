@@ -146,9 +146,9 @@ function App() {
             path="/activities/riverrafting/trip/:id"
             element={<RiverRaftingDetails />}
           />
-          <Route path="/activities/Hiking" element={<Hiking />} />
+          <Route path="/activities/hiking" element={<Hiking />} />
           <Route
-            path="/activities/Hiking/trip/:id"
+            path="/activities/hiking/trip/:id"
             element={<HikingDetails />}
           />
           <Route path="/Termpage" element={<Termpage />} />
