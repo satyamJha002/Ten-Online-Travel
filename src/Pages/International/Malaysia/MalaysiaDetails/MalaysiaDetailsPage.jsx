@@ -38,7 +38,7 @@ const MalaysiaDetailsPage = () => {
   return (
     <>
       {filteredObjects.map((items, index) => (
-        <div key={index} className={styles["datails-container"]}>
+        <div key={index} className={styles["details-container"]}>
           {/* Right side */}
           <div className={styles["detail-right"]}>
             <div className={styles["detail-title"]}>
@@ -340,7 +340,7 @@ const MalaysiaDetailsPage = () => {
                   <span>/Adult</span>
                 </div>
                 <div>
-                <BookingPopup pageName="Malaysia" />
+                  <BookingPopup pageName="Malaysia" />
                 </div>
               </div>
             </div>

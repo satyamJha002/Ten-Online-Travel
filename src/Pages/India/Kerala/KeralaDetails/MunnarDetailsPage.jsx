@@ -128,12 +128,12 @@ const MunnarDetailsPage = () => {
                         {typeof desc === "string" && <p>{desc}</p>}
                         {typeof desc === "object" && (
                           <div className="mb-2">
-                            <h1 className="text-2xl font-semibold mb-1">
+                            <h1 className="text-2xl font-semibold mb-1 max-sm:text-[1.1rem]">
                               {desc.listTitle}
                             </h1>
                             <ul>
                               {desc.listDesc.map((item, index) => (
-                                <li key={index} className="pt-1">
+                                <li key={index} className="pt-1 max-sm:text-sm">
                                   {item}
                                 </li>
                               ))}
@@ -145,47 +145,59 @@ const MunnarDetailsPage = () => {
               </div>
             </div>
 
-            <div className="max-w-xl mx-auto mt-10">
-              <table className="table-auto w-full border border-gray-200">
-                <tbody>
-                  {Object.entries(items.tripDetails).map(
-                    ([key, value], index) => (
-                      <tr key={index} className="even:bg-gray-100">
-                        <td className="px-4 py-2 font-bold text-gray-700 capitalize border border-gray-200">
-                          {key
-                            .replace(/([A-Z])/g, " $1")
-                            .replace(/^./, (str) => str.toUpperCase())}
-                        </td>
-                        <td className="px-4 py-2 text-gray-600 border border-gray-200">
-                          {value}
-                        </td>
-                      </tr>
-                    )
-                  )}
-                </tbody>
-              </table>
-            </div>
+            {items.tripDetails === "" ? null : (
+              <div className="max-w-xl mx-auto mt-10">
+                <table className="table-auto w-full border border-gray-200">
+                  <tbody>
+                    {Object.entries(items.tripDetails).map(
+                      ([key, value], index) => (
+                        <tr key={index} className="even:bg-gray-100">
+                          <td className="px-4 py-2 font-bold text-gray-700 capitalize border border-gray-200">
+                            {key
+                              .replace(/([A-Z])/g, " $1")
+                              .replace(/^./, (str) => str.toUpperCase())}
+                          </td>
+                          <td className="px-4 py-2 text-gray-600 border border-gray-200">
+                            {value}
+                          </td>
+                        </tr>
+                      )
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            )}
 
             <div className={styles["info-details"]}>
               <div className="flex gap-2 items-center">
-                <FaBusAlt className="text-2xl text-green-500" />
+                <FaBusAlt className="text-2xl max-sm:text-xl text-green-500" />
                 <div className="flex flex-col">
-                  <span className="text-[1.3rem] font-[500]">Transport</span>
-                  <span className="text-sm text-[#696d75]">AC Sedan Car</span>
+                  <span className="text-[1.3rem] font-[500] max-sm:text-lg">
+                    Transport
+                  </span>
+                  <span className="text-sm text-[#696d75] max-sm:text-sm">
+                    AC Sedan Car
+                  </span>
                 </div>
               </div>
               <div className="flex gap-2 items-center">
-                <MdRestaurant className="text-2xl text-green-500" />
+                <MdRestaurant className="text-2xl max-sm:text-xl text-green-500" />
                 <div className="flex flex-col">
-                  <span className="text-[1.3rem] font-[500]">Meals</span>
-                  <span className="text-sm text-[#696d75]">BreakFast</span>
+                  <span className="text-[1.3rem] max-sm:text-lg font-[500]">
+                    Meals
+                  </span>
+                  <span className="text-sm max-sm:text-sm text-[#696d75]">
+                    BreakFast
+                  </span>
                 </div>
               </div>
               <div className="flex gap-2 items-center">
-                <FaHotel className="text-2xl text-green-500" />
+                <FaHotel className="text-2xl max-sm:text-xl text-green-500" />
                 <div className="flex flex-col">
-                  <span className="text-[1.3rem] font-[500]">Accomodation</span>
-                  <span className="text-sm text-[#696d75]">
+                  <span className="text-[1.3rem] max-sm:text-lg font-[500]">
+                    Accomodation
+                  </span>
+                  <span className="text-sm max-sm:text-sm text-[#696d75]">
                     3 Star / 4 Star
                   </span>
                 </div>
@@ -219,7 +231,9 @@ const MunnarDetailsPage = () => {
 
             <div id="overView" className={styles["detail-overview"]}>
               <h1>{items.overView === " " ? null : "OverView"}</h1>
-              <p className="text-[1.1rem] pt-3">{items.overView}</p>
+              <p className="text-[1.1rem] max-sm:text-sm pt-3">
+                {items.overView}
+              </p>
             </div>
 
             <div id="itIneary" className={styles["detail-itinerary"]}>
@@ -378,7 +392,9 @@ const MunnarDetailsPage = () => {
             <div
               className={`mt-10 text-2xl font-semibold text-center ${styles["review"]}`}
             >
-              <h2>Check our reviews on TripAdvisor!</h2>
+              <h2 className="max-sm:text-sm">
+                Check our reviews on TripAdvisor!
+              </h2>
             </div>
             <div className={styles["tripAdvisor-container"]}>
               <div className={styles["tripAdvisor-img"]}>
@@ -393,7 +409,7 @@ const MunnarDetailsPage = () => {
                 <h2>Agency</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex items-center justify-center gap-1 text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

@@ -293,8 +293,9 @@
 }
 
 .tripAdvisor-container {
-  width: 250px;
+  width: 300px;
   padding: 20px;
+  text-align: center;
   margin-top: 20px;
   border: 1px solid green;
 }
@@ -373,6 +374,26 @@
     width: 50%;
     margin-top: 0px;
   }
+
+  .detail-left {
+    width: 90%;
+    padding-left: 0px;
+  }
+
+  .detail-left .review h2 {
+    font-size: 1.5rem;
+  }
+
+  .tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -389,7 +410,7 @@
 
   .detail-nav-sticky {
     background-color: rgb(255, 255, 255);
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 20px;
     justify-content: space-around;
     max-width: 100%;
@@ -401,10 +422,26 @@
 }
 
 @media (max-width: 480px) {
+  .detail-description p {
+    font-size: 0.9rem;
+  }
+
+  .detail-overview h1,
+  .detail-itinerary h1,
+  .both-inclusions-containers h1,
+  .hotels h1 {
+    font-size: 1.2rem;
+  }
+
+  .accordion-header h3,
+  .accordion-content {
+    font-size: 1rem;
+  }
+
   table {
     display: block;
     width: 50%;
-    min-width: 320px;
+    min-width: 220px;
   }
 
   th,
@@ -419,5 +456,23 @@
   th {
     background-color: #f7fafc;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 320px) {
+  .detail-description p {
+    font-size: 0.9rem;
+  }
+
+  .detail-overview h1,
+  .detail-itinerary h1,
+  .both-inclusions-containers h1,
+  .hotels h1 {
+    font-size: 1.2rem;
+  }
+
+  .accordion-header h3,
+  .accordion-content {
+    font-size: 1rem;
   }
 }

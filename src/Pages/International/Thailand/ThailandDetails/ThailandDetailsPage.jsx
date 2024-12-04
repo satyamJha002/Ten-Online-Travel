@@ -38,7 +38,7 @@ const ThailandDetailsPage = () => {
   return (
     <>
       {filteredObjects.map((items, index) => (
-        <div key={index} className={styles["datails-container"]}>
+        <div key={index} className={styles["details-container"]}>
           {/* Right side */}
           <div className={styles["detail-right"]}>
             <div className={styles["detail-title"]}>
@@ -340,11 +340,13 @@ const ThailandDetailsPage = () => {
                   <span>/Adult</span>
                 </div>
                 <div>
-                <BookingPopup pageName="Thailand" />
+                  <BookingPopup pageName="Thailand" />
                 </div>
               </div>
             </div>
-            <div className="mt-10 text-2xl font-semibold text-center">
+            <div
+              className={`mt-10 text-2xl font-semibold text-center ${styles["review"]}`}
+            >
               <h2>Check our reviews on TripAdvisor!</h2>
             </div>
             <div className={styles["tripAdvisor-container"]}>

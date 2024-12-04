@@ -1,4 +1,4 @@
-.datails-container {
+.details-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -120,6 +120,7 @@
   padding: 1rem;
   margin-top: 2rem;
   border: 1px solid black;
+  align-items: center;
   justify-content: space-evenly;
   background-color: rgb(255, 255, 255);
 }
@@ -292,8 +293,9 @@
 }
 
 .tripAdvisor-container {
-  width: 250px;
+  width: 300px;
   padding: 20px;
+  text-align: center;
   margin-top: 20px;
   border: 1px solid green;
 }
@@ -312,20 +314,16 @@
 @media screen and (max-width: 1208px) {
   .detail-price-container {
     padding: 12% 10%;
-    width: 100%;
+    height: auto;
   }
 
   .availableBtn {
     width: 100%;
   }
-  .finalPrice h1 {
-    font-weight: 600;
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 1000px) {
-  .datails-container {
+  .details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,7 +341,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 111;
     box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
     border-radius: 0;
@@ -366,10 +364,7 @@
   .responsive-detail-price .finalPrice {
     display: flex;
   }
-  .finalPrice h1 {
-    font-weight: 600;
-    font-size: 1rem;
-  }
+
   .responsive-detail-price .finalPrice h1 {
     font-size: 1.2rem;
   }
@@ -378,6 +373,26 @@
     font-size: 1rem;
     width: 50%;
     margin-top: 0px;
+  }
+
+  .detail-left {
+    width: 90%;
+    padding-left: 0px;
+  }
+
+  .detail-left .review h2 {
+    font-size: 1.5rem;
+  }
+
+  .tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -395,7 +410,7 @@
 
   .detail-nav-sticky {
     background-color: rgb(255, 255, 255);
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 20px;
     justify-content: space-around;
     max-width: 100%;
@@ -404,17 +419,29 @@
     box-sizing: border-box;
     z-index: 10;
   }
-  .finalPrice h1 {
-    font-weight: 600;
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 480px) {
+  .detail-description p {
+    font-size: 0.9rem;
+  }
+
+  .detail-overview h1,
+  .detail-itinerary h1,
+  .both-inclusions-containers h1,
+  .hotels h1 {
+    font-size: 1.2rem;
+  }
+
+  .accordion-header h3,
+  .accordion-content {
+    font-size: 1rem;
+  }
+
   table {
     display: block;
     width: 50%;
-    min-width: 320px;
+    min-width: 220px;
   }
 
   th,
@@ -425,89 +452,27 @@
     padding: 8px;
     border-bottom: 1px solid #ddd;
   }
-  .finalPrice h1 {
-    font-weight: 600;
-    font-size: 1rem;
-  }
+
   th {
     background-color: #f7fafc;
     font-weight: bold;
   }
 }
 
-@media screen and (max-width: 1208px) {
-  .detail-price-container {
-    padding: 12% 10%;
-    width: 100%;
-  }
-  .availableBtn {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0px;
-    width: 100%;
-  }
-  .detail-right {
-    width: 96%;
-  }
-  .detail-left {
-    width: 100%;
-    padding: 0 10px;
-  }
-  .dubai-detail-nav-sticky {
-    font-size: 1rem;
-    margin-top: 8%;
-    width: 100%;
-    border-radius: 15px;
-  }
-  .finalPrice h1 {
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  .dubai-detail-nav-sticky ul {
-    flex-direction: row;
+@media (max-width: 320px) {
+  .detail-description p {
+    font-size: 0.9rem;
   }
 
-  .dubai-detail-nav-sticky ul li {
-    padding: 5px;
-    font-size: 1em;
+  .detail-overview h1,
+  .detail-itinerary h1,
+  .both-inclusions-containers h1,
+  .hotels h1 {
+    font-size: 1.2rem;
   }
-  .dubai-hotels-table {
-    width: 100%;
-  }
-  .dubai-hotels-container {
-    padding: 0;
-  }
-  .detail-price-container {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 225px;
-    z-index: 111;
-    box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
-    border-radius: 0;
-    padding: 24px 24px 16px;
-    background-color: #fff;
-  }
-  .availableBtn {
-    width: auto;
-    padding: 2%;
-  }
-  .tripAdvisor-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-    padding: 20px;
-    margin-top: 20px;
+
+  .accordion-header h3,
+  .accordion-content {
+    font-size: 1rem;
   }
 }
