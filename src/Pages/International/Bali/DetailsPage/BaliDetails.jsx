@@ -8,6 +8,7 @@ import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detail.css";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const BaliDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -196,9 +197,9 @@ const BaliDetails = () => {
                 <h1>{items.price}</h1>
                 <span>/Adult</span>
               </div>
-              <div className="availableBtn">
-                <button>Check Availability</button>
-              </div>
+              <div>
+                <BookingPopup pageName="Bali" />
+                </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">
               <h2>Check our reviews on TripAdvisor!</h2>
