@@ -312,11 +312,15 @@
 @media screen and (max-width: 1208px) {
   .detail-price-container {
     padding: 12% 10%;
-    height: auto;
+    width: 100%;
   }
 
   .availableBtn {
     width: 100%;
+  }
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
   }
 }
 
@@ -362,7 +366,10 @@
   .responsive-detail-price .finalPrice {
     display: flex;
   }
-
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
   .responsive-detail-price .finalPrice h1 {
     font-size: 1.2rem;
   }
@@ -397,6 +404,10 @@
     box-sizing: border-box;
     z-index: 10;
   }
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -414,7 +425,10 @@
     padding: 8px;
     border-bottom: 1px solid #ddd;
   }
-
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
   th {
     background-color: #f7fafc;
     font-weight: bold;

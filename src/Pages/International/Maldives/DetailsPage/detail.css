@@ -328,7 +328,7 @@
 @media screen and (max-width: 1208px) {
   .detail-price-container {
     padding: 12% 10%;
-    height: auto;
+    width: 100%;
   }
   .availableBtn {
     width: 100%;
@@ -370,14 +370,16 @@
     z-index: 111;
     box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
     border-radius: 0;
-    padding: 24px 24px 16px;
+    height: 225px;
+    padding: 0px 24px;
     background-color: #fff;
   }
   .availableBtn {
     width: auto;
     padding: 2%;
   }
-  .maldives-originalPrice {
-    /* font-size: rem; */
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
   }
 }
