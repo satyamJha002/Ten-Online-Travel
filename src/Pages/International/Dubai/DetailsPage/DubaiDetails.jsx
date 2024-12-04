@@ -247,13 +247,13 @@ const DubaiDetails = () => {
                     <FaStarHalfAlt />
                   </span>
                 </div>
-                <div>
+                <div className="mt-2">
                   <span>Trip Advisor Review</span>
-                  <p>"Before Holiday Review"</p>
-                  <p>"very bad experience"</p>
-                  <p>"Trip to Bali and Singapore"</p>
-                  <p>"Comfortable experince"</p>
-                  <p>"Nicely planned trip to bali"</p>
+                  <p className="mt-1 leading-3">"Before Holiday Review"</p>
+                  <p className="leading-none">"very bad experience"</p>
+                  <p className="leading-none">"Trip to Bali and Singapore"</p>
+                  <p className="leading-none">"Comfortable experince"</p>
+                  <p className="leading-none">"Nicely planned trip to bali"</p>
                 </div>
               </div>
             </div>

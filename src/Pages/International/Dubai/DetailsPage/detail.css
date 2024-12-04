@@ -285,7 +285,7 @@
   border-radius: 5px;
 }
 .tripAdvisor-container {
-  width: 250px;
+  width: 300px;
   padding: 20px;
   margin-top: 20px;
   border: 1px solid green;
@@ -326,13 +326,14 @@
   font-size: 1em;
   padding: 15px;
 }
+
 /* responsive design  */
 /* please chang your class name */
 
 @media screen and (max-width: 1208px) {
   .detail-price-container {
     padding: 12% 10%;
-    height: auto;
+    width: 100%;
   }
   .availableBtn {
     width: 100%;
@@ -359,7 +360,10 @@
     width: 100%;
     border-radius: 15px;
   }
-
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
   .dubai-detail-nav-sticky ul {
     flex-direction: row;
   }
@@ -380,6 +384,7 @@
     right: 0;
     bottom: 0;
     width: 100vw;
+    height: 225px;
     z-index: 111;
     box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
     border-radius: 0;
