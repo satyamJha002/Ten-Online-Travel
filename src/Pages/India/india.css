@@ -10,6 +10,7 @@
 }
 .tour-image {
   width: 424px;
+  border-radius:5px
   height: 416px;
   transition: transform 0.5s ease-in-out;
 }
