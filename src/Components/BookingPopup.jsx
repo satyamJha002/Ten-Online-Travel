@@ -93,7 +93,7 @@ const BookingPopup = ({ pageName }) => {
 
             <div className="popup-body flex flex-col sm:flex-row flex-grow gap-4 sm:gap-6">
               <div className="price w-full sm:w-1/2 pl-4 border-t sm:border-l border-gray-300 flex flex-col items-center justify-center px-4 py-6">
-                <div className="text-green-600 text-4xl mb-4 rounded-md transition">
+                <div className="text-green-600 max-md:flex max-lg:flex max-lg:gap-2 max-sm:text-center max-sm:text-xl text-4xl mb-4 rounded-md transition">
                   Package Details
                 </div>
 
@@ -185,7 +185,7 @@ const BookingPopup = ({ pageName }) => {
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center">
+                <div className="flex max-md:gap-4 max-sm:flex max-sm:flex-col max-sm:gap-2 justify-between items-center">
                   <button
                     className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition"
                     onClick={proceedToCheckout}
