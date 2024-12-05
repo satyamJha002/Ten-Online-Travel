@@ -55,6 +55,7 @@ import GoaDetails from "./Pages/India/Goa/Goadetails/Goadetails";
 import BookingPopup from "./Components/BookingPopup";
 import BillingPage from "./Components/BillingPage";
 import MunnarDetailsPage from "./Pages/India/Kerala/KeralaDetails/MunnarDetailsPage";
+import ActivitiesMain from "./Pages/Activities/ActivitiesMain/ActivitiesMain";
 // import AdminPanel from "./Components/AdminPanel";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 // import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
@@ -102,6 +103,7 @@ function App() {
             path="/international/maldives/trip/:id"
             element={<MaldivesDetails />}
           />
+          <Route path="/activities" element={< ActivitiesMain />} />
           <Route
             path="/andaman-tour/andmatour/trip/:id"
             element={<Detailsandaman />}
