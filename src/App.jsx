@@ -59,6 +59,7 @@ import ActivitiesMain from "./Pages/Activities/ActivitiesMain/ActivitiesMain";
 // import AdminPanel from "./Components/AdminPanel";
 // import Details from "./Pages/DetailsPage/Details"; // Importing the missing Details component
 // import MalaysiaDetailsPage from "./Pages/International/Malaysia/MalaysiaDetails/MalaysiaDetailsPage";
+import India from "./Pages/India/India";
 import International from "./Pages/International/International";
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/book" element={<BookingPopup />} />
+          <Route path="/india" element={<India />} />
           <Route path="/billing" element={<BillingPage />} />
           {/* <Route path="/admin" element={<AdminPanel />} /> */}
           <Route path="/" element={<Home />} />
