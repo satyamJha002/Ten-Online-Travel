@@ -56,16 +56,12 @@
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  height: 600px; /* Adjust height as needed */
 }
 
 .paragliding-details-card-image {
   width: 100%;
-  height: 90%;
+  height: 85%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .paragliding-details-arrow {
@@ -95,7 +91,7 @@
   padding: 8px 16px;
 }
 
-.rparagliding-details-arrow.right {
+.paragliding-details-arrow.right {
   right: 10px;
   padding: 8px 16px;
 }
@@ -359,4 +355,82 @@
 
 .hotels-table td {
   color: #555;
+}
+
+@media screen and (max-width: 1208px) {
+  .paragliding-detail-price-container {
+    padding: 12% 10%;
+    width: 100%;
+  }
+  .paragliding-availableBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .paragliding-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .paragliding-detail-right {
+    width: 96%;
+  }
+  .paragliding-detail-left {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .paragliding-detail-nav-sticky {
+    font-size: 1rem;
+    margin-top: 8%;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .paragliding-finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .paragliding-detail-nav-sticky ul {
+    flex-direction: row;
+  }
+
+  .paragliding-detail-nav-sticky ul li {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .paragliding-hotels-table {
+    width: 100%;
+  }
+  .paragliding-hotels-container {
+    padding: 0;
+  }
+  .paragliding-detail-price-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 225px;
+    z-index: 111;
+    box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    padding: 24px 24px 16px;
+    background-color: #fff;
+  }
+  .paragliding-availableBtn {
+    width: auto;
+    padding: 2%;
+  }
+  .paragliding-tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
