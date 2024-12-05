@@ -60,14 +60,12 @@ const ThailandDetailsPage = () => {
               />
               <button
                 className={`${styles["details-arrow"]} ${styles["left"]}`}
-                onClick={() => handlePrevImage(items.images)}
-              >
+                onClick={() => handlePrevImage(items.images)}>
                 ❮
               </button>
               <button
                 className={`${styles["details-arrow"]} ${styles["right"]}`}
-                onClick={() => handleNextImage(items.images)}
-              >
+                onClick={() => handleNextImage(items.images)}>
                 ❯
               </button>
             </div>
@@ -77,8 +75,7 @@ const ThailandDetailsPage = () => {
                 items.detailDescription === " "
                   ? "m-0"
                   : styles["detail-description"]
-              }
-            >
+              }>
               <p>
                 {items.detailDescription === " "
                   ? null
@@ -182,16 +179,14 @@ const ThailandDetailsPage = () => {
                               ? list.listItems.map((item, index) => (
                                   <li
                                     key={index}
-                                    className="list-none text-[#75757d]"
-                                  >
+                                    className="list-none text-[#75757d]">
                                     {item}
                                   </li>
                                 ))
                               : list.listItems.map((item, index) => (
                                   <li
                                     key={index}
-                                    className="list-disc text-[#80818b]"
-                                  >
+                                    className="list-disc text-[#80818b]">
                                     {item}
                                   </li>
                                 ))}
@@ -213,8 +208,7 @@ const ThailandDetailsPage = () => {
                       <div key={index} className={styles["qna-container"]}>
                         <div
                           className={styles["accordion-header"]}
-                          onClick={() => toggleAccordion(index)}
-                        >
+                          onClick={() => toggleAccordion(index)}>
                           <h2>{ele.question}</h2>
                           <span>{openIndex === index ? "-" : "+"}</span>
                         </div>
@@ -230,8 +224,7 @@ const ThailandDetailsPage = () => {
 
             <div
               id="inClusions"
-              className={styles["both-inclusions-containers"]}
-            >
+              className={styles["both-inclusions-containers"]}>
               <h1>Inclusions</h1>
               {items.inClusions.map((item, index) => (
                 <>
@@ -240,8 +233,7 @@ const ThailandDetailsPage = () => {
                       {item.packageInclusion.map((ele, index) => (
                         <div
                           key={index}
-                          className={styles["packageInclusions"]}
-                        >
+                          className={styles["packageInclusions"]}>
                           <h3 className="text-[1.1rem] font-[500]">
                             {ele.title}
                           </h3>
@@ -249,8 +241,7 @@ const ThailandDetailsPage = () => {
                             {ele.points.map((point, index) => (
                               <p
                                 key={index}
-                                className="flex items-center gap-2 text-[1rem]"
-                              >
+                                className="flex items-center gap-2 text-[1rem]">
                                 <FaCheckCircle className="text-green-500 overflow-hidden text-2xl" />
                                 {point}
                               </p>
@@ -271,8 +262,7 @@ const ThailandDetailsPage = () => {
                           {ele.points.map((point, index) => (
                             <p
                               key={index}
-                              className="flex items-center gap-2 text-[1rem]"
-                            >
+                              className="flex items-center gap-2 text-[1rem]">
                               <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" />
                               {point}
                             </p>
@@ -340,7 +330,7 @@ const ThailandDetailsPage = () => {
                   <span>/Adult</span>
                 </div>
                 <div>
-                <BookingPopup pageName="Thailand" />
+                  <BookingPopup pageName="Thailand" />
                 </div>
               </div>
             </div>

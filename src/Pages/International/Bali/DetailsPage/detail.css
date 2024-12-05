@@ -333,7 +333,7 @@
     width: 100%;
     padding: 0 10px;
   }
-  .dubai-detail-nav-sticky {
+  .detail-nav-sticky {
     font-size: 1rem;
     margin-top: 8%;
     width: 100%;
@@ -343,18 +343,18 @@
     font-weight: 600;
     font-size: 1rem;
   }
-  .dubai-detail-nav-sticky ul {
+  .detail-nav-sticky ul {
     flex-direction: row;
   }
 
-  .dubai-detail-nav-sticky ul li {
+  .detail-nav-sticky ul li {
     padding: 5px;
-    font-size: 1em;
+    font-size: 0.6em;
   }
-  .dubai-hotels-table {
+  .hotels-table {
     width: 100%;
   }
-  .dubai-hotels-container {
+  .hotels-container {
     padding: 0;
   }
   .detail-price-container {
