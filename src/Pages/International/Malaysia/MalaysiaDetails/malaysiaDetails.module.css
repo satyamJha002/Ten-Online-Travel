@@ -454,11 +454,6 @@
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 320px) {
-  .detail-description p {
-    font-size: 0.9rem;
-=======
 @media screen and (max-width: 1208px) {
   .detail-price-container {
     padding: 12% 10%;
@@ -496,7 +491,6 @@
   }
   .detail-nav-sticky ul {
     flex-direction: row;
->>>>>>> 667b8549aacb76cae1351cf6487ca4406d01e453
   }
 
   .detail-overview h1,
