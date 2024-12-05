@@ -349,18 +349,6 @@
     background-color: #fff;
   }
 
-  .detail-left .detail-discount {
-    display: none;
-  }
-
-  .responsive-detail-price {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
   .responsive-detail-price .finalPrice {
     display: flex;
   }
@@ -371,8 +359,8 @@
 
   .responsive-detail-price .availableBtn {
     font-size: 1rem;
-    width: 50%;
-    margin-top: 0px;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .detail-left {

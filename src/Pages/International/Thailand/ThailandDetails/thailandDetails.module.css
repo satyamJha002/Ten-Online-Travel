@@ -451,23 +451,6 @@
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 320px) {
-  .detail-description p {
-    font-size: 0.9rem;
-  }
-
-  .detail-overview h1,
-  .detail-itinerary h1,
-  .both-inclusions-containers h1,
-  .hotels h1 {
-    font-size: 1.2rem;
-  }
-
-  .accordion-header h3,
-  .accordion-content {
-    font-size: 1rem;
-=======
 @media screen and (max-width: 1208px) {
   .detail-price-container {
     padding: 12% 10%;
@@ -543,6 +526,5 @@
     width: 90%;
     padding: 20px;
     margin-top: 20px;
->>>>>>> c1f2d7b40132aeccfe231dab6d34b28075a28d01
   }
 }

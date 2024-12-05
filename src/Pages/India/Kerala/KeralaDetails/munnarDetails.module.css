@@ -348,31 +348,18 @@
     padding: 24px 24px 16px;
     background-color: #fff;
   }
-
-  .detail-left .detail-discount {
-    display: none;
-  }
-
-  .responsive-detail-price {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
   .responsive-detail-price .finalPrice {
     display: flex;
   }
 
   .responsive-detail-price .finalPrice h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .responsive-detail-price .availableBtn {
     font-size: 1rem;
-    width: 50%;
-    margin-top: 0px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .detail-left {

@@ -64,14 +64,14 @@ const BookingPopup = ({ pageName }) => {
     <div className="booking-container relative">
       <button
         className="bg-green-500 text-white px-20 py-3 rounded-md hover:bg-green-600 transition"
-        onClick={() => setShowPopup(true)}>
+        onClick={() => setShowPopup(true)}
+      >
         Check Availability
       </button>
 
       {showPopup && (
         <div className="popup bg-black bg-opacity-50 fixed inset-0 z-50 flex items-center justify-center">
           <div className="popup-content bg-white p-6 rounded-lg shadow-lg w-full sm:w-[800px] h-[580px] flex flex-col">
-          
             <div className="summary-section bg-white-50 w-full p-3 mb-2 rounded-md shadow">
               <h2 className="text-xl text-blue-700 font-semibold">
                 Place: {pageName}
@@ -89,22 +89,21 @@ const BookingPopup = ({ pageName }) => {
             </div>
 
             <div className="popup-body flex flex-grow">
-            
               <div className="booking-details w-full sm:w-1/2 pr-4">
                 <h2 className="text-2xl mt-4 font-semibold mb-6 text-center">
                   Select Booking Details
                 </h2>
 
-              <label className="block text-sm font-medium mb-2">
-                Date:
-                <input
-                  type="date"
-                  value={date}
-                  onChange={(e) => setDate(e.target.value)}
-                  className="border border-gray-300 p-3 rounded-md w-full mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </label>
+                <label className="block text-sm font-medium mb-2">
+                  Date:
+                  <input
+                    type="date"
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                    className="border border-gray-300 p-3 rounded-md w-full mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </label>
 
                 <label className="block text-sm font-medium mb-2">
                   Package Type:
@@ -160,45 +159,45 @@ const BookingPopup = ({ pageName }) => {
                 </div>
               </div>
 
-            
               <div className="price w-full sm:w-1/2 pl-4 border-l border-gray-300 flex flex-col items-center justify-center px-4 py-6">
                 <div className="text-green-600 text-4xl mb-4 rounded-md transition">
                   Package Details
                 </div>
 
-              {packageType && (
-                <>
-                  <h2 className="text-lg text-gray-700 font-medium mb-2">
-                    {packageDetails[packageType]?.name}
-                  </h2>
-                  <p className="text-sm text-gray-700">
-                    {packageDetails[packageType]?.description}
-                  </p>
-                  <p className="text-sm text-gray-700 font-medium mt-2">
-                    Starting Date: {packageDetails[packageType]?.startDate}
-                  </p>
+                {packageType && (
+                  <>
+                    <h2 className="text-lg text-gray-700 font-medium mb-2">
+                      {packageDetails[packageType]?.name}
+                    </h2>
+                    <p className="text-sm text-gray-700">
+                      {packageDetails[packageType]?.description}
+                    </p>
+                    <p className="text-sm text-gray-700 font-medium mt-2">
+                      Starting Date: {packageDetails[packageType]?.startDate}
+                    </p>
 
-                  <p className="text-lg text-gray-700 font-medium mt-4">
-                    {packageType
-                      ? `$${getPerPersonPrice()}/Person`
-                      : "Select a package to view price"}
-                  </p>
+                    <p className="text-lg text-gray-700 font-medium mt-4">
+                      {packageType
+                        ? `$${getPerPersonPrice()}/Person`
+                        : "Select a package to view price"}
+                    </p>
 
-                  <hr className="my-2" />
-                  <p className="text-lg text-gray-700 font-medium">
-                    Total Price:{" "}
-                    <span className="font-bold text-xl">
-                      ${packageType ? getPackagePrice() : "0.00"}
-                    </span>
-                  </p>
-                </>
-              )}
+                    <hr className="my-2" />
+                    <p className="text-lg text-gray-700 font-medium">
+                      Total Price:{" "}
+                      <span className="font-bold text-xl">
+                        ${packageType ? getPackagePrice() : "0.00"}
+                      </span>
+                    </p>
+                  </>
+                )}
 
-              {!packageType && (
-                <p className="text-sm text-gray-500">
-                  Please select a package to view details.
-                </p>
-              )}
+                {!packageType && (
+                  <p className="text-sm text-gray-500">
+                    Please select a package to view details.
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>

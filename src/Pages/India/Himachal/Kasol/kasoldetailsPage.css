@@ -225,7 +225,7 @@
 }
 
 .kasol-detail-price-container {
-  width: 80%;
+  width: 100%;
   height: 300px;
   padding: 50px;
   margin-top: 50px;
@@ -343,10 +343,6 @@
     left: 0;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     padding: 15px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -379,7 +375,7 @@
   }
 
   .kasol-finalPrice h1 {
-    font-size: 1.2em;
+    font-size: 1.4rem;
   }
 
   .kasol-details-images-slider {
@@ -411,13 +407,6 @@
   .kasol-detail-nav-sticky ul li {
     padding: 5px;
     font-size: 1.2em;
-  }
-
-  .kasol-availableBtn {
-    font-size: 0.9em;
-    padding: 10px;
-    margin-top: 0;
-    margin-left: 8px;
   }
 
   .kasol-tripAdvisor-heading {
@@ -464,7 +453,7 @@
   }
 
   .kasol-availableBtn {
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,9 +492,16 @@
   }
 }
 
+@media (max-width: 550px) {
+  .kasol-info-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 480px) {
   .kasol-detail-nav-sticky {
-    font-size: 0.75rem;
+    font-size: 0.57rem;
     padding: 8px;
   }
 

@@ -70,18 +70,18 @@ const OotyDetails = () => {
         </div>
 
         <div className="Ooty-info-details p-4">
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 items-center">
             <FaBusAlt className="text-2xl text-green-500" />
-            <div>
-              <p>Transport</p>
-              <h1>SIC</h1>
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Transport</span>
+              <span className="text-sm text-[#696d75]">SIC</span>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <MdRestaurant className="text-2xl text-green-500" />
-            <div>
-              <p>Meals</p>
-              <h1>Breakfast</h1>
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Meals</span>
+              <span className="text-sm text-[#696d75]">Breakfast</span>
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@ const OotyDetails = () => {
           <div className="Ooty-inclusions">
             {OotyObject.packageInclusion.map((inc, index) => (
               <div key={index} className="Ooty-inclusion">
-                <p>
+                <p className="flex gap-2 text-lg items-center">
                   <FaCheckCircle className="text-green-500 overflow-hidden text-xl" />{" "}
                   {inc}
                 </p>
@@ -168,7 +168,7 @@ const OotyDetails = () => {
           <div className="Ooty-inclusions">
             {OotyObject.packageExclusion.map((exc, index) => (
               <div key={index} className="Ooty-inclusion">
-                <p>
+                <p className="flex gap-2 text-lg items-center">
                   <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" />{" "}
                   {exc}
                 </p>
@@ -240,7 +240,7 @@ const OotyDetails = () => {
             <h2>Agency</h2>
             <div>
               <p>Trip Advisor Traveler Rating</p>
-              <span className="flex gap-1 text-green-500">
+              <span className="flex items-center justify-center gap-1 text-green-500">
                 <FaStar />
                 <FaStar />
                 <FaStar />

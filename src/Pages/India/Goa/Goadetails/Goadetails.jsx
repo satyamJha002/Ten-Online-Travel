@@ -62,12 +62,14 @@ const GoaDetails = () => {
           />
           <button
             className="goa-details-arrow left"
-            onClick={() => handlePrevImage(selectedPackage.images)}>
+            onClick={() => handlePrevImage(selectedPackage.images)}
+          >
             ❮
           </button>
           <button
             className="goa-details-arrow right"
-            onClick={() => handleNextImage(selectedPackage.images)}>
+            onClick={() => handleNextImage(selectedPackage.images)}
+          >
             ❯
           </button>
         </div>
@@ -81,18 +83,18 @@ const GoaDetails = () => {
 
         {/* Information Details */}
         <div className="goa-info-details p-4">
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <FaBusAlt className="text-2xl text-green-500" />
-            <div>
-              <p>Transport</p>
-              <h1>SIC</h1>
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Transport</span>
+              <span className="text-sm text-[#696d75]">SIC</span>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <MdRestaurant className="text-2xl text-green-500" />
-            <div>
-              <p>Meals</p>
-              <h1>Breakfast</h1>
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Meals</span>
+              <span className="text-sm text-[#696d75]">Breakfast</span>
             </div>
           </div>
         </div>
@@ -133,7 +135,8 @@ const GoaDetails = () => {
               <div key={index} className="goa-qna-container">
                 <div
                   className="goa-accordion-header"
-                  onClick={() => toggleAccordion(index)}>
+                  onClick={() => toggleAccordion(index)}
+                >
                   <h2>{item.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>

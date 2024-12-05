@@ -462,12 +462,6 @@
   .hotels h1 {
     font-size: 1.2rem;
   }
-<<<<<<< HEAD
-
-  .accordion-header h3,
-  .accordion-content {
-    font-size: 1rem;
-=======
   .hotels-table {
     width: 100%;
   }
@@ -500,6 +494,5 @@
     width: 90%;
     padding: 20px;
     margin-top: 20px;
->>>>>>> c1f2d7b40132aeccfe231dab6d34b28075a28d01
   }
 }

@@ -205,7 +205,7 @@ const SikkimDetails = () => {
           </div>
         </div>
 
-        <div className="mt-10 text-2xl font-semibold text-center">
+        <div className="mt-10 text-2xl font-semibold text-center review">
           <h2>Check our reviews on TripAdvisor!</h2>
         </div>
         <div className="sikkim-tripAdvisor-container">

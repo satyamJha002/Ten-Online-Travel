@@ -1,7 +1,13 @@
 import { useParams } from "react-router-dom";
 import { packages } from "../../../../assets/Data/kasol";
 import { useState } from "react";
-import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
+import {
+  FaCheckCircle,
+  FaStar,
+  FaBusAlt,
+  FaStarHalfAlt,
+  FaHotel,
+} from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./kasoldetailsPage.css";
@@ -54,12 +60,14 @@ const KasolDetails = () => {
           />
           <button
             className="kasol-details-arrow left"
-            onClick={handlePrevImage}>
+            onClick={handlePrevImage}
+          >
             ❮
           </button>
           <button
             className="kasol-details-arrow right"
-            onClick={handleNextImage}>
+            onClick={handleNextImage}
+          >
             ❯
           </button>
         </div>
@@ -71,18 +79,25 @@ const KasolDetails = () => {
         </div>
 
         <div className="kasol-info-details p-4">
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 items-center">
             <FaBusAlt className="text-2xl text-green-500" />
-            <div>
-              <p>Transport</p>
-              <h1>SIC</h1>
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Transport</span>
+              <span className="text-sm text-[#696d75]">SIC</span>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <MdRestaurant className="text-2xl text-green-500" />
-            <div>
-              <p>Meals</p>
-              <h1>Breakfast</h1>
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Meals</span>
+              <span className="text-sm text-[#696d75]">Breakfast</span>
+            </div>
+          </div>
+          <div className="flex gap-2 items-center">
+            <FaHotel className="text-2xl text-green-500" />
+            <div className="flex flex-col">
+              <span className="text-[1.3rem] font-[500]">Accomodation</span>
+              <span className="text-sm text-[#696d75]">3 Star</span>
             </div>
           </div>
         </div>
@@ -127,7 +142,8 @@ const KasolDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}>
+                  }}
+                >
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -138,7 +154,8 @@ const KasolDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}>
+                    }}
+                  >
                     <p>{ele.answer}</p>
                   </div>
                 )}
