@@ -302,6 +302,10 @@
   width: 100px;
 }
 
+.tripAdvisor-content {
+  text-align: center;
+}
+
 .tripAdvisor-content h2 {
   font-weight: 700;
   margin-top: 20px;

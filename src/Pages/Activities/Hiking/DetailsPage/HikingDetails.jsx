@@ -206,13 +206,11 @@ const HikingDetails = () => {
                   alt=""
                 />
               </div>
-              <div className="tripAdvisor-content">
-                <h2>Before Holiday |</h2>
-                <h2>Online Travel</h2>
-                <h2>Agency</h2>
+              <div className="tripAdvisor-content text-center">
+                <h2>Ten Travels</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex items-center justify-center gap-1 text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

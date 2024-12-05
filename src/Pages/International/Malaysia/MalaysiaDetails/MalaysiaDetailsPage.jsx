@@ -347,9 +347,8 @@ const MalaysiaDetailsPage = () => {
                 />
               </div>
               <div className={styles["tripAdvisor-content"]}>
-                <h2>TEN TRAVELS |</h2>
-                <h2>Online Travel</h2>
-                <h2>Agency</h2>
+                <h2>Ten Travels</h2>
+
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
                   <span className="flex gap-1 justify-center items-center text-green-500">

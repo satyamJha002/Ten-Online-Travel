@@ -1,10 +1,6 @@
-import { v4 as uuidv4 } from "uuid";
-
-const randomNumericId = parseInt(uuidv4().replace(/-/g, "").slice(0, 12), 16);
-
 export const Thailand = [
   {
-    id: randomNumericId,
+    id: 1,
     images: [
       "https://b4holiday.com/wp-content/uploads/2021/10/traveler-in-thailand.jpg",
       "https://b4holiday.com/wp-content/uploads/2021/10/thailand_islands.jpg",

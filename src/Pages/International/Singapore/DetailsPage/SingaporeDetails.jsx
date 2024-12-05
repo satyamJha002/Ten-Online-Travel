@@ -208,7 +208,7 @@ const SingaporeDetails = () => {
                 />
               </div>
               <div className="tripAdvisor-content text-center">
-                <h2>Ten travels</h2>
+                <h2>Ten Travels</h2>
 
                 <div>
                   <p>Trip Advisor Traveler Rating</p>

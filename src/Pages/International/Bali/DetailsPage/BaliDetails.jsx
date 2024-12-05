@@ -207,10 +207,9 @@ const BaliDetails = () => {
                   alt=""
                 />
               </div>
-              <div className="tripAdvisor-content">
-                <h2>Before Holiday |</h2>
-                <h2>Online Travel</h2>
-                <h2>Agency</h2>
+              <div className="tripAdvisor-content text-center">
+                <h2>Ten Travels</h2>
+
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
                   <span className="flex gap-1 justify-center items-center text-green-500">
