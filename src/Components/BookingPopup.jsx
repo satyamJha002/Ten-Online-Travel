@@ -63,7 +63,7 @@ const BookingPopup = ({ pageName }) => {
   return (
     <div className="booking-container relative">
       <button
-        className="bg-green-500 text-white px-20 py-3 rounded-md hover:bg-green-600 transition"
+        className="bg-green-500 text-white w-full mt-2 py-3 rounded-md hover:bg-green-600 transition"
         onClick={() => setShowPopup(true)}>
         Check Availability
       </button>

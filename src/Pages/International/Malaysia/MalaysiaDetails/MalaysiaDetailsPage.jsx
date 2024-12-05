@@ -352,7 +352,7 @@ const MalaysiaDetailsPage = () => {
                 <h2>Agency</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex gap-1 justify-center items-center text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

@@ -59,14 +59,12 @@ const BaliDetails = () => {
               />
               <button
                 className="details-arrow left"
-                onClick={() => handlePrevImage(items.images)}
-              >
+                onClick={() => handlePrevImage(items.images)}>
                 ❮
               </button>
               <button
                 className="details-arrow right"
-                onClick={() => handleNextImage(items.images)}
-              >
+                onClick={() => handleNextImage(items.images)}>
                 ❯
               </button>
             </div>
@@ -132,8 +130,7 @@ const BaliDetails = () => {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
-                      }}
-                    >
+                      }}>
                       <h2>{ele.question}</h2>
                       <span>{openIndex === index ? "-" : "+"}</span>
                     </div>
@@ -144,8 +141,7 @@ const BaliDetails = () => {
                           padding: "10px",
                           background: "#fff",
                           border: "1px solid #ccc",
-                        }}
-                      >
+                        }}>
                         <p>{ele.answer}</p>
                       </div>
                     )}
@@ -199,7 +195,7 @@ const BaliDetails = () => {
               </div>
               <div>
                 <BookingPopup pageName="Bali" />
-                </div>
+              </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">
               <h2>Check our reviews on TripAdvisor!</h2>
@@ -217,7 +213,7 @@ const BaliDetails = () => {
                 <h2>Agency</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex gap-1 justify-center items-center text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

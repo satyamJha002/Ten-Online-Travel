@@ -446,6 +446,7 @@
   }
   .detail-right {
     width: 96%;
+    padding: 0 10px;
   }
   .detail-left {
     width: 100%;

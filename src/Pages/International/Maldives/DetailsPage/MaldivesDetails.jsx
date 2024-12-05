@@ -273,7 +273,7 @@ const MaldivesDetails = () => {
               </div>
               <div>
                 <BookingPopup pageName="Maldives" />
-                </div>
+              </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">
               <h2>Check our reviews on TripAdvisor!</h2>
@@ -291,7 +291,7 @@ const MaldivesDetails = () => {
                 <h2>Agency</h2>
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex items-center justify-center gap-1 text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />
