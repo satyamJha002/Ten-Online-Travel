@@ -304,6 +304,9 @@
   width: 100px;
 }
 
+.tripAdvisor-content {
+  text-align: center;
+}
 .tripAdvisor-content h2 {
   font-weight: 700;
   margin-top: 20px;
@@ -451,9 +454,49 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 320px) {
   .detail-description p {
     font-size: 0.9rem;
+=======
+@media screen and (max-width: 1208px) {
+  .detail-price-container {
+    padding: 12% 10%;
+    width: 100%;
+  }
+  .availableBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+  }
+  .detail-right {
+    width: 96%;
+    padding: 0 10px;
+  }
+  .detail-left {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .dubai-detail-nav-sticky {
+    font-size: 1rem;
+    margin-top: 8%;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .detail-nav-sticky ul {
+    flex-direction: row;
+>>>>>>> 667b8549aacb76cae1351cf6487ca4406d01e453
   }
 
   .detail-overview h1,

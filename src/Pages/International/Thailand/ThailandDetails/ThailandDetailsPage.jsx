@@ -347,12 +347,11 @@ const ThailandDetailsPage = () => {
                 />
               </div>
               <div className={styles["tripAdvisor-content"]}>
-                <h2>TEN TRAVELS |</h2>
-                <h2>Online Travel</h2>
-                <h2>Agency</h2>
+                <h2>Ten Travels</h2>
+
                 <div>
                   <p>Trip Advisor Traveler Rating</p>
-                  <span className="flex gap-1 text-green-500">
+                  <span className="flex items-center justify-center gap-1 text-green-500">
                     <FaStar />
                     <FaStar />
                     <FaStar />

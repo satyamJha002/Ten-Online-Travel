@@ -360,3 +360,81 @@
 .hotels-table td {
   color: #555;
 }
+@media screen and (max-width: 1208px) {
+  .riverrafting-detail-price-container {
+    padding: 12% 10%;
+    width: 100%;
+  }
+  .riverrafting-availableBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .riverrafting-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .riverrafting-detail-right {
+    width: 96%;
+    padding: 0 10px;
+  }
+  .riverrafting-detail-left {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .riverrafting-detail-nav-sticky {
+    font-size: 1rem;
+    margin-top: 8%;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .riverrafting-finalPrice h1 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .riverrafting-detail-nav-sticky ul {
+    flex-direction: row;
+  }
+
+  .riverrafting-detail-nav-sticky ul li {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .riverrafting-hotels-table {
+    width: 100%;
+  }
+  .riverrafting-hotels-container {
+    padding: 0;
+  }
+  .riverrafting-detail-price-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 225px;
+    z-index: 111;
+    box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    padding: 24px 24px 16px;
+    background-color: #fff;
+  }
+  .riverrafting-availableBtn {
+    width: auto;
+    padding: 2%;
+  }
+  .riverrafting-tripAdvisor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}

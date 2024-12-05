@@ -343,7 +343,8 @@
     width: 100%;
   }
   .maldives-detail-right {
-    width: 90%;
+    width: 96%;
+    padding: 0 10px;
   }
   .maldives-detail-title h1 {
     font-size: 20px;

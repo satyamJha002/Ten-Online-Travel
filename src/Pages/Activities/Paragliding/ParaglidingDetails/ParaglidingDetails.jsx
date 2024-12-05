@@ -56,14 +56,12 @@ const ParaglidingDetails = () => {
           />
           <button
             className="paragliding-details-arrow left"
-            onClick={handlePrevImage}
-          >
+            onClick={handlePrevImage}>
             ❮
           </button>
           <button
             className="paragliding-details-arrow right"
-            onClick={handleNextImage}
-          >
+            onClick={handleNextImage}>
             ❯
           </button>
         </div>
@@ -131,8 +129,7 @@ const ParaglidingDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -143,8 +140,7 @@ const ParaglidingDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
@@ -239,13 +235,12 @@ const ParaglidingDetails = () => {
               alt=""
             />
           </div>
-          <div className="paragliding-tripAdvisor-content">
-            <h2>Before Holiday |</h2>
-            <h2>Online Travel</h2>
-            <h2>Agency</h2>
+          <div className="paragliding-tripAdvisor-content text-center">
+            <h2>Ten Travels</h2>
+
             <div>
               <p>Trip Advisor Traveler Rating</p>
-              <span className="flex gap-1 text-green-500">
+              <span className="flex items-center justify-center gap-1 text-green-500">
                 <FaStar />
                 <FaStar />
                 <FaStar />
