@@ -3,6 +3,8 @@ import { BiCalendar } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import { packages } from "../../assets/Data/homePage";
 import "./Home.css";
+import Section5 from "../../Home/Section5";
+import Section6 from "../../Home/Section6";
 
 const Home = () => {
   return (
@@ -228,13 +230,13 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* Fixed background image section */}
 
       <section
         className="travel-section"
         style={{
-          backgroundImage: "url('https://cdn.tripspoint.com/uploads/photos/2083/shimla-manali-himachal-tour-from-delhi_C3T1Q.jpeg')",
+          backgroundImage:
+            "url('https://cdn.tripspoint.com/uploads/photos/2083/shimla-manali-himachal-tour-from-delhi_C3T1Q.jpeg')",
         }}
       >
         <div className="fix-container">
@@ -242,7 +244,11 @@ const Home = () => {
           <div className="left-content">
             <h2 className="white-text">Why Book Your Trip with Us</h2>
             <p className="white-text">
-              Our team ensures that your travel experience is seamless and stress-free. We offer personalized bookings, flexible options, and exceptional customer service to make your trip unforgettable. Let us take care of all the details while you focus on making memories.
+              Our team ensures that your travel experience is seamless and
+              stress-free. We offer personalized bookings, flexible options, and
+              exceptional customer service to make your trip unforgettable. Let
+              us take care of all the details while you focus on making
+              memories.
             </p>
           </div>
 
@@ -268,11 +274,13 @@ const Home = () => {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-
                   </div>
                   <div>
                     <h3>Get Booking Instantly</h3>
-                    <p>Book your trips instantly and get confirmation within minutes, ensuring a smooth experience.</p>
+                    <p>
+                      Book your trips instantly and get confirmation within
+                      minutes, ensuring a smooth experience.
+                    </p>
                   </div>
                 </div>
 
@@ -293,11 +301,13 @@ const Home = () => {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-
                   </div>
                   <div>
                     <h3>Secure Payment Gateway</h3>
-                    <p>Our secure payment methods ensure your booking process is safe and hassle-free.</p>
+                    <p>
+                      Our secure payment methods ensure your booking process is
+                      safe and hassle-free.
+                    </p>
                   </div>
                 </div>
 
@@ -318,11 +328,13 @@ const Home = () => {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-
                   </div>
                   <div>
                     <h3>24/7 Customer Support</h3>
-                    <p>Our team is available 24/7 to assist you with your booking and travel needs.</p>
+                    <p>
+                      Our team is available 24/7 to assist you with your booking
+                      and travel needs.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -346,11 +358,13 @@ const Home = () => {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-
                   </div>
                   <div>
                     <h3>Customizable Packages</h3>
-                    <p>Design your perfect vacation with our flexible and customizable travel packages.</p>
+                    <p>
+                      Design your perfect vacation with our flexible and
+                      customizable travel packages.
+                    </p>
                   </div>
                 </div>
 
@@ -371,11 +385,13 @@ const Home = () => {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-
                   </div>
                   <div>
                     <h3>Exclusive Offers / Discounts</h3>
-                    <p>Enjoy the best prices guaranteed! Found better deal? We’ll match it / beat it for you.</p>
+                    <p>
+                      Enjoy the best prices guaranteed! Found better deal? We’ll
+                      match it / beat it for you.
+                    </p>
                   </div>
                 </div>
 
@@ -396,11 +412,13 @@ const Home = () => {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-
                   </div>
                   <div>
                     <h3>Flexible Cancellation Policy</h3>
-                    <p>Experience worry-free booking with our flexible cancellation options.</p>
+                    <p>
+                      Experience worry-free booking with our flexible
+                      cancellation options.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -408,6 +426,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Section5 />
+      <Section6 />
     </div>
   );
 };
