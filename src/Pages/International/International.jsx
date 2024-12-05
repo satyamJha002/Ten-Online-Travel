@@ -15,8 +15,8 @@ const International = () => {
             <h1>Destination</h1>
             <div className="Main-container">
                 <img src="https://b4holiday.com/wp-content/uploads/2017/11/mountain-landscape-2031539_19201-1290x540.jpg" alt="activeimg" />
-                <p>Experience the thrill of adventure with our curated activity packages, featuring paragliding, river rafting, and hiking. Soar through the skies with paragliding, enjoying breathtaking views of serene landscapes, or dive into the excitement of river rafting as you tackle rapids with the guidance of experienced professionals. For those seeking to reconnect with nature, our hiking trails offer a mix of peaceful paths and challenging treks through stunning destinations.</p>
-                <p>Each activity is carefully designed to ensure your safety and satisfaction, complete with personalized planning and top-notch support. Pair your adventures with our unbeatable flight and hotel deals to create the ultimate travel experience. Whether you're an adrenaline junkie or a nature lover, we have something for everyone.</p>
+                <p>Before Holiday is one of India’s top online travel platforms, specializing in holiday packages both within the country and internationally. The company offers a variety of options, including budget-friendly packages, luxury experiences, group tours, and fully customized trips.</p>
+                <p>With an extensive selection of holiday packages, including unique and exotic options, Before Holiday ensures personalized service and exceptional customer support. Say goodbye to long IVR wait times—your requests are handled quickly and efficiently. Explore our top-selling destinations and enjoy unbeatable deals on flight and hotel combos!</p>
             </div>
             <div className='Internationalcard'>
                 <div className='campingcard'>
