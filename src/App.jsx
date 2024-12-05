@@ -130,7 +130,10 @@ function App() {
             element={<OotyDetails />}
           />
           <Route path="/india/tamilnadu/Kodaikanal" element={<Kodaikanal />} />
-          <Route path="/india/tamilnadu/Kodaikanal/trip/:id" element={<KodaikanalDetails />} />
+          <Route
+            path="/india/tamilnadu/Kodaikanal/trip/:id"
+            element={<KodaikanalDetails />}
+          />
           <Route path="/munnar" element={<Munnar />} />
           <Route path="/munnar/trip/:id" element={<MunnarDetailsPage />} />
           <Route

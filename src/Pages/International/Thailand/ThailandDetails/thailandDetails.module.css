@@ -353,10 +353,6 @@
     background-color: #fff;
   }
 
-  .detail-left .detail-discount {
-    display: none;
-  }
-
   .responsive-detail-price .finalPrice {
     display: flex;
   }
@@ -510,7 +506,6 @@
     right: 0;
     bottom: 0;
     width: 100vw;
-    height: 185px;
     z-index: 111;
     box-shadow: -2px 0 16px rgba(0, 0, 0, 0.2);
     border-radius: 0;
