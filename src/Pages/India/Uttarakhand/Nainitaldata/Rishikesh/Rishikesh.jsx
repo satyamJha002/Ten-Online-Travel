@@ -16,6 +16,7 @@ const Rishikesh = () => {
     <div className="rishikesh">
       {/*Rishikesh */}
       <div className="rishikesh-div">
+        <p className="rishikesh-destination"> Home {newUrl}</p>
         <h1 className="rishikesh-heading">Rishikesh</h1>
         <p className="rishikesh-content">
           <strong>
