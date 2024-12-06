@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { IoMdCloseCircle } from "react-icons/io";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const DarjeelingDetailsPage = () => {
   const [currentImages, setCurrentImages] = useState(0);
@@ -63,14 +64,12 @@ const DarjeelingDetailsPage = () => {
               />
               <button
                 className={`${styles["details-arrow"]} ${styles["left"]}`}
-                onClick={() => prevImage(items.images)}
-              >
+                onClick={() => prevImage(items.images)}>
                 ❮
               </button>
               <button
                 className={`${styles["details-arrow"]} ${styles["right"]}`}
-                onClick={() => nextImage(items.images)}
-              >
+                onClick={() => nextImage(items.images)}>
                 ❯
               </button>
             </div>
@@ -80,8 +79,7 @@ const DarjeelingDetailsPage = () => {
                 items.detailDescription === " "
                   ? "m-0"
                   : styles["detail-description"]
-              }
-            >
+              }>
               <p>
                 {items.detailDescription === " "
                   ? null
@@ -181,8 +179,7 @@ const DarjeelingDetailsPage = () => {
                       <div key={index} className={styles["qna-container"]}>
                         <div
                           className={styles["accordion-header"]}
-                          onClick={() => toggleAccordion(index)}
-                        >
+                          onClick={() => toggleAccordion(index)}>
                           <h3 className="text-[1.2rem]">{ele.question}</h3>
                           <span>{openIndex === index ? "-" : "+"}</span>
                         </div>
@@ -200,8 +197,7 @@ const DarjeelingDetailsPage = () => {
 
             <div
               id="inClusions"
-              className={styles["both-inclusions-containers"]}
-            >
+              className={styles["both-inclusions-containers"]}>
               <h1>Inclusions</h1>
               {items.inClusions.map((item, index) => (
                 <>
@@ -210,8 +206,7 @@ const DarjeelingDetailsPage = () => {
                       {item.packageInclusion.map((ele, index) => (
                         <div
                           key={index}
-                          className={styles["packageInclusions"]}
-                        >
+                          className={styles["packageInclusions"]}>
                           <h3 className="text-[1rem] font-[500]">
                             {ele.title}
                           </h3>
@@ -219,8 +214,7 @@ const DarjeelingDetailsPage = () => {
                             {ele.points.map((point, index) => (
                               <p
                                 key={index}
-                                className="flex items-center gap-2 text-[1rem]"
-                              >
+                                className="flex items-center gap-2 text-[1rem]">
                                 <FaCheckCircle className="text-green-500" />
                                 <span>{point}</span>
                               </p>
@@ -241,8 +235,7 @@ const DarjeelingDetailsPage = () => {
                           {ele.points.map((point, index) => (
                             <p
                               key={index}
-                              className="flex items-center gap-2 text-[1rem]"
-                            >
+                              className="flex items-center gap-2 text-[1rem]">
                               <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" />
                               {point}
                             </p>
@@ -311,15 +304,14 @@ const DarjeelingDetailsPage = () => {
                   <h1>{items.price}</h1>
                   <span>/Adult</span>
                 </div>
-                <div className={styles["availableBtn"]}>
-                  <button>Check Availability</button>
+                <div>
+                  <BookingPopup pageName="Darjeeling" />
                 </div>
               </div>
             </div>
 
             <div
-              className={`mt-10 text-2xl font-semibold text-center ${styles["review"]}`}
-            >
+              className={`mt-10 text-2xl font-semibold text-center ${styles["review"]}`}>
               <h2>Check our reviews on TripAdvisor!</h2>
             </div>
             <div className={styles["tripAdvisor-container"]}>

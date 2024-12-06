@@ -11,6 +11,7 @@ import {
   watertourPackages,
 } from "../../../../assets/Data/Andmantour";
 import "./Detailsandaman.css";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const Detailsandaman = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -84,14 +85,12 @@ const Detailsandaman = () => {
                 />
                 <button
                   className="andamn-details-arrow left"
-                  onClick={() => handlePrevImage(items.images)}
-                >
+                  onClick={() => handlePrevImage(items.images)}>
                   ❮
                 </button>
                 <button
                   className="andamn-details-arrow right"
-                  onClick={() => handleNextImage(items.images)}
-                >
+                  onClick={() => handleNextImage(items.images)}>
                   ❯
                 </button>
               </div>
@@ -180,8 +179,7 @@ const Detailsandaman = () => {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
-                      }}
-                    >
+                      }}>
                       <h2>{ele.question}</h2>
                       <span>{openIndex === index ? "-" : "+"}</span>
                     </div>
@@ -192,8 +190,7 @@ const Detailsandaman = () => {
                           padding: "10px",
                           background: "#fff",
                           border: "1px solid #ccc",
-                        }}
-                      >
+                        }}>
                         <p>{ele.answer}</p>
                       </div>
                     )}
@@ -301,8 +298,9 @@ const Detailsandaman = () => {
                 <h1>{items.price}</h1>
                 <span>/Adult</span>
               </div>
-              <div className="andamn-availableBtn">
-                <button>Check Availability</button>
+
+              <div>
+                <BookingPopup pageName="Andaman Tour" />
               </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">

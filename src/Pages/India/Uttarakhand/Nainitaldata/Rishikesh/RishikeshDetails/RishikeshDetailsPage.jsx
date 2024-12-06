@@ -5,6 +5,7 @@ import { FaCheckCircle, FaStar, FaStarHalfAlt, FaBusAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./RishikeshDetailsPage.css";
+import BookingPopup from "../../../../../../Components/BookingPopup";
 
 const RishikeshDetailsPage = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -56,14 +57,12 @@ const RishikeshDetailsPage = () => {
           />
           <button
             className="Rishikesh-details-arrow left"
-            onClick={() => handlePrevImage(RishikeshObject.images)}
-          >
+            onClick={() => handlePrevImage(RishikeshObject.images)}>
             ❮
           </button>
           <button
             className="Rishikesh-details-arrow right"
-            onClick={() => handleNextImage(RishikeshObject.images)}
-          >
+            onClick={() => handleNextImage(RishikeshObject.images)}>
             ❯
           </button>
         </div>
@@ -136,8 +135,7 @@ const RishikeshDetailsPage = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -148,8 +146,7 @@ const RishikeshDetailsPage = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
@@ -203,8 +200,8 @@ const RishikeshDetailsPage = () => {
             <h1>{RishikeshObject.price || "Contact for Price"}</h1>
             <span>/Adult</span>
           </div>
-          <div className="Rishikesh-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="Rishikesh" />
           </div>
         </div>
 

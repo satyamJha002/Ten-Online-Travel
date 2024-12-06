@@ -4,6 +4,7 @@ import { tourssightPackages } from "../../../../assets/Data/constantsikkim";
 import { FaCheckCircle, FaStar, FaStarHalfAlt, FaBusAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
+import BookingPopup from "../../../../Components/BookingPopup";
 import "./SikkimDetails.css";
 
 const SikkimDetails = () => {
@@ -55,14 +56,12 @@ const SikkimDetails = () => {
           />
           <button
             className="sikkim-details-arrow left"
-            onClick={() => handlePrevImage(sikkimObject.images)}
-          >
+            onClick={() => handlePrevImage(sikkimObject.images)}>
             ❮
           </button>
           <button
             className="sikkim-details-arrow right"
-            onClick={() => handleNextImage(sikkimObject.images)}
-          >
+            onClick={() => handleNextImage(sikkimObject.images)}>
             ❯
           </button>
         </div>
@@ -133,8 +132,7 @@ const SikkimDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -145,8 +143,7 @@ const SikkimDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
@@ -200,8 +197,8 @@ const SikkimDetails = () => {
             <h1>{sikkimObject.price || "Contact for Price"}</h1>
             <span>/Adult</span>
           </div>
-          <div className="sikkim-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="Sikkim" />
           </div>
         </div>
 

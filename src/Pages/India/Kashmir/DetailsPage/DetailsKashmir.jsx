@@ -8,6 +8,7 @@ import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
 import "./detailsKashmirPage.css";
 import { kashmirPackages } from "../../../../assets/Data/data";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const DetailsKashmir = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -311,8 +312,8 @@ const DetailsKashmir = () => {
                 <h1>{items.price}</h1>
                 <span>/Adult</span>
               </div>
-              <div className="Kashmir-availableBtn">
-                <button>Check Availability</button>
+              <div>
+                <BookingPopup pageName="Kashmir" />
               </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">

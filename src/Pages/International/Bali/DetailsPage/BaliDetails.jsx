@@ -17,8 +17,6 @@ const BaliDetails = () => {
 
   const filteredObjects = Bali.filter((obj) => obj.id === Number(id));
 
-  console.log(filteredObjects);
-
   const handlePrevImage = (images) => {
     setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };

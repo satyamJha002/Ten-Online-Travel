@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { IoMdCloseCircle } from "react-icons/io";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const MunnarDetailsPage = () => {
   const { id } = useParams();
@@ -96,14 +97,12 @@ const MunnarDetailsPage = () => {
               />
               <button
                 className={`${styles["details-arrow"]} ${styles["left"]}`}
-                onClick={() => handlePrevImages(items.images)}
-              >
+                onClick={() => handlePrevImages(items.images)}>
                 ❮
               </button>
               <button
                 className={`${styles["details-arrow"]} ${styles["right"]}`}
-                onClick={() => handleNextImage(items.images)}
-              >
+                onClick={() => handleNextImage(items.images)}>
                 ❯
               </button>
             </div>
@@ -113,8 +112,7 @@ const MunnarDetailsPage = () => {
                 items.detailDescription === " "
                   ? "m-0"
                   : styles["detail-description"]
-              }
-            >
+              }>
               <p>
                 {items.detailDescription === " "
                   ? null
@@ -245,8 +243,7 @@ const MunnarDetailsPage = () => {
                       <div key={index} className={styles["qna-container"]}>
                         <div
                           className={styles["accordion-header"]}
-                          onClick={() => toggleAccordion(index)}
-                        >
+                          onClick={() => toggleAccordion(index)}>
                           <h3 className="text-[1.2rem]">{ele.question}</h3>
                           <span>{openIndex === index ? "-" : "+"}</span>
                         </div>
@@ -264,8 +261,7 @@ const MunnarDetailsPage = () => {
 
             <div
               id="inClusions"
-              className={styles["both-inclusions-containers"]}
-            >
+              className={styles["both-inclusions-containers"]}>
               <h1>Inclusions</h1>
               {items.inClusions.map((item, index) => (
                 <>
@@ -274,8 +270,7 @@ const MunnarDetailsPage = () => {
                       {item.packageInclusion.map((ele, index) => (
                         <div
                           key={index}
-                          className={styles["packageInclusions"]}
-                        >
+                          className={styles["packageInclusions"]}>
                           <h3 className="text-[1rem] font-[500]">
                             {ele.title}
                           </h3>
@@ -283,8 +278,7 @@ const MunnarDetailsPage = () => {
                             {ele.points.map((point, index) => (
                               <p
                                 key={index}
-                                className="flex items-center gap-2 text-[1rem]"
-                              >
+                                className="flex items-center gap-2 text-[1rem]">
                                 <FaCheckCircle className="text-green-500" />
                                 <span>{point}</span>
                               </p>
@@ -305,8 +299,7 @@ const MunnarDetailsPage = () => {
                           {ele.points.map((point, index) => (
                             <p
                               key={index}
-                              className="flex items-center gap-2 text-[1rem]"
-                            >
+                              className="flex items-center gap-2 text-[1rem]">
                               <IoMdCloseCircle className="text-red-500 overflow-hidden text-2xl" />
                               {point}
                             </p>
@@ -343,8 +336,7 @@ const MunnarDetailsPage = () => {
                           {placeIndex === 0 && (
                             <td
                               rowSpan={hotel.places.length < 4 ? 2 : 4}
-                              className="py-2 px-4 border-b border-gray-300"
-                            >
+                              className="py-2 px-4 border-b border-gray-300">
                               {hotel.roomType}
                             </td>
                           )}
@@ -383,15 +375,14 @@ const MunnarDetailsPage = () => {
                   <h1>{items.price}</h1>
                   <span>/Adult</span>
                 </div>
-                <div className={styles["availableBtn"]}>
-                  <button>Check Availability</button>
+                <div>
+                  <BookingPopup pageName="Kerala" />
                 </div>
               </div>
             </div>
 
             <div
-              className={`mt-10 text-2xl font-semibold text-center ${styles["review"]}`}
-            >
+              className={`mt-10 text-2xl font-semibold text-center ${styles["review"]}`}>
               <h2 className="max-sm:text-sm">
                 Check our reviews on TripAdvisor!
               </h2>

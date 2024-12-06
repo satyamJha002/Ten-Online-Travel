@@ -11,6 +11,7 @@ import {
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./kasoldetailsPage.css";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const KasolDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -60,14 +61,12 @@ const KasolDetails = () => {
           />
           <button
             className="kasol-details-arrow left"
-            onClick={handlePrevImage}
-          >
+            onClick={handlePrevImage}>
             ❮
           </button>
           <button
             className="kasol-details-arrow right"
-            onClick={handleNextImage}
-          >
+            onClick={handleNextImage}>
             ❯
           </button>
         </div>
@@ -142,8 +141,7 @@ const KasolDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -154,8 +152,7 @@ const KasolDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
@@ -231,8 +228,8 @@ const KasolDetails = () => {
             <h1>{kasolObjects.price}</h1>
             <span>/Adult</span>
           </div>
-          <div className="kasol-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="Kasol" />
           </div>
         </div>
 

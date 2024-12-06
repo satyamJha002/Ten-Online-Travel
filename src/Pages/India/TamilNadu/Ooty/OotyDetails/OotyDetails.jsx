@@ -5,6 +5,7 @@ import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./OotyDetails.css";
+import BookingPopup from "../../../../../Components/BookingPopup";
 
 const OotyDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -57,8 +58,7 @@ const OotyDetails = () => {
           </button>
           <button
             className="Ooty-details-arrow right"
-            onClick={handleNextImage}
-          >
+            onClick={handleNextImage}>
             ❯
           </button>
         </div>
@@ -126,8 +126,7 @@ const OotyDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -138,8 +137,7 @@ const OotyDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
@@ -219,8 +217,8 @@ const OotyDetails = () => {
             <h1>{OotyObject.price}</h1>
             <span>/Adult</span>
           </div>
-          <div className="Ooty-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="Ooty" />
           </div>
         </div>
 

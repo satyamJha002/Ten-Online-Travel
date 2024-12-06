@@ -6,6 +6,7 @@ import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./KodaikanalDetails.css";
+import BookingPopup from "../../../../../Components/BookingPopup";
 
 const KodaikanalDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -57,14 +58,12 @@ const KodaikanalDetails = () => {
           />
           <button
             className="Kodaikanal-details-arrow left"
-            onClick={handlePrevImage}
-          >
+            onClick={handlePrevImage}>
             ❮
           </button>
           <button
             className="Kodaikanal-details-arrow right"
-            onClick={handleNextImage}
-          >
+            onClick={handleNextImage}>
             ❯
           </button>
         </div>
@@ -132,8 +131,7 @@ const KodaikanalDetails = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                  }}
-                >
+                  }}>
                   <h2>{ele.question}</h2>
                   <span>{openIndex === index ? "-" : "+"}</span>
                 </div>
@@ -144,8 +142,7 @@ const KodaikanalDetails = () => {
                       padding: "10px",
                       background: "#fff",
                       border: "1px solid #ccc",
-                    }}
-                  >
+                    }}>
                     <p>{ele.answer}</p>
                   </div>
                 )}
@@ -225,8 +222,8 @@ const KodaikanalDetails = () => {
             <h1>{KodaikanalObject.price}</h1>
             <span>/Adult</span>
           </div>
-          <div className="Kodaikanal-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="Kodaikanal" />
           </div>
         </div>
 
