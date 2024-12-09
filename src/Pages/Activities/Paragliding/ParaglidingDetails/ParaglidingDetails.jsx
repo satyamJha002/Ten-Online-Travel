@@ -5,6 +5,7 @@ import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./ParaglidingDetails.css";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const ParaglidingDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -220,8 +221,8 @@ const ParaglidingDetails = () => {
             <h1>{paraglidingObject.price}</h1>
             <span>/Adult</span>
           </div>
-          <div className="paragliding-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="Paragliding" />
           </div>
         </div>
 

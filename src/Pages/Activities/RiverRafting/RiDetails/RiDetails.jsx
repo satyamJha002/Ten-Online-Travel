@@ -5,6 +5,7 @@ import { FaCheckCircle, FaStar, FaBusAlt, FaStarHalfAlt } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { MdRestaurant } from "react-icons/md";
 import "./RiDetails.css";
+import BookingPopup from "../../../../Components/BookingPopup";
 
 const RiverRaftingDetails = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -216,8 +217,8 @@ const RiverRaftingDetails = () => {
             <h1>{riverraftingObjects.price}</h1>
             <span>/Adult</span>
           </div>
-          <div className="riverrafting-availableBtn">
-            <button>Check Availability</button>
+          <div>
+            <BookingPopup pageName="River rafting" />
           </div>
         </div>
 

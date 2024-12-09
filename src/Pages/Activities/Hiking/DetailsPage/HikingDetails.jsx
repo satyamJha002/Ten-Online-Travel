@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { FaBusAlt } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
 import { FaStarHalfAlt } from "react-icons/fa";
+import BookingPopup from "../../../../Components/BookingPopup";
 import "./detail.css";
 
 const HikingDetails = () => {
@@ -192,8 +193,8 @@ const HikingDetails = () => {
                 <h1>{items.price}</h1>
                 <span>/Adult</span>
               </div>
-              <div className="availableBtn">
-                <button>Check Availability</button>
+              <div>
+                <BookingPopup pageName="Hiking" />
               </div>
             </div>
             <div className="mt-10 text-2xl font-semibold text-center">
