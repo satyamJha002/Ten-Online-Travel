@@ -1,15 +1,13 @@
 /* eslint-disable react/prop-types */
 import "./Cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt, faClock, } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ pkg, locationURL }) => {
+const Card = ({ pkg, newUrl }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [showMap, setShowMap] = useState(false);
-
-  ;
 
   const toggleMap = () => {
     setShowMap(!showMap);
@@ -68,7 +66,7 @@ const Card = ({ pkg, locationURL }) => {
         </div>
       </div>
       <div className="available-year">
-        <Link to={`${locationURL}/trip/${pkg.id}`} className="view-details-btn">
+        <Link to={`${pkg.route}`} className="view-details-btn">
           <button>View Details</button>
         </Link>
       </div>

@@ -12,7 +12,7 @@ const Section5 = () => {
             <Cart key={pkg.id} pkg={pkg} />
           ))}
         </div>
-        <button class="view-trip-btn">VIEW ALL TRIP</button>
+        <button className="view-trip-btn">VIEW ALL TRIP</button>
       </div>
     </>
   );
