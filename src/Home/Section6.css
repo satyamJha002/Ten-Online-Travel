@@ -22,11 +22,11 @@
   background-color: #32b67a;
 }
 
-.Section6Info {
+.Section5Info {
   margin-top: 30px;
 }
 
-.Section6Info p {
+.Section5Info p {
   color: #7c7c8b;
 }
 
@@ -74,23 +74,19 @@
 .Section6CardsContainer {
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+  padding-left: 5%;
   margin-top: 30px;
-}
-
-.Section6CardsContainer > *:nth-last-child(-n + 1) {
-  margin-right: auto;
-  margin-left: 15px;
 }
 
 .view-trip-btn {
   padding: 10px 20px;
   margin-top: 30px;
-  margin-left: 43%;
   margin-bottom: 20px;
   border: 2px solid #00c853;
   border-radius: 4px;
@@ -143,12 +139,7 @@
   }
 
   .Section6CardsContainer {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .Section6CardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 15px;
+    gap: 20px;
   }
 }
 
@@ -173,9 +164,12 @@
     gap: 20px;
   }
 
-  .Section5CardsContainer > *:nth-last-child(-n + 1) {
+  .singaporeCardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
-    margin-left: 15px;
+    margin-left: 35px;
+  }
+  .view-trip-btn {
+    margin-left: 35%;
   }
 }
 
@@ -202,10 +196,8 @@
 
   .Section6CardsContainer {
     justify-content: center;
-  }
-  .Section5CardsContainer > *:nth-last-child(-n + 1) {
-    margin-right: auto;
-    margin-left: 15px;
+    gap: 15px;
+    padding: 0;
   }
 }
 
@@ -225,9 +217,14 @@
   .friAndFam h2 {
     padding: 0 15px;
   }
-
+  .Section6CardsContainer {
+    padding: 0;
+  }
   .Section6CardsContainer > *:nth-last-child(-n + 1) {
     margin-right: auto;
     margin-left: 15px;
+  }
+  .view-trip-btn {
+    margin-left: 25%;
   }
 }

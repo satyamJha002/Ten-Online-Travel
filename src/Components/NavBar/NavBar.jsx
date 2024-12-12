@@ -127,13 +127,9 @@ const Navbar = () => {
             </text>
           </svg>
         </div>
-
         <div className="text-center">
-          <p className="text-sm md:text-xs font-medium">
-            Call Us, We are open 24/7
-          </p>
-          <p className="text-xl md:text-4xl font-bold text-green-600">
-            <a href="/contact">(+91) 1234567890</a>
+          <p className="text-xl md:text-4xl font-bold text-green-600 animate-fadeInUp">
+            <span>BOOK FIRST PAY LATER </span>
           </p>
         </div>
       </div>
