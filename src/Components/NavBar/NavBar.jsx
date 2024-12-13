@@ -129,7 +129,7 @@ const Navbar = () => {
         </div>
         <div className="text-center">
           <p className="text-xl md:text-4xl font-bold text-green-600 animate-fadeInUp">
-            <span>BOOK FIRST PAY LATER </span>
+            <span>BOOK NOW PAY LATER </span>
           </p>
         </div>
       </div>
